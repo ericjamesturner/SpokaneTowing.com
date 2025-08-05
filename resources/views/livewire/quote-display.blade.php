@@ -309,6 +309,7 @@
                     </form>
                 </div>
             @endif
+            @endif {{-- End of $showBookingForm check --}}
         </div>
         
         <script>

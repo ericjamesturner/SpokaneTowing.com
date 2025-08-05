@@ -6,6 +6,20 @@
     <title>@yield('title') | Spokane Towing</title>
     <meta name="description" content="@yield('description')">
     
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:title" content="@yield('title') | Spokane Towing">
+    <meta property="og:description" content="@yield('description')">
+    <meta property="og:image" content="https://spokanetowing.com/images/towing-service.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ url()->current() }}">
+    <meta property="twitter:title" content="@yield('title') | Spokane Towing">
+    <meta property="twitter:description" content="@yield('description')">
+    <meta property="twitter:image" content="https://spokanetowing.com/images/towing-service.jpg">
+    
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -42,6 +56,62 @@
             });
         </script>
     @endif
+    @include('partials.schema-local-business')
+    
+    <script type="application/ld+json">
+    {
+      "@@context": "https://schema.org",
+      "@@type": "Service",
+      "serviceType": "@yield('service-type', 'Towing Service')",
+      "provider": {
+        "@@id": "https://spokanetowing.com/#business"
+      },
+      "name": "@yield('hero-title')",
+      "description": "@yield('description')",
+      "url": "{{ url()->current() }}",
+      "areaServed": [
+        {
+          "@@type": "City",
+          "name": "Spokane"
+        },
+        {
+          "@@type": "City", 
+          "name": "Coeur d'Alene"
+        },
+        {
+          "@@type": "City",
+          "name": "Post Falls"
+        }
+      ],
+      "availableChannel": {
+        "@@type": "ServiceChannel",
+        "serviceUrl": "{{ url()->current() }}",
+        "servicePhone": "+15097977999",
+        "availableLanguage": "English"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@@context": "https://schema.org",
+      "@@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://spokanetowing.com"
+        },
+        {
+          "@@type": "ListItem",
+          "position": 2,
+          "name": "@yield('hero-title')",
+          "item": "{{ url()->current() }}"
+        }
+      ]
+    }
+    </script>
 </head>
 <body class="antialiased bg-white text-gray-900">
     <!-- Header -->

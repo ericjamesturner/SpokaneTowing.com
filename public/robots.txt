@@ -1,2 +1,14 @@
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap location
+Sitemap: https://spokanetowing.com/sitemap.xml
+
+# Allow search engines to crawl everything
+Disallow: /admin
+Disallow: /login
+Disallow: /register
+Disallow: /password
+
+# Crawl delay for responsible crawling
+Crawl-delay: 1

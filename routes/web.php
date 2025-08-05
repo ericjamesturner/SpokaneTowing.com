@@ -15,6 +15,10 @@ Route::get('/booking-confirmation', function () {
     return view('booking-confirmation');
 })->name('booking.confirmation');
 
+Route::get('/faq', function () {
+    return view('faq');
+})->name('faq');
+
 // Service Pages
 Route::get('/24-hour-towing', function () {
     return view('services.24-hour-towing');
@@ -80,6 +84,10 @@ Route::get('/towing-sandpoint', function () {
 Route::get('/towing-colville', function () {
     return view('locations.colville');
 })->name('locations.colville');
+
+Route::get('/towing-spokane-valley', function () {
+    return view('locations.spokane-valley');
+})->name('locations.spokane-valley');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])

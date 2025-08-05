@@ -72,6 +72,7 @@
 </div>
 @endsection
 
+@section('extra-sections')
 @include('partials.coverage-area', ['title' => 'Recovery Service Coverage Area', 'description' => 'Professional winch out and recovery services throughout the Spokane region:'])
 
 <!-- Safety Information -->

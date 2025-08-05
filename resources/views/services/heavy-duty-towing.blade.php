@@ -73,6 +73,7 @@
 </div>
 @endsection
 
+@section('extra-sections')
 @include('partials.coverage-area', ['title' => 'Heavy Duty Towing Coverage', 'description' => 'Professional heavy duty towing services throughout the greater Spokane region:'])
 
 <!-- Commercial Features -->

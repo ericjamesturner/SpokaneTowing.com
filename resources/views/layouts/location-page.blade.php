@@ -42,6 +42,73 @@
             });
         </script>
     @endif
+    @include('partials.schema-local-business')
+    
+    <script type="application/ld+json">
+    {
+      "@@context": "https://schema.org",
+      "@@type": "ServiceArea",
+      "name": "Towing Services in @yield('city')",
+      "description": "@yield('description')",
+      "url": "{{ url()->current() }}",
+      "provider": {
+        "@@id": "https://spokanetowing.com/#business"
+      },
+      "areaServed": {
+        "@@type": "City",
+        "name": "@yield('city')"
+      },
+      "hasOfferCatalog": {
+        "@@type": "OfferCatalog",
+        "name": "Towing Services in @yield('city')",
+        "itemListElement": [
+          {
+            "@@type": "Offer",
+            "itemOffered": {
+              "@@type": "Service",
+              "name": "Emergency Towing",
+              "description": "24/7 emergency towing service in @yield('city')"
+            }
+          },
+          {
+            "@@type": "Offer",
+            "itemOffered": {
+              "@@type": "Service",
+              "name": "Roadside Assistance",
+              "description": "Jump starts, fuel delivery, and lockout service in @yield('city')"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@@context": "https://schema.org",
+      "@@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://spokanetowing.com"
+        },
+        {
+          "@@type": "ListItem",
+          "position": 2,
+          "name": "Locations",
+          "item": "https://spokanetowing.com/#locations"
+        },
+        {
+          "@@type": "ListItem",
+          "position": 3,
+          "name": "@yield('city')",
+          "item": "{{ url()->current() }}"
+        }
+      ]
+    }
+    </script>
 </head>
 <body class="antialiased bg-white text-gray-900">
     <!-- Header -->

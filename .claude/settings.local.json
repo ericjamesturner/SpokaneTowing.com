@@ -6,7 +6,11 @@
       "Bash(grep:*)",
       "Bash(mkdir:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(php artisan view:clear:*)",
+      "Bash(mv:*)",
+      "Bash(cp:*)",
+      "Bash(php artisan view:cache:*)"
     ],
     "deny": []
   }

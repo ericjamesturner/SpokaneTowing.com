@@ -16,6 +16,11 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     
+    <!-- Schema.org Structured Data -->
+    @include('partials.schema-local-business')
+    @include('partials.schema-website')
+    @include('partials.schema-faq')
+    
     @if(config('towing.google_maps.api_key'))
         <script>
             ((g) => {
@@ -446,6 +451,10 @@
                 </p>
                 <div class="grid md:grid-cols-3 gap-8 text-left">
                     <div>
+                        <h3 class="font-semibold mb-2">Contact</h3>
+                        <p class="text-gray-600 mb-3">
+                            <a href="tel:+15097977999" class="text-blue-600 hover:underline text-xl font-semibold">(509) 797-7999</a>
+                        </p>
                         <h3 class="font-semibold mb-2">Service Hours</h3>
                         <p class="text-gray-600">24 Hours a Day<br>7 Days a Week<br>365 Days a Year</p>
                     </div>
@@ -453,22 +462,22 @@
                         <h3 class="font-semibold mb-2">Service Areas</h3>
                         <div class="text-gray-600 grid grid-cols-1 gap-1">
                             <a href="/" class="hover:text-blue-600">Spokane, WA</a>
-                            <a href="/towing-coeur-d-alene" class="hover:text-blue-600">Coeur d'Alene, ID</a>
-                            <a href="/towing-post-falls" class="hover:text-blue-600">Post Falls, ID</a>
+                            <a href="/towing-spokane-valley" class="hover:text-blue-600">Spokane Valley, WA</a>
                             <a href="/towing-cheney" class="hover:text-blue-600">Cheney, WA</a>
                             <a href="/towing-deer-park" class="hover:text-blue-600">Deer Park, WA</a>
                             <a href="/towing-airway-heights" class="hover:text-blue-600">Airway Heights, WA</a>
                             <a href="/towing-liberty-lake" class="hover:text-blue-600">Liberty Lake, WA</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold mb-2">&nbsp;</h3>
+                        <div class="text-gray-600 grid grid-cols-1 gap-1">
+                            <a href="/towing-coeur-d-alene" class="hover:text-blue-600">Coeur d'Alene, ID</a>
+                            <a href="/towing-post-falls" class="hover:text-blue-600">Post Falls, ID</a>
                             <a href="/towing-hayden-id" class="hover:text-blue-600">Hayden, ID</a>
                             <a href="/towing-sandpoint" class="hover:text-blue-600">Sandpoint, ID</a>
                             <a href="/towing-colville" class="hover:text-blue-600">Colville, WA</a>
                         </div>
-                    </div>
-                    <div>
-                        <h3 class="font-semibold mb-2">Contact</h3>
-                        <p class="text-gray-600">
-                            <a href="tel:+15097977999" class="text-blue-600 hover:underline">(509) 797-7999</a>
-                        </p>
                     </div>
                 </div>
             </div>
@@ -479,6 +488,13 @@
     <footer class="bg-gray-900 text-white py-8">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
+                <div class="mb-4">
+                    <a href="/faq" class="text-gray-400 hover:text-white transition mx-3">FAQ</a>
+                    <span class="text-gray-600">|</span>
+                    <a href="/#services" class="text-gray-400 hover:text-white transition mx-3">Services</a>
+                    <span class="text-gray-600">|</span>
+                    <a href="/#contact" class="text-gray-400 hover:text-white transition mx-3">Contact</a>
+                </div>
                 <p class="text-gray-400">Licensed & Insured | Serving Spokane Since 2010</p>
             </div>
         </div>
