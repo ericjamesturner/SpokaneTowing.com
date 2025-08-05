@@ -14,7 +14,12 @@
       "Bash(sips:*)",
       "Bash(curl:*)",
       "Bash(rm:*)",
-      "Bash(cwebp:*)"
+      "Bash(cwebp:*)",
+      "Bash(php artisan make:migration:*)",
+      "Bash(php artisan make:model:*)",
+      "Bash(php artisan make:seeder:*)",
+      "Bash(php artisan migrate:*)",
+      "Bash(php artisan make:controller:*)"
     ],
     "deny": []
   }

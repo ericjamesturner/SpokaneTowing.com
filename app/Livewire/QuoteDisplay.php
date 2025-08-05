@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Models\Quote;
 use Livewire\Component;
 use Illuminate\Support\Facades\Http;
 
@@ -14,33 +15,10 @@ class QuoteDisplay extends Component
     public $quote = null;
     public $error = null;
     public $loading = true;
-    public $showBookingForm = false;
     
-    // Booking form fields
-    public $customerName = '';
-    public $customerPhone = '';
-    public $customerEmail = '';
-    public $homeAddress = '';
-    public $vehicleYear = '';
-    public $vehicleMake = '';
-    public $vehicleModel = '';
-    public $problem = '';
-    public $problemOther = '';
+    // Quote record ID
+    public $quoteRecordId = null;
 
-    protected function rules()
-    {
-        return [
-            'customerName' => 'required|min:2',
-            'customerPhone' => 'required|min:10',
-            'customerEmail' => 'required|email',
-            'homeAddress' => 'required|min:5',
-            'vehicleYear' => 'required|numeric|min:1900|max:' . (date('Y') + 1),
-            'vehicleMake' => 'required|min:2',
-            'vehicleModel' => 'required|min:1',
-            'problem' => 'required',
-            'problemOther' => 'required_if:problem,other',
-        ];
-    }
 
     public function mount($fromAddress, $toAddress)
     {
@@ -100,6 +78,22 @@ class QuoteDisplay extends Component
                     'total' => $finalCharge,
                     'isMinimum' => $finalCharge == $minimumCharge,
                 ];
+                
+                // Save quote to database
+                $quoteRecord = Quote::create([
+                    'from_address' => $this->fromAddress,
+                    'to_address' => $this->toAddress,
+                    'distance' => $this->distance,
+                    'duration' => $this->duration,
+                    'hook_fee' => $hookFee,
+                    'mileage_charge' => $mileageCharge,
+                    'total' => $finalCharge,
+                    'is_minimum' => $finalCharge == $minimumCharge,
+                    'status' => 'quoted',
+                    'quoted_at' => now(),
+                ]);
+                
+                $this->quoteRecordId = $quoteRecord->id;
             }
         } catch (\Exception $e) {
             $this->error = $e->getMessage();
@@ -108,66 +102,6 @@ class QuoteDisplay extends Component
         $this->loading = false;
     }
 
-    public function bookTow()
-    {
-        $this->validate();
-        
-        // Prepare email data
-        $emailData = [
-            'customerName' => $this->customerName,
-            'customerPhone' => $this->customerPhone,
-            'customerEmail' => $this->customerEmail,
-            'homeAddress' => $this->homeAddress,
-            'vehicleInfo' => $this->vehicleYear . ' ' . $this->vehicleMake . ' ' . $this->vehicleModel,
-            'problem' => $this->problem === 'other' ? $this->problemOther : $this->problem,
-            'fromAddress' => $this->fromAddress,
-            'toAddress' => $this->toAddress,
-            'quote' => $this->quote,
-            'bookingTime' => now()->format('Y-m-d H:i:s'),
-        ];
-        
-        // Send email
-        \Mail::send([], [], function ($message) use ($emailData) {
-            $message->to('eric@ravenfab.com')
-                    ->subject('New Towing Booking - ' . $emailData['customerName'])
-                    ->html($this->buildEmailHtml($emailData));
-        });
-        
-        // Store booking details in session for confirmation page
-        session()->put('booking_details', $emailData);
-        
-        // Redirect to confirmation page
-        return redirect()->route('booking.confirmation');
-    }
-    
-    private function buildEmailHtml($data)
-    {
-        return '
-            <h2>New Towing Booking</h2>
-            <p><strong>Booking Time:</strong> ' . $data['bookingTime'] . '</p>
-            
-            <h3>Customer Information</h3>
-            <p><strong>Name:</strong> ' . $data['customerName'] . '</p>
-            <p><strong>Phone:</strong> ' . $data['customerPhone'] . '</p>
-            <p><strong>Email:</strong> ' . $data['customerEmail'] . '</p>
-            <p><strong>Home Address:</strong> ' . $data['homeAddress'] . '</p>
-            
-            <h3>Vehicle Information</h3>
-            <p><strong>Vehicle:</strong> ' . $data['vehicleInfo'] . '</p>
-            <p><strong>Problem:</strong> ' . $data['problem'] . '</p>
-            
-            <h3>Towing Details</h3>
-            <p><strong>From:</strong> ' . $data['fromAddress'] . '</p>
-            <p><strong>To:</strong> ' . $data['toAddress'] . '</p>
-            <p><strong>Distance:</strong> ' . $data['quote']['distance'] . ' miles</p>
-            <p><strong>Estimated Time:</strong> ' . $data['quote']['duration'] . ' minutes</p>
-            
-            <h3>Pricing</h3>
-            <p><strong>Hook Fee:</strong> $' . number_format($data['quote']['hookFee'], 2) . '</p>
-            <p><strong>Mileage:</strong> $' . number_format($data['quote']['mileageCharge'], 2) . '</p>
-            <p><strong>Total:</strong> $' . number_format($data['quote']['total'], 2) . '</p>
-        ';
-    }
 
     private function calculateDistance($from, $to)
     {
@@ -252,19 +186,18 @@ class QuoteDisplay extends Component
 
     public function showBookingForm()
     {
-        $this->showBookingForm = true;
-        $this->dispatch('booking-form-shown');
+        if ($this->quoteRecordId) {
+            $quote = Quote::find($this->quoteRecordId);
+            if ($quote) {
+                // Update status to booking
+                $quote->update(['status' => 'booking']);
+                
+                // Redirect to booking page
+                return redirect()->route('quote.book', $quote);
+            }
+        }
     }
     
-    public function hideBookingForm()
-    {
-        $this->showBookingForm = false;
-    }
-
-    public function cancelBooking()
-    {
-        $this->showBookingForm = false;
-    }
 
     public function render()
     {

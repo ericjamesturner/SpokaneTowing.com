@@ -11,6 +11,12 @@ Route::get('/quote', function () {
     return view('quote');
 })->name('quote');
 
+Route::get('/quote/{quote:uuid}/book', \App\Livewire\QuoteBookingForm::class)->name('quote.book');
+
+Route::get('/quote/{quote:uuid}/thank-you', function (\App\Models\Quote $quote) {
+    return view('quote-thank-you', compact('quote'));
+})->name('quote.thankyou');
+
 Route::get('/booking-confirmation', function () {
     return view('booking-confirmation');
 })->name('booking.confirmation');
@@ -99,6 +105,14 @@ Route::middleware(['auth'])->group(function () {
     Volt::route('settings/profile', 'settings.profile')->name('settings.profile');
     Volt::route('settings/password', 'settings.password')->name('settings.password');
     Volt::route('settings/appearance', 'settings.appearance')->name('settings.appearance');
+    
+    // Admin routes
+    Route::prefix('admin')->name('admin.')->group(function () {
+        Route::get('/quotes', \App\Livewire\Admin\QuotesTable::class)->name('quotes.index');
+        Route::get('/quotes/{quote}', function (\App\Models\Quote $quote) {
+            return view('admin.quotes.show', compact('quote'));
+        })->name('quotes.show');
+    });
 });
 
 require __DIR__.'/auth.php';
