@@ -52,12 +52,13 @@
                     setTimeout(() => {
                         const autocompletes = document.querySelectorAll('gmp-place-autocomplete');
                         autocompletes.forEach(autocomplete => {
-                            // Set location restriction for Spokane area
+                            // Set location restriction for wider Eastern WA/North Idaho area
+                            // Covers Spokane, Kettle Falls, Sandpoint, Coeur d'Alene, etc.
                             autocomplete.locationRestriction = {
-                                west: -117.6760,
-                                north: 47.9088,
-                                east: -117.1760,
-                                south: 47.4088
+                                west: -118.5,    // West of Kettle Falls
+                                north: 48.5,     // North of Sandpoint
+                                east: -116.0,    // East of Coeur d'Alene
+                                south: 46.5      // South of Colfax/Pullman
                             };
                             
                             // Set origin point to Spokane center

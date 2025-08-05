@@ -17,7 +17,7 @@ return [
     ],
 
     'service_area' => [
-        'max_pickup_distance' => 40, // Miles from Spokane center
+        'max_pickup_distance' => 100, // Miles from Spokane center - covers Kettle Falls, Sandpoint, etc.
         'center_lat' => 47.6588, // Spokane latitude
         'center_lng' => -117.4260, // Spokane longitude
     ],
