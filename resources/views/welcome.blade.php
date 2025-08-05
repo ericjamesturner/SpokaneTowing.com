@@ -51,10 +51,7 @@
                 <div class="flex items-center">
                     <a href="/" class="text-xl font-bold text-white hover:text-gray-200 transition">Spokane Towing</a>
                 </div>
-                <nav class="hidden md:flex items-center space-x-8">
-                    <a href="#services" class="text-gray-200 hover:text-white transition">Services</a>
-                    <a href="#about" class="text-gray-200 hover:text-white transition">About</a>
-                    <a href="#contact" class="text-gray-200 hover:text-white transition">Contact</a>
+                <nav class="hidden md:flex items-center">
                     <a href="tel:+15097977999" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition font-semibold">
                         Call Now: (509) 797-7999
                     </a>
@@ -379,8 +376,7 @@
     <footer class="bg-gray-900 text-white py-8">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
-                <p>&copy; {{ date('Y') }} Spokane Towing. All rights reserved.</p>
-                <p class="mt-2 text-gray-400">Licensed & Insured | Serving Spokane Since 2010</p>
+                <p class="text-gray-400">Licensed & Insured | Serving Spokane Since 2010</p>
             </div>
         </div>
     </footer>

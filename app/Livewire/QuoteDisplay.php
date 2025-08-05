@@ -133,10 +133,11 @@ class QuoteDisplay extends Component
                     ->html($this->buildEmailHtml($emailData));
         });
         
-        session()->flash('success', 'Your tow has been booked! We\'ll call you shortly to confirm.');
+        // Store booking details in session for confirmation page
+        session()->put('booking_details', $emailData);
         
-        // Reset form
-        $this->showBookingForm = false;
+        // Redirect to confirmation page
+        return redirect()->route('booking.confirmation');
     }
     
     private function buildEmailHtml($data)

@@ -11,6 +11,10 @@ Route::get('/quote', function () {
     return view('quote');
 })->name('quote');
 
+Route::get('/booking-confirmation', function () {
+    return view('booking-confirmation');
+})->name('booking.confirmation');
+
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
