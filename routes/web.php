@@ -25,6 +25,10 @@ Route::get('/faq', function () {
     return view('faq');
 })->name('faq');
 
+Route::get('/spokane-towing-services', function () {
+    return view('spokane-towing-services');
+})->name('spokane-towing-services');
+
 // Service Pages
 Route::get('/24-hour-towing', function () {
     return view('services.24-hour-towing');

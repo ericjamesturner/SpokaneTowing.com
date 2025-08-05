@@ -57,7 +57,8 @@
                 <div class="flex items-center">
                     <a href="/" class="text-xl font-bold text-white hover:text-gray-200 transition">Spokane Towing</a>
                 </div>
-                <nav class="hidden md:flex items-center">
+                <nav class="hidden md:flex items-center space-x-4">
+                    <a href="/spokane-towing-services" class="text-white hover:text-gray-200 transition">Services</a>
                     <a href="tel:+15097977999" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition font-semibold">
                         Call Now: (509) 797-7999
                     </a>
@@ -504,6 +505,8 @@
             <div class="text-center">
                 <div class="mb-4">
                     <a href="/faq" class="text-gray-400 hover:text-white transition mx-3">FAQ</a>
+                    <span class="text-gray-600">|</span>
+                    <a href="/spokane-towing-services" class="text-gray-400 hover:text-white transition mx-3">Spokane Towing Services</a>
                     <span class="text-gray-600">|</span>
                     <a href="/#services" class="text-gray-400 hover:text-white transition mx-3">Services</a>
                     <span class="text-gray-600">|</span>
