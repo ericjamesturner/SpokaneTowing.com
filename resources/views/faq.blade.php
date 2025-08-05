@@ -13,6 +13,7 @@
     @include('partials.fonts')
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @include('partials.clarity')
 </head>
 <body class="antialiased bg-gray-50 text-gray-900">
     <!-- Header -->

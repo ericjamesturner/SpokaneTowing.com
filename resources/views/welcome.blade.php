@@ -46,6 +46,8 @@
             });
         </script>
     @endif
+    
+    @include('partials.clarity')
 </head>
 <body class="antialiased bg-white text-gray-900">
     <!-- Header -->
