@@ -73,34 +73,7 @@
 </div>
 @endsection
 
-@section('extra-sections')
-<!-- Coverage Area -->
-<section class="py-20 bg-gray-50">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-8 text-center">Heavy Duty Towing Coverage</h2>
-            <p class="text-lg mb-8 text-center">Professional heavy duty towing services throughout the greater Spokane region:</p>
-            
-            <div class="grid md:grid-cols-3 gap-4">
-                <ul class="space-y-2">
-                    <li>✓ Spokane</li>
-                    <li>✓ Spokane Valley</li>
-                    <li>✓ Liberty Lake</li>
-                </ul>
-                <ul class="space-y-2">
-                    <li>✓ Cheney</li>
-                    <li>✓ Deer Park</li>
-                    <li>✓ Airway Heights</li>
-                </ul>
-                <ul class="space-y-2">
-                    <li>✓ I-90 Corridor</li>
-                    <li>✓ Highway 395</li>
-                    <li>✓ Commercial routes</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
+@include('partials.coverage-area', ['title' => 'Heavy Duty Towing Coverage', 'description' => 'Professional heavy duty towing services throughout the greater Spokane region:'])
 
 <!-- Commercial Features -->
 <section class="py-20">

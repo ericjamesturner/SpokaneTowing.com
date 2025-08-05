@@ -4,7 +4,9 @@
       "Bash(ls:*)",
       "Bash(php artisan make:livewire:*)",
       "Bash(grep:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": []
   }

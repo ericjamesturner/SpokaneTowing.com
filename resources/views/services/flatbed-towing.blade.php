@@ -70,31 +70,5 @@
 @endsection
 
 @section('extra-sections')
-<!-- Coverage Area -->
-<section class="py-20 bg-gray-50">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-8 text-center">Flatbed Towing Service Coverage</h2>
-            <p class="text-lg mb-8 text-center">Professional flatbed towing available throughout the Spokane area:</p>
-            
-            <div class="grid md:grid-cols-3 gap-4">
-                <ul class="space-y-2">
-                    <li>✓ Spokane</li>
-                    <li>✓ Spokane Valley</li>
-                    <li>✓ Liberty Lake</li>
-                </ul>
-                <ul class="space-y-2">
-                    <li>✓ Cheney</li>
-                    <li>✓ Deer Park</li>
-                    <li>✓ Airway Heights</li>
-                </ul>
-                <ul class="space-y-2">
-                    <li>✓ Coeur d'Alene, ID</li>
-                    <li>✓ Post Falls, ID</li>
-                    <li>✓ Surrounding areas</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
+@include('partials.coverage-area', ['title' => 'Flatbed Towing Service Coverage', 'description' => 'Professional flatbed towing available throughout the Spokane area:'])
 @endsection
