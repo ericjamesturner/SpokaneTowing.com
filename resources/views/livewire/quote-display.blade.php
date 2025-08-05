@@ -14,8 +14,6 @@
         </a>
     </div>
 
-    <h1 class="text-3xl font-bold text-gray-900 mb-8">Your Towing Quote</h1>
-
     @if ($loading)
         <div class="text-center py-12">
             <div class="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
@@ -34,7 +32,7 @@
         <div class="space-y-6">
             <!-- Quote Summary -->
             <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm text-center">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Your Towing Quote</h2>
+                <h2 class="text-xl font-bold text-gray-700 mb-2">We can be there in approx. 30 mins for</h2>
                 <div class="text-5xl font-bold text-blue-600 mb-4">
                     ${{ number_format($quote['total'], 2) }}
                 </div>
