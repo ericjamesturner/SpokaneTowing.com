@@ -41,51 +41,6 @@
                 region: "US"
             });
         </script>
-        <script>
-            // Initialize PlaceAutocompleteElement when page loads
-            document.addEventListener('DOMContentLoaded', async () => {
-                try {
-                    await google.maps.importLibrary("places");
-                    await google.maps.importLibrary("core");
-                    
-                    // Wait for elements to be ready
-                    setTimeout(() => {
-                        const autocompletes = document.querySelectorAll('gmp-place-autocomplete');
-                        autocompletes.forEach(autocomplete => {
-                            // Set location restriction for wider Eastern WA/North Idaho area
-                            // Covers Spokane, Kettle Falls, Sandpoint, Coeur d'Alene, etc.
-                            autocomplete.locationRestriction = {
-                                west: -118.5,    // West of Kettle Falls
-                                north: 48.5,     // North of Sandpoint
-                                east: -116.0,    // East of Coeur d'Alene
-                                south: 46.5      // South of Colfax/Pullman
-                            };
-                            
-                            // Set origin point to Spokane center
-                            autocomplete.origin = { lat: 47.6588, lng: -117.4260 };
-                            
-                            // Set region and language
-                            autocomplete.region = 'US';
-                            autocomplete.language = 'en-US';
-                            
-                            // Request options for imperial units
-                            autocomplete.requestOptions = {
-                                region: 'US',
-                                language: 'en-US',
-                                units: 'imperial'
-                            };
-                            
-                            // Try setting units directly on the element
-                            if (autocomplete.units !== undefined) {
-                                autocomplete.units = 'imperial';
-                            }
-                        });
-                    }, 100);
-                } catch (e) {
-                    console.error('Failed to load places library:', e);
-                }
-            });
-        </script>
     @endif
 </head>
 <body class="antialiased bg-white text-gray-900">
@@ -159,20 +114,18 @@
                             Pickup Location
                         </label>
                         <div class="relative">
-                            <gmp-place-autocomplete
+                            <input
+                                type="text"
+                                id="from-address"
                                 name="from"
                                 placeholder="e.g. Spokane Arena, 720 W Mallon Ave, or current location"
-                                class="w-full"
+                                class="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-base"
                                 required
-                                location-bias
-                                data-lat="47.6588"
-                                data-lng="-117.4260"
-                                data-radius="50000"
-                            ></gmp-place-autocomplete>
+                            >
                             <button 
                                 type="button"
-                                onclick="detectLocation('from')"
-                                class="absolute right-2 top-1/2 -translate-y-1/2 p-2 text-gray-500 hover:text-blue-600 transition z-10"
+                                onclick="detectLocation('from-address')"
+                                class="absolute right-2 top-1/2 -translate-y-1/2 p-2 text-gray-500 hover:text-blue-600 transition"
                                 title="Use my location"
                             >
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -188,20 +141,18 @@
                             Drop-off Location
                         </label>
                         <div class="relative">
-                            <gmp-place-autocomplete
+                            <input
+                                type="text"
+                                id="to-address"
                                 name="to"
                                 placeholder="e.g. Sacred Heart Hospital, 101 W 8th Ave, or repair shop"
-                                class="w-full"
+                                class="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-base"
                                 required
-                                location-bias
-                                data-lat="47.6588"
-                                data-lng="-117.4260"
-                                data-radius="50000"
-                            ></gmp-place-autocomplete>
+                            >
                             <button 
                                 type="button"
-                                onclick="detectLocation('to')"
-                                class="absolute right-2 top-1/2 -translate-y-1/2 p-2 text-gray-500 hover:text-blue-600 transition z-10"
+                                onclick="detectLocation('to-address')"
+                                class="absolute right-2 top-1/2 -translate-y-1/2 p-2 text-gray-500 hover:text-blue-600 transition"
                                 title="Use my location"
                             >
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -220,98 +171,49 @@
                     </button>
                 </form>
                 
-                <style>
-                    gmp-place-autocomplete {
-                        width: 100%;
-                        --gmpx-color-surface: #ffffff;
-                        --gmpx-color-on-surface: #1f2937;
-                        --gmpx-color-on-surface-variant: #6b7280;
-                        --gmpx-color-primary: #3b82f6;
-                        --gmpx-color-on-primary: #ffffff;
-                        --gmpx-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-                    }
-                    gmp-place-autocomplete input {
-                        width: 100%;
-                        padding: 0.75rem 3rem 0.75rem 1rem;
-                        border: 1px solid #e5e7eb;
-                        border-radius: 0.5rem;
-                        font-size: 16px; /* Prevents zoom on iOS */
-                        background-color: #ffffff;
-                        color: #1f2937;
-                        transition: all 0.2s;
-                    }
-                    gmp-place-autocomplete input:hover {
-                        border-color: #d1d5db;
-                    }
-                    gmp-place-autocomplete input:focus {
-                        outline: none;
-                        border-color: #3b82f6;
-                        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
-                    }
-                    gmp-place-autocomplete input::placeholder {
-                        color: #9ca3af;
-                    }
-                    /* Style the dropdown */
-                    .pac-container {
-                        background-color: #ffffff !important;
-                        border: 1px solid #e5e7eb !important;
-                        border-radius: 0.5rem !important;
-                        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
-                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
-                        margin-top: 0.25rem !important;
-                    }
-                    .pac-item {
-                        padding: 0.75rem 1rem !important;
-                        color: #374151 !important;
-                        cursor: pointer !important;
-                        transition: background-color 0.2s !important;
-                        border-bottom: 1px solid #f3f4f6 !important;
-                    }
-                    .pac-item:last-child {
-                        border-bottom: none !important;
-                    }
-                    .pac-item:hover {
-                        background-color: #f3f4f6 !important;
-                    }
-                    .pac-item-selected {
-                        background-color: #eff6ff !important;
-                    }
-                    .pac-matched {
-                        font-weight: 600 !important;
-                        color: #1f2937 !important;
-                    }
-                    .pac-item-query {
-                        color: #1f2937 !important;
-                        font-weight: 600 !important;
-                    }
-                    /* Fix the secondary text (address) color */
-                    .pac-secondary-text {
-                        color: #6b7280 !important;
-                        font-size: 0.875rem !important;
-                    }
-                    
-                    /* Mobile-specific fixes */
-                    @media (max-width: 640px) {
-                        .pac-container {
-                            position: absolute !important;
-                            max-height: 200px !important;
-                            overflow-y: auto !important;
-                            width: calc(100% - 2rem) !important;
-                            left: 1rem !important;
-                            right: 1rem !important;
-                            z-index: 9999 !important;
-                        }
-                        
-                        /* Prevent horizontal scroll on mobile */
-                        body {
-                            overflow-x: hidden;
-                        }
-                    }
-                </style>
                 
                 <script>
+                    let fromAutocomplete, toAutocomplete;
                     
-                    async function detectLocation(field) {
+                    // Initialize autocomplete when libraries are loaded
+                    document.addEventListener('DOMContentLoaded', async () => {
+                        try {
+                            const { Autocomplete } = await google.maps.importLibrary("places");
+                            
+                            // Define bounds for 100 miles around Spokane
+                            // 100 miles ≈ 1.45 degrees latitude/longitude at this location
+                            const spokaneCenter = new google.maps.LatLng(47.6588, -117.4260);
+                            const bounds = new google.maps.LatLngBounds(
+                                new google.maps.LatLng(46.2088, -118.8760),  // SW corner (~100 miles)
+                                new google.maps.LatLng(49.1088, -116.0760)   // NE corner (~100 miles)
+                            );
+                            
+                            // Options for autocomplete
+                            const options = {
+                                bounds: bounds,
+                                componentRestrictions: { country: "us" },
+                                fields: ["formatted_address", "geometry", "name"],
+                                strictBounds: true,  // Restrict results to bounds
+                                types: ["geocode", "establishment"],
+                                origin: spokaneCenter
+                            };
+                            
+                            // Initialize autocomplete for both inputs
+                            fromAutocomplete = new Autocomplete(
+                                document.getElementById('from-address'),
+                                options
+                            );
+                            
+                            toAutocomplete = new Autocomplete(
+                                document.getElementById('to-address'),
+                                options
+                            );
+                        } catch (e) {
+                            console.error('Failed to initialize autocomplete:', e);
+                        }
+                    });
+                    
+                    async function detectLocation(fieldId) {
                         if (navigator.geolocation) {
                             try {
                                 const { Geocoder } = await google.maps.importLibrary("geocoding");
@@ -328,13 +230,9 @@
                                         
                                         if (response.results && response.results[0]) {
                                             const address = response.results[0].formatted_address;
-                                            const autocomplete = document.querySelector(`gmp-place-autocomplete[name="${field}"]`);
-                                            if (autocomplete) {
-                                                const input = autocomplete.querySelector('input');
-                                                if (input) {
-                                                    input.value = address;
-                                                    autocomplete.value = address;
-                                                }
+                                            const input = document.getElementById(fieldId);
+                                            if (input) {
+                                                input.value = address;
                                             }
                                         }
                                     },
