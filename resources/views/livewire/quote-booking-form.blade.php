@@ -136,12 +136,10 @@
                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent @error('problem') border-red-500 @enderror"
                     >
                         <option value="">Select a problem</option>
-                        <option value="flat_tire">Flat tire</option>
-                        <option value="dead_battery">Dead battery</option>
-                        <option value="locked_out">Locked out</option>
-                        <option value="out_of_gas">Out of gas</option>
                         <option value="accident">Accident</option>
-                        <option value="wont_start">Won't start</option>
+                        <option value="breakdown">Breakdown/Won't start</option>
+                        <option value="flat_tire">Flat tire</option>
+                        <option value="stuck">Stuck/Off-road</option>
                         <option value="other">Other</option>
                     </select>
                     @error('problem') 

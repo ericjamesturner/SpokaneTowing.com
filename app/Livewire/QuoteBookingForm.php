@@ -144,7 +144,16 @@ class QuoteBookingForm extends Component
     private function sendGBPNNotification()
     {
         try {
-            $problemDescription = $this->problem === 'other' ? $this->problem_other : $this->problem;
+            $problemDescriptions = [
+                'accident' => 'Accident',
+                'breakdown' => "Breakdown/Won't start",
+                'flat_tire' => 'Flat tire',
+                'stuck' => 'Stuck/Off-road',
+            ];
+            
+            $problemDescription = $this->problem === 'other' 
+                ? $this->problem_other 
+                : ($problemDescriptions[$this->problem] ?? $this->problem);
             $vehicleInfo = $this->vehicle_year . ' ' . $this->vehicle_make . ' ' . $this->vehicle_model;
             
             $message = "New towing lead: {$this->customer_name} - {$this->customer_phone}\n" .
