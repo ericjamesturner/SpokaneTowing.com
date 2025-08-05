@@ -144,10 +144,10 @@
                         <h4 class="text-sm font-medium text-gray-700 dark:text-zinc-300 mb-1">Route</h4>
                         <div class="space-y-1">
                             <p class="text-sm text-gray-600 dark:text-zinc-400">
-                                <span class="font-medium">From:</span> <span class="text-gray-900 dark:text-zinc-100">{{ Str::limit($quote->from_address, 40) }}</span>
+                                <span class="font-medium">From:</span> <span class="text-gray-900 dark:text-zinc-100">{{ $quote->from_address }}</span>
                             </p>
                             <p class="text-sm text-gray-600 dark:text-zinc-400">
-                                <span class="font-medium">To:</span> <span class="text-gray-900 dark:text-zinc-100">{{ Str::limit($quote->to_address, 40) }}</span>
+                                <span class="font-medium">To:</span> <span class="text-gray-900 dark:text-zinc-100">{{ $quote->to_address }}</span>
                             </p>
                             <p class="text-sm text-gray-500 dark:text-zinc-500">
                                 {{ $quote->distance }} miles • {{ $quote->duration }} mins

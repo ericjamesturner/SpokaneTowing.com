@@ -90,12 +90,15 @@
         </div>
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 relative">
             <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                     24/7 Emergency Towing in Spokane
-                </h2>
-                <p class="text-xl text-gray-700 mb-8">
+                </h1>
+                <p class="text-xl text-gray-700 mb-4">
                     Fast, reliable, and professional towing services when you need them most. 
                     Available around the clock for all your vehicle recovery needs.
+                </p>
+                <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                    Spokane Towing provides comprehensive emergency roadside assistance throughout Spokane County and surrounding areas. From local light-duty towing to heavy-duty commercial vehicle recovery, our experienced team delivers prompt, affordable towing solutions 24 hours a day. Whether you need a jump start, tire change, lockout service, or accident recovery, we're here to help.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="tel:+15097977999" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition font-semibold text-lg shadow-lg">
