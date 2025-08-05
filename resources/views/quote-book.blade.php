@@ -214,12 +214,10 @@
                                 onchange="toggleOtherField(this)"
                             >
                                 <option value="">Select a problem</option>
-                                <option value="flat_tire" {{ old('problem') == 'flat_tire' ? 'selected' : '' }}>Flat tire</option>
-                                <option value="dead_battery" {{ old('problem') == 'dead_battery' ? 'selected' : '' }}>Dead battery</option>
-                                <option value="locked_out" {{ old('problem') == 'locked_out' ? 'selected' : '' }}>Locked out</option>
-                                <option value="out_of_gas" {{ old('problem') == 'out_of_gas' ? 'selected' : '' }}>Out of gas</option>
                                 <option value="accident" {{ old('problem') == 'accident' ? 'selected' : '' }}>Accident</option>
-                                <option value="wont_start" {{ old('problem') == 'wont_start' ? 'selected' : '' }}>Won't start</option>
+                                <option value="breakdown" {{ old('problem') == 'breakdown' ? 'selected' : '' }}>Breakdown/Won't start</option>
+                                <option value="flat_tire" {{ old('problem') == 'flat_tire' ? 'selected' : '' }}>Flat tire</option>
+                                <option value="stuck" {{ old('problem') == 'stuck' ? 'selected' : '' }}>Stuck/Off-road</option>
                                 <option value="other" {{ old('problem') == 'other' ? 'selected' : '' }}>Other</option>
                             </select>
                             @error('problem') 

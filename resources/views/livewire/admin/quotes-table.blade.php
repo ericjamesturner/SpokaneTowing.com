@@ -123,12 +123,10 @@
                         @if($quote->problem)
                             @php
                                 $problemLabels = [
-                                    'flat_tire' => 'Flat Tire',
-                                    'dead_battery' => 'Dead Battery',
-                                    'locked_out' => 'Locked Out',
-                                    'out_of_gas' => 'Out of Gas',
                                     'accident' => 'Accident',
-                                    'wont_start' => "Won't Start",
+                                    'breakdown' => "Breakdown/Won't start",
+                                    'flat_tire' => 'Flat Tire',
+                                    'stuck' => 'Stuck/Off-road',
                                     'other' => $quote->problem_other ?? 'Other',
                                 ];
                                 $problemLabel = $problemLabels[$quote->problem] ?? $quote->problem;
