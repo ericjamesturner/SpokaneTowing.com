@@ -143,7 +143,7 @@
     </section>
 
     <!-- Quote Section -->
-    <section id="quote" class="py-20 bg-gray-50">
+    <section id="quote" class="py-20 bg-gray-50 relative">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-3xl mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-2">
@@ -153,7 +153,7 @@
                     Calculate your towing cost in seconds
                 </p>
                 
-                <form action="{{ route('quote') }}" method="GET" class="space-y-6 max-w-2xl mx-auto">
+                <form action="{{ route('quote') }}" method="GET" class="space-y-6 max-w-2xl mx-auto pb-32 md:pb-0">
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-2">
                             Pickup Location
@@ -293,42 +293,50 @@
                     /* Mobile-specific fixes */
                     @media (max-width: 640px) {
                         .pac-container {
-                            position: fixed !important;
-                            top: auto !important;
-                            bottom: 0 !important;
-                            left: 0 !important;
-                            right: 0 !important;
-                            max-height: 50vh !important;
+                            position: absolute !important;
+                            max-height: 200px !important;
                             overflow-y: auto !important;
-                            border-radius: 1rem 1rem 0 0 !important;
+                            width: calc(100% - 2rem) !important;
+                            left: 1rem !important;
+                            right: 1rem !important;
                             z-index: 9999 !important;
+                        }
+                        
+                        /* Prevent viewport resize when keyboard opens */
+                        html, body {
+                            height: 100%;
+                            overflow-x: hidden;
+                        }
+                        
+                        /* Keep the form section in view */
+                        #quote {
+                            min-height: 100vh;
+                            display: flex;
+                            align-items: flex-start;
+                            padding-top: 5rem;
                         }
                     }
                 </style>
                 
                 <script>
-                    // Prevent aggressive scrolling on mobile when focusing inputs
-                    document.addEventListener('DOMContentLoaded', () => {
-                        const autocompletes = document.querySelectorAll('gmp-place-autocomplete');
-                        autocompletes.forEach(autocomplete => {
-                            const input = autocomplete.querySelector('input');
-                            if (input) {
-                                input.addEventListener('focus', (e) => {
-                                    // Scroll the input into view with some padding
-                                    setTimeout(() => {
-                                        const rect = input.getBoundingClientRect();
-                                        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                                        const targetY = rect.top + scrollTop - 100; // 100px padding from top
-                                        
-                                        window.scrollTo({
-                                            top: targetY,
-                                            behavior: 'smooth'
-                                        });
-                                    }, 300);
-                                });
+                    // Fix mobile scrolling and keyboard issues
+                    if (window.innerWidth <= 640) {
+                        // Store original viewport height
+                        const originalHeight = window.innerHeight;
+                        
+                        // Prevent viewport resize on keyboard open
+                        window.addEventListener('resize', () => {
+                            if (window.innerHeight < originalHeight * 0.75) {
+                                // Keyboard is likely open
+                                document.documentElement.style.height = `${originalHeight}px`;
+                                document.body.style.height = `${originalHeight}px`;
+                            } else {
+                                // Keyboard is likely closed
+                                document.documentElement.style.height = '';
+                                document.body.style.height = '';
                             }
                         });
-                    });
+                    }
                     
                     async function detectLocation(field) {
                         if (navigator.geolocation) {
