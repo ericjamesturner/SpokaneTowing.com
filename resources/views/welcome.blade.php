@@ -73,7 +73,14 @@
     <!-- Hero Section -->
     <section class="pt-16 relative overflow-hidden bg-gray-100">
         <div class="absolute inset-0">
-            <img src="/images/hero.png" alt="Towing service" class="w-full h-full object-cover scale-100 md:scale-75 opacity-30">
+            <img 
+                src="/images/hero.jpg" 
+                alt="Towing service" 
+                class="w-full h-full object-cover scale-100 md:scale-75 opacity-30"
+                loading="eager"
+                width="1536"
+                height="1024"
+            >
             <div class="absolute inset-0 bg-black/40"></div>
             <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white"></div>
         </div>
