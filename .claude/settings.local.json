@@ -3,7 +3,8 @@
     "allow": [
       "Bash(ls:*)",
       "Bash(php artisan make:livewire:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(mkdir:*)"
     ],
     "deny": []
   }
