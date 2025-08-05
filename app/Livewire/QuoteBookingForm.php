@@ -82,6 +82,9 @@ class QuoteBookingForm extends Component
         // Send email
         $this->sendBookingEmail();
         
+        // Send notification to GBPN
+        $this->sendGBPNNotification();
+        
         // Redirect to thank you page
         return redirect()->route('quote.thankyou', $this->quote);
     }
@@ -136,6 +139,44 @@ class QuoteBookingForm extends Component
                         <p><strong>Total:</strong> $' . number_format($emailData['total'], 2) . '</p>
                     ');
         });
+    }
+    
+    private function sendGBPNNotification()
+    {
+        try {
+            $problemDescription = $this->problem === 'other' ? $this->problem_other : $this->problem;
+            $vehicleInfo = $this->vehicle_year . ' ' . $this->vehicle_make . ' ' . $this->vehicle_model;
+            
+            $message = "New towing lead: {$this->customer_name} - {$this->customer_phone}\n" .
+                      "Vehicle: {$vehicleInfo}\n" .
+                      "Problem: {$problemDescription}\n" .
+                      "From: {$this->quote->from_address}\n" .
+                      "To: {$this->quote->to_address}\n" .
+                      "Distance: {$this->quote->distance} miles\n" .
+                      "Total: $" . number_format($this->quote->total, 2);
+            
+            $response = \Http::withHeaders([
+                'Authorization' => 'Bearer 1024433|Icxmxb7G6OKjao5f48jdzKp1QVqZCn63VRfP9q325e0cdd95',
+                'Content-Type' => 'application/json',
+                'Accept' => 'application/json',
+            ])->post('https://app.gbpn.com/api/teams/1510/messages/send', [
+                'to_phone_number' => '+15099995574',
+                'from_phone_number_id' => 635,
+                'message' => $message
+            ]);
+            
+            // Log the response for debugging if needed
+            \Log::info('GBPN notification sent', [
+                'status' => $response->status(),
+                'response' => $response->json()
+            ]);
+        } catch (\Exception $e) {
+            // Log error but don't interrupt the booking process
+            \Log::error('Failed to send GBPN notification', [
+                'error' => $e->getMessage(),
+                'booking_id' => $this->quote->id
+            ]);
+        }
     }
 
     public function render()
