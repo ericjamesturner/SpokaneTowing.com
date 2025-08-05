@@ -32,57 +32,17 @@
         </div>
     @elseif ($quote && !$showBookingForm)
         <div class="space-y-6">
-            <!-- Map Display -->
-            <div id="map" class="w-full h-96 rounded-lg border border-gray-200"></div>
-            
-            <!-- Quote Details -->
-            <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                        <h3 class="text-sm font-medium text-gray-500 mb-1">From</h3>
-                        <p class="text-gray-900">{{ $fromAddress }}</p>
-                    </div>
-                    <div>
-                        <h3 class="text-sm font-medium text-gray-500 mb-1">To</h3>
-                        <p class="text-gray-900">{{ $toAddress }}</p>
-                    </div>
+            <!-- Quote Summary -->
+            <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm text-center">
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">Your Towing Quote</h2>
+                <div class="text-5xl font-bold text-blue-600 mb-4">
+                    ${{ number_format($quote['total'], 2) }}
                 </div>
+                @if ($quote['isMinimum'])
+                    <p class="text-sm text-gray-500 mb-4">*Minimum service charge applied</p>
+                @endif
                 
-                <div class="space-y-3 mb-6">
-                    <div class="flex justify-between text-gray-700">
-                        <span>Distance:</span>
-                        <span class="font-medium">{{ $quote['distance'] }} miles</span>
-                    </div>
-                    <div class="flex justify-between text-gray-700">
-                        <span>Estimated time for us to arrive to you:</span>
-                        <span class="font-medium">20-30 minutes</span>
-                    </div>
-                    <div class="flex justify-between text-gray-700">
-                        <span>Estimated time for the actual tow:</span>
-                        <span class="font-medium">{{ $quote['duration'] }} minutes</span>
-                    </div>
-                    <div class="border-t pt-3">
-                        <div class="flex justify-between text-gray-700">
-                            <span>Hook Fee:</span>
-                            <span class="font-medium">${{ number_format($quote['hookFee'], 2) }}</span>
-                        </div>
-                        <div class="flex justify-between text-gray-700">
-                            <span>Mileage ({{ $quote['distance'] }} mi × ${{ number_format(config('towing.pricing.per_mile'), 2) }}):</span>
-                            <span class="font-medium">${{ number_format($quote['mileageCharge'], 2) }}</span>
-                        </div>
-                    </div>
-                    <div class="border-t pt-3">
-                        <div class="flex justify-between text-xl font-bold text-gray-900">
-                            <span>Total:</span>
-                            <span>${{ number_format($quote['total'], 2) }}</span>
-                        </div>
-                        @if ($quote['isMinimum'])
-                            <p class="text-sm text-gray-500 mt-1">*Minimum service charge applied</p>
-                        @endif
-                    </div>
-                </div>
-
-                <div class="flex gap-4">
+                <div class="flex gap-4 mb-6">
                     <button 
                         wire:click="showBookingForm"
                         class="flex-1 bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition font-semibold"
@@ -96,10 +56,80 @@
                         Call to Book
                     </a>
                 </div>
+                
+                <button 
+                    onclick="toggleDetails()"
+                    class="text-blue-600 hover:text-blue-700 font-medium flex items-center gap-2 mx-auto"
+                >
+                    <span id="details-text">Show Details</span>
+                    <svg id="details-icon" class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                
+                <!-- Expandable Details -->
+                <div id="quote-details" class="hidden mt-6 text-left">
+                    <div class="border-t pt-6">
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <h3 class="text-sm font-medium text-gray-500 mb-1">From:</h3>
+                                <p class="text-gray-900">{{ $fromAddress }}</p>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-medium text-gray-500 mb-1">To:</h3>
+                                <p class="text-gray-900">{{ $toAddress }}</p>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
+                                <span class="text-gray-700">Distance:</span>
+                                <span class="font-medium text-gray-900">{{ $quote['distance'] }} miles</span>
+                            </div>
+                            <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
+                                <span class="text-gray-700">Time for us to arrive:</span>
+                                <span class="font-medium text-gray-900">20-30 mins</span>
+                            </div>
+                            <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
+                                <span class="text-gray-700">Time for the tow:</span>
+                                <span class="font-medium text-gray-900">{{ $quote['duration'] }} mins</span>
+                            </div>
+                            <div class="border-t pt-4 space-y-3">
+                                <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
+                                    <span class="text-gray-700">Hook Fee:</span>
+                                    <span class="font-medium text-gray-900">${{ number_format($quote['hookFee'], 2) }}</span>
+                                </div>
+                                <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
+                                    <span class="text-gray-700">Mileage <span class="text-sm">({{ $quote['distance'] }} mi × ${{ number_format(config('towing.pricing.per_mile'), 2) }})</span>:</span>
+                                    <span class="font-medium text-gray-900">${{ number_format($quote['mileageCharge'], 2) }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
+            <!-- Map Display -->
+            <div id="map" class="w-full h-96 rounded-lg border border-gray-200"></div>
         </div>
         
         <script>
+            function toggleDetails() {
+                const details = document.getElementById('quote-details');
+                const text = document.getElementById('details-text');
+                const icon = document.getElementById('details-icon');
+                
+                if (details.classList.contains('hidden')) {
+                    details.classList.remove('hidden');
+                    text.textContent = 'Hide Details';
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    details.classList.add('hidden');
+                    text.textContent = 'Show Details';
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            }
+            
             document.addEventListener('DOMContentLoaded', async () => {
                 try {
                     const { Map } = await google.maps.importLibrary("maps");

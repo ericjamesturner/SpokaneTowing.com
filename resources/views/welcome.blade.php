@@ -110,15 +110,12 @@
                 
                 <form action="{{ route('quote') }}" method="GET" class="space-y-6 max-w-2xl mx-auto">
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">
-                            Pickup Location
-                        </label>
                         <div class="relative">
                             <input
                                 type="text"
                                 id="from-address"
                                 name="from"
-                                placeholder="e.g. Spokane Arena, 720 W Mallon Ave, or current location"
+                                placeholder="Pickup location"
                                 class="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-base"
                                 required
                             >
@@ -137,15 +134,12 @@
                     </div>
                     
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">
-                            Drop-off Location
-                        </label>
                         <div class="relative">
                             <input
                                 type="text"
                                 id="to-address"
                                 name="to"
-                                placeholder="e.g. Sacred Heart Hospital, 101 W 8th Ave, or repair shop"
+                                placeholder="Drop-off location"
                                 class="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-base"
                                 required
                             >
