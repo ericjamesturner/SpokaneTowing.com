@@ -11,7 +11,10 @@
       "Bash(mv:*)",
       "Bash(cp:*)",
       "Bash(php artisan view:cache:*)",
-      "Bash(sips:*)"
+      "Bash(sips:*)",
+      "Bash(curl:*)",
+      "Bash(rm:*)",
+      "Bash(cwebp:*)"
     ],
     "deny": []
   }

@@ -11,8 +11,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=inter:400,500,600,700" rel="stylesheet" />
+    @include('partials.fonts')
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     
@@ -73,14 +72,17 @@
     <!-- Hero Section -->
     <section class="pt-16 relative overflow-hidden bg-gray-100">
         <div class="absolute inset-0">
-            <img 
-                src="/images/hero.jpg" 
-                alt="Towing service" 
-                class="w-full h-full object-cover scale-100 md:scale-75 opacity-30"
-                loading="eager"
-                width="1536"
-                height="1024"
-            >
+            <picture>
+                <source srcset="/images/hero.webp" type="image/webp">
+                <img 
+                    src="/images/hero.jpg" 
+                    alt="Towing service" 
+                    class="w-full h-full object-cover scale-100 md:scale-75 opacity-30"
+                    loading="eager"
+                    width="1440"
+                    height="960"
+                >
+            </picture>
             <div class="absolute inset-0 bg-black/40"></div>
             <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white"></div>
         </div>
