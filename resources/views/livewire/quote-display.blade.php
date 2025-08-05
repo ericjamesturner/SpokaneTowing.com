@@ -54,7 +54,11 @@
                         <span class="font-medium">{{ $quote['distance'] }} miles</span>
                     </div>
                     <div class="flex justify-between text-gray-700">
-                        <span>Estimated Time:</span>
+                        <span>Estimated time for us to arrive to you:</span>
+                        <span class="font-medium">20-30 minutes</span>
+                    </div>
+                    <div class="flex justify-between text-gray-700">
+                        <span>Estimated time for the actual tow:</span>
                         <span class="font-medium">{{ $quote['duration'] }} minutes</span>
                     </div>
                     <div class="border-t pt-3">

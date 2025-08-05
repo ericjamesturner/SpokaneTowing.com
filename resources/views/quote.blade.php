@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Your Towing Quote - Spokane Towing</title>
     
     <link rel="icon" href="/favicon.ico" sizes="any">
@@ -46,7 +46,7 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <a href="/" class="text-xl font-bold text-white">Spokane Towing</a>
+                    <a href="/" class="text-xl font-bold text-white hover:text-gray-200 transition">Spokane Towing</a>
                 </div>
                 <a href="tel:+15097977999" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition font-semibold">
                     Call Now: (509) 797-7999

@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Spokane Towing - 24/7 Professional Towing Services</title>
     <meta name="description" content="Fast, reliable towing services in Spokane, WA. Available 24/7 for emergency roadside assistance, vehicle recovery, and more. Call now for a quote!">
     
@@ -94,7 +94,7 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <h1 class="text-xl font-bold text-white">Spokane Towing</h1>
+                    <a href="/" class="text-xl font-bold text-white hover:text-gray-200 transition">Spokane Towing</a>
                 </div>
                 <nav class="hidden md:flex items-center space-x-8">
                     <a href="#services" class="text-gray-200 hover:text-white transition">Services</a>
@@ -235,7 +235,7 @@
                         padding: 0.75rem 3rem 0.75rem 1rem;
                         border: 1px solid #e5e7eb;
                         border-radius: 0.5rem;
-                        font-size: 1rem;
+                        font-size: 16px; /* Prevents zoom on iOS */
                         background-color: #ffffff;
                         color: #1f2937;
                         transition: all 0.2s;
