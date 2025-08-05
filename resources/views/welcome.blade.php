@@ -363,8 +363,7 @@
                     <div>
                         <h3 class="font-semibold mb-2">Contact</h3>
                         <p class="text-gray-600">
-                            Emergency: <a href="tel:+15097977999" class="text-blue-600 hover:underline">(509) 797-7999</a><br>
-                            Email: info@spokanetowing.com
+                            <a href="tel:+15097977999" class="text-blue-600 hover:underline">(509) 797-7999</a>
                         </p>
                     </div>
                 </div>
