@@ -33,44 +33,45 @@ return new class extends Migration
             $table->string('home_address')->nullable();
             
             // Vehicle information
-            $table->string('vehicle_year')->nullable();
+            $table->string('vehicle_year', 4)->nullable();
             $table->string('vehicle_make')->nullable();
             $table->string('vehicle_model')->nullable();
             $table->string('problem')->nullable();
             $table->text('problem_other')->nullable();
             
-            // Status tracking
-            $table->enum('status', ['quoted', 'booked', 'confirmed', 'dispatched', 'en_route', 'arrived', 'completed', 'cancelled'])->default('quoted');
+            // Status tracking - includes 'booking' status
+            $table->enum('status', ['quoted', 'booking', 'booked', 'confirmed', 'dispatched', 'en_route', 'arrived', 'completed', 'cancelled'])->default('quoted');
             
-            // Timestamps for tracking
-            $table->timestamp('quoted_at')->useCurrent();
+            // Timestamps for each status
+            $table->timestamp('quoted_at')->nullable();
             $table->timestamp('booked_at')->nullable();
             $table->timestamp('confirmed_at')->nullable();
-            $table->timestamp('paid_at')->nullable();
             $table->timestamp('dispatched_at')->nullable();
             $table->timestamp('en_route_at')->nullable();
             $table->timestamp('arrived_at')->nullable();
             $table->timestamp('completed_at')->nullable();
             $table->timestamp('cancelled_at')->nullable();
             
-            // Additional tracking info
-            $table->string('driver_name')->nullable();
-            $table->string('truck_number')->nullable();
-            $table->text('notes')->nullable();
+            // Tracking fields for partial form completion
+            $table->string('last_updated_field')->nullable();
+            $table->timestamp('last_activity_at')->nullable();
             
-            // Payment info
+            // Payment tracking
             $table->decimal('amount_paid', 8, 2)->nullable();
             $table->string('payment_method')->nullable();
-            $table->string('transaction_id')->nullable();
+            $table->timestamp('paid_at')->nullable();
+            
+            // Notes
+            $table->text('admin_notes')->nullable();
+            $table->text('customer_notes')->nullable();
             
             $table->timestamps();
             
             // Indexes for performance
-            $table->index('uuid');
-            $table->index('quote_number');
-            $table->index('customer_phone');
             $table->index('status');
             $table->index('quoted_at');
+            $table->index('customer_phone');
+            $table->index('customer_email');
         });
     }
 
