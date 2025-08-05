@@ -153,7 +153,7 @@
                     Calculate your towing cost in seconds
                 </p>
                 
-                <form action="{{ route('quote') }}" method="GET" class="space-y-6 max-w-2xl mx-auto pb-32 md:pb-0">
+                <form action="{{ route('quote') }}" method="GET" class="space-y-6 max-w-2xl mx-auto">
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-2">
                             Pickup Location
@@ -302,41 +302,14 @@
                             z-index: 9999 !important;
                         }
                         
-                        /* Prevent viewport resize when keyboard opens */
-                        html, body {
-                            height: 100%;
+                        /* Prevent horizontal scroll on mobile */
+                        body {
                             overflow-x: hidden;
-                        }
-                        
-                        /* Keep the form section in view */
-                        #quote {
-                            min-height: 100vh;
-                            display: flex;
-                            align-items: flex-start;
-                            padding-top: 5rem;
                         }
                     }
                 </style>
                 
                 <script>
-                    // Fix mobile scrolling and keyboard issues
-                    if (window.innerWidth <= 640) {
-                        // Store original viewport height
-                        const originalHeight = window.innerHeight;
-                        
-                        // Prevent viewport resize on keyboard open
-                        window.addEventListener('resize', () => {
-                            if (window.innerHeight < originalHeight * 0.75) {
-                                // Keyboard is likely open
-                                document.documentElement.style.height = `${originalHeight}px`;
-                                document.body.style.height = `${originalHeight}px`;
-                            } else {
-                                // Keyboard is likely closed
-                                document.documentElement.style.height = '';
-                                document.body.style.height = '';
-                            }
-                        });
-                    }
                     
                     async function detectLocation(field) {
                         if (navigator.geolocation) {
