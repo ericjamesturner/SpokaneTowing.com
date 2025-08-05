@@ -289,9 +289,47 @@
                         color: #6b7280 !important;
                         font-size: 0.875rem !important;
                     }
+                    
+                    /* Mobile-specific fixes */
+                    @media (max-width: 640px) {
+                        .pac-container {
+                            position: fixed !important;
+                            top: auto !important;
+                            bottom: 0 !important;
+                            left: 0 !important;
+                            right: 0 !important;
+                            max-height: 50vh !important;
+                            overflow-y: auto !important;
+                            border-radius: 1rem 1rem 0 0 !important;
+                            z-index: 9999 !important;
+                        }
+                    }
                 </style>
                 
                 <script>
+                    // Prevent aggressive scrolling on mobile when focusing inputs
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const autocompletes = document.querySelectorAll('gmp-place-autocomplete');
+                        autocompletes.forEach(autocomplete => {
+                            const input = autocomplete.querySelector('input');
+                            if (input) {
+                                input.addEventListener('focus', (e) => {
+                                    // Scroll the input into view with some padding
+                                    setTimeout(() => {
+                                        const rect = input.getBoundingClientRect();
+                                        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                                        const targetY = rect.top + scrollTop - 100; // 100px padding from top
+                                        
+                                        window.scrollTo({
+                                            top: targetY,
+                                            behavior: 'smooth'
+                                        });
+                                    }, 300);
+                                });
+                            }
+                        });
+                    });
+                    
                     async function detectLocation(field) {
                         if (navigator.geolocation) {
                             try {
