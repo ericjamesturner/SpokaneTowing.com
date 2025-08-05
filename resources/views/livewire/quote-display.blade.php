@@ -33,7 +33,7 @@
             @if (!$showBookingForm)
             <!-- Quote Summary -->
             <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm text-center">
-                <h2 class="text-xl font-bold text-gray-700 mb-2">We can be there in approx. 30 mins for</h2>
+                <h2 class="text-xl font-bold text-gray-700 mb-2">We can be there in 20-30 mins for</h2>
                 <div class="text-5xl font-bold text-blue-600 mb-4">
                     ${{ number_format($quote['total'], 2) }}
                 </div>
@@ -308,7 +308,6 @@
                         </div>
                     </form>
                 </div>
-            @endif
             @endif {{-- End of $showBookingForm check --}}
         </div>
         
