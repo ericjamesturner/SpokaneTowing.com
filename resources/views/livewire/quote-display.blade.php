@@ -33,9 +33,10 @@
             <!-- Quote Summary -->
             <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm text-center">
                 <h2 class="text-xl font-bold text-gray-700 mb-2">We can be there in 20-30 mins for</h2>
-                <div class="text-5xl font-bold text-blue-600 mb-4">
+                <div class="text-5xl font-bold text-blue-600 mb-2">
                     ${{ number_format($quote['total'], 2) }}
                 </div>
+                <p class="text-sm text-gray-600 mb-4">(including WA sales tax)</p>
                 @if ($quote['isMinimum'])
                     <p class="text-sm text-gray-500 mb-4">*Minimum service charge applied</p>
                 @endif
