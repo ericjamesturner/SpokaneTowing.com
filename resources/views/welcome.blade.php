@@ -92,7 +92,7 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 relative">
             <div class="max-w-3xl mx-auto text-center">
                 <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                    24/7 Emergency Towing in Spokane
+                    24/7 Towing in Spokane
                 </h1>
                 <p class="text-xl text-gray-700 mb-4">
                     Fast, reliable, and professional towing services when you need them most. 
