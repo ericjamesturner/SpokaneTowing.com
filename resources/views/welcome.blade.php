@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Spokane Towing - 24/7 Professional Towing Services</title>
     <meta name="description" content="Fast, reliable towing services in Spokane, WA. Available 24/7 for emergency roadside assistance, vehicle recovery, and more. Call now for a quote!">
+    <link rel="canonical" href="{{ url('/') }}">
     
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">

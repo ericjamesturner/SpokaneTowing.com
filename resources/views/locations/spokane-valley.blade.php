@@ -1,6 +1,6 @@
 @extends('layouts.location-page')
 
-@section('title', 'Spokane Valley Towing | 24/7 Towing Services in Spokane Valley, WA')
+@section('title', 'Spokane Valley Towing | 24/7 Service')
 
 @section('description', 'Fast, reliable towing services in Spokane Valley, WA. From Greenacres to Millwood, Liberty Lake to Veradale. 24/7 emergency towing, roadside assistance, and vehicle recovery. Call (509) 797-7999')
 

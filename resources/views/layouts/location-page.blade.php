@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>@yield('title') | Spokane Towing</title>
     <meta name="description" content="@yield('description')">
+    <link rel="canonical" href="{{ url()->current() }}">
     
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">

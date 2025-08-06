@@ -1,6 +1,6 @@
 @extends('layouts.service-page')
 
-@section('title', 'Roadside Assistance Spokane | Jump Start, Fuel Delivery, Lockout')
+@section('title', 'Roadside Assistance Spokane | Fast Help 24/7')
 @section('description', 'Need roadside assistance in Spokane? Jump starts, fuel delivery, flat tire help, and lockout service. Fast response times. Call (509) 797-7999')
 
 @section('hero-title', 'Roadside Assistance in Spokane')

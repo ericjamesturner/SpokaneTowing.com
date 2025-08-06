@@ -1,6 +1,6 @@
 @extends('layouts.location-page')
 
-@section('title', 'Towing Services Cheney, WA - Eastern Washington University Area')
+@section('title', 'Towing Services Cheney, WA - EWU Area')
 
 @section('description', 'Professional towing and roadside assistance in Cheney, Washington. Serving Eastern Washington University students and residents. Fast response times. Call (509) 797-7999')
 

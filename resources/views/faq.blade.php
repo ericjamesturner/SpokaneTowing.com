@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Frequently Asked Questions - Spokane Towing</title>
+    <meta name="description" content="Common questions about towing services in Spokane. Learn about costs, response times, service areas, and what to expect when you call us.">
+    <link rel="canonical" href="{{ url('/faq') }}">
     
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">

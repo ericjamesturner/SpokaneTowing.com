@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Spokane Towing Services - Professional 24/7 Towing & Roadside Assistance</title>
+    <title>Spokane Towing Services - 24/7 Professional Towing</title>
     <meta name="description" content="Complete Spokane towing services including emergency towing, roadside assistance, accident recovery, and heavy-duty towing. Available 24/7 throughout Spokane County. Call (509) 797-7999.">
     
     <link rel="canonical" href="{{ url('/spokane-towing-services') }}">

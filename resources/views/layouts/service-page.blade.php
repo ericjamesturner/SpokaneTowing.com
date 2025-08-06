@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>@yield('title') | Spokane Towing</title>
     <meta name="description" content="@yield('description')">
+    <link rel="canonical" href="{{ url()->current() }}">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">

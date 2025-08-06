@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Your Towing Quote - Spokane Towing</title>
+    <meta name="description" content="Get an instant towing quote for Spokane and surrounding areas. Transparent pricing with no hidden fees. Available 24/7.">
+    <link rel="canonical" href="{{ url('/quote') }}">
     
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
