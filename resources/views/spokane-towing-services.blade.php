@@ -387,17 +387,17 @@
                     <ul class="space-y-2 text-gray-400">
                         <li><a href="/" class="hover:text-white transition">Emergency Towing</a></li>
                         <li><a href="/" class="hover:text-white transition">Roadside Assistance</a></li>
-                        <li><a href="/services/long-distance-towing" class="hover:text-white transition">Long Distance Towing</a></li>
+                        <li><a href="/long-distance-towing" class="hover:text-white transition">Long Distance Towing</a></li>
                         <li><a href="/" class="hover:text-white transition">Accident Recovery</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Service Areas</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="/areas/spokane" class="hover:text-white transition">Spokane</a></li>
-                        <li><a href="/areas/spokane-valley" class="hover:text-white transition">Spokane Valley</a></li>
-                        <li><a href="/areas/cheney" class="hover:text-white transition">Cheney</a></li>
-                        <li><a href="/areas/liberty-lake" class="hover:text-white transition">Liberty Lake</a></li>
+                        <li><a href="/" class="hover:text-white transition">Spokane</a></li>
+                        <li><a href="/towing-spokane-valley" class="hover:text-white transition">Spokane Valley</a></li>
+                        <li><a href="/towing-cheney" class="hover:text-white transition">Cheney</a></li>
+                        <li><a href="/towing-liberty-lake" class="hover:text-white transition">Liberty Lake</a></li>
                     </ul>
                 </div>
                 <div>
