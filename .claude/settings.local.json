@@ -19,7 +19,9 @@
       "Bash(php artisan make:model:*)",
       "Bash(php artisan make:seeder:*)",
       "Bash(php artisan migrate:*)",
-      "Bash(php artisan make:controller:*)"
+      "Bash(php artisan make:controller:*)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_console_messages"
     ],
     "deny": []
   }
