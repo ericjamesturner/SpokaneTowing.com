@@ -106,6 +106,12 @@
         {
           "@@type": "ListItem",
           "position": 2,
+          "name": "Towing Services",
+          "item": "https://spokanetowing.com/spokane-towing-services"
+        },
+        {
+          "@@type": "ListItem",
+          "position": 3,
           "name": "@yield('hero-title')",
           "item": "{{ url()->current() }}"
         }

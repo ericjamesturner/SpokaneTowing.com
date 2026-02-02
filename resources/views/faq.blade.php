@@ -28,6 +28,29 @@
     @include('partials.fonts')
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    @include('partials.schema-faq')
+
+    <script type="application/ld+json">
+    {
+      "@@context": "https://schema.org",
+      "@@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://spokanetowing.com"
+        },
+        {
+          "@@type": "ListItem",
+          "position": 2,
+          "name": "FAQ",
+          "item": "https://spokanetowing.com/faq"
+        }
+      ]
+    }
+    </script>
     @include('partials.clarity')
 </head>
 <body class="antialiased bg-black text-white">

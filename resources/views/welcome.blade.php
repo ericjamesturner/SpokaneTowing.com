@@ -35,6 +35,7 @@
     <!-- Schema.org Structured Data -->
     @include('partials.schema-local-business')
     @include('partials.schema-website')
+    @include('partials.schema-organization')
     @include('partials.schema-faq')
 
     @if(config('towing.google_maps.api_key'))
@@ -343,101 +344,94 @@
 
             <!-- Main Services Grid -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
-                <a href="/24-hour-towing" class="service-card bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-red-500/50 group">
-                    <div class="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
+                <a href="/24-hour-towing" class="service-card relative overflow-hidden rounded-2xl border border-slate-700/50 hover:border-red-500/50 group">
+                    <img src="/images/service-emergency.webp" alt="" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
+                    <div class="relative p-8 pt-28">
+                        <h3 class="text-xl font-bold text-white mb-3 drop-shadow-lg">24/7 Emergency Towing</h3>
+                        <p class="text-gray-300 mb-4">Available around the clock for breakdowns, accidents, and vehicle recovery anywhere in Spokane.</p>
+                        <span class="text-red-500 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
+                            Learn More
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </span>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">24/7 Emergency Towing</h3>
-                    <p class="text-gray-400 mb-4">Available around the clock for breakdowns, accidents, and vehicle recovery anywhere in Spokane.</p>
-                    <span class="text-red-500 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
-                        Learn More
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                        </svg>
-                    </span>
                 </a>
 
-                <a href="/roadside-assistance" class="service-card bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-red-500/50 group">
-                    <div class="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
+                <a href="/roadside-assistance" class="service-card relative overflow-hidden rounded-2xl border border-slate-700/50 hover:border-red-500/50 group">
+                    <img src="/images/service-roadside.webp" alt="" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
+                    <div class="relative p-8 pt-28">
+                        <h3 class="text-xl font-bold text-white mb-3 drop-shadow-lg">Roadside Assistance</h3>
+                        <p class="text-gray-300 mb-4">Jump starts, fuel delivery, and emergency help when you're stranded on the road.</p>
+                        <span class="text-red-500 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
+                            Learn More
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </span>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Roadside Assistance</h3>
-                    <p class="text-gray-400 mb-4">Jump starts, fuel delivery, and emergency help when you're stranded on the road.</p>
-                    <span class="text-red-500 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
-                        Learn More
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                        </svg>
-                    </span>
                 </a>
 
-                <a href="/flatbed-towing" class="service-card bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-red-500/50 group">
-                    <div class="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
-                        </svg>
+                <a href="/flatbed-towing" class="service-card relative overflow-hidden rounded-2xl border border-slate-700/50 hover:border-red-500/50 group">
+                    <img src="/images/service-flatbed.webp" alt="" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
+                    <div class="relative p-8 pt-28">
+                        <h3 class="text-xl font-bold text-white mb-3 drop-shadow-lg">Flatbed Towing</h3>
+                        <p class="text-gray-300 mb-4">Safe transport for luxury, classic, and low-clearance vehicles on our modern flatbeds.</p>
+                        <span class="text-red-500 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
+                            Learn More
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </span>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Flatbed Towing</h3>
-                    <p class="text-gray-400 mb-4">Safe transport for luxury, classic, and low-clearance vehicles on our modern flatbeds.</p>
-                    <span class="text-red-500 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
-                        Learn More
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                        </svg>
-                    </span>
                 </a>
 
-                <a href="/lockout-flat-tire" class="service-card bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-red-500/50 group">
-                    <div class="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path>
-                        </svg>
+                <a href="/lockout-flat-tire" class="service-card relative overflow-hidden rounded-2xl border border-slate-700/50 hover:border-red-500/50 group">
+                    <img src="/images/service-lockout.webp" alt="" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
+                    <div class="relative p-8 pt-28">
+                        <h3 class="text-xl font-bold text-white mb-3 drop-shadow-lg">Lockout Service</h3>
+                        <p class="text-gray-300 mb-4">Locked out of your car? We'll get you back in quickly and safely without damage.</p>
+                        <span class="text-red-500 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
+                            Learn More
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </span>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Lockout Service</h3>
-                    <p class="text-gray-400 mb-4">Locked out of your car? We'll get you back in quickly and safely without damage.</p>
-                    <span class="text-red-500 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
-                        Learn More
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                        </svg>
-                    </span>
                 </a>
 
-                <a href="/heavy-duty-towing" class="service-card bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-red-500/50 group">
-                    <div class="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path>
-                        </svg>
+                <a href="/heavy-duty-towing" class="service-card relative overflow-hidden rounded-2xl border border-slate-700/50 hover:border-red-500/50 group">
+                    <img src="/images/service-heavy.webp" alt="" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
+                    <div class="relative p-8 pt-28">
+                        <h3 class="text-xl font-bold text-white mb-3 drop-shadow-lg">Heavy-Duty Towing</h3>
+                        <p class="text-gray-300 mb-4">Commercial trucks, RVs, and heavy equipment - we have the power to move it all.</p>
+                        <span class="text-red-500 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
+                            Learn More
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </span>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Heavy-Duty Towing</h3>
-                    <p class="text-gray-400 mb-4">Commercial trucks, RVs, and heavy equipment - we have the power to move it all.</p>
-                    <span class="text-red-500 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
-                        Learn More
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                        </svg>
-                    </span>
                 </a>
 
-                <a href="/winch-out-recovery" class="service-card bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-red-500/50 group">
-                    <div class="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
-                        </svg>
+                <a href="/winch-out-recovery" class="service-card relative overflow-hidden rounded-2xl border border-slate-700/50 hover:border-red-500/50 group">
+                    <img src="/images/service-winch.webp" alt="" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
+                    <div class="relative p-8 pt-28">
+                        <h3 class="text-xl font-bold text-white mb-3 drop-shadow-lg">Winch-Out Recovery</h3>
+                        <p class="text-gray-300 mb-4">Stuck in a ditch, mud, or snow? Our powerful winch will get you out fast.</p>
+                        <span class="text-red-500 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
+                            Learn More
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </span>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Winch-Out Recovery</h3>
-                    <p class="text-gray-400 mb-4">Stuck in a ditch, mud, or snow? Our powerful winch will get you out fast.</p>
-                    <span class="text-red-500 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
-                        Learn More
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                        </svg>
-                    </span>
                 </a>
             </div>
 
