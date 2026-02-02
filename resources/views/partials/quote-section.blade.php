@@ -74,6 +74,9 @@
                     >
                         Get Instant Quote
                     </button>
+                    <p class="text-center text-gray-500 text-sm mt-4">
+                        Quotes are estimates. Call <a href="tel:+15097977999" class="text-orange-500 hover:text-orange-400 font-medium">(509) 797-7999</a> to lock in your price.
+                    </p>
                 </form>
             </div>
 

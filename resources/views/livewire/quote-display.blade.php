@@ -54,7 +54,15 @@
                 <div class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-400 mb-2">
                     ${{ number_format($quote['total'], 2) }}
                 </div>
-                <p class="text-sm text-gray-500 mb-4">(including WA sales tax)</p>
+                <p class="text-sm text-gray-500 mb-2">(including WA sales tax)</p>
+                <div class="bg-amber-500/10 border border-amber-500/30 rounded-lg px-4 py-3 mb-4">
+                    <p class="text-amber-400 text-sm font-medium">
+                        <svg class="w-4 h-4 inline-block mr-1 -mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                        </svg>
+                        This is an estimate. Call <a href="tel:+15097977999" class="underline font-bold">(509) 797-7999</a> to lock in your price.
+                    </p>
+                </div>
                 @if ($quote['isMinimum'])
                     <p class="text-sm text-gray-500 mb-4">*Minimum service charge applied</p>
                 @endif
