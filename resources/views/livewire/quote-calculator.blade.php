@@ -135,7 +135,7 @@
                         </div>
                     </div>
 
-                    <p class="text-gray-500 text-sm mb-4 text-center">This is an estimate. Final price may vary based on vehicle condition and accessibility. Call to confirm and book.</p>
+                    <p class="text-gray-500 text-sm mb-4 text-center">Estimate only. Call to confirm and book.</p>
 
                     <a
                         href="tel:+15097977999"

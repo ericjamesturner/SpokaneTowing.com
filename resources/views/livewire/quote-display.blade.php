@@ -58,7 +58,7 @@
                 @if ($quote['isMinimum'])
                     <p class="text-sm text-gray-500 mb-2">*Minimum service charge applied</p>
                 @endif
-                <p class="text-gray-500 text-sm mb-6">This is an estimate. Final price may vary based on vehicle condition and accessibility. Call to confirm pricing and book your tow.</p>
+                <p class="text-gray-500 text-sm mb-6">Estimate only. Call to confirm and book.</p>
 
                 <a
                     href="tel:+15097977999"
@@ -120,7 +120,7 @@
                                     <span class="text-white font-semibold">Estimated Total:</span>
                                     <span class="font-bold text-orange-500 text-lg">${{ number_format($quote['hookFee'] + $quote['mileageCharge'], 2) }}</span>
                                 </div>
-                                <p class="text-gray-500 text-sm text-center pt-2">Plus applicable sales tax. Final price confirmed when you call.</p>
+                                <p class="text-gray-500 text-sm text-center pt-2">Plus sales tax</p>
                             </div>
                         </div>
                     </div>
