@@ -57,6 +57,12 @@
     @include('partials.clarity')
 </head>
 <body class="antialiased bg-black text-white min-h-screen">
+    <!-- Background Image -->
+    <div class="fixed inset-0 z-0">
+        <img src="/images/quote-bg.webp" alt="" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-900/95 via-slate-900/90 to-black"></div>
+    </div>
+
     <!-- Header -->
     <header class="fixed top-0 w-full z-50">
         <div class="absolute inset-0 bg-slate-900/90 backdrop-blur-md border-b border-white/10"></div>
@@ -88,7 +94,7 @@
         </div>
     </header>
 
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-12">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-12 relative z-10">
         <div class="max-w-4xl mx-auto">
             @livewire('quote-display', [
                 'fromAddress' => request('from'),
@@ -98,7 +104,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-black border-t border-slate-800 mt-auto">
+    <footer class="bg-black border-t border-slate-800 mt-auto relative z-10">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="flex items-center space-x-3 mb-4 md:mb-0">
