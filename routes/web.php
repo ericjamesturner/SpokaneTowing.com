@@ -25,6 +25,14 @@ Route::get('/faq', function () {
     return view('faq');
 })->name('faq');
 
+Route::get('/privacy-policy', function () {
+    return view('privacy-policy');
+})->name('privacy-policy');
+
+Route::get('/terms-of-service', function () {
+    return view('terms-of-service');
+})->name('terms-of-service');
+
 Route::get('/spokane-towing-services', function () {
     return view('spokane-towing-services');
 })->name('spokane-towing-services');

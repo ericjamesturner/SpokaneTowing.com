@@ -104,6 +104,10 @@
                 <div class="flex items-center space-x-3 mb-4 md:mb-0">
                     <img src="/header-logo.webp" alt="Spokane Towing" class="h-20 w-auto">
                 </div>
+                <div class="flex flex-wrap justify-center gap-4 mb-4 md:mb-0 text-sm">
+                    <a href="/privacy-policy" class="text-gray-400 hover:text-white transition">Privacy</a>
+                    <a href="/terms-of-service" class="text-gray-400 hover:text-white transition">Terms</a>
+                </div>
                 <div class="text-gray-500 text-sm">
                     &copy; {{ date('Y') }} Spokane Towing. Licensed & Insured.
                 </div>
