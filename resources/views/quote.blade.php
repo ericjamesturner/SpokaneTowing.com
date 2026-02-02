@@ -7,6 +7,19 @@
     <meta name="description" content="Get an instant towing quote for Spokane and surrounding areas. Transparent pricing with no hidden fees. Available 24/7.">
     <link rel="canonical" href="{{ url('/quote') }}">
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url('/quote') }}">
+    <meta property="og:title" content="Your Towing Quote - Spokane Towing">
+    <meta property="og:description" content="Get an instant towing quote for Spokane and surrounding areas. Transparent pricing with no hidden fees.">
+    <meta property="og:image" content="{{ url('/images/og-image.jpg') }}">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Your Towing Quote - Spokane Towing">
+    <meta name="twitter:description" content="Get an instant towing quote for Spokane and surrounding areas. Transparent pricing with no hidden fees.">
+    <meta name="twitter:image" content="{{ url('/images/og-image.jpg') }}">
+
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">

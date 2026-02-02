@@ -12,14 +12,14 @@
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:title" content="@yield('title') | Spokane Towing">
     <meta property="og:description" content="@yield('description')">
-    <meta property="og:image" content="https://spokanetowing.com/images/towing-service.jpg">
+    <meta property="og:image" content="{{ url('/images/og-image.jpg') }}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ url()->current() }}">
     <meta property="twitter:title" content="@yield('title') | Spokane Towing">
     <meta property="twitter:description" content="@yield('description')">
-    <meta property="twitter:image" content="https://spokanetowing.com/images/towing-service.jpg">
+    <meta property="twitter:image" content="{{ url('/images/og-image.jpg') }}">
 
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">

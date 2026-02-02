@@ -8,6 +8,19 @@
 
     <link rel="canonical" href="{{ url('/spokane-towing-services') }}">
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url('/spokane-towing-services') }}">
+    <meta property="og:title" content="Spokane Towing Services - 24/7 Professional Towing">
+    <meta property="og:description" content="Complete Spokane towing services including emergency towing, roadside assistance, accident recovery, and heavy-duty towing. Available 24/7.">
+    <meta property="og:image" content="{{ url('/images/og-image.jpg') }}">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Spokane Towing Services - 24/7 Professional Towing">
+    <meta name="twitter:description" content="Complete Spokane towing services including emergency towing, roadside assistance, and heavy-duty towing. Available 24/7.">
+    <meta name="twitter:image" content="{{ url('/images/og-image.jpg') }}">
+
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">

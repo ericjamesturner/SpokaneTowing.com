@@ -7,6 +7,22 @@
     <meta name="description" content="Fast, reliable towing services in Spokane, WA. Available 24/7 for emergency roadside assistance, vehicle recovery, and more. Call now for a quote!">
     <link rel="canonical" href="{{ url('/') }}">
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url('/') }}">
+    <meta property="og:title" content="Spokane Towing - 24/7 Professional Towing Services">
+    <meta property="og:description" content="Fast, reliable towing services in Spokane, WA. Available 24/7 for emergency roadside assistance, vehicle recovery, and more. Call now for a quote!">
+    <meta property="og:image" content="{{ url('/images/og-image.jpg') }}">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Spokane Towing">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="{{ url('/') }}">
+    <meta name="twitter:title" content="Spokane Towing - 24/7 Professional Towing Services">
+    <meta name="twitter:description" content="Fast, reliable towing services in Spokane, WA. Available 24/7 for emergency roadside assistance, vehicle recovery, and more.">
+    <meta name="twitter:image" content="{{ url('/images/og-image.jpg') }}">
+
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">

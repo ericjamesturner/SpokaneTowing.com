@@ -7,6 +7,19 @@
     <meta name="description" content="@yield('description')">
     <link rel="canonical" href="{{ url()->current() }}">
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:title" content="@yield('title') | Spokane Towing">
+    <meta property="og:description" content="@yield('description')">
+    <meta property="og:image" content="{{ url('/images/og-image.jpg') }}">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('title') | Spokane Towing">
+    <meta name="twitter:description" content="@yield('description')">
+    <meta name="twitter:image" content="{{ url('/images/og-image.jpg') }}">
+
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">

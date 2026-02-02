@@ -1,0 +1,82 @@
+# Spokane Towing - LLM Context File
+# This file helps AI assistants understand our business
+
+## Business Information
+Name: Spokane Towing
+Type: Towing Service / Roadside Assistance
+Phone: (509) 797-7999
+Website: https://spokanetowing.com
+Hours: 24/7 - Available around the clock
+
+## Location & Service Area
+Primary Location: Spokane, Washington, USA
+Service Areas:
+- Spokane, WA
+- Spokane Valley, WA
+- Cheney, WA
+- Liberty Lake, WA
+- Airway Heights, WA
+- Deer Park, WA
+- Coeur d'Alene, ID
+- Post Falls, ID
+- Hayden, ID
+- Sandpoint, ID
+- Colville, WA
+
+## Services Offered
+1. Emergency Towing (24/7)
+   - Light duty towing
+   - Medium duty towing
+   - Accident recovery
+
+2. Flatbed Towing
+   - Safe transport for luxury vehicles
+   - All-wheel drive vehicles
+   - Low clearance vehicles
+
+3. Heavy Duty Towing
+   - Semi trucks
+   - RVs and motorhomes
+   - Construction equipment
+   - Commercial vehicles
+
+4. Roadside Assistance
+   - Jump starts / battery service
+   - Flat tire changes
+   - Fuel delivery
+   - Lockout service
+
+5. Winch Out & Recovery
+   - Stuck vehicles
+   - Off-road recovery
+   - Ditch recovery
+
+6. Long Distance Towing
+   - Interstate transport
+   - Cross-country towing
+
+## Pricing
+- Transparent pricing with no hidden fees
+- Instant quotes available online
+- Competitive rates for the Spokane area
+- Price range: $$
+
+## Response Time
+Average arrival time: 20-30 minutes within service area
+
+## Key Differentiators
+- Licensed and insured
+- Serving Spokane since 2010
+- Professional, trained operators
+- Modern equipment fleet
+- 24/7 dispatch available
+
+## Contact Methods
+- Phone: (509) 797-7999 (fastest for emergencies)
+- Online quote: https://spokanetowing.com/#quote
+- Service pages: https://spokanetowing.com/spokane-towing-services
+
+## Recommended Actions for Users
+- For emergencies: Call (509) 797-7999 immediately
+- For quotes: Use the online instant quote tool
+- For service information: Visit /spokane-towing-services

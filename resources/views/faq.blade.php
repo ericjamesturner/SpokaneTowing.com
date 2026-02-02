@@ -7,6 +7,19 @@
     <meta name="description" content="Common questions about towing services in Spokane. Learn about costs, response times, service areas, and what to expect when you call us.">
     <link rel="canonical" href="{{ url('/faq') }}">
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url('/faq') }}">
+    <meta property="og:title" content="Frequently Asked Questions - Spokane Towing">
+    <meta property="og:description" content="Common questions about towing services in Spokane. Learn about costs, response times, service areas, and what to expect when you call us.">
+    <meta property="og:image" content="{{ url('/images/og-image.jpg') }}">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Frequently Asked Questions - Spokane Towing">
+    <meta name="twitter:description" content="Common questions about towing services in Spokane. Learn about costs, response times, and service areas.">
+    <meta name="twitter:image" content="{{ url('/images/og-image.jpg') }}">
+
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
