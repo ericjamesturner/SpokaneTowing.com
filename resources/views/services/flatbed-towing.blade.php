@@ -11,7 +11,7 @@
 @section('content')
 <h2 class="text-3xl font-bold mb-8">Premium Flatbed Towing Services</h2>
 
-<div class="prose prose-lg max-w-none mb-12">
+<div class="prose prose-invert prose-lg max-w-none mb-12 prose-headings:text-white prose-p:text-gray-300 prose-li:text-gray-300 prose-strong:text-white">
     <p>When your vehicle needs the safest possible transport, flatbed towing is the gold standard. Spokane Towing provides professional flatbed towing services throughout Spokane, WA and surrounding areas. Our modern flatbed trucks ensure your vehicle is transported securely without any wheel contact with the road.</p>
     
     <h3 class="text-2xl font-semibold mt-8 mb-4">Our Flatbed Towing Services Include:</h3>
@@ -60,12 +60,15 @@
 </div>
 
 <!-- CTA Box -->
-<div class="bg-blue-50 rounded-lg p-8 text-center">
-    <h3 class="text-2xl font-bold mb-4">Need Safe Flatbed Towing?</h3>
-    <p class="mb-6 text-gray-700">Protect your investment with professional flatbed transport</p>
-    <a href="tel:+15097977999" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition font-semibold text-lg inline-block">
-        Call (509) 797-7999
-    </a>
+<div class="bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-8 text-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-black/10"></div>
+    <div class="relative">
+        <h3 class="text-2xl font-bold mb-4 text-white">Need Safe Flatbed Towing?</h3>
+        <p class="mb-6 text-white/90">Protect your investment with professional flatbed transport</p>
+        <a href="tel:+15097977999" class="bg-white text-orange-600 px-8 py-4 rounded-xl hover:bg-gray-100 transition font-bold text-lg inline-block shadow-lg">
+            Call (509) 797-7999
+        </a>
+    </div>
 </div>
 @endsection
 

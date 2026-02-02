@@ -11,7 +11,7 @@
 @section('content')
 <h2 class="text-3xl font-bold mb-8">Professional Long Distance Towing</h2>
 
-<div class="prose prose-lg max-w-none mb-12">
+<div class="prose prose-invert prose-lg max-w-none mb-12 prose-headings:text-white prose-p:text-gray-300 prose-li:text-gray-300 prose-strong:text-white">
     <p>When you need to transport your vehicle over long distances, trust Spokane Towing for professional long distance towing services. Whether you're relocating, purchasing a vehicle from another state, or need emergency transport, we provide reliable long distance towing throughout the Pacific Northwest and beyond.</p>
     
     <h3 class="text-2xl font-semibold mt-8 mb-4">Our Long Distance Services Include:</h3>
@@ -81,49 +81,52 @@
 </div>
 
 <!-- CTA Box -->
-<div class="bg-blue-50 rounded-lg p-8 text-center">
-    <h3 class="text-2xl font-bold mb-4">Need Long Distance Transport?</h3>
-    <p class="mb-6 text-gray-700">Get a quote for professional long distance towing services</p>
-    <a href="tel:+15097977999" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition font-semibold text-lg inline-block">
-        Call (509) 797-7999
-    </a>
+<div class="bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-8 text-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-black/10"></div>
+    <div class="relative">
+        <h3 class="text-2xl font-bold mb-4 text-white">Need Long Distance Transport?</h3>
+        <p class="mb-6 text-white/90">Get a quote for professional long distance towing services</p>
+        <a href="tel:+15097977999" class="bg-white text-orange-600 px-8 py-4 rounded-xl hover:bg-gray-100 transition font-bold text-lg inline-block shadow-lg">
+            Call (509) 797-7999
+        </a>
+    </div>
 </div>
 @endsection
 
 @section('extra-sections')
 <!-- Service Areas -->
-<section class="py-20 bg-gray-50">
+<section class="py-20 bg-slate-900">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-8 text-center">Long Distance Transport Destinations</h2>
-            <p class="text-lg mb-8 text-center">We provide long distance towing services from Spokane to destinations throughout the region and beyond:</p>
-            
+            <h2 class="text-3xl font-bold mb-8 text-center text-white">Long Distance Transport Destinations</h2>
+            <p class="text-lg mb-8 text-center text-gray-300">We provide long distance towing services from Spokane to destinations throughout the region and beyond:</p>
+
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white rounded-lg shadow-md p-6">
-                    <h3 class="text-lg font-semibold mb-4">Pacific Northwest</h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li>✓ Seattle, WA</li>
-                        <li>✓ Portland, OR</li>
-                        <li>✓ Boise, ID</li>
-                        <li>✓ Vancouver, BC</li>
+                <div class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50">
+                    <h3 class="text-lg font-semibold mb-4 text-white">Pacific Northwest</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Seattle, WA</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Portland, OR</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Boise, ID</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Vancouver, BC</li>
                     </ul>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
-                    <h3 class="text-lg font-semibold mb-4">Mountain States</h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li>✓ Denver, CO</li>
-                        <li>✓ Salt Lake City, UT</li>
-                        <li>✓ Billings, MT</li>
-                        <li>✓ Missoula, MT</li>
+                <div class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50">
+                    <h3 class="text-lg font-semibold mb-4 text-white">Mountain States</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Denver, CO</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Salt Lake City, UT</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Billings, MT</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Missoula, MT</li>
                     </ul>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
-                    <h3 class="text-lg font-semibold mb-4">Custom Destinations</h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li>✓ California cities</li>
-                        <li>✓ Arizona locations</li>
-                        <li>✓ Nevada destinations</li>
-                        <li>✓ Anywhere you need</li>
+                <div class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50">
+                    <h3 class="text-lg font-semibold mb-4 text-white">Custom Destinations</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> California cities</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Arizona locations</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Nevada destinations</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Anywhere you need</li>
                     </ul>
                 </div>
             </div>
@@ -132,27 +135,27 @@
 </section>
 
 <!-- Transport Features -->
-<section class="py-20">
+<section class="py-20 bg-slate-950">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-8 text-center">Long Distance Transport Features</h2>
+            <h2 class="text-3xl font-bold mb-8 text-center text-white">Long Distance Transport Features</h2>
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-semibold mb-4">Professional Service</h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li>✓ Licensed interstate operators</li>
-                        <li>✓ GPS tracking available</li>
-                        <li>✓ Regular progress updates</li>
-                        <li>✓ Professional documentation</li>
+                <div class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50">
+                    <h3 class="text-xl font-semibold mb-4 text-white">Professional Service</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Licensed interstate operators</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> GPS tracking available</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Regular progress updates</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Professional documentation</li>
                     </ul>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-semibold mb-4">Vehicle Protection</h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li>✓ Secure tie-down systems</li>
-                        <li>✓ Weather protection available</li>
-                        <li>✓ Full insurance coverage</li>
-                        <li>✓ Careful handling procedures</li>
+                <div class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50">
+                    <h3 class="text-xl font-semibold mb-4 text-white">Vehicle Protection</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Secure tie-down systems</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Weather protection available</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Full insurance coverage</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Careful handling procedures</li>
                     </ul>
                 </div>
             </div>

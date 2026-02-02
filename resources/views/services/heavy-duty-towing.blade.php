@@ -11,7 +11,7 @@
 @section('content')
 <h2 class="text-3xl font-bold mb-8">Heavy Duty Towing Specialists</h2>
 
-<div class="prose prose-lg max-w-none mb-12">
+<div class="prose prose-invert prose-lg max-w-none mb-12 prose-headings:text-white prose-p:text-gray-300 prose-li:text-gray-300 prose-strong:text-white">
     <p>When standard tow trucks aren't enough, Spokane Towing provides heavy duty towing services for large vehicles and commercial equipment. Our powerful heavy duty tow trucks and experienced operators can handle the biggest towing challenges in Spokane, WA and throughout the region.</p>
     
     <h3 class="text-2xl font-semibold mt-8 mb-4">Heavy Duty Vehicles We Tow:</h3>
@@ -64,12 +64,15 @@
 </div>
 
 <!-- CTA Box -->
-<div class="bg-blue-50 rounded-lg p-8 text-center">
-    <h3 class="text-2xl font-bold mb-4">Need Heavy Duty Towing Now?</h3>
-    <p class="mb-6 text-gray-700">Commercial vehicle breakdown? We're standing by 24/7</p>
-    <a href="tel:+15097977999" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition font-semibold text-lg inline-block">
-        Call (509) 797-7999
-    </a>
+<div class="bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-8 text-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-black/10"></div>
+    <div class="relative">
+        <h3 class="text-2xl font-bold mb-4 text-white">Need Heavy Duty Towing Now?</h3>
+        <p class="mb-6 text-white/90">Commercial vehicle breakdown? We're standing by 24/7</p>
+        <a href="tel:+15097977999" class="bg-white text-orange-600 px-8 py-4 rounded-xl hover:bg-gray-100 transition font-bold text-lg inline-block shadow-lg">
+            Call (509) 797-7999
+        </a>
+    </div>
 </div>
 @endsection
 
@@ -77,27 +80,27 @@
 @include('partials.coverage-area', ['title' => 'Heavy Duty Towing Coverage', 'description' => 'Professional heavy duty towing services throughout the greater Spokane region:'])
 
 <!-- Commercial Features -->
-<section class="py-20">
+<section class="py-20 bg-slate-900">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-8 text-center">Commercial Towing Features</h2>
+            <h2 class="text-3xl font-bold mb-8 text-center text-white">Commercial Towing Features</h2>
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-semibold mb-4">Fleet Services</h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li>✓ Priority dispatch</li>
-                        <li>✓ Volume discounts</li>
-                        <li>✓ Direct billing</li>
-                        <li>✓ 24/7 availability</li>
+                <div class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50">
+                    <h3 class="text-xl font-semibold mb-4 text-white">Fleet Services</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Priority dispatch</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Volume discounts</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Direct billing</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> 24/7 availability</li>
                     </ul>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-semibold mb-4">Safety & Compliance</h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li>✓ DOT compliant operations</li>
-                        <li>✓ Proper traffic control</li>
-                        <li>✓ Insurance coordination</li>
-                        <li>✓ Safety documentation</li>
+                <div class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50">
+                    <h3 class="text-xl font-semibold mb-4 text-white">Safety & Compliance</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> DOT compliant operations</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Proper traffic control</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Insurance coordination</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Safety documentation</li>
                     </ul>
                 </div>
             </div>

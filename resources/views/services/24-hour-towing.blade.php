@@ -11,7 +11,7 @@
 @section('content')
 <h2 class="text-3xl font-bold mb-8">Emergency Towing Available 24/7</h2>
 
-<div class="prose prose-lg max-w-none mb-12">
+<div class="prose prose-invert prose-lg max-w-none mb-12 prose-headings:text-white prose-p:text-gray-300 prose-li:text-gray-300 prose-strong:text-white">
     <p>When your vehicle breaks down at 2 AM or you're stranded on the highway after an accident, you need a reliable 24 hour towing service in Spokane that you can count on. Spokane Towing provides round-the-clock emergency towing services throughout Spokane, WA and surrounding areas.</p>
     
     <h3 class="text-2xl font-semibold mt-8 mb-4">Our 24 Hour Towing Services Include:</h3>
@@ -35,12 +35,15 @@
 </div>
 
 <!-- CTA Box -->
-<div class="bg-blue-50 rounded-lg p-8 text-center">
-    <h3 class="text-2xl font-bold mb-4">Need Emergency Towing Right Now?</h3>
-    <p class="mb-6 text-gray-700">Don't wait - our dispatchers are standing by 24/7</p>
-    <a href="tel:+15097977999" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition font-semibold text-lg inline-block">
-        Call (509) 797-7999
-    </a>
+<div class="bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-8 text-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-black/10"></div>
+    <div class="relative">
+        <h3 class="text-2xl font-bold mb-4 text-white">Need Emergency Towing Right Now?</h3>
+        <p class="mb-6 text-white/90">Don't wait - our dispatchers are standing by 24/7</p>
+        <a href="tel:+15097977999" class="bg-white text-orange-600 px-8 py-4 rounded-xl hover:bg-gray-100 transition font-bold text-lg inline-block shadow-lg">
+            Call (509) 797-7999
+        </a>
+    </div>
 </div>
 @endsection
 

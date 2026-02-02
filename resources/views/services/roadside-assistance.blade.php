@@ -9,7 +9,7 @@
 @section('content')
     <h2 class="text-3xl font-bold mb-8">Professional Roadside Assistance Services</h2>
     
-    <div class="prose prose-lg max-w-none mb-12">
+    <div class="prose prose-invert prose-lg max-w-none mb-12 prose-headings:text-white prose-p:text-gray-300 prose-li:text-gray-300 prose-strong:text-white">
         <p>Don't let a dead battery, empty gas tank, or locked car ruin your day. Spokane Towing provides comprehensive roadside assistance throughout Spokane, WA and surrounding areas. Our trained technicians arrive quickly with the tools and expertise to get you back on the road.</p>
         
         <h3 class="text-2xl font-semibold mt-8 mb-4">Our Roadside Assistance Services</h3>
@@ -47,16 +47,19 @@
     </div>
 
     <!-- CTA Box -->
-    <div class="bg-blue-50 rounded-lg p-8 text-center">
-        <h3 class="text-2xl font-bold mb-4">Need Roadside Assistance Now?</h3>
-        <p class="mb-6 text-gray-700">Our technicians are ready to help you 24/7</p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+15097977999" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition font-semibold text-lg">
-                Call (509) 797-7999
-            </a>
-            <a href="/#quote" class="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-gray-50 transition font-semibold text-lg border-2 border-blue-600">
-                Get Instant Quote
-            </a>
+    <div class="bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-8 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/10"></div>
+        <div class="relative">
+            <h3 class="text-2xl font-bold mb-4 text-white">Need Roadside Assistance Now?</h3>
+            <p class="mb-6 text-white/90">Our technicians are ready to help you 24/7</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:+15097977999" class="bg-white text-orange-600 px-8 py-4 rounded-xl hover:bg-gray-100 transition font-bold text-lg shadow-lg">
+                    Call (509) 797-7999
+                </a>
+                <a href="/#quote" class="bg-white/10 text-white px-8 py-4 rounded-xl hover:bg-white/20 transition font-semibold text-lg border border-white/30">
+                    Get Instant Quote
+                </a>
+            </div>
         </div>
     </div>
 @endsection

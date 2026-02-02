@@ -11,7 +11,7 @@
 @section('content')
 <h2 class="text-3xl font-bold mb-8">Expert Vehicle Recovery Services</h2>
 
-<div class="prose prose-lg max-w-none mb-12">
+<div class="prose prose-invert prose-lg max-w-none mb-12 prose-headings:text-white prose-p:text-gray-300 prose-li:text-gray-300 prose-strong:text-white">
     <p>When your vehicle is stuck in a ditch, trapped in snow, or bogged down in mud, you need professional winch out and recovery services. Spokane Towing provides expert off-road recovery throughout Spokane, WA and surrounding areas. Our experienced team has the equipment and expertise to safely extract your vehicle from any challenging situation.</p>
     
     <h3 class="text-2xl font-semibold mt-8 mb-4">Our Recovery Services Include:</h3>
@@ -63,12 +63,15 @@
 </div>
 
 <!-- CTA Box -->
-<div class="bg-blue-50 rounded-lg p-8 text-center">
-    <h3 class="text-2xl font-bold mb-4">Vehicle Stuck or Need Recovery?</h3>
-    <p class="mb-6 text-gray-700">Professional winch out and recovery services available now</p>
-    <a href="tel:+15097977999" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition font-semibold text-lg inline-block">
-        Call (509) 797-7999
-    </a>
+<div class="bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-8 text-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-black/10"></div>
+    <div class="relative">
+        <h3 class="text-2xl font-bold mb-4 text-white">Vehicle Stuck or Need Recovery?</h3>
+        <p class="mb-6 text-white/90">Professional winch out and recovery services available now</p>
+        <a href="tel:+15097977999" class="bg-white text-orange-600 px-8 py-4 rounded-xl hover:bg-gray-100 transition font-bold text-lg inline-block shadow-lg">
+            Call (509) 797-7999
+        </a>
+    </div>
 </div>
 @endsection
 
@@ -76,27 +79,27 @@
 @include('partials.coverage-area', ['title' => 'Recovery Service Coverage Area', 'description' => 'Professional winch out and recovery services throughout the Spokane region:'])
 
 <!-- Safety Information -->
-<section class="py-20">
+<section class="py-20 bg-slate-900">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-8 text-center">Recovery Safety & Equipment</h2>
+            <h2 class="text-3xl font-bold mb-8 text-center text-white">Recovery Safety & Equipment</h2>
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-semibold mb-4">Safety Procedures</h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li>✓ Site assessment and hazard identification</li>
-                        <li>✓ Proper rigging and anchor points</li>
-                        <li>✓ Traffic control when needed</li>
-                        <li>✓ Vehicle damage prevention</li>
+                <div class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50">
+                    <h3 class="text-xl font-semibold mb-4 text-white">Safety Procedures</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Site assessment and hazard identification</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Proper rigging and anchor points</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Traffic control when needed</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Vehicle damage prevention</li>
                     </ul>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-semibold mb-4">Professional Equipment</h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li>✓ Heavy-duty winches</li>
-                        <li>✓ Recovery straps and chains</li>
-                        <li>✓ Snatch blocks and pulleys</li>
-                        <li>✓ All-terrain vehicles</li>
+                <div class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50">
+                    <h3 class="text-xl font-semibold mb-4 text-white">Professional Equipment</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Heavy-duty winches</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Recovery straps and chains</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Snatch blocks and pulleys</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> All-terrain vehicles</li>
                     </ul>
                 </div>
             </div>

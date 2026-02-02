@@ -38,8 +38,8 @@
     <li><strong>Business District Support:</strong> Fleet and commercial vehicle towing for Valley businesses</li>
 </ul>
 
-<div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 mb-8">
-    <h3 class="text-xl font-semibold mb-2">Why Spokane Valley Chooses Us:</h3>
+<div class="bg-orange-500/10 border-l-4 border-orange-500 p-6 mb-8 rounded-r-xl">
+    <h3 class="text-xl font-semibold mb-2 text-white">Why Spokane Valley Chooses Us:</h3>
     <ul class="space-y-2">
         <li>✓ <strong>Local Knowledge:</strong> We know every street from Barker to Pines</li>
         <li>✓ <strong>Fast Response:</strong> Strategic positioning for quick Valley arrival</li>

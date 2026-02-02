@@ -6,7 +6,7 @@
     <title>Spokane Towing - 24/7 Professional Towing Services</title>
     <meta name="description" content="Fast, reliable towing services in Spokane, WA. Available 24/7 for emergency roadside assistance, vehicle recovery, and more. Call now for a quote!">
     <link rel="canonical" href="{{ url('/') }}">
-    
+
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -15,12 +15,12 @@
     @include('partials.fonts')
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    
+
     <!-- Schema.org Structured Data -->
     @include('partials.schema-local-business')
     @include('partials.schema-website')
     @include('partials.schema-faq')
-    
+
     @if(config('towing.google_maps.api_key'))
         <script>
             ((g) => {
@@ -47,26 +47,67 @@
             });
         </script>
     @endif
-    
+
     @include('partials.clarity')
+
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.75) 0%, rgba(30, 41, 59, 0.65) 50%, rgba(15, 23, 42, 0.55) 100%);
+        }
+        .quote-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(12px);
+        }
+        .service-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+        }
+        .glow-orange {
+            box-shadow: 0 0 40px rgba(249, 115, 22, 0.3);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(249, 115, 22, 0.4); }
+            50% { box-shadow: 0 0 40px rgba(249, 115, 22, 0.6); }
+        }
+        .pulse-glow {
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+    </style>
 </head>
-<body class="antialiased bg-white text-gray-900">
+<body class="antialiased bg-black text-white">
     <!-- Header -->
-    <header class="fixed top-0 w-full bg-gray-900/90 backdrop-blur-sm border-b border-gray-700 z-50">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <a href="/" class="text-xl font-bold text-white hover:text-gray-200 transition">Spokane Towing</a>
-                </div>
-                <nav class="hidden md:flex items-center space-x-4">
-                    <a href="/spokane-towing-services" class="text-white hover:text-gray-200 transition">Services</a>
-                    <a href="tel:+15097977999" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition font-semibold">
-                        Call Now: (509) 797-7999
+    <header class="fixed top-0 w-full z-50 transition-all duration-300" id="main-header">
+        <div class="absolute inset-0 bg-slate-900/90 backdrop-blur-md border-b border-white/10"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="flex justify-between items-center h-20">
+                <a href="/">
+                    <img src="/header-logo.webp" alt="Spokane Towing" class="h-20 w-auto">
+                </a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="/spokane-towing-services" class="text-gray-300 hover:text-white transition font-medium">Services</a>
+                    <a href="#quote" class="text-gray-300 hover:text-white transition font-medium">Get Quote</a>
+                    <a href="/faq" class="text-gray-300 hover:text-white transition font-medium">FAQ</a>
+                    <a href="tel:+15097977999" class="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-xl hover:from-red-700 hover:to-red-800 transition font-semibold shadow-lg shadow-red-600/25 flex items-center space-x-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        <span>(509) 797-7999</span>
                     </a>
                 </nav>
                 <div class="md:hidden">
-                    <a href="tel:+15097977999" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition font-semibold text-sm">
-                        Call Now
+                    <a href="tel:+15097977999" class="bg-gradient-to-r from-red-600 to-red-700 text-white px-4 py-2 rounded-lg font-semibold text-sm flex items-center space-x-1">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        <span>Call Now</span>
                     </a>
                 </div>
             </div>
@@ -74,448 +115,605 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="pt-16 relative overflow-hidden bg-gray-100">
+    <section class="relative min-h-screen flex items-center pt-20">
         <div class="absolute inset-0">
-            <picture>
-                <source srcset="/images/hero.webp" type="image/webp">
-                <img 
-                    src="/images/hero.jpg" 
-                    alt="Towing service" 
-                    class="w-full h-full object-cover scale-100 md:scale-75 opacity-30"
-                    loading="eager"
-                    width="1440"
-                    height="960"
-                >
-            </picture>
-            <div class="absolute inset-0 bg-black/40"></div>
-            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white"></div>
+            <img
+                src="/images/hero-new.webp"
+                alt="Professional towing service in Spokane"
+                class="w-full h-full object-cover -scale-x-100"
+                loading="eager"
+            >
+            <div class="hero-gradient absolute inset-0"></div>
         </div>
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 relative">
-            <div class="max-w-3xl mx-auto text-center">
-                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                    24/7 Towing in Spokane
-                </h1>
-                <p class="text-xl text-gray-700 mb-4">
-                    Fast, reliable, and professional towing services when you need them most. 
-                    Available around the clock for all your vehicle recovery needs.
-                </p>
-                <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-                    Spokane Towing provides comprehensive emergency roadside assistance throughout Spokane County and surrounding areas. From local light-duty towing to heavy-duty commercial vehicle recovery, our experienced team delivers prompt, affordable towing solutions 24 hours a day. Whether you need a jump start, tire change, lockout service, or accident recovery, we're here to help.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="tel:+15097977999" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition font-semibold text-lg shadow-lg">
-                        Call for Immediate Service
-                    </a>
-                    <a href="#quote" class="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-gray-50 transition font-semibold text-lg border-2 border-blue-600">
-                        Get Instant Quote
-                    </a>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-red-600/20 border border-red-600/30 rounded-full px-4 py-2 mb-6">
+                        <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                        <span class="text-red-300 text-sm font-medium">Available 24/7 - Dispatching Now</span>
+                    </div>
+
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                        Fast & Reliable<br>
+                        <span class="text-gradient">Towing Service</span><br>
+                        in Spokane
+                    </h1>
+
+                    <p class="text-xl text-gray-300 mb-8 max-w-xl">
+                        Professional towing and roadside assistance when you need it most.
+                        Our expert team arrives in 20-30 minutes, ready to help.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+                        <a href="tel:+15097977999" class="bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 rounded-xl hover:from-red-700 hover:to-red-800 transition font-semibold text-lg shadow-lg shadow-red-600/25 flex items-center justify-center space-x-2 pulse-glow">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <span>Call (509) 797-7999</span>
+                        </a>
+                        <a href="#quote" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl hover:bg-white/20 transition font-semibold text-lg border border-white/20 flex items-center justify-center space-x-2">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                            </svg>
+                            <span>Get Instant Quote</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="flex flex-wrap gap-6 justify-center lg:justify-start text-sm text-gray-400">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Licensed & Insured</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>20-30 Min Response</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>No Hidden Fees</span>
+                        </div>
+                    </div>
                 </div>
-                <p class="mt-6 text-gray-600">Average arrival time: 20-30 minutes</p>
+
+                <!-- Quick Quote Card -->
+                <div class="hidden lg:block">
+                    <div class="quote-card rounded-3xl p-8 shadow-2xl border border-white/20">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-2">Get an Instant Quote</h2>
+                        <p class="text-gray-600 mb-6">Calculate your towing cost in seconds</p>
+
+                        <form action="{{ route('quote') }}" method="GET" class="space-y-4">
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                    <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                </div>
+                                <input
+                                    type="text"
+                                    id="hero-from-address"
+                                    name="from"
+                                    placeholder="Pickup location"
+                                    class="w-full pl-12 pr-12 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900 bg-gray-50"
+                                    required
+                                >
+                                <button
+                                    type="button"
+                                    onclick="detectLocation('hero-from-address')"
+                                    class="absolute right-3 top-1/2 -translate-y-1/2 p-2 text-gray-400 hover:text-red-500 transition"
+                                    title="Use my location"
+                                >
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                    <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                </div>
+                                <input
+                                    type="text"
+                                    id="hero-to-address"
+                                    name="to"
+                                    placeholder="Drop-off location"
+                                    class="w-full pl-12 pr-12 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900 bg-gray-50"
+                                    required
+                                >
+                                <button
+                                    type="button"
+                                    onclick="detectLocation('hero-to-address')"
+                                    class="absolute right-3 top-1/2 -translate-y-1/2 p-2 text-gray-400 hover:text-red-500 transition"
+                                    title="Use my location"
+                                >
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="w-full bg-gradient-to-r from-red-600 to-red-700 text-white py-4 px-6 rounded-xl hover:from-red-700 hover:to-red-800 transition font-semibold text-lg shadow-lg shadow-red-600/25"
+                            >
+                                Get Instant Quote
+                            </button>
+                        </form>
+
+                        <div class="mt-6 flex items-center justify-center space-x-2 text-gray-500 text-sm">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                            </svg>
+                            <span>No credit card required</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
         </div>
     </section>
 
-    <!-- Quote Section -->
-    <section id="quote" class="py-20 bg-gray-50 relative">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-2">
-                    Get an Instant Quote
-                </h2>
-                <p class="text-xl text-center text-gray-600 mb-10">
-                    Calculate your towing cost in seconds
-                </p>
-                
-                <form action="{{ route('quote') }}" method="GET" class="space-y-6 max-w-2xl mx-auto">
-                    <div>
-                        <div class="relative">
-                            <input
-                                type="text"
-                                id="from-address"
-                                name="from"
-                                placeholder="Pickup location"
-                                class="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-base"
-                                required
-                            >
-                            <button 
-                                type="button"
-                                onclick="detectLocation('from-address')"
-                                class="absolute right-2 top-1/2 -translate-y-1/2 p-2 text-gray-500 hover:text-blue-600 transition"
-                                title="Use my location"
-                            >
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                </svg>
-                            </button>
-                        </div>
+    <!-- Mobile Quote Section -->
+    <section id="quote" class="lg:hidden py-16 bg-slate-900">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="quote-card rounded-2xl p-6 shadow-2xl">
+                <h2 class="text-2xl font-bold text-slate-900 mb-2 text-center">Get an Instant Quote</h2>
+                <p class="text-gray-600 mb-6 text-center">Calculate your towing cost in seconds</p>
+
+                <form action="{{ route('quote') }}" method="GET" class="space-y-4">
+                    <div class="relative">
+                        <input
+                            type="text"
+                            id="mobile-from-address"
+                            name="from"
+                            placeholder="Pickup location"
+                            class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900 bg-gray-50"
+                            required
+                        >
                     </div>
-                    
-                    <div>
-                        <div class="relative">
-                            <input
-                                type="text"
-                                id="to-address"
-                                name="to"
-                                placeholder="Drop-off location"
-                                class="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-base"
-                                required
-                            >
-                            <button 
-                                type="button"
-                                onclick="detectLocation('to-address')"
-                                class="absolute right-2 top-1/2 -translate-y-1/2 p-2 text-gray-500 hover:text-blue-600 transition"
-                                title="Use my location"
-                            >
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                </svg>
-                            </button>
-                        </div>
+
+                    <div class="relative">
+                        <input
+                            type="text"
+                            id="mobile-to-address"
+                            name="to"
+                            placeholder="Drop-off location"
+                            class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900 bg-gray-50"
+                            required
+                        >
                     </div>
-                    
-                    <button 
+
+                    <button
                         type="submit"
-                        class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition font-semibold text-lg"
+                        class="w-full bg-gradient-to-r from-red-600 to-red-700 text-white py-3 px-6 rounded-xl hover:from-red-700 hover:to-red-800 transition font-semibold text-lg"
                     >
                         Get Instant Quote
                     </button>
                 </form>
-                
-                
-                <script>
-                    let fromAutocomplete, toAutocomplete;
-                    
-                    // Initialize autocomplete when libraries are loaded
-                    document.addEventListener('DOMContentLoaded', async () => {
-                        try {
-                            const { Autocomplete } = await google.maps.importLibrary("places");
-                            
-                            // Define bounds for 100 miles around Spokane
-                            // 100 miles ≈ 1.45 degrees latitude/longitude at this location
-                            const spokaneCenter = new google.maps.LatLng(47.6588, -117.4260);
-                            const bounds = new google.maps.LatLngBounds(
-                                new google.maps.LatLng(46.2088, -118.8760),  // SW corner (~100 miles)
-                                new google.maps.LatLng(49.1088, -116.0760)   // NE corner (~100 miles)
-                            );
-                            
-                            // Options for autocomplete
-                            const options = {
-                                bounds: bounds,
-                                componentRestrictions: { country: "us" },
-                                fields: ["formatted_address", "geometry", "name"],
-                                strictBounds: true,  // Restrict results to bounds
-                                types: ["geocode", "establishment"],
-                                origin: spokaneCenter
-                            };
-                            
-                            // Initialize autocomplete for both inputs
-                            fromAutocomplete = new Autocomplete(
-                                document.getElementById('from-address'),
-                                options
-                            );
-                            
-                            toAutocomplete = new Autocomplete(
-                                document.getElementById('to-address'),
-                                options
-                            );
-                        } catch (e) {
-                            console.error('Failed to initialize autocomplete:', e);
-                        }
-                    });
-                    
-                    async function detectLocation(fieldId) {
-                        if (navigator.geolocation) {
-                            try {
-                                const { Geocoder } = await google.maps.importLibrary("geocoding");
-                                
-                                navigator.geolocation.getCurrentPosition(
-                                    async (position) => {
-                                        const lat = position.coords.latitude;
-                                        const lng = position.coords.longitude;
-                                        
-                                        const geocoder = new Geocoder();
-                                        const response = await geocoder.geocode({
-                                            location: { lat: lat, lng: lng }
-                                        });
-                                        
-                                        if (response.results && response.results[0]) {
-                                            const address = response.results[0].formatted_address;
-                                            const input = document.getElementById(fieldId);
-                                            if (input) {
-                                                input.value = address;
-                                            }
-                                        }
-                                    },
-                                    (error) => {
-                                        console.error('Error getting location:', error);
-                                        alert('Unable to get your location. Please enter address manually.');
-                                    }
-                                );
-                            } catch (e) {
-                                console.error('Geocoding failed:', e);
-                            }
-                        } else {
-                            alert('Geolocation is not supported by your browser.');
-                        }
-                    }
-                </script>
-                
-                <div class="mt-12 text-center">
-                    <p class="text-gray-600 mb-4">Prefer to speak with someone?</p>
-                    <div class="bg-blue-600 text-white rounded-lg p-6 inline-block">
-                        <p class="text-lg mb-2">24/7 Emergency Line</p>
-                        <a href="tel:+15097977999" class="text-3xl font-bold hover:underline">
-                            (509) 797-7999
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 bg-white">
+    <section id="services" class="py-24 bg-slate-900">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-                Our Services
-            </h2>
-            
+            <div class="text-center mb-16">
+                <span class="inline-block text-red-500 font-semibold text-sm tracking-wider uppercase mb-4">What We Offer</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+                    Professional Towing Services
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    From emergency roadside assistance to heavy-duty towing, we've got you covered
+                </p>
+            </div>
+
             <!-- Main Services Grid -->
-            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
-                <a href="/24-hour-towing" class="text-center p-6 hover:bg-gray-50 rounded-lg transition">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+                <a href="/24-hour-towing" class="service-card bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-red-500/50 group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">24 Hour Emergency Towing</h3>
-                    <p class="text-gray-600">Available 24/7 for breakdowns, accidents, and vehicle recovery.</p>
+                    <h3 class="text-xl font-bold text-white mb-3">24/7 Emergency Towing</h3>
+                    <p class="text-gray-400 mb-4">Available around the clock for breakdowns, accidents, and vehicle recovery anywhere in Spokane.</p>
+                    <span class="text-red-500 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
+                        Learn More
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </span>
                 </a>
-                
-                <a href="/roadside-assistance" class="text-center p-6 hover:bg-gray-50 rounded-lg transition">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+
+                <a href="/roadside-assistance" class="service-card bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-red-500/50 group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Roadside Assistance</h3>
-                    <p class="text-gray-600">Jump starts, fuel delivery, and emergency roadside help.</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Roadside Assistance</h3>
+                    <p class="text-gray-400 mb-4">Jump starts, fuel delivery, and emergency help when you're stranded on the road.</p>
+                    <span class="text-red-500 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
+                        Learn More
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </span>
                 </a>
-                
-                <a href="/flatbed-towing" class="text-center p-6 hover:bg-gray-50 rounded-lg transition">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+
+                <a href="/flatbed-towing" class="service-card bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-red-500/50 group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Flatbed Towing</h3>
-                    <p class="text-gray-600">Safe transport for luxury, classic, and low-clearance vehicles.</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Flatbed Towing</h3>
+                    <p class="text-gray-400 mb-4">Safe transport for luxury, classic, and low-clearance vehicles on our modern flatbeds.</p>
+                    <span class="text-red-500 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
+                        Learn More
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </a>
+
+                <a href="/lockout-flat-tire" class="service-card bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-red-500/50 group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Lockout Service</h3>
+                    <p class="text-gray-400 mb-4">Locked out of your car? We'll get you back in quickly and safely without damage.</p>
+                    <span class="text-red-500 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
+                        Learn More
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </a>
+
+                <a href="/heavy-duty-towing" class="service-card bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-red-500/50 group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Heavy-Duty Towing</h3>
+                    <p class="text-gray-400 mb-4">Commercial trucks, RVs, and heavy equipment - we have the power to move it all.</p>
+                    <span class="text-red-500 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
+                        Learn More
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </a>
+
+                <a href="/winch-out-recovery" class="service-card bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-red-500/50 group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Winch-Out Recovery</h3>
+                    <p class="text-gray-400 mb-4">Stuck in a ditch, mud, or snow? Our powerful winch will get you out fast.</p>
+                    <span class="text-red-500 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
+                        Learn More
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </span>
                 </a>
             </div>
-            
-            <!-- Additional Services List -->
-            <div class="max-w-4xl mx-auto">
-                <h3 class="text-2xl font-semibold mb-6 text-center">Complete Service List</h3>
-                <div class="grid md:grid-cols-2 gap-4">
-                    <div class="space-y-3">
-                        <a href="/24-hour-towing" class="flex items-center text-gray-700 hover:text-blue-600">
-                            <svg class="w-5 h-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            Local Towing
-                        </a>
-                        <a href="/long-distance-towing" class="flex items-center text-gray-700 hover:text-blue-600">
-                            <svg class="w-5 h-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            Long-Distance Towing
-                        </a>
-                        <a href="/flatbed-towing" class="flex items-center text-gray-700 hover:text-blue-600">
-                            <svg class="w-5 h-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            Flatbed Towing
-                        </a>
-                        <a href="/24-hour-towing" class="flex items-center text-gray-700 hover:text-blue-600">
-                            <svg class="w-5 h-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            Motorcycle Towing
-                        </a>
-                        <a href="/heavy-duty-towing" class="flex items-center text-gray-700 hover:text-blue-600">
-                            <svg class="w-5 h-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            Heavy-Duty Towing
-                        </a>
-                        <a href="/heavy-duty-towing" class="flex items-center text-gray-700 hover:text-blue-600">
-                            <svg class="w-5 h-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            Fleet/Commercial Towing
-                        </a>
-                        <a href="/winch-out-recovery" class="flex items-center text-gray-700 hover:text-blue-600">
-                            <svg class="w-5 h-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            Winch-Outs & Recovery
-                        </a>
-                    </div>
-                    <div class="space-y-3">
-                        <a href="/24-hour-towing" class="flex items-center text-gray-700 hover:text-blue-600">
-                            <svg class="w-5 h-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            Accident Recovery
-                        </a>
-                        <a href="/roadside-assistance" class="flex items-center text-gray-700 hover:text-blue-600">
-                            <svg class="w-5 h-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            Jump Starts
-                        </a>
-                        <a href="/roadside-assistance" class="flex items-center text-gray-700 hover:text-blue-600">
-                            <svg class="w-5 h-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            Fuel Delivery
-                        </a>
-                        <a href="/lockout-flat-tire" class="flex items-center text-gray-700 hover:text-blue-600">
-                            <svg class="w-5 h-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            Flat Tire Service
-                        </a>
-                        <a href="/lockout-flat-tire" class="flex items-center text-gray-700 hover:text-blue-600">
-                            <svg class="w-5 h-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            Lockout Service
-                        </a>
-                        <a href="/roadside-assistance" class="flex items-center text-gray-700 hover:text-blue-600">
-                            <svg class="w-5 h-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            Roadside Assistance
-                        </a>
-                    </div>
-                </div>
+
+            <!-- View All Services -->
+            <div class="text-center">
+                <a href="/spokane-towing-services" class="inline-flex items-center space-x-2 text-red-500 hover:text-red-400 font-semibold text-lg transition">
+                    <span>View All Services</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Why Choose Us Section -->
-    <section id="about" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                    Why Choose Spokane Towing?
+    <section class="py-24 bg-slate-950 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,<svg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"none\" fill-rule=\"evenodd\"><g fill=\"%23ffffff\" fill-opacity=\"0.4\"><path d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/></g></g></svg>')"></div>
+        </div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center mb-16">
+                <span class="inline-block text-red-500 font-semibold text-sm tracking-wider uppercase mb-4">Why Us</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+                    The Spokane Towing Difference
                 </h2>
-                <div class="grid md:grid-cols-2 gap-6 text-left mt-12">
-                    <div class="flex items-start">
-                        <svg class="w-6 h-6 text-blue-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    When you're stranded, you need a towing company you can trust
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-gradient-to-br from-red-600/20 to-red-700/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-red-600/30">
+                        <svg class="w-10 h-10 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
-                        <div>
-                            <h3 class="font-semibold mb-1">Fast Response Times</h3>
-                            <p class="text-gray-600">Average arrival within 20-30 minutes</p>
-                        </div>
                     </div>
-                    <div class="flex items-start">
-                        <svg class="w-6 h-6 text-blue-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    <h3 class="text-xl font-bold text-white mb-2">Fast Response</h3>
+                    <p class="text-gray-400">Average arrival time of 20-30 minutes. We know every minute counts.</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-gradient-to-br from-red-600/20 to-red-700/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-red-600/30">
+                        <svg class="w-10 h-10 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                         </svg>
-                        <div>
-                            <h3 class="font-semibold mb-1">Licensed & Insured</h3>
-                            <p class="text-gray-600">Fully licensed and insured for your protection</p>
-                        </div>
                     </div>
-                    <div class="flex items-start">
-                        <svg class="w-6 h-6 text-blue-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    <h3 class="text-xl font-bold text-white mb-2">Fully Insured</h3>
+                    <p class="text-gray-400">Licensed, bonded, and insured for your complete peace of mind.</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-gradient-to-br from-red-600/20 to-red-700/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-red-600/30">
+                        <svg class="w-10 h-10 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
                         </svg>
-                        <div>
-                            <h3 class="font-semibold mb-1">Professional Drivers</h3>
-                            <p class="text-gray-600">Experienced and courteous service professionals</p>
-                        </div>
                     </div>
-                    <div class="flex items-start">
-                        <svg class="w-6 h-6 text-blue-600 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    <h3 class="text-xl font-bold text-white mb-2">Expert Team</h3>
+                    <p class="text-gray-400">Experienced, professional drivers who treat your vehicle with care.</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-gradient-to-br from-red-600/20 to-red-700/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-red-600/30">
+                        <svg class="w-10 h-10 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
-                        <div>
-                            <h3 class="font-semibold mb-1">Fair Pricing</h3>
-                            <p class="text-gray-600">Competitive rates with no hidden fees</p>
-                        </div>
                     </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Fair Pricing</h3>
+                    <p class="text-gray-400">Transparent, competitive rates with no hidden fees or surprises.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                    Serving Spokane & Surrounding Areas
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-red-600 to-red-700 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/10"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    Stranded? We're On Our Way.
                 </h2>
-                <p class="text-xl text-gray-600 mb-8">
-                    We provide towing services throughout Spokane County and beyond
+                <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                    Don't wait on the side of the road. Call now and we'll dispatch a truck immediately.
                 </p>
-                <div class="grid md:grid-cols-3 gap-8 text-left">
-                    <div>
-                        <h3 class="font-semibold mb-2">Contact</h3>
-                        <p class="text-gray-600 mb-3">
-                            <a href="tel:+15097977999" class="text-blue-600 hover:underline text-xl font-semibold">(509) 797-7999</a>
-                        </p>
-                        <h3 class="font-semibold mb-2">Service Hours</h3>
-                        <p class="text-gray-600">24 Hours a Day<br>7 Days a Week<br>365 Days a Year</p>
-                    </div>
-                    <div>
-                        <h3 class="font-semibold mb-2">Service Areas</h3>
-                        <div class="text-gray-600 grid grid-cols-1 gap-1">
-                            <a href="/" class="hover:text-blue-600">Spokane, WA</a>
-                            <a href="/towing-spokane-valley" class="hover:text-blue-600">Spokane Valley, WA</a>
-                            <a href="/towing-cheney" class="hover:text-blue-600">Cheney, WA</a>
-                            <a href="/towing-deer-park" class="hover:text-blue-600">Deer Park, WA</a>
-                            <a href="/towing-airway-heights" class="hover:text-blue-600">Airway Heights, WA</a>
-                            <a href="/towing-liberty-lake" class="hover:text-blue-600">Liberty Lake, WA</a>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="tel:+15097977999" class="bg-white text-red-600 px-8 py-4 rounded-xl hover:bg-gray-100 transition font-bold text-xl shadow-lg flex items-center justify-center space-x-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        <span>(509) 797-7999</span>
+                    </a>
+                    <a href="#quote" class="bg-transparent text-white px-8 py-4 rounded-xl hover:bg-white/10 transition font-semibold text-xl border-2 border-white flex items-center justify-center space-x-2">
+                        <span>Get Online Quote</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section id="contact" class="py-24 bg-slate-900">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="inline-block text-red-500 font-semibold text-sm tracking-wider uppercase mb-4">Coverage</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+                    Serving Spokane & Beyond
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Fast, reliable towing throughout the Inland Northwest
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4 flex items-center">
+                        <span class="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                        Washington
+                    </h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-gray-400 hover:text-red-500 transition">Spokane</a></li>
+                        <li><a href="/towing-spokane-valley" class="text-gray-400 hover:text-red-500 transition">Spokane Valley</a></li>
+                        <li><a href="/towing-cheney" class="text-gray-400 hover:text-red-500 transition">Cheney</a></li>
+                        <li><a href="/towing-deer-park" class="text-gray-400 hover:text-red-500 transition">Deer Park</a></li>
+                        <li><a href="/towing-airway-heights" class="text-gray-400 hover:text-red-500 transition">Airway Heights</a></li>
+                        <li><a href="/towing-liberty-lake" class="text-gray-400 hover:text-red-500 transition">Liberty Lake</a></li>
+                        <li><a href="/towing-colville" class="text-gray-400 hover:text-red-500 transition">Colville</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4 flex items-center">
+                        <span class="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                        Idaho
+                    </h3>
+                    <ul class="space-y-2">
+                        <li><a href="/towing-coeur-d-alene" class="text-gray-400 hover:text-red-500 transition">Coeur d'Alene</a></li>
+                        <li><a href="/towing-post-falls" class="text-gray-400 hover:text-red-500 transition">Post Falls</a></li>
+                        <li><a href="/towing-hayden-id" class="text-gray-400 hover:text-red-500 transition">Hayden</a></li>
+                        <li><a href="/towing-sandpoint" class="text-gray-400 hover:text-red-500 transition">Sandpoint</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4 flex items-center">
+                        <span class="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                        Contact Us
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-gray-500 text-sm mb-1">24/7 Emergency Line</p>
+                            <a href="tel:+15097977999" class="text-2xl font-bold text-red-500 hover:text-red-400 transition">(509) 797-7999</a>
+                        </div>
+                        <div>
+                            <p class="text-gray-500 text-sm mb-1">Service Hours</p>
+                            <p class="text-white font-medium">24 Hours / 7 Days</p>
+                            <p class="text-gray-400">365 Days a Year</p>
                         </div>
                     </div>
-                    <div>
-                        <h3 class="font-semibold mb-2">&nbsp;</h3>
-                        <div class="text-gray-600 grid grid-cols-1 gap-1">
-                            <a href="/towing-coeur-d-alene" class="hover:text-blue-600">Coeur d'Alene, ID</a>
-                            <a href="/towing-post-falls" class="hover:text-blue-600">Post Falls, ID</a>
-                            <a href="/towing-hayden-id" class="hover:text-blue-600">Hayden, ID</a>
-                            <a href="/towing-sandpoint" class="hover:text-blue-600">Sandpoint, ID</a>
-                            <a href="/towing-colville" class="hover:text-blue-600">Colville, WA</a>
-                        </div>
-                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4 flex items-center">
+                        <span class="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                        Quick Links
+                    </h3>
+                    <ul class="space-y-2">
+                        <li><a href="/spokane-towing-services" class="text-gray-400 hover:text-red-500 transition">All Services</a></li>
+                        <li><a href="/faq" class="text-gray-400 hover:text-red-500 transition">FAQ</a></li>
+                        <li><a href="#quote" class="text-gray-400 hover:text-red-500 transition">Get a Quote</a></li>
+                        <li><a href="/24-hour-towing" class="text-gray-400 hover:text-red-500 transition">Emergency Towing</a></li>
+                        <li><a href="/roadside-assistance" class="text-gray-400 hover:text-red-500 transition">Roadside Assistance</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <div class="mb-4">
-                    <a href="/faq" class="text-gray-400 hover:text-white transition mx-3">FAQ</a>
-                    <span class="text-gray-600">|</span>
-                    <a href="/spokane-towing-services" class="text-gray-400 hover:text-white transition mx-3">Spokane Towing Services</a>
-                    <span class="text-gray-600">|</span>
-                    <a href="/#services" class="text-gray-400 hover:text-white transition mx-3">Services</a>
-                    <span class="text-gray-600">|</span>
-                    <a href="/#contact" class="text-gray-400 hover:text-white transition mx-3">Contact</a>
+    <footer class="bg-slate-950 border-t border-slate-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-3 mb-6 md:mb-0">
+                    <img src="/header-logo.webp" alt="Spokane Towing" class="h-14 w-auto">
                 </div>
-                <p class="text-gray-400">Licensed & Insured | Serving Spokane Since 2010</p>
+
+                <div class="flex flex-wrap justify-center gap-6 mb-6 md:mb-0">
+                    <a href="/spokane-towing-services" class="text-gray-400 hover:text-white transition">Services</a>
+                    <a href="/faq" class="text-gray-400 hover:text-white transition">FAQ</a>
+                    <a href="#quote" class="text-gray-400 hover:text-white transition">Get Quote</a>
+                    <a href="tel:+15097977999" class="text-gray-400 hover:text-white transition">Contact</a>
+                </div>
+
+                <div class="text-gray-500 text-sm">
+                    Licensed & Insured | Serving Spokane Since 2010
+                </div>
+            </div>
+
+            <div class="mt-8 pt-8 border-t border-slate-800 text-center text-gray-500 text-sm">
+                &copy; {{ date('Y') }} Spokane Towing. All rights reserved.
             </div>
         </div>
     </footer>
+
+    <script>
+        let fromAutocomplete, toAutocomplete, heroFromAutocomplete, heroToAutocomplete;
+
+        // Initialize autocomplete when libraries are loaded
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const { Autocomplete } = await google.maps.importLibrary("places");
+
+                // Define bounds for 100 miles around Spokane
+                const spokaneCenter = new google.maps.LatLng(47.6588, -117.4260);
+                const bounds = new google.maps.LatLngBounds(
+                    new google.maps.LatLng(46.2088, -118.8760),
+                    new google.maps.LatLng(49.1088, -116.0760)
+                );
+
+                const options = {
+                    bounds: bounds,
+                    componentRestrictions: { country: "us" },
+                    fields: ["formatted_address", "geometry", "name"],
+                    strictBounds: true,
+                    types: ["geocode", "establishment"],
+                    origin: spokaneCenter
+                };
+
+                // Hero form autocomplete (desktop)
+                const heroFromInput = document.getElementById('hero-from-address');
+                const heroToInput = document.getElementById('hero-to-address');
+                if (heroFromInput) heroFromAutocomplete = new Autocomplete(heroFromInput, options);
+                if (heroToInput) heroToAutocomplete = new Autocomplete(heroToInput, options);
+
+                // Mobile form autocomplete
+                const mobileFromInput = document.getElementById('mobile-from-address');
+                const mobileToInput = document.getElementById('mobile-to-address');
+                if (mobileFromInput) fromAutocomplete = new Autocomplete(mobileFromInput, options);
+                if (mobileToInput) toAutocomplete = new Autocomplete(mobileToInput, options);
+            } catch (e) {
+                console.error('Failed to initialize autocomplete:', e);
+            }
+        });
+
+        async function detectLocation(fieldId) {
+            if (navigator.geolocation) {
+                try {
+                    const { Geocoder } = await google.maps.importLibrary("geocoding");
+
+                    navigator.geolocation.getCurrentPosition(
+                        async (position) => {
+                            const lat = position.coords.latitude;
+                            const lng = position.coords.longitude;
+
+                            const geocoder = new Geocoder();
+                            const response = await geocoder.geocode({
+                                location: { lat: lat, lng: lng }
+                            });
+
+                            if (response.results && response.results[0]) {
+                                const address = response.results[0].formatted_address;
+                                const input = document.getElementById(fieldId);
+                                if (input) {
+                                    input.value = address;
+                                }
+                            }
+                        },
+                        (error) => {
+                            console.error('Error getting location:', error);
+                            alert('Unable to get your location. Please enter address manually.');
+                        }
+                    );
+                } catch (e) {
+                    console.error('Geocoding failed:', e);
+                }
+            } else {
+                alert('Geolocation is not supported by your browser.');
+            }
+        }
+
+        // Header scroll effect
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('py-2');
+            } else {
+                header.classList.remove('py-2');
+            }
+        });
+    </script>
 </body>
 </html>

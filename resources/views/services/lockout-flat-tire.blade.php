@@ -11,7 +11,7 @@
 @section('content')
 <h2 class="text-3xl font-bold mb-8">Professional Lockout & Flat Tire Services</h2>
 
-<div class="prose prose-lg max-w-none mb-12">
+<div class="prose prose-invert prose-lg max-w-none mb-12 prose-headings:text-white prose-p:text-gray-300 prose-li:text-gray-300 prose-strong:text-white">
     <p>Getting locked out of your car or dealing with a flat tire can happen to anyone at any time. When you're stranded in Spokane, WA, you need reliable roadside assistance that responds quickly and gets the job done right. Spokane Towing provides professional car lockout services and flat tire assistance throughout the greater Spokane area.</p>
     
     <h3 class="text-2xl font-semibold mt-8 mb-4">Our Lockout Services Include:</h3>
@@ -48,12 +48,15 @@
 </div>
 
 <!-- CTA Box -->
-<div class="bg-blue-50 rounded-lg p-8 text-center">
-    <h3 class="text-2xl font-bold mb-4">Locked Out or Have a Flat Tire?</h3>
-    <p class="mb-6 text-gray-700">Get fast, professional assistance - we're available 24/7</p>
-    <a href="tel:+15097977999" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition font-semibold text-lg inline-block">
-        Call (509) 797-7999
-    </a>
+<div class="bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-8 text-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-black/10"></div>
+    <div class="relative">
+        <h3 class="text-2xl font-bold mb-4 text-white">Locked Out or Have a Flat Tire?</h3>
+        <p class="mb-6 text-white/90">Get fast, professional assistance - we're available 24/7</p>
+        <a href="tel:+15097977999" class="bg-white text-orange-600 px-8 py-4 rounded-xl hover:bg-gray-100 transition font-bold text-lg inline-block shadow-lg">
+            Call (509) 797-7999
+        </a>
+    </div>
 </div>
 @endsection
 
