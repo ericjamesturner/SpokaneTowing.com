@@ -72,7 +72,7 @@
             background: linear-gradient(135deg, rgba(15, 23, 42, 0.75) 0%, rgba(30, 41, 59, 0.65) 50%, rgba(15, 23, 42, 0.55) 100%);
         }
         .quote-card {
-            background: rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(12px);
         }
         .service-card {
@@ -169,12 +169,6 @@
                             </svg>
                             <span>Call (509) 797-7999</span>
                         </a>
-                        <a href="#quote" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl hover:bg-white/20 transition font-semibold text-lg border border-white/20 flex items-center justify-center space-x-2">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-                            </svg>
-                            <span>Get Instant Quote</span>
-                        </a>
                     </div>
 
                     <!-- Trust Badges -->
@@ -203,8 +197,8 @@
                 <!-- Quick Quote Card -->
                 <div class="hidden lg:block">
                     <div class="quote-card rounded-3xl p-8 shadow-2xl border border-white/20">
-                        <h2 class="text-2xl font-bold text-slate-900 mb-2">Get an Instant Quote</h2>
-                        <p class="text-gray-600 mb-6">Calculate your towing cost in seconds</p>
+                        <h2 class="text-2xl font-bold text-white mb-2">Get an Instant Quote</h2>
+                        <p class="text-gray-300 mb-6">Calculate your towing cost in seconds</p>
 
                         <form action="{{ route('quote') }}" method="GET" class="space-y-4">
                             <div class="relative">
@@ -269,7 +263,7 @@
                             </button>
                         </form>
 
-                        <div class="mt-6 flex items-center justify-center space-x-2 text-gray-500 text-sm">
+                        <div class="mt-6 flex items-center justify-center space-x-2 text-gray-400 text-sm">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
                             </svg>
