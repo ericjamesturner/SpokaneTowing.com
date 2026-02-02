@@ -88,7 +88,7 @@
         </div>
     </header>
 
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 pt-56 pb-12">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-12">
         <div class="max-w-4xl mx-auto">
             @livewire('quote-display', [
                 'fromAddress' => request('from'),

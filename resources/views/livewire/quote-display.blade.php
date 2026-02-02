@@ -6,7 +6,7 @@
     @endif
 
     <div class="mb-6">
-        <a href="/" class="text-orange-500 hover:text-orange-400 flex items-center gap-2 transition">
+        <a href="/" class="text-red-500 hover:text-red-400 flex items-center gap-2 transition">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
             </svg>
@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="mt-6 flex gap-4">
-                <a href="/" class="bg-gradient-to-r from-orange-500 to-orange-600 text-white py-3 px-6 rounded-xl hover:from-orange-600 hover:to-orange-700 transition font-semibold">
+                <a href="/" class="bg-gradient-to-r from-red-600 to-red-700 text-white py-3 px-6 rounded-xl hover:from-red-700 hover:to-red-800 transition font-semibold">
                     Try Again
                 </a>
                 <a href="tel:+15097977999" class="bg-white/10 text-white py-3 px-6 rounded-xl hover:bg-white/20 transition font-semibold border border-white/20">
@@ -51,7 +51,7 @@
                 </div>
 
                 <h2 class="text-xl font-bold text-gray-300 mb-4">We can be there in 20-30 mins for</h2>
-                <div class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-400 mb-2">
+                <div class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-500 mb-2">
                     ${{ number_format($quote['hookFee'] + $quote['mileageCharge'], 2) }}
                 </div>
                 <p class="text-sm text-gray-400 mb-2">Plus applicable sales tax</p>
@@ -62,7 +62,7 @@
 
                 <a
                     href="tel:+15097977999"
-                    class="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-4 px-6 rounded-xl hover:from-orange-600 hover:to-orange-700 transition font-semibold text-lg shadow-lg shadow-orange-500/25 flex items-center justify-center space-x-3 mb-4"
+                    class="w-full bg-gradient-to-r from-red-600 to-red-700 text-white py-4 px-6 rounded-xl hover:from-red-700 hover:to-red-800 transition font-semibold text-lg shadow-lg shadow-red-600/25 flex items-center justify-center space-x-3 mb-4"
                 >
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
@@ -72,7 +72,7 @@
 
                 <button
                     onclick="toggleDetails()"
-                    class="text-orange-500 hover:text-orange-400 font-medium flex items-center gap-2 mx-auto transition"
+                    class="text-red-500 hover:text-red-400 font-medium flex items-center gap-2 mx-auto transition"
                 >
                     <span id="details-text">Show Details</span>
                     <svg id="details-icon" class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -118,7 +118,7 @@
                                 </div>
                                 <div class="flex flex-col sm:flex-row sm:justify-between gap-1 pt-3 border-t border-slate-700">
                                     <span class="text-white font-semibold">Estimated Total:</span>
-                                    <span class="font-bold text-orange-500 text-lg">${{ number_format($quote['hookFee'] + $quote['mileageCharge'], 2) }}</span>
+                                    <span class="font-bold text-red-500 text-lg">${{ number_format($quote['hookFee'] + $quote['mileageCharge'], 2) }}</span>
                                 </div>
                                 <p class="text-gray-500 text-sm text-center pt-2">Plus sales tax</p>
                             </div>
@@ -174,7 +174,7 @@
                     const directionsRenderer = new DirectionsRenderer({
                         suppressMarkers: false,
                         polylineOptions: {
-                            strokeColor: "#f97316",
+                            strokeColor: "#dc2626",
                             strokeWeight: 5
                         }
                     });
