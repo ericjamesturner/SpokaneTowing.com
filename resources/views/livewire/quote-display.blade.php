@@ -52,36 +52,32 @@
 
                 <h2 class="text-xl font-bold text-gray-300 mb-4">We can be there in 20-30 mins for</h2>
                 <div class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-400 mb-2">
-                    ${{ number_format($quote['total'], 2) }}
+                    ${{ number_format($quote['hookFee'] + $quote['mileageCharge'], 2) }}
                 </div>
-                <p class="text-sm text-gray-500 mb-2">(including WA sales tax)</p>
-                <div class="bg-amber-500/10 border border-amber-500/30 rounded-lg px-4 py-3 mb-4">
-                    <p class="text-amber-400 text-sm font-medium">
-                        <svg class="w-4 h-4 inline-block mr-1 -mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
-                        </svg>
-                        This is an estimate. Call <a href="tel:+15097977999" class="underline font-bold">(509) 797-7999</a> to lock in your price.
-                    </p>
-                </div>
+                <p class="text-sm text-gray-400 mb-4">Plus applicable sales tax</p>
                 @if ($quote['isMinimum'])
                     <p class="text-sm text-gray-500 mb-4">*Minimum service charge applied</p>
                 @endif
 
-                <div class="flex flex-col sm:flex-row gap-4 mb-8">
-                    <button
-                        wire:click="showBookingForm"
-                        type="button"
-                        class="flex-1 bg-gradient-to-r from-orange-500 to-orange-600 text-white py-4 px-6 rounded-xl hover:from-orange-600 hover:to-orange-700 transition font-semibold text-lg shadow-lg shadow-orange-500/25"
-                    >
-                        Book This Tow
-                    </button>
-                    <a
-                        href="tel:+15097977999"
-                        class="flex-1 bg-white/10 text-white py-4 px-6 rounded-xl hover:bg-white/20 transition font-semibold text-lg border border-white/20 text-center"
-                    >
-                        Call to Book
-                    </a>
+                <div class="bg-amber-500/10 border border-amber-500/30 rounded-xl px-6 py-4 mb-6">
+                    <p class="text-amber-400 text-sm font-medium mb-2">
+                        <svg class="w-5 h-5 inline-block mr-1 -mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                        </svg>
+                        This is an estimate only
+                    </p>
+                    <p class="text-gray-300 text-sm">Final price may vary based on vehicle condition, accessibility, and other factors. Call to confirm pricing and book your tow.</p>
                 </div>
+
+                <a
+                    href="tel:+15097977999"
+                    class="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-4 px-6 rounded-xl hover:from-orange-600 hover:to-orange-700 transition font-semibold text-lg shadow-lg shadow-orange-500/25 flex items-center justify-center space-x-3 mb-4"
+                >
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                    <span>Call Now to Book: (509) 797-7999</span>
+                </a>
 
                 <button
                     onclick="toggleDetails()"
@@ -129,22 +125,11 @@
                                     <span class="text-gray-400">Mileage <span class="text-sm">({{ $quote['distance'] }} mi × ${{ number_format(config('towing.pricing.per_mile'), 2) }})</span>:</span>
                                     <span class="font-medium text-white">${{ number_format($quote['mileageCharge'], 2) }}</span>
                                 </div>
-                                @php
-                                    $subtotal = $quote['hookFee'] + $quote['mileageCharge'];
-                                    $tax = $quote['total'] - $subtotal;
-                                @endphp
                                 <div class="flex flex-col sm:flex-row sm:justify-between gap-1 pt-3 border-t border-slate-700">
-                                    <span class="text-gray-400">Subtotal:</span>
-                                    <span class="font-medium text-white">${{ number_format($subtotal, 2) }}</span>
+                                    <span class="text-white font-semibold">Estimated Total:</span>
+                                    <span class="font-bold text-orange-500 text-lg">${{ number_format($quote['hookFee'] + $quote['mileageCharge'], 2) }}</span>
                                 </div>
-                                <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
-                                    <span class="text-gray-400">WA Sales Tax <span class="text-sm">({{ number_format(config('towing.pricing.tax_rate') * 100, 1) }}%)</span>:</span>
-                                    <span class="font-medium text-white">${{ number_format($tax, 2) }}</span>
-                                </div>
-                                <div class="flex flex-col sm:flex-row sm:justify-between gap-1 pt-3 border-t border-slate-700">
-                                    <span class="text-white font-semibold">Total:</span>
-                                    <span class="font-bold text-orange-500 text-lg">${{ number_format($quote['total'], 2) }}</span>
-                                </div>
+                                <p class="text-gray-500 text-sm text-center pt-2">Plus applicable sales tax. Final price confirmed when you call.</p>
                             </div>
                         </div>
                     </div>

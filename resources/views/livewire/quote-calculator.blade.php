@@ -125,9 +125,10 @@
                         </div>
                         <div class="border-t pt-3">
                             <div class="flex justify-between text-xl font-bold text-gray-900">
-                                <span>Total:</span>
-                                <span>${{ number_format($quote['total'], 2) }}</span>
+                                <span>Estimated Total:</span>
+                                <span>${{ number_format($quote['hookFee'] + $quote['mileageCharge'], 2) }}</span>
                             </div>
+                            <p class="text-sm text-gray-500 mt-1">Plus applicable sales tax</p>
                             @if ($quote['isMinimum'])
                                 <p class="text-sm text-gray-500 mt-1">*Minimum service charge applied</p>
                             @endif
@@ -135,28 +136,24 @@
                     </div>
 
                     <div class="bg-amber-50 border border-amber-200 rounded-lg px-4 py-3 mb-4">
-                        <p class="text-amber-800 text-sm font-medium">
+                        <p class="text-amber-800 text-sm font-medium mb-1">
                             <svg class="w-4 h-4 inline-block mr-1 -mt-0.5 text-amber-600" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
                             </svg>
-                            This is an estimate. Call <a href="tel:+15097977999" class="underline font-bold text-amber-900">(509) 797-7999</a> to lock in your price.
+                            This is an estimate only
                         </p>
+                        <p class="text-amber-700 text-sm">Final price may vary based on vehicle condition and accessibility. Call to confirm and book.</p>
                     </div>
 
-                    <div class="flex gap-4">
-                        <button 
-                            wire:click="showBookingForm"
-                            class="flex-1 bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition font-semibold"
-                        >
-                            Book This Tow
-                        </button>
-                        <a 
-                            href="tel:+15097977999"
-                            class="flex-1 bg-white text-blue-600 py-3 px-6 rounded-lg hover:bg-gray-50 transition font-semibold border-2 border-blue-600 text-center"
-                        >
-                            Call to Book
-                        </a>
-                    </div>
+                    <a
+                        href="tel:+15097977999"
+                        class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition font-semibold flex items-center justify-center space-x-2"
+                    >
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        <span>Call to Book: (509) 797-7999</span>
+                    </a>
                 </div>
             </div>
             
