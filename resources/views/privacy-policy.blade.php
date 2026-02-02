@@ -72,10 +72,26 @@
                     <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
                         <li>Provide towing and roadside assistance services</li>
                         <li>Generate accurate quotes for our services</li>
-                        <li>Communicate with you about your service requests</li>
+                        <li>Communicate with you about your service requests via phone, email, or SMS</li>
+                        <li>Send you text message updates about your tow (driver dispatch, ETA, arrival)</li>
                         <li>Improve our website and services</li>
                         <li>Comply with legal obligations</li>
                     </ul>
+
+                    <h2 class="text-2xl font-semibold text-white mt-8 mb-4">SMS/Text Message Privacy</h2>
+                    <p class="text-gray-300 mb-4">When you provide your phone number and consent to receive text messages, we collect and use your mobile phone number to send you service-related SMS messages. Here's what you need to know:</p>
+
+                    <p class="text-gray-300 mb-4"><strong class="text-white">What We Collect:</strong> Your mobile phone number and records of text messages sent to you (message content, timestamps, delivery status).</p>
+
+                    <p class="text-gray-300 mb-4"><strong class="text-white">How We Use It:</strong> We use your phone number solely to send you transactional messages related to your towing service request, including quote confirmations, booking confirmations, driver updates, and service notifications.</p>
+
+                    <p class="text-gray-300 mb-4"><strong class="text-white">No Marketing:</strong> We do not use your phone number for marketing or promotional text messages. All SMS communications are directly related to services you have requested.</p>
+
+                    <p class="text-gray-300 mb-4"><strong class="text-white">No Sharing:</strong> We do not sell, rent, or share your phone number with third parties for their marketing purposes. Your phone number is only shared with our SMS service provider to facilitate message delivery.</p>
+
+                    <p class="text-gray-300 mb-4"><strong class="text-white">Data Retention:</strong> We retain your phone number and SMS records for up to 2 years for customer service and legal compliance purposes, after which they are securely deleted.</p>
+
+                    <p class="text-gray-300 mb-4"><strong class="text-white">Opt-Out:</strong> You may opt out of SMS messages at any time by replying STOP to any message. See our <a href="/terms-of-service" class="text-red-500 hover:text-red-400">Terms of Service</a> for complete SMS terms.</p>
 
                     <h2 class="text-2xl font-semibold text-white mt-8 mb-4">Information Sharing</h2>
                     <p class="text-gray-300 mb-4">We do not sell your personal information. We may share your information with:</p>
@@ -98,6 +114,8 @@
                         <li>Request correction of inaccurate information</li>
                         <li>Request deletion of your information</li>
                         <li>Opt out of marketing communications</li>
+                        <li>Opt out of SMS messages by replying STOP to any text message</li>
+                        <li>Request information about what data we hold about you</li>
                     </ul>
 
                     <h2 class="text-2xl font-semibold text-white mt-8 mb-4">Contact Us</h2>

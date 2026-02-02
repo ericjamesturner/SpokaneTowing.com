@@ -201,6 +201,39 @@
                         <p class="text-gray-300 mb-6">Calculate your towing cost in seconds</p>
 
                         <form action="{{ route('quote') }}" method="GET" class="space-y-4">
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="relative">
+                                    <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                                        </svg>
+                                    </div>
+                                    <input
+                                        type="text"
+                                        id="hero-name"
+                                        name="name"
+                                        placeholder="Your name"
+                                        class="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900 bg-gray-50"
+                                        required
+                                    >
+                                </div>
+                                <div class="relative">
+                                    <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                        </svg>
+                                    </div>
+                                    <input
+                                        type="tel"
+                                        id="hero-phone"
+                                        name="phone"
+                                        placeholder="Phone number"
+                                        class="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900 bg-gray-50"
+                                        required
+                                    >
+                                </div>
+                            </div>
+
                             <div class="relative">
                                 <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                                     <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -263,12 +296,9 @@
                             </button>
                         </form>
 
-                        <div class="mt-6 flex items-center justify-center space-x-2 text-gray-400 text-sm">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                            </svg>
-                            <span>No credit card required</span>
-                        </div>
+                        <p class="mt-4 text-gray-400 text-xs text-center leading-relaxed">
+                            By submitting, you agree to our <a href="/terms-of-service" class="text-red-400 hover:text-red-300 underline">Terms</a> and <a href="/privacy-policy" class="text-red-400 hover:text-red-300 underline">Privacy Policy</a>, and consent to receive calls/texts about your quote.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -286,10 +316,33 @@
     <section id="quote" class="lg:hidden py-16 bg-slate-900">
         <div class="container mx-auto px-4 sm:px-6">
             <div class="quote-card rounded-2xl p-6 shadow-2xl">
-                <h2 class="text-2xl font-bold text-slate-900 mb-2 text-center">Get an Instant Quote</h2>
-                <p class="text-gray-600 mb-6 text-center">Calculate your towing cost in seconds</p>
+                <h2 class="text-2xl font-bold text-white mb-2 text-center">Get an Instant Quote</h2>
+                <p class="text-gray-300 mb-6 text-center">Calculate your towing cost in seconds</p>
 
                 <form action="{{ route('quote') }}" method="GET" class="space-y-4">
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="relative">
+                            <input
+                                type="text"
+                                id="mobile-name"
+                                name="name"
+                                placeholder="Your name"
+                                class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900 bg-gray-50"
+                                required
+                            >
+                        </div>
+                        <div class="relative">
+                            <input
+                                type="tel"
+                                id="mobile-phone"
+                                name="phone"
+                                placeholder="Phone number"
+                                class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900 bg-gray-50"
+                                required
+                            >
+                        </div>
+                    </div>
+
                     <div class="relative">
                         <input
                             type="text"
@@ -319,6 +372,9 @@
                         Get Instant Quote
                     </button>
                 </form>
+                <p class="mt-4 text-gray-400 text-xs text-center leading-relaxed">
+                    By submitting, you agree to our <a href="/terms-of-service" class="text-red-400 hover:text-red-300 underline">Terms</a> and <a href="/privacy-policy" class="text-red-400 hover:text-red-300 underline">Privacy Policy</a>, and consent to receive calls/texts about your quote.
+                </p>
             </div>
         </div>
     </section>

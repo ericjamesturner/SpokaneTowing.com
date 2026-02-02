@@ -98,6 +98,31 @@
                     <h2 class="text-2xl font-semibold text-white mt-8 mb-4">Cancellation</h2>
                     <p class="text-gray-300 mb-4">If you need to cancel a service request, please notify us as soon as possible. Cancellation fees may apply if our driver has already been dispatched to your location.</p>
 
+                    <h2 class="text-2xl font-semibold text-white mt-8 mb-4">SMS/Text Message Terms</h2>
+                    <p class="text-gray-300 mb-4">By providing your phone number and submitting a quote request or booking, you expressly consent to receive text messages from Spokane Towing. These messages may include:</p>
+                    <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
+                        <li>Quote confirmations and pricing information</li>
+                        <li>Service booking confirmations</li>
+                        <li>Driver dispatch and ETA updates</li>
+                        <li>Driver arrival notifications</li>
+                        <li>Service completion updates</li>
+                        <li>Follow-up communications related to your service</li>
+                    </ul>
+
+                    <p class="text-gray-300 mb-4"><strong class="text-white">Message Frequency:</strong> Message frequency varies based on your service requests. You may receive 1-10 messages per service request.</p>
+
+                    <p class="text-gray-300 mb-4"><strong class="text-white">Opt-Out:</strong> You can opt out of receiving text messages at any time by replying STOP to any message. After opting out, you will receive a confirmation message and no further texts will be sent. Note that opting out may affect our ability to provide service updates.</p>
+
+                    <p class="text-gray-300 mb-4"><strong class="text-white">Help:</strong> Reply HELP to any message for assistance, or contact us at (509) 797-7999.</p>
+
+                    <p class="text-gray-300 mb-4"><strong class="text-white">Message and Data Rates:</strong> Message and data rates may apply. Check with your mobile carrier for details about your text messaging plan.</p>
+
+                    <p class="text-gray-300 mb-4"><strong class="text-white">Carrier Disclaimer:</strong> Carriers are not liable for delayed or undelivered messages. Message delivery is subject to effective transmission from your network operator.</p>
+
+                    <p class="text-gray-300 mb-4"><strong class="text-white">Supported Carriers:</strong> Our SMS services are compatible with most major U.S. carriers including AT&T, Verizon, T-Mobile, Sprint, and others.</p>
+
+                    <p class="text-gray-300 mb-4">Your consent to receive text messages is not a condition of purchasing any goods or services. You may request service by calling us directly at (509) 797-7999 if you prefer not to receive text messages.</p>
+
                     <h2 class="text-2xl font-semibold text-white mt-8 mb-4">Website Use</h2>
                     <p class="text-gray-300 mb-4">You agree to use our website only for lawful purposes. You may not:</p>
                     <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">

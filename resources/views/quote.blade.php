@@ -98,7 +98,9 @@
         <div class="max-w-4xl mx-auto">
             @livewire('quote-display', [
                 'fromAddress' => request('from'),
-                'toAddress' => request('to')
+                'toAddress' => request('to'),
+                'customerName' => request('name'),
+                'customerPhone' => request('phone')
             ])
         </div>
     </div>
