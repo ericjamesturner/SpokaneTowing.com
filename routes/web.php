@@ -33,6 +33,12 @@ Route::get('/terms-of-service', function () {
     return view('terms-of-service');
 })->name('terms-of-service');
 
+Route::get('/contact', \App\Livewire\ContactForm::class)->name('contact');
+
+Route::get('/contact/thank-you', function () {
+    return view('contact-thank-you');
+})->name('contact.thankyou');
+
 Route::get('/spokane-towing-services', function () {
     return view('spokane-towing-services');
 })->name('spokane-towing-services');

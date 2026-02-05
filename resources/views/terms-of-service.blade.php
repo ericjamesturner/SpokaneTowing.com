@@ -58,8 +58,30 @@
                     <h2 class="text-2xl font-semibold text-white mt-8 mb-4">Agreement to Terms</h2>
                     <p class="text-gray-300 mb-4">By accessing our website or using our towing and roadside assistance services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.</p>
 
-                    <h2 class="text-2xl font-semibold text-white mt-8 mb-4">Services</h2>
-                    <p class="text-gray-300 mb-4">Spokane Towing provides towing and roadside assistance services in the Spokane, Washington area and surrounding regions. Our services include but are not limited to:</p>
+                    <!-- Important Notices -->
+                    <div class="bg-red-900/20 border border-red-800 rounded-xl p-6 my-8">
+                        <h2 class="text-xl font-semibold text-red-400 mb-4">Important Notices</h2>
+
+                        <h3 class="text-lg font-semibold text-white mb-2">Lead Generation Service</h3>
+                        <p class="text-gray-300 mb-4">Spokane Towing operates as a lead generation and referral service. <strong class="text-white">We do not directly provide towing or roadside assistance services.</strong> When you contact us or submit a request through our website, your information is forwarded to licensed, independent towing companies in our network who provide the actual towing and roadside assistance services. The towing company that responds to your request is solely responsible for the services they provide.</p>
+
+                        <h3 class="text-lg font-semibold text-white mb-2">Pricing Disclaimer</h3>
+                        <p class="text-gray-300">All prices, quotes, and estimates displayed on this website are <strong class="text-white">for illustrative and example purposes only</strong> and are subject to change without notice. These figures do not constitute a binding offer or guarantee of pricing. Actual service costs will be determined by the towing company that responds to your request and may vary based on location, vehicle type, time of service, and other factors. <strong class="text-white">You must contact us or the service provider directly to obtain an accurate quote for your specific situation.</strong></p>
+                    </div>
+
+                    <h2 class="text-2xl font-semibold text-white mt-8 mb-4">Nature of Our Services</h2>
+                    <p class="text-gray-300 mb-4">Spokane Towing is a lead generation and referral platform that connects customers with independent towing and roadside assistance providers. When you submit a service request:</p>
+                    <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
+                        <li>Your request is forwarded to one or more towing companies in our network</li>
+                        <li>The towing company that accepts your request will contact you directly</li>
+                        <li>All services are performed by independent, licensed towing operators</li>
+                        <li>We do not employ drivers or operate tow trucks</li>
+                        <li>Pricing, service quality, and timing are determined by the service provider</li>
+                    </ul>
+                    <p class="text-gray-300 mb-4">By using our website, you understand and agree that Spokane Towing acts as an intermediary and is not the provider of towing services.</p>
+
+                    <h2 class="text-2xl font-semibold text-white mt-8 mb-4">Services Available Through Our Network</h2>
+                    <p class="text-gray-300 mb-4">Through our network of independent towing providers, the following services may be available in the Spokane, Washington area and surrounding regions:</p>
                     <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
                         <li>Emergency towing (24/7)</li>
                         <li>Flatbed towing</li>
@@ -70,15 +92,18 @@
                     </ul>
 
                     <h2 class="text-2xl font-semibold text-white mt-8 mb-4">Quotes and Pricing</h2>
-                    <p class="text-gray-300 mb-4">Quotes provided through our website or over the phone are estimates based on the information provided. Final pricing may vary based on:</p>
+                    <p class="text-gray-300 mb-4"><strong class="text-white">All prices shown on this website are example prices for illustrative purposes only and do not represent actual service costs.</strong> These example prices are subject to change at any time without notice.</p>
+                    <p class="text-gray-300 mb-4">Actual pricing for towing and roadside assistance services is determined solely by the independent service provider who responds to your request. Final pricing may vary based on:</p>
                     <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
+                        <li>The service provider's current rates</li>
                         <li>Actual distance traveled</li>
-                        <li>Vehicle condition and accessibility</li>
-                        <li>Time of service (regular hours vs. after-hours)</li>
+                        <li>Vehicle condition, size, and accessibility</li>
+                        <li>Time of service (regular hours vs. after-hours/weekends/holidays)</li>
                         <li>Additional services required</li>
-                        <li>Road and weather conditions</li>
+                        <li>Road, traffic, and weather conditions</li>
+                        <li>Equipment required for the job</li>
                     </ul>
-                    <p class="text-gray-300 mb-4">We will communicate any significant changes to the quoted price before proceeding with service when possible.</p>
+                    <p class="text-gray-300 mb-4"><strong class="text-white">To receive an accurate quote, you must contact us directly at <a href="tel:+15097977999" class="text-red-500 hover:text-red-400">(509) 797-7999</a> or submit a quote request and speak with a service provider.</strong> Any quote provided is valid only at the time it is given and may change based on actual conditions at the time of service.</p>
 
                     <h2 class="text-2xl font-semibold text-white mt-8 mb-4">Payment</h2>
                     <p class="text-gray-300 mb-4">Payment is due at the time of service unless prior arrangements have been made. We accept cash, major credit cards, and approved insurance claims. Additional fees may apply for declined payments or returned checks.</p>
@@ -87,12 +112,14 @@
                     <p class="text-gray-300 mb-4">By requesting towing services, you represent that you are the vehicle owner or have authorization from the owner to request towing. You agree to provide valid identification and vehicle documentation upon request.</p>
 
                     <h2 class="text-2xl font-semibold text-white mt-8 mb-4">Liability</h2>
-                    <p class="text-gray-300 mb-4">Spokane Towing carries appropriate insurance coverage for our operations. However:</p>
+                    <p class="text-gray-300 mb-4">As a lead generation and referral service, Spokane Towing does not perform towing or roadside assistance services directly. Therefore:</p>
                     <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
-                        <li>We are not responsible for pre-existing damage to vehicles</li>
-                        <li>We are not liable for personal items left in vehicles</li>
-                        <li>Our liability is limited to the extent permitted by law</li>
-                        <li>We recommend documenting your vehicle's condition before service</li>
+                        <li><strong class="text-white">We are not liable for any actions, omissions, damages, or injuries caused by the independent towing companies in our network</strong></li>
+                        <li>The towing company that responds to your request is solely responsible for their services, pricing, and any damage that may occur</li>
+                        <li>We do not guarantee the availability, quality, or timeliness of services provided by network towing companies</li>
+                        <li>Any disputes regarding service should be directed to the towing company that performed the service</li>
+                        <li>We recommend documenting your vehicle's condition before any service is performed</li>
+                        <li>We recommend verifying pricing directly with the service provider before authorizing work</li>
                     </ul>
 
                     <h2 class="text-2xl font-semibold text-white mt-8 mb-4">Cancellation</h2>
@@ -161,6 +188,7 @@
                     <a href="/spokane-towing-services" class="text-gray-400 hover:text-white transition">Services</a>
                     <a href="/faq" class="text-gray-400 hover:text-white transition">FAQ</a>
                     <a href="/#quote" class="text-gray-400 hover:text-white transition">Get Quote</a>
+                    <a href="/contact" class="text-gray-400 hover:text-white transition">Contact</a>
                     <a href="/privacy-policy" class="text-gray-400 hover:text-white transition">Privacy</a>
                     <a href="/terms-of-service" class="text-gray-400 hover:text-white transition">Terms</a>
                 </div>

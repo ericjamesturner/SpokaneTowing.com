@@ -224,6 +224,7 @@
                     <a href="/spokane-towing-services" class="text-gray-400 hover:text-white transition">Services</a>
                     <a href="/faq" class="text-gray-400 hover:text-white transition">FAQ</a>
                     <a href="/#quote" class="text-gray-400 hover:text-white transition">Get Quote</a>
+                    <a href="/contact" class="text-gray-400 hover:text-white transition">Contact</a>
                     <a href="/privacy-policy" class="text-gray-400 hover:text-white transition">Privacy</a>
                     <a href="/terms-of-service" class="text-gray-400 hover:text-white transition">Terms</a>
                 </div>

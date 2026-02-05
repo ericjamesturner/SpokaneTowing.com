@@ -58,6 +58,12 @@
                     <h2 class="text-2xl font-semibold text-white mt-8 mb-4">Introduction</h2>
                     <p class="text-gray-300 mb-4">Spokane Towing ("we," "our," or "us") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your information when you use our website and services.</p>
 
+                    <!-- Important Notice -->
+                    <div class="bg-red-900/20 border border-red-800 rounded-xl p-6 my-6">
+                        <h3 class="text-lg font-semibold text-red-400 mb-2">About Our Service</h3>
+                        <p class="text-gray-300">Spokane Towing operates as a <strong class="text-white">lead generation and referral service</strong>. We do not directly provide towing or roadside assistance services. When you submit your information through our website or contact us, your information may be shared with independent, licensed towing companies in our network who provide the actual services. Please review the "Information Sharing" section below for details.</p>
+                    </div>
+
                     <h2 class="text-2xl font-semibold text-white mt-8 mb-4">Information We Collect</h2>
                     <p class="text-gray-300 mb-4">We may collect the following types of information:</p>
                     <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
@@ -70,13 +76,17 @@
                     <h2 class="text-2xl font-semibold text-white mt-8 mb-4">How We Use Your Information</h2>
                     <p class="text-gray-300 mb-4">We use the information we collect to:</p>
                     <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
-                        <li>Provide towing and roadside assistance services</li>
-                        <li>Generate accurate quotes for our services</li>
+                        <li>Forward your service request to towing companies in our network</li>
+                        <li>Display example price estimates on our website (note: these are illustrative only and actual prices are determined by the service provider)</li>
                         <li>Communicate with you about your service requests via phone, email, or SMS</li>
-                        <li>Send you text message updates about your tow (driver dispatch, ETA, arrival)</li>
+                        <li>Send you text message updates about your service request</li>
                         <li>Improve our website and services</li>
                         <li>Comply with legal obligations</li>
                     </ul>
+
+                    <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-4 my-4">
+                        <p class="text-gray-300 text-sm"><strong class="text-white">Note on Pricing:</strong> Any prices or quotes displayed on our website are example estimates for illustrative purposes only and are subject to change. Actual service pricing is determined by the independent towing company that responds to your request. Contact us at <a href="tel:+15097977999" class="text-red-500 hover:text-red-400">(509) 797-7999</a> for current pricing information.</p>
+                    </div>
 
                     <h2 class="text-2xl font-semibold text-white mt-8 mb-4">SMS/Text Message Privacy</h2>
                     <p class="text-gray-300 mb-4">When you provide your phone number and consent to receive text messages, we collect and use your mobile phone number to send you service-related SMS messages. Here's what you need to know:</p>
@@ -94,12 +104,14 @@
                     <p class="text-gray-300 mb-4"><strong class="text-white">Opt-Out:</strong> You may opt out of SMS messages at any time by replying STOP to any message. See our <a href="/terms-of-service" class="text-red-500 hover:text-red-400">Terms of Service</a> for complete SMS terms.</p>
 
                     <h2 class="text-2xl font-semibold text-white mt-8 mb-4">Information Sharing</h2>
-                    <p class="text-gray-300 mb-4">We do not sell your personal information. We may share your information with:</p>
+                    <p class="text-gray-300 mb-4">We do not sell your personal information to data brokers or marketing companies. However, as a lead generation service, we share your information with third parties as follows:</p>
                     <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
-                        <li>Our drivers and staff to provide requested services</li>
-                        <li>Payment processors to complete transactions</li>
-                        <li>Law enforcement when required by law</li>
+                        <li><strong class="text-white">Independent Towing Companies:</strong> When you submit a service request, your contact information, location, and vehicle details are shared with one or more licensed, independent towing companies in our network so they can respond to your request and provide services</li>
+                        <li><strong class="text-white">Service Providers:</strong> We may share information with third-party service providers who help us operate our website and process communications (e.g., SMS providers, hosting services)</li>
+                        <li><strong class="text-white">Payment Processors:</strong> If applicable, payment information may be shared with payment processors to complete transactions</li>
+                        <li><strong class="text-white">Legal Requirements:</strong> We may disclose information when required by law or to protect our rights</li>
                     </ul>
+                    <p class="text-gray-300 mb-4"><strong class="text-white">By submitting a service request, you consent to having your information shared with towing companies in our network for the purpose of fulfilling your request.</strong></p>
 
                     <h2 class="text-2xl font-semibold text-white mt-8 mb-4">Cookies and Tracking</h2>
                     <p class="text-gray-300 mb-4">Our website uses cookies and similar technologies to improve your experience and analyze website traffic. You can control cookie preferences through your browser settings.</p>
@@ -144,6 +156,7 @@
                     <a href="/spokane-towing-services" class="text-gray-400 hover:text-white transition">Services</a>
                     <a href="/faq" class="text-gray-400 hover:text-white transition">FAQ</a>
                     <a href="/#quote" class="text-gray-400 hover:text-white transition">Get Quote</a>
+                    <a href="/contact" class="text-gray-400 hover:text-white transition">Contact</a>
                     <a href="/privacy-policy" class="text-gray-400 hover:text-white transition">Privacy</a>
                     <a href="/terms-of-service" class="text-gray-400 hover:text-white transition">Terms</a>
                 </div>
