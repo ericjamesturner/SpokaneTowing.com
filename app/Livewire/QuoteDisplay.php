@@ -225,7 +225,7 @@ class QuoteDisplay extends Component
             $customerName = $quoteRecord->customer_name ?? 'Unknown';
             $resend->emails->send([
                 'from' => 'Spokane Towing <spokanetowing@e.ravenfab.com>',
-                'to' => [$notificationEmail],
+                'to' => [$notificationEmail, 'brtowingandrecoveryllc@gmail.com'],
                 'subject' => "New Quote from {$customerName} - \${$quoteRecord->total}",
                 'html' => $this->buildQuoteEmailHtml($quoteRecord),
             ]);
