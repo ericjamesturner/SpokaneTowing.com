@@ -8,7 +8,7 @@
             "name" => "How much does towing cost in Spokane?",
             "acceptedAnswer" => [
                 "@@type" => "Answer",
-                "text" => "Towing costs in Spokane start at $95 minimum, with a $75 hook fee plus $3.50 per mile. Get an instant quote on our website for exact pricing based on your pickup and drop-off locations."
+                "text" => "Towing costs in Spokane start at a $140 hook fee plus $6 per mile. Get an instant quote on our website for exact pricing based on your pickup and drop-off locations."
             ]
         ],
         [

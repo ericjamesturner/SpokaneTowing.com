@@ -118,7 +118,7 @@
                     <div class="space-y-6">
                         <div class="border-l-2 border-red-600 pl-4">
                             <h3 class="font-semibold text-white mb-2">How much does a tow cost?</h3>
-                            <p class="text-gray-400">Our pricing includes a hook fee plus mileage. Local tows typically range from $75-$150 depending on distance. We provide upfront quotes before service.</p>
+                            <p class="text-gray-400">Our pricing includes a hook fee plus mileage. Local tows typically range from $170-$230 depending on distance. We provide upfront quotes before service.</p>
                         </div>
                         <div class="border-l-2 border-red-600 pl-4">
                             <h3 class="font-semibold text-white mb-2">What payment methods do you accept?</h3>
