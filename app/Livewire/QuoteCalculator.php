@@ -61,14 +61,14 @@ class QuoteCalculator extends Component
             $result = $this->calculateDistance($this->fromAddress, $this->toAddress);
             
             if ($result) {
-                $this->distance = $result['distance'];
+                $this->distance = (int) ceil($result['distance']);
                 $this->duration = $result['duration'];
-                
+
                 // Calculate pricing
                 $hookFee = config('towing.pricing.hook_fee');
                 $perMile = config('towing.pricing.per_mile');
                 $minimumCharge = config('towing.pricing.minimum_charge');
-                
+
                 $mileageCharge = $this->distance * $perMile;
                 $totalCharge = $hookFee + $mileageCharge;
                 
