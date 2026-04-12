@@ -1,8 +1,8 @@
 @extends('layouts.service-page')
 
-@section('title', 'Heavy Duty Towing Spokane | Commercial Vehicle Recovery')
+@section('title', 'Heavy Duty Towing Spokane | Commercial & Semi Truck Towing 24/7')
 
-@section('description', 'Professional heavy duty towing and commercial vehicle recovery in Spokane, WA. Trucks, buses, RVs, and commercial equipment. Available 24/7. Call (509) 797-7999')
+@section('description', 'Heavy duty towing for semis, trucks, buses, RVs & commercial vehicles in Spokane. Professional recovery with specialized equipment, available 24/7. Call (509) 797-7999')
 
 @section('hero-title', 'Heavy Duty Towing & Commercial Recovery')
 
@@ -63,6 +63,26 @@
     <p class="mt-8">Don't let a breakdown shut down your business operations. Spokane Towing's heavy duty towing services get your commercial vehicles back on the road quickly and safely. We have the equipment, expertise, and availability to handle any heavy duty towing situation.</p>
 </div>
 
+<h3 class="text-2xl font-semibold mt-8 mb-6">Heavy Duty Towing FAQ</h3>
+<div class="space-y-6 mb-12">
+    <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
+        <h4 class="text-lg font-semibold mb-2 text-white">Can you tow a semi truck or tractor-trailer?</h4>
+        <p class="text-gray-300">Yes, we have heavy duty tow trucks equipped to handle semis, tractor-trailers, box trucks, buses, RVs, and other large commercial vehicles. Our operators are experienced with all types of heavy equipment.</p>
+    </div>
+    <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
+        <h4 class="text-lg font-semibold mb-2 text-white">How much does heavy duty towing cost?</h4>
+        <p class="text-gray-300">Heavy duty towing pricing depends on the vehicle size, weight, and distance. Call (509) 797-7999 for a quote. We offer competitive commercial rates and fleet discounts with no hidden fees.</p>
+    </div>
+    <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
+        <h4 class="text-lg font-semibold mb-2 text-white">Do you work with commercial insurance companies?</h4>
+        <p class="text-gray-300">Yes, we work with all major commercial insurance providers. We can coordinate directly with your insurance company and provide all required documentation for claims.</p>
+    </div>
+    <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
+        <h4 class="text-lg font-semibold mb-2 text-white">Do you offer fleet towing contracts?</h4>
+        <p class="text-gray-300">Yes, we offer fleet service agreements with priority dispatch, volume pricing, and direct billing for businesses in the Spokane area. Contact us to set up a commercial account.</p>
+    </div>
+</div>
+
 <!-- CTA Box -->
 <div class="bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-8 text-center relative overflow-hidden">
     <div class="absolute inset-0 bg-black/10"></div>
@@ -107,4 +127,45 @@
         </div>
     </div>
 </section>
+
+<script type="application/ld+json">
+{!! json_encode([
+    "@@context" => "https://schema.org",
+    "@@type" => "FAQPage",
+    "mainEntity" => [
+        [
+            "@@type" => "Question",
+            "name" => "Can you tow a semi truck or tractor-trailer?",
+            "acceptedAnswer" => [
+                "@@type" => "Answer",
+                "text" => "Yes, we have heavy duty tow trucks equipped to handle semis, tractor-trailers, box trucks, buses, RVs, and other large commercial vehicles. Our operators are experienced with all types of heavy equipment."
+            ]
+        ],
+        [
+            "@@type" => "Question",
+            "name" => "How much does heavy duty towing cost?",
+            "acceptedAnswer" => [
+                "@@type" => "Answer",
+                "text" => "Heavy duty towing pricing depends on the vehicle size, weight, and distance. Call (509) 797-7999 for a quote. We offer competitive commercial rates and fleet discounts with no hidden fees."
+            ]
+        ],
+        [
+            "@@type" => "Question",
+            "name" => "Do you work with commercial insurance companies?",
+            "acceptedAnswer" => [
+                "@@type" => "Answer",
+                "text" => "Yes, we work with all major commercial insurance providers. We can coordinate directly with your insurance company and provide all required documentation for claims."
+            ]
+        ],
+        [
+            "@@type" => "Question",
+            "name" => "Do you offer fleet towing contracts?",
+            "acceptedAnswer" => [
+                "@@type" => "Answer",
+                "text" => "Yes, we offer fleet service agreements with priority dispatch, volume pricing, and direct billing for businesses in the Spokane area. Contact us to set up a commercial account."
+            ]
+        ]
+    ]
+], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) !!}
+</script>
 @endsection

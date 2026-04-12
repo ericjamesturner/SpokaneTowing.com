@@ -1,8 +1,8 @@
 @extends('layouts.service-page')
 
-@section('title', 'Winch Out Recovery Spokane | Off-Road Vehicle Recovery')
+@section('title', 'Winch Out & Vehicle Recovery Spokane | Ditch & Off-Road Rescue')
 
-@section('description', 'Professional winch out and off-road recovery services in Spokane, WA. Stuck in snow, mud, or ditch? Our expert recovery team gets you out safely. Available 24/7. Call (509) 797-7999')
+@section('description', 'Stuck in a ditch, snow, or mud in Spokane? Professional winch out & vehicle recovery service. Fast response with specialized equipment, available 24/7. Call (509) 797-7999')
 
 @section('hero-title', 'Winch Out & Off-Road Recovery Services')
 

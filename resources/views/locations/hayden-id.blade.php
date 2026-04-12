@@ -1,8 +1,8 @@
 @extends('layouts.location-page')
 
-@section('title', 'Towing Services Hayden, ID - North Idaho Coverage')
+@section('title', 'Hayden Towing | 24/7 North Idaho Tow Truck Service')
 
-@section('description', 'Professional towing and roadside assistance in Hayden, Idaho. Serving Hayden Lake area with reliable service. Available 24/7. Call (509) 797-7999')
+@section('description', 'Hayden, ID towing serving Hayden Lake & North Idaho. Emergency towing, roadside assistance & vehicle recovery. Available 24/7. Call (509) 797-7999')
 
 @section('city', 'Hayden, ID')
 

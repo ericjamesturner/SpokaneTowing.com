@@ -1,7 +1,7 @@
 @extends('layouts.service-page')
 
-@section('title', 'Roadside Assistance Spokane | Fast Help 24/7')
-@section('description', 'Need roadside assistance in Spokane? Jump starts, fuel delivery, flat tire help, and lockout service. Fast response times. Call (509) 797-7999')
+@section('title', 'Roadside Assistance Spokane | Jump Starts, Lockouts & More 24/7')
+@section('description', 'Need roadside assistance in Spokane? Jump starts, fuel delivery, flat tire changes & lockout service. 20-30 min response, available 24/7. Call (509) 797-7999')
 
 @section('hero-title', 'Roadside Assistance in Spokane')
 @section('hero-subtitle', 'Jump starts, fuel delivery, lockouts, and flat tire service. Fast, reliable help when you need it.')
@@ -46,6 +46,26 @@
         </ul>
     </div>
 
+    <h3 class="text-2xl font-semibold mt-12 mb-6">Roadside Assistance FAQ</h3>
+    <div class="space-y-6 mb-12">
+        <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
+            <h4 class="text-lg font-semibold mb-2 text-white">How much does roadside assistance cost in Spokane?</h4>
+            <p class="text-gray-300">Roadside assistance pricing varies by service. Jump starts, lockouts, and flat tire changes are affordable with transparent pricing. Call (509) 797-7999 for a quote or use our online quote tool for instant pricing.</p>
+        </div>
+        <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
+            <h4 class="text-lg font-semibold mb-2 text-white">How fast can you get to me for roadside assistance?</h4>
+            <p class="text-gray-300">Our average response time is 20-30 minutes in the Spokane metro area. We have drivers positioned throughout Spokane, Spokane Valley, and surrounding areas for the fastest possible response.</p>
+        </div>
+        <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
+            <h4 class="text-lg font-semibold mb-2 text-white">Do I need a membership for roadside assistance?</h4>
+            <p class="text-gray-300">No membership required. Unlike AAA or other clubs, you can call us anytime for immediate roadside assistance with no subscription fees. Just call (509) 797-7999 and we'll dispatch a technician.</p>
+        </div>
+        <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
+            <h4 class="text-lg font-semibold mb-2 text-white">Will roadside assistance replace my battery?</h4>
+            <p class="text-gray-300">We provide jump start service to get your vehicle running. If your battery needs replacement, we can recommend trusted local auto shops. Our technicians will test your charging system to help diagnose the issue.</p>
+        </div>
+    </div>
+
     <!-- CTA Box -->
     <div class="bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-8 text-center relative overflow-hidden">
         <div class="absolute inset-0 bg-black/10"></div>
@@ -62,4 +82,49 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('extra-sections')
+@include('partials.coverage-area', ['title' => 'Roadside Assistance Coverage Area', 'description' => 'We provide roadside assistance throughout the greater Spokane area, including:'])
+
+<script type="application/ld+json">
+{!! json_encode([
+    "@@context" => "https://schema.org",
+    "@@type" => "FAQPage",
+    "mainEntity" => [
+        [
+            "@@type" => "Question",
+            "name" => "How much does roadside assistance cost in Spokane?",
+            "acceptedAnswer" => [
+                "@@type" => "Answer",
+                "text" => "Roadside assistance pricing varies by service. Jump starts, lockouts, and flat tire changes are affordable with transparent pricing. Call (509) 797-7999 for a quote or use our online quote tool for instant pricing."
+            ]
+        ],
+        [
+            "@@type" => "Question",
+            "name" => "How fast can you get to me for roadside assistance?",
+            "acceptedAnswer" => [
+                "@@type" => "Answer",
+                "text" => "Our average response time is 20-30 minutes in the Spokane metro area. We have drivers positioned throughout Spokane, Spokane Valley, and surrounding areas for the fastest possible response."
+            ]
+        ],
+        [
+            "@@type" => "Question",
+            "name" => "Do I need a membership for roadside assistance?",
+            "acceptedAnswer" => [
+                "@@type" => "Answer",
+                "text" => "No membership required. Unlike AAA or other clubs, you can call us anytime for immediate roadside assistance with no subscription fees. Just call (509) 797-7999 and we'll dispatch a technician."
+            ]
+        ],
+        [
+            "@@type" => "Question",
+            "name" => "Will roadside assistance replace my battery?",
+            "acceptedAnswer" => [
+                "@@type" => "Answer",
+                "text" => "We provide jump start service to get your vehicle running. If your battery needs replacement, we can recommend trusted local auto shops. Our technicians will test your charging system to help diagnose the issue."
+            ]
+        ]
+    ]
+], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) !!}
+</script>
 @endsection

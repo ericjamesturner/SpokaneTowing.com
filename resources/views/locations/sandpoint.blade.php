@@ -1,8 +1,8 @@
 @extends('layouts.location-page')
 
-@section('title', 'Towing Services Sandpoint, ID - Lake Pend Oreille Area')
+@section('title', 'Sandpoint Towing | North Idaho Tow Truck Service')
 
-@section('description', 'Reliable towing and roadside assistance in Sandpoint, Idaho. Serving Lake Pend Oreille region with professional service. Extended range coverage. Call (509) 797-7999')
+@section('description', 'Sandpoint, ID towing near Lake Pend Oreille & Schweitzer Mountain. Emergency towing, roadside assistance & vehicle recovery. Call (509) 797-7999')
 
 @section('city', 'Sandpoint, ID')
 

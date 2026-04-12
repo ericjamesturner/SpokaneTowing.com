@@ -59,7 +59,7 @@
 <body class="antialiased bg-black text-white min-h-screen">
     <!-- Background Image -->
     <div class="fixed inset-0 z-0">
-        <img src="/images/quote-bg.webp" alt="" class="w-full h-full object-cover">
+        <img src="/images/quote-bg.webp" alt="Get a towing quote in Spokane" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-gradient-to-b from-slate-900/95 via-slate-900/90 to-black"></div>
     </div>
 

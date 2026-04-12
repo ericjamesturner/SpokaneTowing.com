@@ -1,8 +1,8 @@
 @extends('layouts.service-page')
 
-@section('title', '24 Hour Emergency Towing Spokane | Available Now')
+@section('title', '24 Hour Towing Spokane | Fast Emergency Tow Truck Service')
 
-@section('description', 'Need 24 hour towing in Spokane? We\'re available now with fast response times. Emergency towing services throughout Spokane, WA. Call (509) 797-7999')
+@section('description', 'Need a tow truck now? 24/7 emergency towing in Spokane with 20-30 min response times. Accident recovery, breakdowns & more. Call (509) 797-7999')
 
 @section('hero-title', '24 Hour Emergency Towing in Spokane')
 
@@ -34,6 +34,26 @@
     </ul>
 </div>
 
+<h3 class="text-2xl font-semibold mt-8 mb-6">24 Hour Towing FAQ</h3>
+<div class="space-y-6 mb-12">
+    <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
+        <h4 class="text-lg font-semibold mb-2 text-white">How much does emergency towing cost in Spokane?</h4>
+        <p class="text-gray-300">Our towing starts at a $140 hook fee plus $6 per mile. Use our online quote tool for exact pricing based on your pickup and drop-off locations. No surge pricing during emergencies.</p>
+    </div>
+    <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
+        <h4 class="text-lg font-semibold mb-2 text-white">How quickly can a tow truck get to me?</h4>
+        <p class="text-gray-300">Our average response time is 20-30 minutes in the Spokane metro area. We dispatch the nearest available truck to your location for the fastest possible response, even late at night.</p>
+    </div>
+    <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
+        <h4 class="text-lg font-semibold mb-2 text-white">Do you charge more for nighttime or holiday towing?</h4>
+        <p class="text-gray-300">No. Our rates are the same 24/7, 365 days a year. We never charge extra for nights, weekends, or holidays. The price you're quoted is the price you pay.</p>
+    </div>
+    <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
+        <h4 class="text-lg font-semibold mb-2 text-white">What should I do while waiting for the tow truck?</h4>
+        <p class="text-gray-300">Stay safe by turning on your hazard lights, moving to the shoulder if possible, and staying inside your vehicle if you're on a busy road. Our dispatcher will keep you updated on the driver's ETA.</p>
+    </div>
+</div>
+
 <!-- CTA Box -->
 <div class="bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-8 text-center relative overflow-hidden">
     <div class="absolute inset-0 bg-black/10"></div>
@@ -49,4 +69,45 @@
 
 @section('extra-sections')
 @include('partials.coverage-area', ['title' => '24 Hour Towing Coverage Area', 'description' => 'We provide emergency towing services throughout the greater Spokane area, including:'])
+
+<script type="application/ld+json">
+{!! json_encode([
+    "@@context" => "https://schema.org",
+    "@@type" => "FAQPage",
+    "mainEntity" => [
+        [
+            "@@type" => "Question",
+            "name" => "How much does emergency towing cost in Spokane?",
+            "acceptedAnswer" => [
+                "@@type" => "Answer",
+                "text" => "Our towing starts at a $140 hook fee plus $6 per mile. Use our online quote tool for exact pricing based on your pickup and drop-off locations. No surge pricing during emergencies."
+            ]
+        ],
+        [
+            "@@type" => "Question",
+            "name" => "How quickly can a tow truck get to me?",
+            "acceptedAnswer" => [
+                "@@type" => "Answer",
+                "text" => "Our average response time is 20-30 minutes in the Spokane metro area. We dispatch the nearest available truck to your location for the fastest possible response, even late at night."
+            ]
+        ],
+        [
+            "@@type" => "Question",
+            "name" => "Do you charge more for nighttime or holiday towing?",
+            "acceptedAnswer" => [
+                "@@type" => "Answer",
+                "text" => "No. Our rates are the same 24/7, 365 days a year. We never charge extra for nights, weekends, or holidays. The price you're quoted is the price you pay."
+            ]
+        ],
+        [
+            "@@type" => "Question",
+            "name" => "What should I do while waiting for the tow truck?",
+            "acceptedAnswer" => [
+                "@@type" => "Answer",
+                "text" => "Stay safe by turning on your hazard lights, moving to the shoulder if possible, and staying inside your vehicle if you're on a busy road. Our dispatcher will keep you updated on the driver's ETA."
+            ]
+        ]
+    ]
+], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) !!}
+</script>
 @endsection

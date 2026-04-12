@@ -1,8 +1,8 @@
 @extends('layouts.location-page')
 
-@section('title', 'Towing Services Colville, WA - Northeast Washington')
+@section('title', 'Colville Towing | Stevens County Tow Truck Service')
 
-@section('description', 'Professional towing and roadside assistance in Colville, Washington. Serving Stevens County with reliable service. Extended coverage area. Call (509) 797-7999')
+@section('description', 'Colville, WA towing serving Stevens County & northeast Washington. Emergency towing, roadside assistance & long distance transport. Call (509) 797-7999')
 
 @section('city', 'Colville, WA')
 

@@ -3,22 +3,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Spokane Towing Services - 24/7 Professional Towing</title>
-    <meta name="description" content="Complete Spokane towing services including emergency towing, roadside assistance, accident recovery, and heavy-duty towing. Available 24/7 throughout Spokane County. Call (509) 797-7999.">
+    <title>Spokane Towing Services | Emergency Towing, Roadside Assistance & More</title>
+    <meta name="description" content="Full-service towing company in Spokane, WA. Emergency towing, roadside assistance, flatbed transport, heavy duty & long distance towing. 20-30 min response. Call (509) 797-7999">
 
     <link rel="canonical" href="{{ url('/spokane-towing-services') }}">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url('/spokane-towing-services') }}">
-    <meta property="og:title" content="Spokane Towing Services - 24/7 Professional Towing">
-    <meta property="og:description" content="Complete Spokane towing services including emergency towing, roadside assistance, accident recovery, and heavy-duty towing. Available 24/7.">
+    <meta property="og:title" content="Spokane Towing Services | Emergency Towing, Roadside Assistance & More">
+    <meta property="og:description" content="Full-service towing company in Spokane, WA. Emergency towing, roadside assistance, flatbed transport, heavy duty & long distance towing. 20-30 min response. Call (509) 797-7999">
     <meta property="og:image" content="{{ url('/images/og-image.jpg') }}">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Spokane Towing Services - 24/7 Professional Towing">
-    <meta name="twitter:description" content="Complete Spokane towing services including emergency towing, roadside assistance, and heavy-duty towing. Available 24/7.">
+    <meta name="twitter:title" content="Spokane Towing Services | Emergency Towing, Roadside Assistance & More">
+    <meta name="twitter:description" content="Full-service towing company in Spokane, WA. Emergency towing, roadside assistance, flatbed transport, heavy duty & long distance towing. 20-30 min response. Call (509) 797-7999">
     <meta name="twitter:image" content="{{ url('/images/og-image.jpg') }}">
 
     <link rel="icon" href="/favicon.ico" sizes="any">
@@ -95,6 +95,47 @@
             ]
         }
     }
+    </script>
+
+    <script type="application/ld+json">
+    {!! json_encode([
+        "@@context" => "https://schema.org",
+        "@@type" => "FAQPage",
+        "mainEntity" => [
+            [
+                "@@type" => "Question",
+                "name" => "How much do Spokane towing services cost?",
+                "acceptedAnswer" => [
+                    "@@type" => "Answer",
+                    "text" => "Our towing rates start at a $140 hook fee plus $6 per mile. We offer competitive pricing with transparent rates and no hidden fees. Call for an instant quote or use our online calculator for exact pricing."
+                ]
+            ],
+            [
+                "@@type" => "Question",
+                "name" => "Do you provide 24/7 towing services in Spokane?",
+                "acceptedAnswer" => [
+                    "@@type" => "Answer",
+                    "text" => "Yes, our Spokane towing services are available 24 hours a day, 7 days a week, 365 days a year including holidays. We're always ready to help when you need us."
+                ]
+            ],
+            [
+                "@@type" => "Question",
+                "name" => "What areas do your Spokane towing services cover?",
+                "acceptedAnswer" => [
+                    "@@type" => "Answer",
+                    "text" => "We service all of Spokane County including Spokane Valley, Liberty Lake, Cheney, Deer Park, Airway Heights, and surrounding areas. We also serve Coeur d'Alene, Post Falls, and Hayden in North Idaho."
+                ]
+            ],
+            [
+                "@@type" => "Question",
+                "name" => "Can you tow my vehicle to any location?",
+                "acceptedAnswer" => [
+                    "@@type" => "Answer",
+                    "text" => "Yes, we can tow your vehicle to any repair shop, dealership, or location of your choice within our service area. Long-distance towing is also available for interstate transport."
+                ]
+            ]
+        ]
+    ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) !!}
     </script>
 
     @include('partials.clarity')
@@ -367,7 +408,7 @@
                     <div class="space-y-6">
                         <div class="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50">
                             <h4 class="font-semibold text-white mb-2">How much do Spokane towing services cost?</h4>
-                            <p class="text-gray-400">Our towing rates vary based on distance and vehicle type. We offer competitive pricing with a base hook fee plus mileage. Call for an instant quote or use our online calculator.</p>
+                            <p class="text-gray-400">Our towing rates start at a $140 hook fee plus $6 per mile. We offer competitive pricing with transparent rates and no hidden fees. Call for an instant quote or use our online calculator for exact pricing.</p>
                         </div>
                         <div class="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50">
                             <h4 class="font-semibold text-white mb-2">Do you provide 24/7 towing services in Spokane?</h4>
@@ -375,7 +416,7 @@
                         </div>
                         <div class="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50">
                             <h4 class="font-semibold text-white mb-2">What areas do your Spokane towing services cover?</h4>
-                            <p class="text-gray-400">We service all of Spokane County including Spokane Valley, Liberty Lake, Cheney, and surrounding areas within a 50-mile radius of downtown Spokane.</p>
+                            <p class="text-gray-400">We service all of Spokane County including Spokane Valley, Liberty Lake, Cheney, Deer Park, Airway Heights, and surrounding areas. We also serve Coeur d'Alene, Post Falls, and Hayden in North Idaho.</p>
                         </div>
                         <div class="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50">
                             <h4 class="font-semibold text-white mb-2">Can you tow my vehicle to any location?</h4>

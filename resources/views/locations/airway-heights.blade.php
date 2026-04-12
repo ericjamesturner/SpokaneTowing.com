@@ -1,8 +1,8 @@
 @extends('layouts.location-page')
 
-@section('title', 'Towing Services Airway Heights, WA - West Spokane County')
+@section('title', 'Airway Heights Towing | 24/7 Emergency Tow Truck Service')
 
-@section('description', 'Professional towing and roadside assistance in Airway Heights, Washington. Serving Fairchild Air Force Base area with fast response. Call (509) 797-7999')
+@section('description', 'Airway Heights, WA towing near Fairchild AFB & Northern Quest. Emergency towing, roadside assistance & recovery. Fast response, available 24/7. Call (509) 797-7999')
 
 @section('city', 'Airway Heights, WA')
 

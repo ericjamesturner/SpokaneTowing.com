@@ -1,8 +1,8 @@
 @extends('layouts.service-page')
 
-@section('title', 'Long Distance Towing Spokane | Interstate Vehicle Transport')
+@section('title', 'Long Distance Towing Spokane | Interstate Auto Transport')
 
-@section('description', 'Professional long distance towing from Spokane, WA. Interstate transport, cross-country towing, and vehicle relocation services. Secure transport anywhere. Call (509) 797-7999')
+@section('description', 'Long distance towing from Spokane to anywhere. Interstate auto transport, cross-country vehicle relocation & secure flatbed transport. Get a free quote. Call (509) 797-7999')
 
 @section('hero-title', 'Long Distance Towing & Vehicle Transport')
 

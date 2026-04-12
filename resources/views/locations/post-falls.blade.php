@@ -1,8 +1,8 @@
 @extends('layouts.location-page')
 
-@section('title', 'Towing Services Post Falls, ID - Professional & Reliable')
+@section('title', 'Post Falls Towing | 24/7 Tow Truck & Roadside Assistance')
 
-@section('description', 'Expert towing and roadside assistance in Post Falls, Idaho. Serving Spokane River area with fast response. 24/7 emergency towing services. Call (509) 797-7999')
+@section('description', 'Post Falls, ID towing along I-90 & the Spokane River corridor. Emergency towing, roadside assistance & vehicle recovery. Available 24/7. Call (509) 797-7999')
 
 @section('city', 'Post Falls, ID')
 

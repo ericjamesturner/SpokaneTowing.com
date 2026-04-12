@@ -3,15 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Spokane Towing - 24/7 Professional Towing Services</title>
-    <meta name="description" content="Fast, reliable towing services in Spokane, WA. Available 24/7 for emergency roadside assistance, vehicle recovery, and more. Call now for a quote!">
+    <title>Spokane Towing | 24/7 Emergency Towing & Roadside Assistance</title>
+    <meta name="description" content="Spokane's trusted 24/7 towing company. Emergency towing, roadside assistance, flatbed transport & heavy duty recovery. 20-30 min response. Call (509) 797-7999">
     <link rel="canonical" href="{{ url('/') }}">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url('/') }}">
-    <meta property="og:title" content="Spokane Towing - 24/7 Professional Towing Services">
-    <meta property="og:description" content="Fast, reliable towing services in Spokane, WA. Available 24/7 for emergency roadside assistance, vehicle recovery, and more. Call now for a quote!">
+    <meta property="og:title" content="Spokane Towing | 24/7 Emergency Towing & Roadside Assistance">
+    <meta property="og:description" content="Spokane's trusted 24/7 towing company. Emergency towing, roadside assistance, flatbed transport & heavy duty recovery. 20-30 min response. Call (509) 797-7999">
     <meta property="og:image" content="{{ url('/images/og-image.jpg') }}">
     <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="Spokane Towing">
@@ -19,8 +19,8 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="{{ url('/') }}">
-    <meta name="twitter:title" content="Spokane Towing - 24/7 Professional Towing Services">
-    <meta name="twitter:description" content="Fast, reliable towing services in Spokane, WA. Available 24/7 for emergency roadside assistance, vehicle recovery, and more.">
+    <meta name="twitter:title" content="Spokane Towing | 24/7 Emergency Towing & Roadside Assistance">
+    <meta name="twitter:description" content="Spokane's trusted 24/7 towing company. Emergency towing, roadside assistance, flatbed transport & heavy duty recovery. 20-30 min response. Call (509) 797-7999">
     <meta name="twitter:image" content="{{ url('/images/og-image.jpg') }}">
 
     <link rel="icon" href="/favicon.ico" sizes="any">
@@ -395,7 +395,7 @@
             <!-- Main Services Grid -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
                 <a href="/24-hour-towing" class="service-card relative overflow-hidden rounded-2xl border border-slate-700/50 hover:border-red-500/50 group">
-                    <img src="/images/service-emergency.webp" alt="" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <img src="/images/service-emergency.webp" alt="24 hour emergency towing service in Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
                     <div class="relative p-8 pt-28">
                         <h3 class="text-xl font-bold text-white mb-3 drop-shadow-lg">24/7 Emergency Towing</h3>
@@ -410,7 +410,7 @@
                 </a>
 
                 <a href="/roadside-assistance" class="service-card relative overflow-hidden rounded-2xl border border-slate-700/50 hover:border-red-500/50 group">
-                    <img src="/images/service-roadside.webp" alt="" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <img src="/images/service-roadside.webp" alt="Roadside assistance service in Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
                     <div class="relative p-8 pt-28">
                         <h3 class="text-xl font-bold text-white mb-3 drop-shadow-lg">Roadside Assistance</h3>
@@ -425,7 +425,7 @@
                 </a>
 
                 <a href="/flatbed-towing" class="service-card relative overflow-hidden rounded-2xl border border-slate-700/50 hover:border-red-500/50 group">
-                    <img src="/images/service-flatbed.webp" alt="" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <img src="/images/service-flatbed.webp" alt="Flatbed towing service in Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
                     <div class="relative p-8 pt-28">
                         <h3 class="text-xl font-bold text-white mb-3 drop-shadow-lg">Flatbed Towing</h3>
@@ -440,7 +440,7 @@
                 </a>
 
                 <a href="/lockout-flat-tire" class="service-card relative overflow-hidden rounded-2xl border border-slate-700/50 hover:border-red-500/50 group">
-                    <img src="/images/service-lockout.webp" alt="" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <img src="/images/service-lockout.webp" alt="Car lockout and flat tire service in Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
                     <div class="relative p-8 pt-28">
                         <h3 class="text-xl font-bold text-white mb-3 drop-shadow-lg">Lockout Service</h3>
@@ -455,7 +455,7 @@
                 </a>
 
                 <a href="/heavy-duty-towing" class="service-card relative overflow-hidden rounded-2xl border border-slate-700/50 hover:border-red-500/50 group">
-                    <img src="/images/service-heavy.webp" alt="" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <img src="/images/service-heavy.webp" alt="Heavy duty truck towing in Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
                     <div class="relative p-8 pt-28">
                         <h3 class="text-xl font-bold text-white mb-3 drop-shadow-lg">Heavy-Duty Towing</h3>
@@ -470,7 +470,7 @@
                 </a>
 
                 <a href="/winch-out-recovery" class="service-card relative overflow-hidden rounded-2xl border border-slate-700/50 hover:border-red-500/50 group">
-                    <img src="/images/service-winch.webp" alt="" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <img src="/images/service-winch.webp" alt="Vehicle winch out and recovery service in Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
                     <div class="relative p-8 pt-28">
                         <h3 class="text-xl font-bold text-white mb-3 drop-shadow-lg">Winch-Out Recovery</h3>

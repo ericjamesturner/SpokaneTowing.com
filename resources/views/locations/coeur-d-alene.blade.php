@@ -1,8 +1,8 @@
 @extends('layouts.location-page')
 
-@section('title', 'Towing Services Coeur d\'Alene, ID - Fast Response Time')
+@section('title', 'Coeur d\'Alene Towing | 24/7 Tow Truck & Roadside Assistance')
 
-@section('description', 'Professional towing and roadside assistance in Coeur d\'Alene, ID. Serving Lake Coeur d\'Alene area with fast response times. Available 24/7. Call (509) 797-7999')
+@section('description', 'Towing in Coeur d\'Alene, ID and the I-90 corridor. Emergency towing, roadside assistance & vehicle recovery serving CDA and surrounding areas 24/7. Call (509) 797-7999')
 
 @section('city', 'Coeur d\'Alene, ID')
 
