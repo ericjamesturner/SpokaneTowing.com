@@ -200,7 +200,8 @@
                         <h2 class="text-2xl font-bold text-white mb-2">Get an Instant Quote</h2>
                         <p class="text-gray-300 mb-6">Calculate your towing cost in seconds</p>
 
-                        <form action="{{ route('quote') }}" method="GET" class="space-y-4">
+                        <form action="{{ route('quote.store') }}" method="POST" class="space-y-4">
+                            @csrf
                             <div class="grid grid-cols-2 gap-3">
                                 <div class="relative">
                                     <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
@@ -319,7 +320,8 @@
                 <h2 class="text-2xl font-bold text-white mb-2 text-center">Get an Instant Quote</h2>
                 <p class="text-gray-300 mb-6 text-center">Calculate your towing cost in seconds</p>
 
-                <form action="{{ route('quote') }}" method="GET" class="space-y-4">
+                <form action="{{ route('quote.store') }}" method="POST" class="space-y-4">
+                    @csrf
                     <div class="grid grid-cols-2 gap-3">
                         <div class="relative">
                             <input

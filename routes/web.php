@@ -7,9 +7,9 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-Route::get('/quote', function () {
-    return view('quote');
-})->name('quote');
+Route::post('/quote', [\App\Http\Controllers\QuoteController::class, 'store'])->name('quote.store');
+Route::get('/quote/error', [\App\Http\Controllers\QuoteController::class, 'error'])->name('quote.error');
+Route::get('/quote/{quote:uuid}', [\App\Http\Controllers\QuoteController::class, 'show'])->name('quote.show');
 
 Route::get('/quote/{quote:uuid}/book', \App\Livewire\QuoteBookingForm::class)->name('quote.book');
 

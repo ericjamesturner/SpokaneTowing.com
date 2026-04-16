@@ -96,12 +96,169 @@
 
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-12 relative z-10">
         <div class="max-w-4xl mx-auto">
-            @livewire('quote-display', [
-                'fromAddress' => request('from'),
-                'toAddress' => request('to'),
-                'customerName' => request('name'),
-                'customerPhone' => request('phone')
-            ])
+            <div class="mb-6">
+                <a href="/" class="text-red-500 hover:text-red-400 flex items-center gap-2 transition">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                    </svg>
+                    Back to Home
+                </a>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Quote Summary -->
+                <div class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 text-center">
+                    <div class="inline-flex items-center space-x-2 bg-green-500/20 border border-green-500/30 rounded-full px-4 py-2 mb-6">
+                        <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                        <span class="text-green-400 text-sm font-medium">Drivers Available Now</span>
+                    </div>
+
+                    <h2 class="text-xl font-bold text-gray-300 mb-4">We can be there in 20-30 mins for</h2>
+                    <div class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-500 mb-2">
+                        ${{ number_format($quote->total, 2) }}
+                    </div>
+                    <p class="text-sm text-gray-400 mb-2">Plus applicable sales tax</p>
+                    @if ($quote->is_minimum)
+                        <p class="text-sm text-gray-500 mb-2">*Minimum service charge applied</p>
+                    @endif
+                    <p class="text-gray-500 text-sm mb-6">Estimate only. Call to confirm and book.</p>
+
+                    <a
+                        href="tel:+15097977999"
+                        class="w-full bg-gradient-to-r from-red-600 to-red-700 text-white py-4 px-6 rounded-xl hover:from-red-700 hover:to-red-800 transition font-semibold text-lg shadow-lg shadow-red-600/25 flex items-center justify-center space-x-3 mb-4"
+                    >
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        <span>Call Now to Book: (509) 797-7999</span>
+                    </a>
+
+                    <button
+                        onclick="toggleDetails()"
+                        class="text-red-500 hover:text-red-400 font-medium flex items-center gap-2 mx-auto transition"
+                    >
+                        <span id="details-text">Show Details</span>
+                        <svg id="details-icon" class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Expandable Details -->
+                    <div id="quote-details" class="hidden mt-8 text-left">
+                        <div class="border-t border-slate-700 pt-6">
+                            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                                <div class="bg-slate-900/50 rounded-xl p-4">
+                                    <h3 class="text-sm font-medium text-gray-500 mb-1">Pickup Location</h3>
+                                    <p class="text-white">{{ $quote->from_address }}</p>
+                                </div>
+                                <div class="bg-slate-900/50 rounded-xl p-4">
+                                    <h3 class="text-sm font-medium text-gray-500 mb-1">Drop-off Location</h3>
+                                    <p class="text-white">{{ $quote->to_address }}</p>
+                                </div>
+                            </div>
+
+                            <div class="space-y-4 bg-slate-900/50 rounded-xl p-4">
+                                <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
+                                    <span class="text-gray-400">Distance:</span>
+                                    <span class="font-medium text-white">{{ $quote->distance }} miles</span>
+                                </div>
+                                <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
+                                    <span class="text-gray-400">Time for us to arrive:</span>
+                                    <span class="font-medium text-white">20-30 mins</span>
+                                </div>
+                                <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
+                                    <span class="text-gray-400">Time for the tow:</span>
+                                    <span class="font-medium text-white">{{ $quote->duration }} mins</span>
+                                </div>
+                                <div class="border-t border-slate-700 pt-4 space-y-3">
+                                    <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
+                                        <span class="text-gray-400">Hook Fee:</span>
+                                        <span class="font-medium text-white">${{ number_format($quote->hook_fee, 2) }}</span>
+                                    </div>
+                                    <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
+                                        <span class="text-gray-400">Mileage <span class="text-sm">({{ $quote->distance }} mi × ${{ number_format(config('towing.pricing.per_mile'), 2) }})</span>:</span>
+                                        <span class="font-medium text-white">${{ number_format($quote->mileage_charge, 2) }}</span>
+                                    </div>
+                                    <div class="flex flex-col sm:flex-row sm:justify-between gap-1 pt-3 border-t border-slate-700">
+                                        <span class="text-white font-semibold">Estimated Total:</span>
+                                        <span class="font-bold text-red-500 text-lg">${{ number_format($quote->total, 2) }}</span>
+                                    </div>
+                                    <p class="text-gray-500 text-sm text-center pt-2">Plus sales tax</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Display -->
+                <div id="map" class="w-full h-96 rounded-2xl border border-slate-700/50 overflow-hidden"></div>
+            </div>
+
+            <script>
+                function toggleDetails() {
+                    const details = document.getElementById('quote-details');
+                    const text = document.getElementById('details-text');
+                    const icon = document.getElementById('details-icon');
+
+                    if (details.classList.contains('hidden')) {
+                        details.classList.remove('hidden');
+                        text.textContent = 'Hide Details';
+                        icon.classList.add('rotate-180');
+                    } else {
+                        details.classList.add('hidden');
+                        text.textContent = 'Show Details';
+                        icon.classList.remove('rotate-180');
+                    }
+                }
+
+                // Initialize map
+                window.addEventListener('load', async function() {
+                    try {
+                        const { Map } = await google.maps.importLibrary("maps");
+                        const { DirectionsService, DirectionsRenderer } = await google.maps.importLibrary("routes");
+
+                        // Initialize map centered on Spokane
+                        const map = new Map(document.getElementById("map"), {
+                            zoom: 10,
+                            center: { lat: 47.6588, lng: -117.4260 },
+                            mapTypeControl: false,
+                            streetViewControl: false,
+                            styles: [
+                                { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
+                                { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
+                                { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
+                                { featureType: "road", elementType: "geometry", stylers: [{ color: "#38414e" }] },
+                                { featureType: "road", elementType: "geometry.stroke", stylers: [{ color: "#212a37" }] },
+                                { featureType: "water", elementType: "geometry", stylers: [{ color: "#17263c" }] },
+                            ]
+                        });
+
+                        const directionsService = new DirectionsService();
+                        const directionsRenderer = new DirectionsRenderer({
+                            suppressMarkers: false,
+                            polylineOptions: {
+                                strokeColor: "#dc2626",
+                                strokeWeight: 5
+                            }
+                        });
+
+                        directionsRenderer.setMap(map);
+
+                        // Calculate and display route
+                        directionsService.route({
+                            origin: @js($quote->from_address),
+                            destination: @js($quote->to_address),
+                            travelMode: google.maps.TravelMode.DRIVING,
+                        }, (result, status) => {
+                            if (status === "OK") {
+                                directionsRenderer.setDirections(result);
+                            }
+                        });
+                    } catch (e) {
+                        console.error('Map initialization failed:', e);
+                    }
+                });
+            </script>
         </div>
     </div>
 

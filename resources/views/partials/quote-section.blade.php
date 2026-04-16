@@ -13,7 +13,8 @@
             </div>
 
             <div class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50">
-                <form action="{{ route('quote') }}" method="GET" class="space-y-6">
+                <form action="{{ route('quote.store') }}" method="POST" class="space-y-6">
+                    @csrf
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div class="relative">
                             <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
