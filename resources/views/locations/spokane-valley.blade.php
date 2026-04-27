@@ -1,8 +1,8 @@
 @extends('layouts.location-page')
 
-@section('title', 'Spokane Valley Towing | Fast 24/7 Tow Truck Service')
+@section('title', 'Spokane Valley Towing | 20-Min Response, $140 + $6/Mile')
 
-@section('description', 'Spokane Valley towing with 20-30 min response. Serving Greenacres, Millwood, Veradale & I-90 corridor. Emergency towing, roadside assistance & recovery 24/7. Call (509) 797-7999')
+@section('description', 'Spokane Valley towing with upfront pricing: $140 hook fee + $6/mile. 20-min response across Greenacres, Millwood, Veradale & I-90. Call (509) 797-7999 24/7')
 
 @section('city', 'Spokane Valley')
 

@@ -4,6 +4,34 @@ Running log of SEO audits, changes, and results.
 
 ---
 
+## April 27, 2026
+
+**Stats (3-month window: Jan 24 - Apr 23) — 15 days after April 12 baseline**
+- 47 clicks (+6) | 10,900 impressions (+1,260) | 0.4% CTR (flat) | 27.2 avg position (-3.3, worse)
+- Mobile: 31 clicks (0.64% CTR, pos 19.1) | Desktop: 16 clicks (0.27% CTR, pos 33.7)
+
+**Key findings:**
+- Position decline is **not** a real ranking loss — Google started showing the site for many new generic, non-Spokane queries (e.g. "towing services", "tow truck service", "truck towing near me") at positions 50-80, dragging the average down. The shift began April 18 and has held steady.
+- Last-7-day position (4/17-4/23) was 47.6, with "towing services" (141 imp pos 54.9) and "tow truck service" (111 imp pos 65.9) leading.
+- "spokane towing" actually IMPROVED from position 35.6 → 29.7 with +1 click.
+- "spokane valley towing" still the biggest missed opportunity: 498 impressions at position 8.4 with 0 clicks (CTR problem on /towing-spokane-valley).
+- Homepage clicks doubled (2 → 5) — title/meta optimizations from April 12 working.
+- Airway Heights and Cheney location pages each picked up a click and remain on page 1.
+- /long-distance-towing lost a click (3 → 2) — only real regression.
+- /spokane-towing-services position worsened (30.1 → 37.8) due to broad-query bleed.
+
+**Changes made:**
+None — measurement-only audit.
+
+**Recommended next actions:**
+1. Rewrite title/meta on /towing-spokane-valley to fix the 0-click-at-position-8 problem (biggest gap on site).
+2. Wait 2-3 weeks before reacting to position drop — likely benign query expansion.
+3. Quick review of /long-distance-towing for the click regression.
+
+**Raw data:** `seo/2026-04-27/`
+
+---
+
 ## April 12, 2026
 
 **Baseline Stats (3-month window: Jan 11 - Apr 10)**
