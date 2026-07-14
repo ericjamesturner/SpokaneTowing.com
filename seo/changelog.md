@@ -4,6 +4,35 @@ Running log of SEO audits, changes, and results.
 
 ---
 
+## July 13, 2026
+
+**Stats (3-month window: Apr 13 - Jul 12) — 11 weeks after April 27 audit**
+- 52 clicks (+5) | 23,400 impressions (+12,500, +114%) | 0.2% CTR (halved) | 43.7 avg position (-16.5, worse)
+- Mobile: 37 clicks (0.4% CTR, pos 36.1) | Desktop: 15 clicks (0.1% CTR, pos 49.1)
+- Note: downloaded zip was a 16-month export; 3-month comparison numbers were pulled from the GSC UI (saved as `*-3mo-from-ui.csv`)
+
+**Key findings:**
+- **The April 27 /towing-spokane-valley title rewrite worked**: 3 → 10 clicks, CTR 0.24% → 0.7%, position 17.8 → 12.9. Now the #1 clicked page. "spokane valley towing" finally converted (0 → 2 clicks) after two audits at zero.
+- The generic-query flood (from April 18) never receded and now dominates: ~12K of 23.4K impressions hit /spokane-towing-services at position 63 for national queries ("towing services" 1,828 imp). CTR/position averages are cosmetically wrecked but money keywords improved underneath: "spokane towing" 29.7 → 16.3, "towing spokane" 44 → 33.4, "towing spokane valley" 22.9 → 15.6.
+- July pacing at 0.92 clicks/day — best month on record. June was weak (13 clicks).
+- /towing-deer-park surged: 2 → 7 clicks, position 25.3 → 15.7.
+- New CTR gaps (page 1-2 rankings, zero clicks): battery-roadside queries on /roadside-assistance (~230 imp at pos ~11), /towing-colville (pos 27 → 9.6, 204 imp), /towing-sandpoint (pos 11.4, 125 imp).
+- Real regressions: /heavy-duty-towing 3 → 0 clicks (position flat), /lockout-flat-tire 4 → 2, /winch-out-recovery 2 → 1.
+- Indexing: 22 indexed / 5 not indexed (one page slipped to "crawled - not indexed"). FAQ rich results still not showing (Search Appearance empty).
+
+**Changes made:**
+None — measurement-only audit.
+
+**Recommended next actions:**
+1. Apply the spokane-valley title/meta formula to /roadside-assistance, targeting the battery jump-start cluster (biggest fixable gap).
+2. Title/meta refresh on /towing-colville and /towing-sandpoint (new page-1 rankings, 0 clicks).
+3. Investigate /heavy-duty-towing click loss (3 → 0 with flat position).
+4. Next audit: identify which page fell out of the index; keep ignoring the generic flood unless money keywords worsen.
+
+**Raw data:** `seo/2026-07-13/`
+
+---
+
 ## April 27, 2026
 
 **Stats (3-month window: Jan 24 - Apr 23) — 15 days after April 12 baseline**
