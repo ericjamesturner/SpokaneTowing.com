@@ -703,7 +703,6 @@
                     <ul class="space-y-2">
                         <li><a href="/spokane-towing-services" class="text-gray-400 hover:text-red-500 transition">All Services</a></li>
                         <li><a href="/service-areas" class="text-gray-400 hover:text-red-500 transition">All Service Areas</a></li>
-                        <li><a href="/spokane-towing-cost" class="text-gray-400 hover:text-red-500 transition">Towing Cost & Rates</a></li>
                         <li><a href="/faq" class="text-gray-400 hover:text-red-500 transition">FAQ</a></li>
                         <li><a href="#quote" class="text-gray-400 hover:text-red-500 transition">Get a Quote</a></li>
                         <li><a href="/24-hour-towing" class="text-gray-400 hover:text-red-500 transition">Emergency Towing</a></li>

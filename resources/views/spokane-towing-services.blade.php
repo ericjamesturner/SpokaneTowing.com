@@ -324,7 +324,6 @@
                         <a href="/motorcycle-towing" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Motorcycle Towing</a>
                         <a href="/winch-out-recovery" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Winch Out & Recovery</a>
                         <a href="/long-distance-towing" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Long Distance Towing</a>
-                        <a href="/spokane-towing-cost" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Towing Cost & Rates</a>
                         <a href="/#quote" class="bg-red-600/20 border border-red-600/30 rounded-xl px-5 py-4 text-red-400 hover:text-red-300 hover:border-red-500/50 transition font-semibold">Get an Instant Quote →</a>
                     </div>
                 </div>
@@ -438,7 +437,7 @@
                     <div class="space-y-6">
                         <div class="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50">
                             <h4 class="font-semibold text-white mb-2">How much do Spokane towing services cost?</h4>
-                            <p class="text-gray-400">Our towing rates start at a $140 hook fee plus $6 per mile. We offer competitive pricing with transparent rates and no hidden fees. See our full <a href="/spokane-towing-cost" class="text-red-500 hover:text-red-400 transition">towing cost guide</a>, call for an instant quote, or use our <a href="/#quote" class="text-red-500 hover:text-red-400 transition">online calculator</a> for exact pricing.</p>
+                            <p class="text-gray-400">Our towing rates start at a $140 hook fee plus $6 per mile. We offer competitive pricing with transparent rates and no hidden fees. Call for an instant quote or use our <a href="/#quote" class="text-red-500 hover:text-red-400 transition">online calculator</a> for exact pricing.</p>
                         </div>
                         <div class="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50">
                             <h4 class="font-semibold text-white mb-2">Do you provide 24/7 towing services in Spokane?</h4>

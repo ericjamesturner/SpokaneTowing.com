@@ -53,7 +53,6 @@
                 <h3 class="text-white font-semibold mb-4">Company</h3>
                 <ul class="space-y-2 text-sm">
                     <li><a href="/spokane-towing-services" class="text-gray-400 hover:text-white transition">All Services</a></li>
-                    <li><a href="/spokane-towing-cost" class="text-gray-400 hover:text-white transition">Towing Cost & Rates</a></li>
                     <li><a href="/faq" class="text-gray-400 hover:text-white transition">FAQ</a></li>
                     <li><a href="/#quote" class="text-gray-400 hover:text-white transition">Get Quote</a></li>
                     <li><a href="/contact" class="text-gray-400 hover:text-white transition">Contact</a></li>

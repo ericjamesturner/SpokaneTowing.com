@@ -84,10 +84,6 @@ Route::get('/motorcycle-towing', function () {
     return view('services.motorcycle-towing');
 })->name('services.motorcycle');
 
-Route::get('/spokane-towing-cost', function () {
-    return view('spokane-towing-cost');
-})->name('spokane-towing-cost');
-
 Route::get('/service-areas', function () {
     return view('service-areas');
 })->name('service-areas');

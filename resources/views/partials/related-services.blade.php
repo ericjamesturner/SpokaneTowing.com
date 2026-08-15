@@ -11,7 +11,6 @@
         '/motorcycle-towing' => 'Motorcycle Towing',
         '/winch-out-recovery' => 'Winch Out & Recovery',
         '/long-distance-towing' => 'Long Distance Towing',
-        '/spokane-towing-cost' => 'Towing Cost & Rates',
     ];
     $currentPath = '/' . ltrim(request()->path(), '/');
 @endphp

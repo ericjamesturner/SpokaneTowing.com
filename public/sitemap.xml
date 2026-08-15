@@ -24,14 +24,6 @@
         <priority>0.9</priority>
     </url>
 
-    <!-- Towing Cost Page -->
-    <url>
-        <loc>https://spokanetowing.com/spokane-towing-cost</loc>
-        <lastmod>2026-08-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
     <!-- Service Areas Page -->
     <url>
         <loc>https://spokanetowing.com/service-areas</loc>

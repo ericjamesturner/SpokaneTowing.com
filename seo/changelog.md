@@ -28,11 +28,10 @@ Running log of SEO audits, changes, and results.
 
 **Changes made (site expansion + internal linking overhaul, same day):**
 
-*New pages (7):*
+*New pages (6):*
 - /battery-jump-start — targets the battery cluster (1,625 imp all-time at pos ~11, 0 clicks)
 - /commercial-towing — targets the commercial cluster (2,562 imp, 0 clicks, no page existed)
 - /motorcycle-towing — small cluster, was advertised on location pages with no page
-- /spokane-towing-cost — targets cheap/cost/price cluster (1,764 imp); publishes $140 + $6/mi rates
 - /service-areas — locations hub (breadcrumb schema previously pointed to nonexistent /#locations)
 - /towing-greenacres — only searched town with no page (~90 imp across 9 queries)
 - /towing-medical-lake — second uncovered town (23 imp)
@@ -53,9 +52,9 @@ Running log of SEO audits, changes, and results.
 - /24-hour-towing: added wrecker service language ("wrecker service near me" ranks pos 7.7, word wasn't on the site)
 - /lockout-flat-tire: added mobile tire service + "flat tire no spare" content (title unchanged — page is recovering)
 - Location breadcrumb schema: /#locations → /service-areas
-- Sitemap: 7 new URLs, lastmod bumped on all changed pages
+- Sitemap: 6 new URLs, lastmod bumped on all changed pages
 
-*Deliberately NOT done:* /towing-spokane page (would cannibalize homepage + hub), About page (user decision), /towing-hayden-id title refresh (not yet).
+*Deliberately NOT done:* /towing-spokane page (would cannibalize homepage + hub), About page (user decision), towing-cost page (user decision — cheap/cost cluster left untargeted), /towing-hayden-id title refresh (not yet).
 
 **Recommended next actions:**
 1. Watch for cannibalization between /battery-jump-start and /roadside-assistance on battery queries; consolidate if they fight.
