@@ -72,6 +72,26 @@ Route::get('/long-distance-towing', function () {
     return view('services.long-distance-towing');
 })->name('services.long-distance');
 
+Route::get('/battery-jump-start', function () {
+    return view('services.battery-jump-start');
+})->name('services.battery-jump-start');
+
+Route::get('/commercial-towing', function () {
+    return view('services.commercial-towing');
+})->name('services.commercial');
+
+Route::get('/motorcycle-towing', function () {
+    return view('services.motorcycle-towing');
+})->name('services.motorcycle');
+
+Route::get('/spokane-towing-cost', function () {
+    return view('spokane-towing-cost');
+})->name('spokane-towing-cost');
+
+Route::get('/service-areas', function () {
+    return view('service-areas');
+})->name('service-areas');
+
 // Location Pages
 Route::get('/towing-coeur-d-alene', function () {
     return view('locations.coeur-d-alene');
@@ -112,6 +132,14 @@ Route::get('/towing-colville', function () {
 Route::get('/towing-spokane-valley', function () {
     return view('locations.spokane-valley');
 })->name('locations.spokane-valley');
+
+Route::get('/towing-greenacres', function () {
+    return view('locations.greenacres');
+})->name('locations.greenacres');
+
+Route::get('/towing-medical-lake', function () {
+    return view('locations.medical-lake');
+})->name('locations.medical-lake');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])

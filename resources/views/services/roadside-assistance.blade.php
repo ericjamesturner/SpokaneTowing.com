@@ -1,7 +1,7 @@
 @extends('layouts.service-page')
 
-@section('title', 'Roadside Assistance Spokane | Jump Starts, Lockouts & More 24/7')
-@section('description', 'Need roadside assistance in Spokane? Jump starts, fuel delivery, flat tire changes & lockout service. 20-30 min response, available 24/7. Call (509) 797-7999')
+@section('title', 'Roadside Assistance Spokane | Battery Jump Starts, 20-Min Response')
+@section('description', 'Spokane roadside assistance with no membership: battery jump starts & testing, fuel delivery, flat tires & lockouts. 20-30 min response, 24/7. Call (509) 797-7999')
 
 @section('hero-title', 'Roadside Assistance in Spokane')
 @section('hero-subtitle', 'Jump starts, fuel delivery, lockouts, and flat tire service. Fast, reliable help when you need it.')
@@ -16,22 +16,22 @@
         
         <div class="grid md:grid-cols-2 gap-8 my-8">
             <div>
-                <h4 class="text-xl font-semibold mb-3">Jump Start Service</h4>
-                <p>Dead battery? We'll jump start your vehicle and test your charging system. If your battery needs replacement, we can recommend trusted local shops.</p>
+                <h4 class="text-xl font-semibold mb-3"><a href="/battery-jump-start" class="text-white hover:text-red-500 transition">Battery Jump Start Service</a></h4>
+                <p>Dead battery? We'll jump start your vehicle and test your battery and charging system on the spot. If the battery is done, we'll get you to a shop for a replacement. <a href="/battery-jump-start" class="text-red-500 hover:underline">Full battery service details →</a></p>
             </div>
-            
+
             <div>
                 <h4 class="text-xl font-semibold mb-3">Fuel Delivery</h4>
                 <p>Ran out of gas? We'll deliver enough fuel to get you to the nearest gas station. Available for gasoline and diesel vehicles.</p>
             </div>
-            
+
             <div>
-                <h4 class="text-xl font-semibold mb-3">Lockout Service</h4>
+                <h4 class="text-xl font-semibold mb-3"><a href="/lockout-flat-tire" class="text-white hover:text-red-500 transition">Lockout Service</a></h4>
                 <p>Locked your keys in the car? Our technicians use professional tools to safely unlock your vehicle without damage.</p>
             </div>
-            
+
             <div>
-                <h4 class="text-xl font-semibold mb-3">Flat Tire Assistance</h4>
+                <h4 class="text-xl font-semibold mb-3"><a href="/lockout-flat-tire" class="text-white hover:text-red-500 transition">Flat Tire Assistance</a></h4>
                 <p>We'll change your flat tire with your spare or tow you to a tire shop if needed. Don't risk your safety changing a tire on a busy road.</p>
             </div>
         </div>
@@ -62,7 +62,7 @@
         </div>
         <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
             <h4 class="text-lg font-semibold mb-2 text-white">Will roadside assistance replace my battery?</h4>
-            <p class="text-gray-300">We provide jump start service to get your vehicle running. If your battery needs replacement, we can recommend trusted local auto shops. Our technicians will test your charging system to help diagnose the issue.</p>
+            <p class="text-gray-300">We provide <a href="/battery-jump-start" class="text-red-500 hover:text-red-400 transition">jump start service and battery testing</a> to get your vehicle running. If your battery needs replacement, we can get you to a trusted local auto shop — driving or towed. Our technicians will test your charging system to help diagnose the issue.</p>
         </div>
     </div>
 

@@ -52,3 +52,9 @@
 
 <p class="text-lg font-semibold mt-8">Don't let a vehicle breakdown ruin your day in Spokane Valley. Call Spokane Towing at (509) 797-7999 for immediate assistance anywhere in the Valley!</p>
 @endsection
+
+@section('nearby')
+    <a href="/towing-greenacres" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Greenacres Towing</a>
+    <a href="/towing-liberty-lake" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Liberty Lake Towing</a>
+    <a href="/towing-post-falls" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Post Falls Towing</a>
+@endsection

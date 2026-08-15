@@ -56,3 +56,9 @@
 
 <p class="text-lg">From <strong>emergency accident recovery</strong> on I-90 to helping residents transport vehicles to trusted repair facilities, we handle all types of automotive emergencies in <strong>Liberty Lake</strong> with professionalism and care.</p>
 @endsection
+
+@section('nearby')
+    <a href="/towing-spokane-valley" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Spokane Valley Towing</a>
+    <a href="/towing-greenacres" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Greenacres Towing</a>
+    <a href="/towing-post-falls" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Post Falls Towing</a>
+@endsection

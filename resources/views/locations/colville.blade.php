@@ -56,3 +56,9 @@
 
 <p class="text-lg">We handle <strong>emergency breakdowns</strong> on US-395, off-road recovery situations, and transport needs to repair facilities in larger cities. While Colville is at our extended service range, we're committed to helping <strong>Stevens County residents</strong> when automotive emergencies arise.</p>
 @endsection
+
+@section('nearby')
+    <a href="/towing-deer-park" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Deer Park Towing</a>
+    <a href="/towing-sandpoint" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Sandpoint Towing</a>
+    <a href="/" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Spokane Towing</a>
+@endsection

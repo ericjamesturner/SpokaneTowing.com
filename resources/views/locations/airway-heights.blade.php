@@ -56,3 +56,9 @@
 
 <p class="text-lg">Whether you need <strong>emergency towing</strong> on US-2, assistance near the base, or help getting your vehicle to a Spokane-area repair shop, our team provides professional, courteous service to the <strong>Airway Heights community</strong>.</p>
 @endsection
+
+@section('nearby')
+    <a href="/towing-medical-lake" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Medical Lake Towing</a>
+    <a href="/towing-cheney" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Cheney Towing</a>
+    <a href="/" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Spokane Towing</a>
+@endsection

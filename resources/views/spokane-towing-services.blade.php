@@ -248,27 +248,31 @@
                                 <svg class="w-5 h-5 text-red-500 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span>24/7 emergency response throughout Spokane</span>
+                                <a href="/24-hour-towing" class="hover:text-red-500 transition">24/7 emergency response throughout Spokane</a>
                             </li>
                             <li class="flex items-start">
                                 <svg class="w-5 h-5 text-red-500 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span>Accident recovery and scene cleanup</span>
+                                <a href="/24-hour-towing" class="hover:text-red-500 transition">Accident recovery and wrecker service</a>
                             </li>
                             <li class="flex items-start">
                                 <svg class="w-5 h-5 text-red-500 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span>Vehicle breakdown towing</span>
+                                <a href="/24-hour-towing" class="hover:text-red-500 transition">Vehicle breakdown towing</a>
                             </li>
                             <li class="flex items-start">
                                 <svg class="w-5 h-5 text-red-500 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span>Off-road recovery services</span>
+                                <a href="/winch-out-recovery" class="hover:text-red-500 transition">Off-road and winch-out recovery</a>
                             </li>
                         </ul>
+                        <a href="/24-hour-towing" class="inline-flex items-center mt-6 text-red-500 hover:text-red-400 font-semibold transition">
+                            24 Hour Towing details
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
                     </div>
 
                     <div class="bg-slate-800/50 backdrop-blur-sm p-8 rounded-2xl border border-slate-700/50">
@@ -278,27 +282,50 @@
                                 <svg class="w-5 h-5 text-red-500 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span>Jump start services</span>
+                                <a href="/battery-jump-start" class="hover:text-red-500 transition">Battery jump start services</a>
                             </li>
                             <li class="flex items-start">
                                 <svg class="w-5 h-5 text-red-500 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span>Flat tire changes</span>
+                                <a href="/lockout-flat-tire" class="hover:text-red-500 transition">Flat tire changes</a>
                             </li>
                             <li class="flex items-start">
                                 <svg class="w-5 h-5 text-red-500 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span>Lockout assistance</span>
+                                <a href="/lockout-flat-tire" class="hover:text-red-500 transition">Lockout assistance</a>
                             </li>
                             <li class="flex items-start">
                                 <svg class="w-5 h-5 text-red-500 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span>Emergency fuel delivery</span>
+                                <a href="/roadside-assistance" class="hover:text-red-500 transition">Emergency fuel delivery</a>
                             </li>
                         </ul>
+                        <a href="/roadside-assistance" class="inline-flex items-center mt-6 text-red-500 hover:text-red-400 font-semibold transition">
+                            Roadside Assistance details
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- All Services -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-semibold mb-6 text-white">Explore All Our Towing Services</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <a href="/24-hour-towing" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">24 Hour Emergency Towing</a>
+                        <a href="/roadside-assistance" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Roadside Assistance</a>
+                        <a href="/battery-jump-start" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Battery Jump Start</a>
+                        <a href="/lockout-flat-tire" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Lockout & Flat Tire</a>
+                        <a href="/flatbed-towing" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Flatbed Towing</a>
+                        <a href="/heavy-duty-towing" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Heavy Duty Towing</a>
+                        <a href="/commercial-towing" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Commercial Towing</a>
+                        <a href="/motorcycle-towing" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Motorcycle Towing</a>
+                        <a href="/winch-out-recovery" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Winch Out & Recovery</a>
+                        <a href="/long-distance-towing" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Long Distance Towing</a>
+                        <a href="/spokane-towing-cost" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Towing Cost & Rates</a>
+                        <a href="/#quote" class="bg-red-600/20 border border-red-600/30 rounded-xl px-5 py-4 text-red-400 hover:text-red-300 hover:border-red-500/50 transition font-semibold">Get an Instant Quote →</a>
                     </div>
                 </div>
 
@@ -307,16 +334,16 @@
                     <h3 class="text-2xl font-semibold mb-6 text-white">Types of Vehicles We Tow</h3>
                     <div class="grid md:grid-cols-3 gap-8">
                         <div>
-                            <h4 class="font-semibold text-red-500 mb-3">Light-Duty Towing</h4>
+                            <h4 class="font-semibold text-red-500 mb-3"><a href="/flatbed-towing" class="hover:underline">Light-Duty Towing</a></h4>
                             <ul class="space-y-2 text-gray-300">
                                 <li>• Cars and sedans</li>
                                 <li>• SUVs and crossovers</li>
                                 <li>• Pickup trucks</li>
-                                <li>• Motorcycles</li>
+                                <li>• <a href="/motorcycle-towing" class="hover:text-red-500 transition underline decoration-slate-600 hover:decoration-red-500">Motorcycles</a></li>
                             </ul>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-red-500 mb-3">Medium-Duty Towing</h4>
+                            <h4 class="font-semibold text-red-500 mb-3"><a href="/commercial-towing" class="hover:underline">Medium-Duty Towing</a></h4>
                             <ul class="space-y-2 text-gray-300">
                                 <li>• Box trucks</li>
                                 <li>• RVs and motorhomes</li>
@@ -325,7 +352,7 @@
                             </ul>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-red-500 mb-3">Heavy-Duty Towing</h4>
+                            <h4 class="font-semibold text-red-500 mb-3"><a href="/heavy-duty-towing" class="hover:underline">Heavy-Duty Towing</a></h4>
                             <ul class="space-y-2 text-gray-300">
                                 <li>• Semi-trucks</li>
                                 <li>• Commercial vehicles</li>
@@ -359,21 +386,24 @@
                                 <li>• Downtown Spokane</li>
                                 <li>• South Hill</li>
                                 <li>• North Side</li>
-                                <li>• Spokane Valley</li>
+                                <li>• <a href="/towing-spokane-valley" class="hover:text-red-500 transition">Spokane Valley</a></li>
                                 <li>• West Plains</li>
                             </ul>
                         </div>
                         <div class="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50">
                             <h4 class="font-semibold text-white mb-3">Nearby Cities</h4>
                             <ul class="text-gray-400 space-y-2">
-                                <li>• Cheney</li>
-                                <li>• Liberty Lake</li>
-                                <li>• Airway Heights</li>
-                                <li>• Medical Lake</li>
-                                <li>• Deer Park</li>
+                                <li>• <a href="/towing-cheney" class="hover:text-red-500 transition">Cheney</a></li>
+                                <li>• <a href="/towing-liberty-lake" class="hover:text-red-500 transition">Liberty Lake</a></li>
+                                <li>• <a href="/towing-airway-heights" class="hover:text-red-500 transition">Airway Heights</a></li>
+                                <li>• <a href="/towing-medical-lake" class="hover:text-red-500 transition">Medical Lake</a></li>
+                                <li>• <a href="/towing-deer-park" class="hover:text-red-500 transition">Deer Park</a></li>
                             </ul>
                         </div>
                     </div>
+                    <p class="mt-6">
+                        <a href="/service-areas" class="text-red-500 hover:text-red-400 font-semibold transition">View all service areas, including Coeur d'Alene, Post Falls & Sandpoint →</a>
+                    </p>
                 </div>
 
                 <!-- Why Choose Us -->
@@ -408,7 +438,7 @@
                     <div class="space-y-6">
                         <div class="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50">
                             <h4 class="font-semibold text-white mb-2">How much do Spokane towing services cost?</h4>
-                            <p class="text-gray-400">Our towing rates start at a $140 hook fee plus $6 per mile. We offer competitive pricing with transparent rates and no hidden fees. Call for an instant quote or use our online calculator for exact pricing.</p>
+                            <p class="text-gray-400">Our towing rates start at a $140 hook fee plus $6 per mile. We offer competitive pricing with transparent rates and no hidden fees. See our full <a href="/spokane-towing-cost" class="text-red-500 hover:text-red-400 transition">towing cost guide</a>, call for an instant quote, or use our <a href="/#quote" class="text-red-500 hover:text-red-400 transition">online calculator</a> for exact pricing.</p>
                         </div>
                         <div class="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50">
                             <h4 class="font-semibold text-white mb-2">Do you provide 24/7 towing services in Spokane?</h4>
@@ -450,32 +480,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-black border-t border-slate-800">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="flex items-center space-x-3 mb-6 md:mb-0">
-                    <img src="/header-logo.webp" alt="Spokane Towing" class="h-20 w-auto">
-                </div>
-
-                <div class="flex flex-wrap justify-center gap-6 mb-6 md:mb-0">
-                    <a href="/spokane-towing-services" class="text-gray-400 hover:text-white transition">Services</a>
-                    <a href="/faq" class="text-gray-400 hover:text-white transition">FAQ</a>
-                    <a href="/#quote" class="text-gray-400 hover:text-white transition">Get Quote</a>
-                    <a href="/contact" class="text-gray-400 hover:text-white transition">Contact</a>
-                    <a href="/privacy-policy" class="text-gray-400 hover:text-white transition">Privacy</a>
-                    <a href="/terms-of-service" class="text-gray-400 hover:text-white transition">Terms</a>
-                </div>
-
-                <div class="text-gray-500 text-sm">
-                    Licensed & Insured | Serving Spokane Since 2010
-                </div>
-            </div>
-
-            <div class="mt-8 pt-8 border-t border-slate-800 text-center text-gray-500 text-sm">
-                &copy; {{ date('Y') }} Spokane Towing. All rights reserved.
-            </div>
-        </div>
-    </footer>
+    @include('partials.site-footer')
 </body>
 </html>

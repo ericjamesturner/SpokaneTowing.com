@@ -56,3 +56,9 @@
 
 <p class="text-lg">We handle everything from <strong>highway breakdowns</strong> on US-395 to off-road recovery situations. Our modern equipment and experienced operators ensure safe, professional service no matter where you're located in the <strong>Deer Park area</strong>.</p>
 @endsection
+
+@section('nearby')
+    <a href="/towing-colville" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Colville Towing</a>
+    <a href="/towing-airway-heights" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Airway Heights Towing</a>
+    <a href="/" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Spokane Towing</a>
+@endsection

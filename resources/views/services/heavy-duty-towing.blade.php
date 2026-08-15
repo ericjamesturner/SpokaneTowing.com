@@ -1,8 +1,8 @@
 @extends('layouts.service-page')
 
-@section('title', 'Heavy Duty Towing Spokane | Commercial & Semi Truck Towing 24/7')
+@section('title', 'Heavy Duty Towing Spokane | Semi Truck Towing & Wrecker Service')
 
-@section('description', 'Heavy duty towing for semis, trucks, buses, RVs & commercial vehicles in Spokane. Professional recovery with specialized equipment, available 24/7. Call (509) 797-7999')
+@section('description', 'Spokane heavy duty towing & wrecker service for semis, buses & RVs, plus heavy duty roadside assistance for trucks. 24/7 dispatch on I-90 & US routes. Call (509) 797-7999')
 
 @section('hero-title', 'Heavy Duty Towing & Commercial Recovery')
 
@@ -12,7 +12,7 @@
 <h2 class="text-3xl font-bold mb-8">Heavy Duty Towing Specialists</h2>
 
 <div class="prose prose-invert prose-lg max-w-none mb-12 prose-headings:text-white prose-p:text-gray-300 prose-li:text-gray-300 prose-strong:text-white">
-    <p>When standard tow trucks aren't enough, Spokane Towing provides heavy duty towing services for large vehicles and commercial equipment. Our powerful heavy duty tow trucks and experienced operators can handle the biggest towing challenges in Spokane, WA and throughout the region.</p>
+    <p>When standard tow trucks aren't enough, Spokane Towing provides heavy duty towing and <strong>heavy duty wrecker service</strong> for large vehicles and commercial equipment. Our powerful heavy duty wreckers and experienced operators handle the biggest towing challenges in Spokane, WA — semis broken down on I-90, buses on US-395, and equipment moves throughout the region.</p>
     
     <h3 class="text-2xl font-semibold mt-8 mb-4">Heavy Duty Vehicles We Tow:</h3>
     <ul class="space-y-2">
@@ -50,8 +50,19 @@
         <li><strong>DOT Compliance:</strong> Familiar with commercial vehicle regulations</li>
     </ul>
 
+    <h3 class="text-2xl font-semibold mt-8 mb-4">Heavy Duty Roadside Assistance</h3>
+    <p>Not every truck problem needs a tow. We provide <strong>heavy duty roadside assistance in Spokane</strong> for semis, box trucks, buses, and RVs — often getting drivers rolling again without losing the load or the day:</p>
+    <ul class="space-y-2">
+        <li>Jump starts for diesel trucks and 24V systems</li>
+        <li>Commercial tire changes with your spare</li>
+        <li>Fuel delivery for diesel vehicles</li>
+        <li>Air line and minor mechanical assessments at the roadside</li>
+        <li>Winching and traction recovery for trucks off the pavement</li>
+    </ul>
+    <p>If the truck can't be fixed where it sits, the wrecker is already dispatched — no second call.</p>
+
     <h3 class="text-2xl font-semibold mt-8 mb-4">Commercial Fleet Services:</h3>
-    <p>We understand that commercial vehicle downtime costs money. That's why we offer priority service for businesses and fleet operators in the Spokane area. Our commercial towing services include:</p>
+    <p>We understand that commercial vehicle downtime costs money. That's why we offer priority service for businesses and fleet operators in the Spokane area — see our full <a href="/commercial-towing">commercial towing services</a> for work trucks, vans, and fleet accounts. Our commercial towing services include:</p>
     <ul class="space-y-2">
         <li>Priority dispatch for fleet customers</li>
         <li>Volume pricing for multiple vehicles</li>
@@ -79,7 +90,11 @@
     </div>
     <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
         <h4 class="text-lg font-semibold mb-2 text-white">Do you offer fleet towing contracts?</h4>
-        <p class="text-gray-300">Yes, we offer fleet service agreements with priority dispatch, volume pricing, and direct billing for businesses in the Spokane area. Contact us to set up a commercial account.</p>
+        <p class="text-gray-300">Yes, we offer fleet service agreements with priority dispatch, volume pricing, and direct billing for businesses in the Spokane area. See our <a href="/commercial-towing" class="text-red-500 hover:text-red-400 transition">commercial towing page</a> or contact us to set up a commercial account.</p>
+    </div>
+    <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
+        <h4 class="text-lg font-semibold mb-2 text-white">Do you provide heavy duty roadside assistance?</h4>
+        <p class="text-gray-300">Yes. We handle jump starts for diesel and 24V systems, commercial tire changes, diesel fuel delivery, and winch recovery for semis, box trucks, buses, and RVs throughout the Spokane area — 24/7.</p>
     </div>
 </div>
 
@@ -163,6 +178,14 @@
             "acceptedAnswer" => [
                 "@@type" => "Answer",
                 "text" => "Yes, we offer fleet service agreements with priority dispatch, volume pricing, and direct billing for businesses in the Spokane area. Contact us to set up a commercial account."
+            ]
+        ],
+        [
+            "@@type" => "Question",
+            "name" => "Do you provide heavy duty roadside assistance?",
+            "acceptedAnswer" => [
+                "@@type" => "Answer",
+                "text" => "Yes. We handle jump starts for diesel and 24V systems, commercial tire changes, diesel fuel delivery, and winch recovery for semis, box trucks, buses, and RVs throughout the Spokane area — 24/7."
             ]
         ]
     ]

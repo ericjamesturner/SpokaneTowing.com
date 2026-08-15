@@ -12,16 +12,17 @@
 <h2 class="text-3xl font-bold mb-8">Emergency Towing Available 24/7</h2>
 
 <div class="prose prose-invert prose-lg max-w-none mb-12 prose-headings:text-white prose-p:text-gray-300 prose-li:text-gray-300 prose-strong:text-white">
-    <p>When your vehicle breaks down at 2 AM or you're stranded on the highway after an accident, you need a reliable 24 hour towing service in Spokane that you can count on. Spokane Towing provides round-the-clock emergency towing services throughout Spokane, WA and surrounding areas.</p>
-    
+    <p>When your vehicle breaks down at 2 AM or you're stranded on the highway after an accident, you need a reliable 24 hour towing and <strong>wrecker service</strong> in Spokane that you can count on. Spokane Towing provides round-the-clock emergency towing services throughout Spokane, WA and surrounding areas.</p>
+
     <h3 class="text-2xl font-semibold mt-8 mb-4">Our 24 Hour Towing Services Include:</h3>
     <ul class="space-y-2">
-        <li>Emergency accident recovery</li>
+        <li>Emergency accident recovery and wrecker service</li>
         <li>Breakdown towing</li>
-        <li>Off-road recovery</li>
+        <li><a href="/winch-out-recovery">Off-road and winch-out recovery</a></li>
         <li>Highway emergency response</li>
         <li>Vehicle transport to repair shops</li>
         <li>Insurance-approved towing</li>
+        <li><a href="/roadside-assistance">Roadside assistance</a> — <a href="/battery-jump-start">jump starts</a>, fuel, and tire changes when a tow isn't needed</li>
     </ul>
 
     <h3 class="text-2xl font-semibold mt-8 mb-4">Why Choose Our 24 Hour Towing?</h3>

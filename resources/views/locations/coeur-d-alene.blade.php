@@ -56,3 +56,9 @@
 
 <p class="text-lg">Whether you need <strong>emergency towing</strong> after an accident on I-90, <strong>roadside assistance</strong> near the lake, or help getting your vehicle to a local repair shop, we're equipped to handle all types of towing situations in Coeur d'Alene.</p>
 @endsection
+
+@section('nearby')
+    <a href="/towing-post-falls" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Post Falls Towing</a>
+    <a href="/towing-hayden-id" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Hayden Towing</a>
+    <a href="/towing-spokane-valley" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Spokane Valley Towing</a>
+@endsection

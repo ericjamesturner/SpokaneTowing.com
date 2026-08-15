@@ -118,7 +118,7 @@
                     <div class="space-y-6">
                         <div class="border-l-2 border-red-600 pl-4">
                             <h3 class="font-semibold text-white mb-2">How much does a tow cost?</h3>
-                            <p class="text-gray-400">Our pricing includes a hook fee plus mileage. Local tows typically range from $170-$230 depending on distance. We provide upfront quotes before service.</p>
+                            <p class="text-gray-400">Our pricing includes a hook fee plus mileage. Local tows typically range from $170-$230 depending on distance. See our full <a href="/spokane-towing-cost" class="text-red-500 hover:text-red-400 transition">towing cost guide</a> or use the <a href="/#quote" class="text-red-500 hover:text-red-400 transition">instant quote calculator</a> for an exact price.</p>
                         </div>
                         <div class="border-l-2 border-red-600 pl-4">
                             <h3 class="font-semibold text-white mb-2">What payment methods do you accept?</h3>
@@ -152,7 +152,7 @@
                         </div>
                         <div class="border-l-2 border-green-500 pl-4">
                             <h3 class="font-semibold text-white mb-2">Do you provide roadside assistance?</h3>
-                            <p class="text-gray-400">Yes, we offer jump starts, tire changes, lockout services, and fuel delivery in addition to towing services.</p>
+                            <p class="text-gray-400">Yes, we offer <a href="/battery-jump-start" class="text-green-500 hover:text-green-400 transition">battery jump starts</a>, <a href="/lockout-flat-tire" class="text-green-500 hover:text-green-400 transition">tire changes and lockout services</a>, and fuel delivery in addition to towing. See the full <a href="/roadside-assistance" class="text-green-500 hover:text-green-400 transition">roadside assistance page</a> for details.</p>
                         </div>
                     </div>
                 </div>
@@ -171,7 +171,7 @@
                     <div class="space-y-6">
                         <div class="border-l-2 border-blue-500 pl-4">
                             <h3 class="font-semibold text-white mb-2">Where do you provide service?</h3>
-                            <p class="text-gray-400">We serve Spokane and surrounding areas including Spokane Valley, Liberty Lake, Cheney, and Airway Heights. Long-distance tows are available upon request.</p>
+                            <p class="text-gray-400">We serve Spokane and surrounding areas including <a href="/towing-spokane-valley" class="text-blue-500 hover:text-blue-400 transition">Spokane Valley</a>, <a href="/towing-liberty-lake" class="text-blue-500 hover:text-blue-400 transition">Liberty Lake</a>, <a href="/towing-cheney" class="text-blue-500 hover:text-blue-400 transition">Cheney</a>, and <a href="/towing-airway-heights" class="text-blue-500 hover:text-blue-400 transition">Airway Heights</a> — see the <a href="/service-areas" class="text-blue-500 hover:text-blue-400 transition">full service area list</a>. <a href="/long-distance-towing" class="text-blue-500 hover:text-blue-400 transition">Long-distance tows</a> are available upon request.</p>
                         </div>
                         <div class="border-l-2 border-blue-500 pl-4">
                             <h3 class="font-semibold text-white mb-2">Do you tow to other cities?</h3>
@@ -198,15 +198,15 @@
                     <div class="space-y-6">
                         <div class="border-l-2 border-purple-500 pl-4">
                             <h3 class="font-semibold text-white mb-2">What types of vehicles can you tow?</h3>
-                            <p class="text-gray-400">We can tow cars, trucks, SUVs, motorcycles, and light commercial vehicles. We have specialized equipment for different vehicle types.</p>
+                            <p class="text-gray-400">We can tow cars, trucks, SUVs, <a href="/motorcycle-towing" class="text-purple-500 hover:text-purple-400 transition">motorcycles</a>, and <a href="/commercial-towing" class="text-purple-500 hover:text-purple-400 transition">commercial vehicles</a> — up to <a href="/heavy-duty-towing" class="text-purple-500 hover:text-purple-400 transition">semis and heavy equipment</a>. We have specialized equipment for different vehicle types.</p>
                         </div>
                         <div class="border-l-2 border-purple-500 pl-4">
                             <h3 class="font-semibold text-white mb-2">Can you tow AWD or 4WD vehicles?</h3>
-                            <p class="text-gray-400">Yes, we have flatbed trucks specifically for all-wheel drive and four-wheel drive vehicles to prevent drivetrain damage.</p>
+                            <p class="text-gray-400">Yes, we have <a href="/flatbed-towing" class="text-purple-500 hover:text-purple-400 transition">flatbed trucks</a> specifically for all-wheel drive and four-wheel drive vehicles to prevent drivetrain damage.</p>
                         </div>
                         <div class="border-l-2 border-purple-500 pl-4">
                             <h3 class="font-semibold text-white mb-2">What if my car is stuck or in an accident?</h3>
-                            <p class="text-gray-400">We provide winching and recovery services for stuck vehicles and can safely remove vehicles from accident scenes when cleared by authorities.</p>
+                            <p class="text-gray-400">We provide <a href="/winch-out-recovery" class="text-purple-500 hover:text-purple-400 transition">winching and recovery services</a> for stuck vehicles and can safely remove vehicles from accident scenes with our <a href="/24-hour-towing" class="text-purple-500 hover:text-purple-400 transition">24 hour wrecker service</a> when cleared by authorities.</p>
                         </div>
                     </div>
                 </div>
@@ -234,32 +234,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-black border-t border-slate-800">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="flex items-center space-x-3 mb-6 md:mb-0">
-                    <img src="/header-logo.webp" alt="Spokane Towing" class="h-20 w-auto">
-                </div>
-
-                <div class="flex flex-wrap justify-center gap-6 mb-6 md:mb-0">
-                    <a href="/spokane-towing-services" class="text-gray-400 hover:text-white transition">Services</a>
-                    <a href="/faq" class="text-gray-400 hover:text-white transition">FAQ</a>
-                    <a href="/#quote" class="text-gray-400 hover:text-white transition">Get Quote</a>
-                    <a href="/contact" class="text-gray-400 hover:text-white transition">Contact</a>
-                    <a href="/privacy-policy" class="text-gray-400 hover:text-white transition">Privacy</a>
-                    <a href="/terms-of-service" class="text-gray-400 hover:text-white transition">Terms</a>
-                </div>
-
-                <div class="text-gray-500 text-sm">
-                    Licensed & Insured | Serving Spokane Since 2010
-                </div>
-            </div>
-
-            <div class="mt-8 pt-8 border-t border-slate-800 text-center text-gray-500 text-sm">
-                &copy; {{ date('Y') }} Spokane Towing. All rights reserved.
-            </div>
-        </div>
-    </footer>
+    @include('partials.site-footer')
 </body>
 </html>

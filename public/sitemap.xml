@@ -3,7 +3,7 @@
     <!-- Homepage -->
     <url>
         <loc>https://spokanetowing.com/</loc>
-        <lastmod>2026-04-12</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -19,15 +19,31 @@
     <!-- Main Service Page -->
     <url>
         <loc>https://spokanetowing.com/spokane-towing-services</loc>
-        <lastmod>2026-04-12</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+    </url>
+
+    <!-- Towing Cost Page -->
+    <url>
+        <loc>https://spokanetowing.com/spokane-towing-cost</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Service Areas Page -->
+    <url>
+        <loc>https://spokanetowing.com/service-areas</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
 
     <!-- FAQ Page -->
     <url>
         <loc>https://spokanetowing.com/faq</loc>
-        <lastmod>2026-04-12</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -35,43 +51,61 @@
     <!-- Service Pages -->
     <url>
         <loc>https://spokanetowing.com/24-hour-towing</loc>
-        <lastmod>2026-04-12</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://spokanetowing.com/roadside-assistance</loc>
-        <lastmod>2026-04-12</lastmod>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://spokanetowing.com/battery-jump-start</loc>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://spokanetowing.com/lockout-flat-tire</loc>
-        <lastmod>2026-04-12</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://spokanetowing.com/flatbed-towing</loc>
-        <lastmod>2026-04-12</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://spokanetowing.com/heavy-duty-towing</loc>
-        <lastmod>2026-04-12</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://spokanetowing.com/commercial-towing</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://spokanetowing.com/motorcycle-towing</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://spokanetowing.com/winch-out-recovery</loc>
-        <lastmod>2026-04-12</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://spokanetowing.com/long-distance-towing</loc>
-        <lastmod>2026-04-12</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -101,61 +135,73 @@
     <!-- Location Pages -->
     <url>
         <loc>https://spokanetowing.com/towing-spokane-valley</loc>
-        <lastmod>2026-04-12</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://spokanetowing.com/towing-greenacres</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://spokanetowing.com/towing-coeur-d-alene</loc>
-        <lastmod>2026-04-12</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://spokanetowing.com/towing-post-falls</loc>
-        <lastmod>2026-04-12</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://spokanetowing.com/towing-cheney</loc>
-        <lastmod>2026-04-12</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://spokanetowing.com/towing-deer-park</loc>
-        <lastmod>2026-04-12</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://spokanetowing.com/towing-airway-heights</loc>
-        <lastmod>2026-04-12</lastmod>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://spokanetowing.com/towing-medical-lake</loc>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://spokanetowing.com/towing-liberty-lake</loc>
-        <lastmod>2026-04-12</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://spokanetowing.com/towing-hayden-id</loc>
-        <lastmod>2026-04-12</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://spokanetowing.com/towing-sandpoint</loc>
-        <lastmod>2026-04-12</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://spokanetowing.com/towing-colville</loc>
-        <lastmod>2026-04-12</lastmod>
+        <lastmod>2026-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>

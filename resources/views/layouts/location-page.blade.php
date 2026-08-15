@@ -110,8 +110,8 @@
         {
           "@@type": "ListItem",
           "position": 2,
-          "name": "Locations",
-          "item": "https://spokanetowing.com/#locations"
+          "name": "Service Areas",
+          "item": "https://spokanetowing.com/service-areas"
         },
         {
           "@@type": "ListItem",
@@ -312,35 +312,25 @@
 
     @yield('extra-sections')
 
+    @hasSection('nearby')
+    <!-- Nearby Areas -->
+    <section class="py-20 bg-slate-900">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4 text-white">Nearby Areas We Serve</h2>
+                <p class="text-lg text-gray-300 mb-8">We also provide 24/7 towing and roadside assistance in these nearby communities:</p>
+                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                    @yield('nearby')
+                </div>
+                <a href="/service-areas" class="text-red-500 hover:text-red-400 font-semibold transition">View all service areas →</a>
+            </div>
+        </div>
+    </section>
+    @endif
+
     <!-- Quote Section -->
     @include('partials.quote-section')
 
-    <!-- Footer -->
-    <footer class="bg-black border-t border-slate-800">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="flex items-center space-x-3 mb-6 md:mb-0">
-                    <img src="/header-logo.webp" alt="Spokane Towing" class="h-20 w-auto">
-                </div>
-
-                <div class="flex flex-wrap justify-center gap-6 mb-6 md:mb-0">
-                    <a href="/spokane-towing-services" class="text-gray-400 hover:text-white transition">Services</a>
-                    <a href="/faq" class="text-gray-400 hover:text-white transition">FAQ</a>
-                    <a href="/#quote" class="text-gray-400 hover:text-white transition">Get Quote</a>
-                    <a href="/contact" class="text-gray-400 hover:text-white transition">Contact</a>
-                    <a href="/privacy-policy" class="text-gray-400 hover:text-white transition">Privacy</a>
-                    <a href="/terms-of-service" class="text-gray-400 hover:text-white transition">Terms</a>
-                </div>
-
-                <div class="text-gray-500 text-sm">
-                    Licensed & Insured | Serving @yield('city') Since 2010
-                </div>
-            </div>
-
-            <div class="mt-8 pt-8 border-t border-slate-800 text-center text-gray-500 text-sm">
-                &copy; {{ date('Y') }} Spokane Towing. All rights reserved.
-            </div>
-        </div>
-    </footer>
+    @include('partials.site-footer')
 </body>
 </html>

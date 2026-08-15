@@ -56,3 +56,9 @@
 
 <p class="text-lg">We handle <strong>emergency situations</strong>, planned vehicle transport, and breakdown recovery in the Sandpoint area. While distance requires advance coordination for non-emergency services, we're available for urgent situations and can provide professional towing throughout the <strong>Lake Pend Oreille region</strong>.</p>
 @endsection
+
+@section('nearby')
+    <a href="/towing-hayden-id" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Hayden Towing</a>
+    <a href="/towing-coeur-d-alene" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Coeur d'Alene Towing</a>
+    <a href="/towing-colville" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Colville Towing</a>
+@endsection

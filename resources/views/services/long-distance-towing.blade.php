@@ -94,6 +94,7 @@
 @endsection
 
 @section('extra-sections')
+@include('partials.coverage-area', ['title' => 'Long Distance Towing Pickup Area', 'description' => 'We pick up vehicles for long distance transport throughout the greater Spokane area, including:'])
 <!-- Service Areas -->
 <section class="py-20 bg-slate-900">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">

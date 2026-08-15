@@ -56,3 +56,9 @@
 
 <p class="text-lg">From <strong>emergency accident recovery</strong> on I-90 to helping residents get their vehicles to trusted local mechanics, we handle all types of towing situations in <strong>Post Falls</strong> with professionalism and care.</p>
 @endsection
+
+@section('nearby')
+    <a href="/towing-coeur-d-alene" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Coeur d'Alene Towing</a>
+    <a href="/towing-hayden-id" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Hayden Towing</a>
+    <a href="/towing-liberty-lake" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Liberty Lake Towing</a>
+@endsection

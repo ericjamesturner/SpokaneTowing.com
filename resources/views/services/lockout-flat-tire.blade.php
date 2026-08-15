@@ -24,15 +24,18 @@
         <li>All vehicle makes and models</li>
     </ul>
 
-    <h3 class="text-2xl font-semibold mt-8 mb-4">Our Flat Tire Services Include:</h3>
+    <h3 class="text-2xl font-semibold mt-8 mb-4">Our Flat Tire & Mobile Tire Services Include:</h3>
     <ul class="space-y-2">
         <li>Tire changing and replacement</li>
         <li>Spare tire installation</li>
         <li>Tire repair when possible</li>
         <li>Emergency tire service</li>
         <li>Roadside tire assistance</li>
-        <li>Mobile tire service</li>
+        <li>Mobile tire service — we come to you, wherever you're parked</li>
     </ul>
+
+    <h4 class="text-xl font-semibold mt-6 mb-3">Flat Tire With No Spare?</h4>
+    <p>More and more newer cars ship without a spare tire — just a sealant kit that can't fix a sidewall or a blowout. If you have a flat and no spare, we'll tow you to the tire shop of your choice on a <a href="/flatbed-towing">flatbed</a>, so you're not stuck waiting on a mobile repair that can't happen. Tell dispatch you have no spare when you call and we'll send the right truck the first time.</p>
 
     <h3 class="text-2xl font-semibold mt-8 mb-4">Why Choose Spokane Towing for Lockouts & Flat Tires?</h3>
     <ul class="space-y-2">

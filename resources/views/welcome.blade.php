@@ -485,6 +485,51 @@
                         </span>
                     </div>
                 </a>
+
+                <a href="/battery-jump-start" class="service-card relative overflow-hidden rounded-2xl border border-slate-700/50 hover:border-red-500/50 group">
+                    <img src="/images/service-roadside.webp" alt="Car battery jump start service in Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
+                    <div class="relative p-8 pt-28">
+                        <h3 class="text-xl font-bold text-white mb-3 drop-shadow-lg">Battery Jump Start</h3>
+                        <p class="text-gray-300 mb-4">Dead battery? We jump start your car, test the battery, and get you moving again fast.</p>
+                        <span class="text-red-500 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
+                            Learn More
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+
+                <a href="/commercial-towing" class="service-card relative overflow-hidden rounded-2xl border border-slate-700/50 hover:border-red-500/50 group">
+                    <img src="/images/service-heavy.webp" alt="Commercial and fleet vehicle towing in Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
+                    <div class="relative p-8 pt-28">
+                        <h3 class="text-xl font-bold text-white mb-3 drop-shadow-lg">Commercial Towing</h3>
+                        <p class="text-gray-300 mb-4">Work trucks, vans, and fleets with priority dispatch and direct billing for businesses.</p>
+                        <span class="text-red-500 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
+                            Learn More
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+
+                <a href="/long-distance-towing" class="service-card relative overflow-hidden rounded-2xl border border-slate-700/50 hover:border-red-500/50 group">
+                    <img src="/images/service-flatbed.webp" alt="Long distance towing and vehicle transport from Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
+                    <div class="relative p-8 pt-28">
+                        <h3 class="text-xl font-bold text-white mb-3 drop-shadow-lg">Long Distance Towing</h3>
+                        <p class="text-gray-300 mb-4">Interstate transport and cross-country vehicle relocation with secure flatbed equipment.</p>
+                        <span class="text-red-500 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
+                            Learn More
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </span>
+                    </div>
+                </a>
             </div>
 
             <!-- View All Services -->
@@ -609,9 +654,11 @@
                     <ul class="space-y-2">
                         <li><a href="/" class="text-gray-400 hover:text-red-500 transition">Spokane</a></li>
                         <li><a href="/towing-spokane-valley" class="text-gray-400 hover:text-red-500 transition">Spokane Valley</a></li>
+                        <li><a href="/towing-greenacres" class="text-gray-400 hover:text-red-500 transition">Greenacres</a></li>
                         <li><a href="/towing-cheney" class="text-gray-400 hover:text-red-500 transition">Cheney</a></li>
                         <li><a href="/towing-deer-park" class="text-gray-400 hover:text-red-500 transition">Deer Park</a></li>
                         <li><a href="/towing-airway-heights" class="text-gray-400 hover:text-red-500 transition">Airway Heights</a></li>
+                        <li><a href="/towing-medical-lake" class="text-gray-400 hover:text-red-500 transition">Medical Lake</a></li>
                         <li><a href="/towing-liberty-lake" class="text-gray-400 hover:text-red-500 transition">Liberty Lake</a></li>
                         <li><a href="/towing-colville" class="text-gray-400 hover:text-red-500 transition">Colville</a></li>
                     </ul>
@@ -655,6 +702,8 @@
                     </h3>
                     <ul class="space-y-2">
                         <li><a href="/spokane-towing-services" class="text-gray-400 hover:text-red-500 transition">All Services</a></li>
+                        <li><a href="/service-areas" class="text-gray-400 hover:text-red-500 transition">All Service Areas</a></li>
+                        <li><a href="/spokane-towing-cost" class="text-gray-400 hover:text-red-500 transition">Towing Cost & Rates</a></li>
                         <li><a href="/faq" class="text-gray-400 hover:text-red-500 transition">FAQ</a></li>
                         <li><a href="#quote" class="text-gray-400 hover:text-red-500 transition">Get a Quote</a></li>
                         <li><a href="/24-hour-towing" class="text-gray-400 hover:text-red-500 transition">Emergency Towing</a></li>
@@ -665,33 +714,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-slate-950 border-t border-slate-800">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="flex items-center space-x-3 mb-6 md:mb-0">
-                    <img src="/header-logo.webp" alt="Spokane Towing" class="h-14 w-auto">
-                </div>
-
-                <div class="flex flex-wrap justify-center gap-6 mb-6 md:mb-0">
-                    <a href="/spokane-towing-services" class="text-gray-400 hover:text-white transition">Services</a>
-                    <a href="/faq" class="text-gray-400 hover:text-white transition">FAQ</a>
-                    <a href="#quote" class="text-gray-400 hover:text-white transition">Get Quote</a>
-                    <a href="/contact" class="text-gray-400 hover:text-white transition">Contact</a>
-                    <a href="/privacy-policy" class="text-gray-400 hover:text-white transition">Privacy</a>
-                    <a href="/terms-of-service" class="text-gray-400 hover:text-white transition">Terms</a>
-                </div>
-
-                <div class="text-gray-500 text-sm">
-                    Licensed & Insured | Serving Spokane Since 2010
-                </div>
-            </div>
-
-            <div class="mt-8 pt-8 border-t border-slate-800 text-center text-gray-500 text-sm">
-                &copy; {{ date('Y') }} Spokane Towing. All rights reserved.
-            </div>
-        </div>
-    </footer>
+    @include('partials.site-footer')
 
     <script>
         let fromAutocomplete, toAutocomplete, heroFromAutocomplete, heroToAutocomplete;

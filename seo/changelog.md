@@ -4,6 +4,70 @@ Running log of SEO audits, changes, and results.
 
 ---
 
+## August 15, 2026
+
+**Stats (3-month window: May 16 - Aug 13) — 33 days after July 13 audit**
+- 84 clicks (+32, +62%) | 35,107 impressions (+11,700, +50%) | 0.24% CTR (up) | 47.1 avg position (-3.4, still flood-driven)
+- Month over month (32-day windows): 48 clicks vs 20 — best period on record
+- Mobile: +39 of the 48 new clicks (81%)
+- Note: zip was again a 16-month export, but site data starts 2025-08-05, so diffing against the July 13 16-month files gives EXACT Jul 13 - Aug 13 numbers. No UI transcription needed.
+
+**Key findings:**
+- **Best month ever with zero changes shipped.** July closed at 40 clicks (2x previous best); August pacing 1.46 clicks/day. 18 of 21 content pages gained clicks. Looks like ranking momentum + summer demand.
+- /towing-deer-park is the new #1 page (+9 clicks, window pos 9.5, 26 all-time). "deer park towing" converted 3 of 10 impressions at position 4.9.
+- /towing-airway-heights woke up: flat at 5 clicks for three audits, then +9 this month.
+- /towing-colville self-resolved the July CTR flag: +4 clicks (1% CTR) with no title change.
+- July regressions recovered: /lockout-flat-tire +4, /winch-out-recovery +1, /roadside-assistance 0 → +4.
+- Battery cluster STILL unconverted: ~72 new impressions at pos ~12, 0 clicks (787 all-time impressions, 0 clicks). Remains the top fixable gap.
+- "spokane valley towing" slid: pos 7.3 → 11.9 in-window, back to 0 clicks (228 imp). Watching, not reacting.
+- /heavy-duty-towing still weakest: +1,323 imp, +1 click; "heavy duty towing" lands at pos ~59 (generic dilution).
+- Generic flood still growing: /spokane-towing-services took 11,185 of the month's ~16,900 impressions at pos 61 for 1 click.
+- New CTR-gap candidate: /towing-hayden-id — only page-1 page with 0 clicks this month (266 imp, pos 11.2).
+- Named queries explain only 11 of 48 new clicks; growth is anonymized long-tail.
+- Search Appearance still empty — FAQ schema has produced no rich results after 4 months. Indexing not checkable from export.
+
+**Changes made (site expansion + internal linking overhaul, same day):**
+
+*New pages (7):*
+- /battery-jump-start — targets the battery cluster (1,625 imp all-time at pos ~11, 0 clicks)
+- /commercial-towing — targets the commercial cluster (2,562 imp, 0 clicks, no page existed)
+- /motorcycle-towing — small cluster, was advertised on location pages with no page
+- /spokane-towing-cost — targets cheap/cost/price cluster (1,764 imp); publishes $140 + $6/mi rates
+- /service-areas — locations hub (breadcrumb schema previously pointed to nonexistent /#locations)
+- /towing-greenacres — only searched town with no page (~90 imp across 9 queries)
+- /towing-medical-lake — second uncovered town (23 imp)
+
+*Internal linking:*
+- /spokane-towing-services hub now links to all 11 service pages + location pages + /service-areas (previously linked to ZERO services/locations despite 27K impressions)
+- New sitewide footer partial with all services + all locations (replaced 6-link footers on home, hub, FAQ, and both layouts)
+- "Related services" block added to service-page layout (all service pages cross-link)
+- "Nearby areas" block added to location-page layout + per-city links on all 12 location pages
+- FAQ answers now link to service/location/cost pages
+- /long-distance-towing fixed: added to homepage services grid + coverage-area partial (was a near-orphan; its impressions collapsed in July)
+- Homepage: added battery, commercial, long-distance cards; Greenacres + Medical Lake links
+- coverage-area partial: added Greenacres, Medical Lake, /service-areas link
+
+*Title/meta and content changes:*
+- /roadside-assistance: retitled to 'Roadside Assistance Spokane | Battery Jump Starts, 20-Min Response' (battery cluster, carried-over #1 action item); battery section links to new page
+- /heavy-duty-towing: retitled to 'Heavy Duty Towing Spokane | Semi Truck Towing & Wrecker Service'; added Heavy Duty Roadside Assistance section (targets "heavy duty roadside assistance", 253 imp at pos 12-13) + wrecker language + FAQ
+- /24-hour-towing: added wrecker service language ("wrecker service near me" ranks pos 7.7, word wasn't on the site)
+- /lockout-flat-tire: added mobile tire service + "flat tire no spare" content (title unchanged — page is recovering)
+- Location breadcrumb schema: /#locations → /service-areas
+- Sitemap: 7 new URLs, lastmod bumped on all changed pages
+
+*Deliberately NOT done:* /towing-spokane page (would cannibalize homepage + hub), About page (user decision), /towing-hayden-id title refresh (not yet).
+
+**Recommended next actions:**
+1. Watch for cannibalization between /battery-jump-start and /roadside-assistance on battery queries; consolidate if they fight.
+2. /towing-hayden-id title/meta refresh (only page-1 page with 0 clicks this month — still open).
+3. Watch "spokane valley towing" position; act only if it slides again.
+4. Check indexing + rich results in GSC UI next audit; request indexing for the 7 new URLs in GSC after deploy.
+5. Next audit: measure new-page impressions and whether hub-page links improved money-page positions.
+
+**Raw data:** `seo/2026-08-15/`
+
+---
+
 ## July 13, 2026
 
 **Stats (3-month window: Apr 13 - Jul 12) — 11 weeks after April 27 audit**

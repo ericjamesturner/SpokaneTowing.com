@@ -56,3 +56,9 @@
 
 <p class="text-lg">Whether you need help with a breakdown near the <strong>PUB</strong>, assistance getting to a repair shop in Spokane, or <strong>emergency towing</strong> after an accident on SR-904, our team provides professional, courteous service to the <strong>Cheney community</strong>.</p>
 @endsection
+
+@section('nearby')
+    <a href="/towing-airway-heights" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Airway Heights Towing</a>
+    <a href="/towing-medical-lake" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Medical Lake Towing</a>
+    <a href="/" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Spokane Towing</a>
+@endsection
