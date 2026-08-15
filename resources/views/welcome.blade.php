@@ -673,6 +673,9 @@
                         <li><a href="/towing-coeur-d-alene" class="text-gray-400 hover:text-red-500 transition">Coeur d'Alene</a></li>
                         <li><a href="/towing-post-falls" class="text-gray-400 hover:text-red-500 transition">Post Falls</a></li>
                         <li><a href="/towing-hayden-id" class="text-gray-400 hover:text-red-500 transition">Hayden</a></li>
+                        <li><a href="/towing-rathdrum" class="text-gray-400 hover:text-red-500 transition">Rathdrum</a></li>
+                        <li><a href="/towing-athol" class="text-gray-400 hover:text-red-500 transition">Athol</a></li>
+                        <li><a href="/towing-spirit-lake" class="text-gray-400 hover:text-red-500 transition">Spirit Lake</a></li>
                         <li><a href="/towing-sandpoint" class="text-gray-400 hover:text-red-500 transition">Sandpoint</a></li>
                     </ul>
                 </div>

@@ -147,7 +147,7 @@
                 </div>
 
                 <h2 class="text-3xl font-bold mb-8 text-white">North Idaho Service Areas</h2>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
                     <a href="/towing-coeur-d-alene" class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-red-500/50 transition group">
                         <h3 class="text-xl font-bold text-white mb-2 group-hover:text-red-500 transition">Coeur d'Alene</h3>
                         <p class="text-gray-400 text-sm">Downtown CdA, the lake, and I-90 through Kootenai County.</p>
@@ -159,6 +159,18 @@
                     <a href="/towing-hayden-id" class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-red-500/50 transition group">
                         <h3 class="text-xl font-bold text-white mb-2 group-hover:text-red-500 transition">Hayden</h3>
                         <p class="text-gray-400 text-sm">US-95 north of CdA, Hayden Lake, and surrounding areas.</p>
+                    </a>
+                    <a href="/towing-rathdrum" class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-red-500/50 transition group">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-red-500 transition">Rathdrum</h3>
+                        <p class="text-gray-400 text-sm">The SR-41 and SR-53 corridors across the fast-growing Rathdrum Prairie.</p>
+                    </a>
+                    <a href="/towing-athol" class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-red-500/50 transition group">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-red-500 transition">Athol</h3>
+                        <p class="text-gray-400 text-sm">US-95 near Silverwood Theme Park and Farragut State Park.</p>
+                    </a>
+                    <a href="/towing-spirit-lake" class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-red-500/50 transition group">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-red-500 transition">Spirit Lake</h3>
+                        <p class="text-gray-400 text-sm">The north end of SR-41, from town to the lake and forest roads.</p>
                     </a>
                     <a href="/towing-sandpoint" class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-red-500/50 transition group">
                         <h3 class="text-xl font-bold text-white mb-2 group-hover:text-red-500 transition">Sandpoint</h3>

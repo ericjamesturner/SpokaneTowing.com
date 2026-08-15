@@ -48,6 +48,9 @@
                     <li><a href="/towing-coeur-d-alene" class="text-gray-400 hover:text-white transition">Coeur d'Alene, ID</a></li>
                     <li><a href="/towing-post-falls" class="text-gray-400 hover:text-white transition">Post Falls, ID</a></li>
                     <li><a href="/towing-hayden-id" class="text-gray-400 hover:text-white transition">Hayden, ID</a></li>
+                    <li><a href="/towing-rathdrum" class="text-gray-400 hover:text-white transition">Rathdrum, ID</a></li>
+                    <li><a href="/towing-athol" class="text-gray-400 hover:text-white transition">Athol, ID</a></li>
+                    <li><a href="/towing-spirit-lake" class="text-gray-400 hover:text-white transition">Spirit Lake, ID</a></li>
                     <li><a href="/towing-sandpoint" class="text-gray-400 hover:text-white transition">Sandpoint, ID</a></li>
                 </ul>
                 <h3 class="text-white font-semibold mb-4">Company</h3>

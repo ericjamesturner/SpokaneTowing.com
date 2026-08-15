@@ -35,6 +35,7 @@ Running log of SEO audits, changes, and results.
 - /service-areas — locations hub (breadcrumb schema previously pointed to nonexistent /#locations)
 - /towing-greenacres — only searched town with no page (~90 imp across 9 queries)
 - /towing-medical-lake — second uncovered town (23 imp)
+- /towing-rathdrum, /towing-athol, /towing-spirit-lake — North Idaho expansion (no named-query volume yet, same as Sandpoint/Colville pre-page; Athol covers Silverwood traffic)
 
 *Internal linking:*
 - /spokane-towing-services hub now links to all 11 service pages + location pages + /service-areas (previously linked to ZERO services/locations despite 27K impressions)

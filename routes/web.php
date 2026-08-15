@@ -137,6 +137,18 @@ Route::get('/towing-medical-lake', function () {
     return view('locations.medical-lake');
 })->name('locations.medical-lake');
 
+Route::get('/towing-rathdrum', function () {
+    return view('locations.rathdrum');
+})->name('locations.rathdrum');
+
+Route::get('/towing-athol', function () {
+    return view('locations.athol');
+})->name('locations.athol');
+
+Route::get('/towing-spirit-lake', function () {
+    return view('locations.spirit-lake');
+})->name('locations.spirit-lake');
+
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
