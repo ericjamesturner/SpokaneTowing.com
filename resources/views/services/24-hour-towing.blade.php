@@ -39,7 +39,7 @@
 <div class="space-y-6 mb-12">
     <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
         <h4 class="text-lg font-semibold mb-2 text-white">How much does emergency towing cost in Spokane?</h4>
-        <p class="text-gray-300">Our towing starts at a $140 hook fee plus $6 per mile. Use our online quote tool for exact pricing based on your pickup and drop-off locations. No surge pricing during emergencies.</p>
+        <p class="text-gray-300">Our towing is a $140 hook fee plus $6 per mile, with a $200 minimum. Use our online quote tool for exact pricing based on your pickup and drop-off locations. No surge pricing during emergencies.</p>
     </div>
     <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
         <h4 class="text-lg font-semibold mb-2 text-white">How quickly can a tow truck get to me?</h4>
@@ -81,7 +81,7 @@
             "name" => "How much does emergency towing cost in Spokane?",
             "acceptedAnswer" => [
                 "@@type" => "Answer",
-                "text" => "Our towing starts at a $140 hook fee plus $6 per mile. Use our online quote tool for exact pricing based on your pickup and drop-off locations. No surge pricing during emergencies."
+                "text" => "Our towing is a $140 hook fee plus $6 per mile, with a $200 minimum. Use our online quote tool for exact pricing based on your pickup and drop-off locations. No surge pricing during emergencies."
             ]
         ],
         [

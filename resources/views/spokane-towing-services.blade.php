@@ -107,7 +107,7 @@
                 "name" => "How much do Spokane towing services cost?",
                 "acceptedAnswer" => [
                     "@@type" => "Answer",
-                    "text" => "Our towing rates start at a $140 hook fee plus $6 per mile. We offer competitive pricing with transparent rates and no hidden fees. Call for an instant quote or use our online calculator for exact pricing."
+                    "text" => "Our towing rates are a $140 hook fee plus $6 per mile, with a $200 minimum. We offer competitive pricing with transparent rates and no hidden fees. Call for an instant quote or use our online calculator for exact pricing."
                 ]
             ],
             [
@@ -437,7 +437,7 @@
                     <div class="space-y-6">
                         <div class="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50">
                             <h4 class="font-semibold text-white mb-2">How much do Spokane towing services cost?</h4>
-                            <p class="text-gray-400">Our towing rates start at a $140 hook fee plus $6 per mile. We offer competitive pricing with transparent rates and no hidden fees. Call for an instant quote or use our <a href="/#quote" class="text-red-500 hover:text-red-400 transition">online calculator</a> for exact pricing.</p>
+                            <p class="text-gray-400">Our towing rates are a $140 hook fee plus $6 per mile, with a $200 minimum. We offer competitive pricing with transparent rates and no hidden fees. Call for an instant quote or use our <a href="/#quote" class="text-red-500 hover:text-red-400 transition">online calculator</a> for exact pricing.</p>
                         </div>
                         <div class="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50">
                             <h4 class="font-semibold text-white mb-2">Do you provide 24/7 towing services in Spokane?</h4>

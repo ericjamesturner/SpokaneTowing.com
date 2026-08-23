@@ -48,7 +48,7 @@
 <div class="space-y-6 mb-12">
     <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
         <h4 class="text-lg font-semibold mb-2 text-white">How much does commercial towing cost in Spokane?</h4>
-        <p class="text-gray-300">Commercial rates depend on vehicle size and distance. Standard work trucks and vans are priced like our regular tows starting at a $140 hook fee plus $6 per mile, with volume discounts for fleet accounts. Call (509) 797-7999 for a quote or to set up fleet pricing.</p>
+        <p class="text-gray-300">Commercial rates depend on vehicle size and distance. Standard work trucks and vans are priced like our regular tows at a $140 hook fee plus $6 per mile with a $200 minimum, and volume discounts for fleet accounts. Call (509) 797-7999 for a quote or to set up fleet pricing.</p>
     </div>
     <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
         <h4 class="text-lg font-semibold mb-2 text-white">Do you offer towing contracts for businesses?</h4>
@@ -95,7 +95,7 @@
             "name" => "How much does commercial towing cost in Spokane?",
             "acceptedAnswer" => [
                 "@@type" => "Answer",
-                "text" => "Commercial rates depend on vehicle size and distance. Standard work trucks and vans are priced like our regular tows starting at a $140 hook fee plus $6 per mile, with volume discounts for fleet accounts. Call (509) 797-7999 for a quote or to set up fleet pricing."
+                "text" => "Commercial rates depend on vehicle size and distance. Standard work trucks and vans are priced like our regular tows at a $140 hook fee plus $6 per mile with a $200 minimum, and volume discounts for fleet accounts. Call (509) 797-7999 for a quote or to set up fleet pricing."
             ]
         ],
         [

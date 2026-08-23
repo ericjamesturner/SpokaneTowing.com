@@ -13,7 +13,7 @@ return [
     'pricing' => [
         'hook_fee' => 140.00, // Base fee for hooking up the vehicle
         'per_mile' => 6.00,  // Cost per mile
-        'minimum_charge' => 140.00, // Minimum service charge
+        'minimum_charge' => 200.00, // Minimum service charge
     ],
 
     'service_area' => [

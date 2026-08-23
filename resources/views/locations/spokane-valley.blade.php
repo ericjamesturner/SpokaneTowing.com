@@ -2,7 +2,7 @@
 
 @section('title', 'Spokane Valley Towing | 20-Min Response, $140 + $6/Mile')
 
-@section('description', 'Spokane Valley towing with upfront pricing: $140 hook fee + $6/mile. 20-min response across Greenacres, Millwood, Veradale & I-90. Call (509) 797-7999 24/7')
+@section('description', 'Spokane Valley towing with upfront pricing: $140 hook + $6/mile, $200 minimum. 20-min response across Greenacres, Millwood & I-90. Call (509) 797-7999 24/7')
 
 @section('city', 'Spokane Valley')
 
