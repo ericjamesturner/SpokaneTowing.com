@@ -7,6 +7,7 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+Route::view('/quote', 'quote-start')->name('quote.start');
 Route::post('/quote', [\App\Http\Controllers\QuoteController::class, 'store'])->name('quote.store');
 Route::get('/quote/error', [\App\Http\Controllers\QuoteController::class, 'error'])->name('quote.error');
 Route::get('/quote/{quote:uuid}', [\App\Http\Controllers\QuoteController::class, 'show'])->name('quote.show');

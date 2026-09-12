@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Terms of Service - Spokane Towing</title>
     <meta name="description" content="Terms of Service for Spokane Towing. Read our terms and conditions for using our towing and roadside assistance services.">
     <link rel="canonical" href="{{ url('/terms-of-service') }}">
@@ -12,7 +12,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
     @include('partials.fonts')
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/website.css', 'resources/js/app.js'])
     @include('partials.clarity')
 </head>
 <body class="antialiased bg-black text-white">
@@ -22,11 +22,11 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="flex justify-between items-center h-20">
                 <a href="/">
-                    <img src="/header-logo.webp" alt="Spokane Towing" class="h-20 w-auto">
+                    <img src="/images/header-logo-384.webp" srcset="/images/header-logo-384.webp 384w, /images/header-logo-640.webp 640w" sizes="(min-width: 1024px) 288px, (min-width: 640px) 256px, 192px" alt="Spokane Towing" width="640" height="130" class="h-auto w-48 sm:w-64 lg:w-72 max-w-full">
                 </a>
                 <nav class="hidden md:flex items-center space-x-8">
                     <a href="/spokane-towing-services" class="text-gray-300 hover:text-white transition font-medium">Services</a>
-                    <a href="/#quote" class="text-gray-300 hover:text-white transition font-medium">Get Quote</a>
+                    <a href="/quote" class="text-gray-300 hover:text-white transition font-medium">Get Quote</a>
                     <a href="/faq" class="text-gray-300 hover:text-white transition font-medium">FAQ</a>
                     <a href="tel:+15097977999" class="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-xl hover:from-red-700 hover:to-red-800 transition font-semibold shadow-lg shadow-red-600/25 flex items-center space-x-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -181,13 +181,13 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="flex items-center space-x-3 mb-6 md:mb-0">
-                    <img src="/header-logo.webp" alt="Spokane Towing" class="h-14 w-auto">
+                    <img width="640" height="130" src="/images/header-logo-384.webp" srcset="/images/header-logo-384.webp 384w, /images/header-logo-640.webp 640w" sizes="(min-width: 1024px) 288px, (min-width: 640px) 256px, 192px" alt="Spokane Towing" class="h-14 w-auto">
                 </div>
 
                 <div class="flex flex-wrap justify-center gap-6 mb-6 md:mb-0">
                     <a href="/spokane-towing-services" class="text-gray-400 hover:text-white transition">Services</a>
                     <a href="/faq" class="text-gray-400 hover:text-white transition">FAQ</a>
-                    <a href="/#quote" class="text-gray-400 hover:text-white transition">Get Quote</a>
+                    <a href="/quote" class="text-gray-400 hover:text-white transition">Get Quote</a>
                     <a href="/contact" class="text-gray-400 hover:text-white transition">Contact</a>
                     <a href="/privacy-policy" class="text-gray-400 hover:text-white transition">Privacy</a>
                     <a href="/terms-of-service" class="text-gray-400 hover:text-white transition">Terms</a>

@@ -2,7 +2,8 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="robots" content="noindex, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Booking Confirmed - Spokane Towing</title>
     
     <link rel="icon" href="/favicon.ico" sizes="any">
@@ -15,7 +16,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @include('partials.clarity')
 </head>
-<body class="antialiased bg-gray-50 text-gray-900">
+<body data-clarity-mask="true" class="antialiased bg-gray-50 text-gray-900">
     <!-- Header -->
     <header class="bg-gray-900/90 backdrop-blur-sm border-b border-gray-700">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">

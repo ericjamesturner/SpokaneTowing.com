@@ -1,8 +1,8 @@
 @extends('layouts.location-page')
 
-@section('title', 'Spokane Valley Towing | 20-Min Response, $140 + $6/Mile')
+@section('title', 'Spokane Valley Towing & Roadside Help')
 
-@section('description', 'Spokane Valley towing with upfront pricing: $140 hook + $6/mile, $200 minimum. 20-min response across Greenacres, Millwood & I-90. Call (509) 797-7999 24/7')
+@section('description', 'Need towing in Spokane Valley? Fast 24/7 tow truck and roadside help across Greenacres, Millwood and I-90. Call (509) 797-7999 for a price and arrival time.')
 
 @section('city', 'Spokane Valley')
 

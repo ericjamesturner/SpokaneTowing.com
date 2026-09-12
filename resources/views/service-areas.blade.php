@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Towing Service Areas | Spokane, Spokane Valley & North Idaho</title>
     <meta name="description" content="Spokane Towing serves Spokane County, the West Plains & North Idaho: Spokane Valley, Cheney, Deer Park, Coeur d'Alene, Post Falls & more. 24/7. Call (509) 797-7999">
     <link rel="canonical" href="{{ url('/service-areas') }}">
@@ -27,9 +27,9 @@
     <!-- Fonts -->
     @include('partials.fonts')
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/website.css', 'resources/js/app.js'])
 
-    @include('partials.schema-local-business')
+    @include('partials.schema-organization')
 
     <script type="application/ld+json">
     {
@@ -60,11 +60,11 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="flex justify-between items-center h-20">
                 <a href="/">
-                    <img src="/header-logo.webp" alt="Spokane Towing" class="h-20 w-auto">
+                    <img src="/images/header-logo-384.webp" srcset="/images/header-logo-384.webp 384w, /images/header-logo-640.webp 640w" sizes="(min-width: 1024px) 288px, (min-width: 640px) 256px, 192px" alt="Spokane Towing" width="640" height="130" class="h-auto w-48 sm:w-64 lg:w-72 max-w-full">
                 </a>
                 <nav class="hidden md:flex items-center space-x-8">
                     <a href="/spokane-towing-services" class="text-gray-300 hover:text-white transition font-medium">Services</a>
-                    <a href="/#quote" class="text-gray-300 hover:text-white transition font-medium">Get Quote</a>
+                    <a href="/quote" class="text-gray-300 hover:text-white transition font-medium">Get Quote</a>
                     <a href="/faq" class="text-gray-300 hover:text-white transition font-medium">FAQ</a>
                     <a href="tel:+15097977999" class="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-xl hover:from-red-700 hover:to-red-800 transition font-semibold shadow-lg shadow-red-600/25 flex items-center space-x-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -214,7 +214,7 @@
                         </svg>
                         <span>Call (509) 797-7999</span>
                     </a>
-                    <a href="/#quote" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl hover:bg-white/20 transition font-semibold text-lg border border-white/20">
+                    <a href="/quote" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl hover:bg-white/20 transition font-semibold text-lg border border-white/20">
                         Get Instant Quote
                     </a>
                 </div>

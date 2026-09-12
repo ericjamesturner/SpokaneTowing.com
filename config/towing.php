@@ -25,4 +25,6 @@ return [
     'google_maps' => [
         'api_key' => env('GOOGLE_MAPS_API_KEY', ''),
     ],
+
+    'notification_email' => env('QUOTE_NOTIFICATION_EMAIL'),
 ];

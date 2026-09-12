@@ -1,6 +1,6 @@
 @extends('layouts.service-page')
 
-@section('title', 'Roadside Assistance Spokane | Battery Jump Starts, 20-Min Response')
+@section('title', 'Roadside Assistance in Spokane | 24/7 Help')
 @section('description', 'Spokane roadside assistance with no membership: battery jump starts & testing, fuel delivery, flat tires & lockouts. 20-30 min response, 24/7. Call (509) 797-7999')
 
 @section('hero-title', 'Roadside Assistance in Spokane')
@@ -76,7 +76,7 @@
                 <a href="tel:+15097977999" class="bg-white text-orange-600 px-8 py-4 rounded-xl hover:bg-gray-100 transition font-bold text-lg shadow-lg">
                     Call (509) 797-7999
                 </a>
-                <a href="/#quote" class="bg-white/10 text-white px-8 py-4 rounded-xl hover:bg-white/20 transition font-semibold text-lg border border-white/30">
+                <a href="/quote" class="bg-white/10 text-white px-8 py-4 rounded-xl hover:bg-white/20 transition font-semibold text-lg border border-white/30">
                     Get Instant Quote
                 </a>
             </div>

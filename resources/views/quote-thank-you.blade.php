@@ -2,13 +2,14 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="robots" content="noindex, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Thank You - Spokane Towing</title>
     <meta name="description" content="Thank you for booking with Spokane Towing. We'll be there in 20-30 minutes.">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @include('partials.clarity')
 </head>
-<body class="bg-gray-50">
+<body data-clarity-mask="true" class="bg-gray-50">
 <div class="min-h-screen bg-gray-50 py-12">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="bg-white p-8 rounded-lg border border-gray-200 shadow-sm text-center">

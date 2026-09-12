@@ -2,16 +2,16 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Spokane Towing | 24/7 Emergency Towing & Roadside Assistance</title>
-    <meta name="description" content="Spokane's trusted 24/7 towing company. Emergency towing, roadside assistance, flatbed transport & heavy duty recovery. 20-30 min response. Call (509) 797-7999">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tow Truck & Towing in Spokane | Spokane Towing</title>
+    <meta name="description" content="Need a tow truck in Spokane? Get fast 24/7 towing, flatbed transport and roadside assistance. Call (509) 797-7999 for availability and an estimate.">
     <link rel="canonical" href="{{ url('/') }}">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url('/') }}">
-    <meta property="og:title" content="Spokane Towing | 24/7 Emergency Towing & Roadside Assistance">
-    <meta property="og:description" content="Spokane's trusted 24/7 towing company. Emergency towing, roadside assistance, flatbed transport & heavy duty recovery. 20-30 min response. Call (509) 797-7999">
+    <meta property="og:title" content="Tow Truck & Towing in Spokane | Spokane Towing">
+    <meta property="og:description" content="Need a tow truck in Spokane? Get fast 24/7 towing, flatbed transport and roadside assistance. Call (509) 797-7999 for availability and an estimate.">
     <meta property="og:image" content="{{ url('/images/og-image.jpg') }}">
     <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="Spokane Towing">
@@ -19,8 +19,8 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="{{ url('/') }}">
-    <meta name="twitter:title" content="Spokane Towing | 24/7 Emergency Towing & Roadside Assistance">
-    <meta name="twitter:description" content="Spokane's trusted 24/7 towing company. Emergency towing, roadside assistance, flatbed transport & heavy duty recovery. 20-30 min response. Call (509) 797-7999">
+    <meta name="twitter:title" content="Tow Truck & Towing in Spokane | Spokane Towing">
+    <meta name="twitter:description" content="Need a tow truck in Spokane? Get fast 24/7 towing, flatbed transport and roadside assistance. Call (509) 797-7999 for availability and an estimate.">
     <meta name="twitter:image" content="{{ url('/images/og-image.jpg') }}">
 
     <link rel="icon" href="/favicon.ico" sizes="any">
@@ -30,40 +30,13 @@
     <!-- Fonts -->
     @include('partials.fonts')
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/website.css', 'resources/js/app.js'])
 
     <!-- Schema.org Structured Data -->
-    @include('partials.schema-local-business')
-    @include('partials.schema-website')
+        @include('partials.schema-website')
     @include('partials.schema-organization')
-    @include('partials.schema-faq')
 
-    @if(config('towing.google_maps.api_key'))
-        <script>
-            ((g) => {
-                var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window;
-                b = b[c] || (b[c] = {});
-                var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams,
-                    u = () => h || (h = new Promise(async (f, n) => {
-                        await (a = m.createElement("script"));
-                        e.set("libraries", [...r] + "");
-                        for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]);
-                        e.set("callback", c + ".maps." + q);
-                        a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
-                        d[q] = f;
-                        a.onerror = () => h = n(Error(p + " could not load."));
-                        a.nonce = m.querySelector("script[nonce]")?.nonce || "";
-                        m.head.append(a)
-                    }));
-                d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n))
-            })({
-                key: "{{ config('towing.google_maps.api_key') }}",
-                v: "weekly",
-                language: "en-US",
-                region: "US"
-            });
-        </script>
-    @endif
+    @include('partials.google-maps')
 
     @include('partials.clarity')
 
@@ -106,11 +79,11 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="flex justify-between items-center h-20">
                 <a href="/">
-                    <img src="/header-logo.webp" alt="Spokane Towing" class="h-20 w-auto">
+                    <img src="/images/header-logo-384.webp" srcset="/images/header-logo-384.webp 384w, /images/header-logo-640.webp 640w" sizes="(min-width: 1024px) 288px, (min-width: 640px) 256px, 192px" alt="Spokane Towing" width="640" height="130" class="h-auto w-48 sm:w-64 lg:w-72 max-w-full">
                 </a>
                 <nav class="hidden md:flex items-center space-x-8">
                     <a href="/spokane-towing-services" class="text-gray-300 hover:text-white transition font-medium">Services</a>
-                    <a href="#quote" class="text-gray-300 hover:text-white transition font-medium">Get Quote</a>
+                    <a href="/quote" class="text-gray-300 hover:text-white transition font-medium">Get Quote</a>
                     <a href="/faq" class="text-gray-300 hover:text-white transition font-medium">FAQ</a>
                     <a href="tel:+15097977999" class="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-xl hover:from-red-700 hover:to-red-800 transition font-semibold shadow-lg shadow-red-600/25 flex items-center space-x-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -134,11 +107,11 @@
     <!-- Hero Section -->
     <section class="relative min-h-screen flex items-center pt-20">
         <div class="absolute inset-0">
-            <img
+            <img width="1536" height="1024"
                 src="/images/hero-new.webp"
                 alt="Professional towing service in Spokane"
                 class="w-full h-full object-cover -scale-x-100"
-                loading="eager"
+                loading="eager" fetchpriority="high"
             >
             <div class="hero-gradient absolute inset-0"></div>
         </div>
@@ -158,8 +131,8 @@
                     </h1>
 
                     <p class="text-xl text-gray-300 mb-8 max-w-xl">
-                        Professional towing and roadside assistance when you need it most.
-                        Our expert team arrives in 20-30 minutes, ready to help.
+                        Need a tow truck in Spokane? Get fast towing and roadside assistance for breakdowns, flat tires and dead batteries.
+                        Call now to arrange pickup and confirm your arrival time.
                     </p>
 
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
@@ -200,7 +173,7 @@
                         <h2 class="text-2xl font-bold text-white mb-2">Get an Instant Quote</h2>
                         <p class="text-gray-300 mb-6">Calculate your towing cost in seconds</p>
 
-                        <form action="{{ route('quote.store') }}" method="POST" class="space-y-4">
+                        <form action="{{ route('quote.store') }}" method="POST" data-quote-form class="space-y-4">
                             @csrf
                             <div class="grid grid-cols-2 gap-3">
                                 <div class="relative">
@@ -212,7 +185,7 @@
                                     <input
                                         type="text"
                                         id="hero-name"
-                                        name="name"
+                                        name="name" aria-label="Your name" autocomplete="name" value="{{ old('name') }}"
                                         placeholder="Your name"
                                         class="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900 bg-gray-50"
                                         required
@@ -227,7 +200,7 @@
                                     <input
                                         type="tel"
                                         id="hero-phone"
-                                        name="phone"
+                                        name="phone" aria-label="Phone number" autocomplete="tel" value="{{ old('phone') }}"
                                         placeholder="Phone number"
                                         class="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900 bg-gray-50"
                                         required
@@ -245,10 +218,10 @@
                                 <input
                                     type="text"
                                     id="hero-from-address"
-                                    name="from"
+                                    name="from" aria-label="Pickup location" autocomplete="off" value="{{ old('from') }}"
                                     placeholder="Pickup location"
                                     class="w-full pl-12 pr-12 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900 bg-gray-50"
-                                    required
+                                    minlength="5" required
                                 >
                                 <button
                                     type="button"
@@ -272,10 +245,10 @@
                                 <input
                                     type="text"
                                     id="hero-to-address"
-                                    name="to"
+                                    name="to" aria-label="Drop-off location" autocomplete="off" value="{{ old('to') }}"
                                     placeholder="Drop-off location"
                                     class="w-full pl-12 pr-12 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900 bg-gray-50"
-                                    required
+                                    minlength="5" required
                                 >
                                 <button
                                     type="button"
@@ -320,14 +293,14 @@
                 <h2 class="text-2xl font-bold text-white mb-2 text-center">Get an Instant Quote</h2>
                 <p class="text-gray-300 mb-6 text-center">Calculate your towing cost in seconds</p>
 
-                <form action="{{ route('quote.store') }}" method="POST" class="space-y-4">
+                <form action="{{ route('quote.store') }}" method="POST" data-quote-form class="space-y-4">
                     @csrf
                     <div class="grid grid-cols-2 gap-3">
                         <div class="relative">
                             <input
                                 type="text"
                                 id="mobile-name"
-                                name="name"
+                                name="name" aria-label="Your name" autocomplete="name" value="{{ old('name') }}"
                                 placeholder="Your name"
                                 class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900 bg-gray-50"
                                 required
@@ -337,7 +310,7 @@
                             <input
                                 type="tel"
                                 id="mobile-phone"
-                                name="phone"
+                                name="phone" aria-label="Phone number" autocomplete="tel" value="{{ old('phone') }}"
                                 placeholder="Phone number"
                                 class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900 bg-gray-50"
                                 required
@@ -349,10 +322,10 @@
                         <input
                             type="text"
                             id="mobile-from-address"
-                            name="from"
+                            name="from" aria-label="Pickup location" autocomplete="off" value="{{ old('from') }}"
                             placeholder="Pickup location"
                             class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900 bg-gray-50"
-                            required
+                            minlength="5" required
                         >
                     </div>
 
@@ -360,10 +333,10 @@
                         <input
                             type="text"
                             id="mobile-to-address"
-                            name="to"
+                            name="to" aria-label="Drop-off location" autocomplete="off" value="{{ old('to') }}"
                             placeholder="Drop-off location"
                             class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900 bg-gray-50"
-                            required
+                            minlength="5" required
                         >
                     </div>
 
@@ -387,17 +360,17 @@
             <div class="text-center mb-16">
                 <span class="inline-block text-red-500 font-semibold text-sm tracking-wider uppercase mb-4">What We Offer</span>
                 <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
-                    Professional Towing Services
+                    Towing and Tow Truck Services in Spokane
                 </h2>
                 <p class="text-xl text-gray-400 max-w-2xl mx-auto">
-                    From emergency roadside assistance to heavy-duty towing, we've got you covered
+                    Find the right help for your vehicle: emergency towing, flatbed transport, roadside assistance and recovery
                 </p>
             </div>
 
             <!-- Main Services Grid -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
                 <a href="/24-hour-towing" class="service-card relative overflow-hidden rounded-2xl border border-slate-700/50 hover:border-red-500/50 group">
-                    <img src="/images/service-emergency.webp" alt="24 hour emergency towing service in Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <img width="1536" height="1024" src="/images/service-emergency-480.webp" srcset="/images/service-emergency-480.webp 480w, /images/service-emergency-800.webp 800w" sizes="(min-width: 1280px) 400px, (min-width: 768px) 45vw, 100vw" loading="lazy" decoding="async" alt="24 hour emergency towing service in Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
                     <div class="relative p-8 pt-28">
                         <h3 class="text-xl font-bold text-white mb-3 drop-shadow-lg">24/7 Emergency Towing</h3>
@@ -412,7 +385,7 @@
                 </a>
 
                 <a href="/roadside-assistance" class="service-card relative overflow-hidden rounded-2xl border border-slate-700/50 hover:border-red-500/50 group">
-                    <img src="/images/service-roadside.webp" alt="Roadside assistance service in Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <img width="1536" height="1024" src="/images/service-roadside-480.webp" srcset="/images/service-roadside-480.webp 480w, /images/service-roadside-800.webp 800w" sizes="(min-width: 1280px) 400px, (min-width: 768px) 45vw, 100vw" loading="lazy" decoding="async" alt="Roadside assistance service in Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
                     <div class="relative p-8 pt-28">
                         <h3 class="text-xl font-bold text-white mb-3 drop-shadow-lg">Roadside Assistance</h3>
@@ -427,11 +400,11 @@
                 </a>
 
                 <a href="/flatbed-towing" class="service-card relative overflow-hidden rounded-2xl border border-slate-700/50 hover:border-red-500/50 group">
-                    <img src="/images/service-flatbed.webp" alt="Flatbed towing service in Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <img width="1024" height="1024" src="/images/service-flatbed-480.webp" srcset="/images/service-flatbed-480.webp 480w, /images/service-flatbed-800.webp 800w" sizes="(min-width: 1280px) 400px, (min-width: 768px) 45vw, 100vw" loading="lazy" decoding="async" alt="Flatbed towing service in Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
                     <div class="relative p-8 pt-28">
                         <h3 class="text-xl font-bold text-white mb-3 drop-shadow-lg">Flatbed Towing</h3>
-                        <p class="text-gray-300 mb-4">Safe transport for luxury, classic, and low-clearance vehicles on our modern flatbeds.</p>
+                        <p class="text-gray-300 mb-4">Safe transport for luxury, classic, and low-clearance vehicles with modern flatbed equipment.</p>
                         <span class="text-red-500 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
                             Learn More
                             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -442,7 +415,7 @@
                 </a>
 
                 <a href="/lockout-flat-tire" class="service-card relative overflow-hidden rounded-2xl border border-slate-700/50 hover:border-red-500/50 group">
-                    <img src="/images/service-lockout.webp" alt="Car lockout and flat tire service in Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <img width="1536" height="1024" src="/images/service-lockout-480.webp" srcset="/images/service-lockout-480.webp 480w, /images/service-lockout-800.webp 800w" sizes="(min-width: 1280px) 400px, (min-width: 768px) 45vw, 100vw" loading="lazy" decoding="async" alt="Car lockout and flat tire service in Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
                     <div class="relative p-8 pt-28">
                         <h3 class="text-xl font-bold text-white mb-3 drop-shadow-lg">Lockout Service</h3>
@@ -457,7 +430,7 @@
                 </a>
 
                 <a href="/heavy-duty-towing" class="service-card relative overflow-hidden rounded-2xl border border-slate-700/50 hover:border-red-500/50 group">
-                    <img src="/images/service-heavy.webp" alt="Heavy duty truck towing in Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <img width="1024" height="1024" src="/images/service-heavy-480.webp" srcset="/images/service-heavy-480.webp 480w, /images/service-heavy-800.webp 800w" sizes="(min-width: 1280px) 400px, (min-width: 768px) 45vw, 100vw" loading="lazy" decoding="async" alt="Heavy duty truck towing in Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
                     <div class="relative p-8 pt-28">
                         <h3 class="text-xl font-bold text-white mb-3 drop-shadow-lg">Heavy-Duty Towing</h3>
@@ -472,11 +445,11 @@
                 </a>
 
                 <a href="/winch-out-recovery" class="service-card relative overflow-hidden rounded-2xl border border-slate-700/50 hover:border-red-500/50 group">
-                    <img src="/images/service-winch.webp" alt="Vehicle winch out and recovery service in Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <img width="1024" height="1024" src="/images/service-winch-480.webp" srcset="/images/service-winch-480.webp 480w, /images/service-winch-800.webp 800w" sizes="(min-width: 1280px) 400px, (min-width: 768px) 45vw, 100vw" loading="lazy" decoding="async" alt="Vehicle winch out and recovery service in Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
                     <div class="relative p-8 pt-28">
                         <h3 class="text-xl font-bold text-white mb-3 drop-shadow-lg">Winch-Out Recovery</h3>
-                        <p class="text-gray-300 mb-4">Stuck in a ditch, mud, or snow? Our powerful winch will get you out fast.</p>
+                        <p class="text-gray-300 mb-4">Stuck in a ditch, mud, or snow? Get fast help with a winch-out or recovery.</p>
                         <span class="text-red-500 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
                             Learn More
                             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -487,7 +460,7 @@
                 </a>
 
                 <a href="/battery-jump-start" class="service-card relative overflow-hidden rounded-2xl border border-slate-700/50 hover:border-red-500/50 group">
-                    <img src="/images/service-roadside.webp" alt="Car battery jump start service in Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <img width="1536" height="1024" src="/images/service-roadside-480.webp" srcset="/images/service-roadside-480.webp 480w, /images/service-roadside-800.webp 800w" sizes="(min-width: 1280px) 400px, (min-width: 768px) 45vw, 100vw" loading="lazy" decoding="async" alt="Car battery jump start service in Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
                     <div class="relative p-8 pt-28">
                         <h3 class="text-xl font-bold text-white mb-3 drop-shadow-lg">Battery Jump Start</h3>
@@ -502,7 +475,7 @@
                 </a>
 
                 <a href="/commercial-towing" class="service-card relative overflow-hidden rounded-2xl border border-slate-700/50 hover:border-red-500/50 group">
-                    <img src="/images/service-heavy.webp" alt="Commercial and fleet vehicle towing in Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <img width="1024" height="1024" src="/images/service-heavy-480.webp" srcset="/images/service-heavy-480.webp 480w, /images/service-heavy-800.webp 800w" sizes="(min-width: 1280px) 400px, (min-width: 768px) 45vw, 100vw" loading="lazy" decoding="async" alt="Commercial and fleet vehicle towing in Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
                     <div class="relative p-8 pt-28">
                         <h3 class="text-xl font-bold text-white mb-3 drop-shadow-lg">Commercial Towing</h3>
@@ -517,7 +490,7 @@
                 </a>
 
                 <a href="/long-distance-towing" class="service-card relative overflow-hidden rounded-2xl border border-slate-700/50 hover:border-red-500/50 group">
-                    <img src="/images/service-flatbed.webp" alt="Long distance towing and vehicle transport from Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+                    <img width="1024" height="1024" src="/images/service-flatbed-480.webp" srcset="/images/service-flatbed-480.webp 480w, /images/service-flatbed-800.webp 800w" sizes="(min-width: 1280px) 400px, (min-width: 768px) 45vw, 100vw" loading="lazy" decoding="async" alt="Long distance towing and vehicle transport from Spokane" class="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
                     <div class="relative p-8 pt-28">
                         <h3 class="text-xl font-bold text-white mb-3 drop-shadow-lg">Long Distance Towing</h3>
@@ -548,7 +521,7 @@
     <section class="py-24 bg-slate-950 relative overflow-hidden">
         <!-- Background Pattern -->
         <div class="absolute inset-0 opacity-5">
-            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,<svg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"none\" fill-rule=\"evenodd\"><g fill=\"%23ffffff\" fill-opacity=\"0.4\"><path d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/></g></g></svg>')"></div>
+            <div class="absolute inset-0" style="background-image: radial-gradient(white 1px, transparent 1px); background-size: 24px 24px"></div>
         </div>
 
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -624,7 +597,7 @@
                         </svg>
                         <span>(509) 797-7999</span>
                     </a>
-                    <a href="#quote" class="bg-transparent text-white px-8 py-4 rounded-xl hover:bg-white/10 transition font-semibold text-xl border-2 border-white flex items-center justify-center space-x-2">
+                    <a href="/quote" class="bg-transparent text-white px-8 py-4 rounded-xl hover:bg-white/10 transition font-semibold text-xl border-2 border-white flex items-center justify-center space-x-2">
                         <span>Get Online Quote</span>
                     </a>
                 </div>
@@ -707,7 +680,7 @@
                         <li><a href="/spokane-towing-services" class="text-gray-400 hover:text-red-500 transition">All Services</a></li>
                         <li><a href="/service-areas" class="text-gray-400 hover:text-red-500 transition">All Service Areas</a></li>
                         <li><a href="/faq" class="text-gray-400 hover:text-red-500 transition">FAQ</a></li>
-                        <li><a href="#quote" class="text-gray-400 hover:text-red-500 transition">Get a Quote</a></li>
+                        <li><a href="/quote" class="text-gray-400 hover:text-red-500 transition">Get a Quote</a></li>
                         <li><a href="/24-hour-towing" class="text-gray-400 hover:text-red-500 transition">Emergency Towing</a></li>
                         <li><a href="/roadside-assistance" class="text-gray-400 hover:text-red-500 transition">Roadside Assistance</a></li>
                     </ul>
@@ -718,91 +691,6 @@
 
     @include('partials.site-footer')
 
-    <script>
-        let fromAutocomplete, toAutocomplete, heroFromAutocomplete, heroToAutocomplete;
 
-        // Initialize autocomplete when libraries are loaded
-        document.addEventListener('DOMContentLoaded', async () => {
-            try {
-                const { Autocomplete } = await google.maps.importLibrary("places");
-
-                // Define bounds for 100 miles around Spokane
-                const spokaneCenter = new google.maps.LatLng(47.6588, -117.4260);
-                const bounds = new google.maps.LatLngBounds(
-                    new google.maps.LatLng(46.2088, -118.8760),
-                    new google.maps.LatLng(49.1088, -116.0760)
-                );
-
-                const options = {
-                    bounds: bounds,
-                    componentRestrictions: { country: "us" },
-                    fields: ["formatted_address", "geometry", "name"],
-                    strictBounds: true,
-                    types: ["geocode", "establishment"],
-                    origin: spokaneCenter
-                };
-
-                // Hero form autocomplete (desktop)
-                const heroFromInput = document.getElementById('hero-from-address');
-                const heroToInput = document.getElementById('hero-to-address');
-                if (heroFromInput) heroFromAutocomplete = new Autocomplete(heroFromInput, options);
-                if (heroToInput) heroToAutocomplete = new Autocomplete(heroToInput, options);
-
-                // Mobile form autocomplete
-                const mobileFromInput = document.getElementById('mobile-from-address');
-                const mobileToInput = document.getElementById('mobile-to-address');
-                if (mobileFromInput) fromAutocomplete = new Autocomplete(mobileFromInput, options);
-                if (mobileToInput) toAutocomplete = new Autocomplete(mobileToInput, options);
-            } catch (e) {
-                console.error('Failed to initialize autocomplete:', e);
-            }
-        });
-
-        async function detectLocation(fieldId) {
-            if (navigator.geolocation) {
-                try {
-                    const { Geocoder } = await google.maps.importLibrary("geocoding");
-
-                    navigator.geolocation.getCurrentPosition(
-                        async (position) => {
-                            const lat = position.coords.latitude;
-                            const lng = position.coords.longitude;
-
-                            const geocoder = new Geocoder();
-                            const response = await geocoder.geocode({
-                                location: { lat: lat, lng: lng }
-                            });
-
-                            if (response.results && response.results[0]) {
-                                const address = response.results[0].formatted_address;
-                                const input = document.getElementById(fieldId);
-                                if (input) {
-                                    input.value = address;
-                                }
-                            }
-                        },
-                        (error) => {
-                            console.error('Error getting location:', error);
-                            alert('Unable to get your location. Please enter address manually.');
-                        }
-                    );
-                } catch (e) {
-                    console.error('Geocoding failed:', e);
-                }
-            } else {
-                alert('Geolocation is not supported by your browser.');
-            }
-        }
-
-        // Header scroll effect
-        const header = document.getElementById('main-header');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
-                header.classList.add('py-2');
-            } else {
-                header.classList.remove('py-2');
-            }
-        });
-    </script>
 </body>
 </html>

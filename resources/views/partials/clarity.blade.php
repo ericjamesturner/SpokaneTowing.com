@@ -5,4 +5,8 @@
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "spx5v7j4vf");
+    @if(session()->pull('analytics_event') === 'quote_created')
+        // Only emitted after the server has created a quote, never on button click.
+        window.clarity('event', 'quote_created');
+    @endif
 </script>

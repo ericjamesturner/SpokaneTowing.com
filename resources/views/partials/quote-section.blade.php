@@ -1,19 +1,27 @@
 <!-- Quote Section -->
-<section class="py-20 bg-slate-900">
+<section id="quote" class="py-12 sm:py-16 bg-slate-900">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto">
             <div class="text-center mb-10">
                 <span class="inline-block text-orange-500 font-semibold text-sm tracking-wider uppercase mb-4">Get Started</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">
-                    Get an Instant Quote
-                </h2>
+                @if($standalone ?? false)
+                    <h1 class="text-3xl md:text-4xl font-bold text-white mb-2">Get a Towing Quote in Spokane</h1>
+                @else
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">Get an Instant Quote</h2>
+                @endif
                 <p class="text-xl text-gray-400">
-                    Calculate your towing cost in seconds
+                    Enter your pickup and drop-off locations for an estimate
                 </p>
             </div>
 
+            @if($errors->any())
+                <div role="alert" class="mb-6 rounded-xl border border-red-400 bg-red-950 p-4 text-white">
+                    <p class="font-semibold">Please check your details:</p>
+                    <ul class="mt-2 list-disc pl-5">@foreach($errors->all() as $error)<li>{{ $error }}</li>@endforeach</ul>
+                </div>
+            @endif
             <div class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50">
-                <form action="{{ route('quote.store') }}" method="POST" class="space-y-6">
+                <form action="{{ route('quote.store') }}" method="POST" data-quote-form class="space-y-6">
                     @csrf
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div class="relative">
@@ -25,7 +33,7 @@
                             <input
                                 type="text"
                                 id="customer-name"
-                                name="name"
+                                name="name" aria-label="Your name" autocomplete="name" value="{{ old('name') }}"
                                 placeholder="Your name"
                                 class="w-full pl-12 pr-4 py-4 bg-slate-900/50 border border-slate-600 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent text-white placeholder-gray-500"
                                 required
@@ -40,7 +48,7 @@
                             <input
                                 type="tel"
                                 id="customer-phone"
-                                name="phone"
+                                name="phone" aria-label="Phone number" autocomplete="tel" value="{{ old('phone') }}"
                                 placeholder="Phone number"
                                 class="w-full pl-12 pr-4 py-4 bg-slate-900/50 border border-slate-600 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent text-white placeholder-gray-500"
                                 required
@@ -58,10 +66,10 @@
                         <input
                             type="text"
                             id="from-address"
-                            name="from"
+                            name="from" aria-label="Pickup location" autocomplete="off" value="{{ old('from') }}"
                             placeholder="Pickup location"
                             class="w-full pl-12 pr-12 py-4 bg-slate-900/50 border border-slate-600 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent text-white placeholder-gray-500"
-                            required
+                            minlength="5" required
                         >
                         <button
                             type="button"
@@ -85,10 +93,10 @@
                         <input
                             type="text"
                             id="to-address"
-                            name="to"
+                            name="to" aria-label="Drop-off location" autocomplete="off" value="{{ old('to') }}"
                             placeholder="Drop-off location"
                             class="w-full pl-12 pr-12 py-4 bg-slate-900/50 border border-slate-600 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent text-white placeholder-gray-500"
-                            required
+                            minlength="5" required
                         >
                         <button
                             type="button"
@@ -111,80 +119,12 @@
                     <p class="text-center text-gray-500 text-sm mt-4">
                         Quotes are estimates. Call <a href="tel:+15097977999" class="text-orange-500 hover:text-orange-400 font-medium">(509) 797-7999</a> to lock in your price.
                     </p>
+                    <p class="text-center text-gray-400 text-xs leading-relaxed">
+                        By submitting, you agree to our <a href="/terms-of-service" class="underline">Terms</a> and <a href="/privacy-policy" class="underline">Privacy Policy</a>, and consent to calls/texts about your quote.
+                    </p>
                 </form>
             </div>
 
-            <script>
-                let fromAutocomplete, toAutocomplete;
-
-                // Initialize autocomplete when libraries are loaded
-                document.addEventListener('DOMContentLoaded', async () => {
-                    try {
-                        const { Autocomplete } = await google.maps.importLibrary("places");
-
-                        // Define bounds for 100 miles around Spokane
-                        const spokaneCenter = new google.maps.LatLng(47.6588, -117.4260);
-                        const bounds = new google.maps.LatLngBounds(
-                            new google.maps.LatLng(46.2088, -118.8760),
-                            new google.maps.LatLng(49.1088, -116.0760)
-                        );
-
-                        // Options for autocomplete
-                        const options = {
-                            bounds: bounds,
-                            componentRestrictions: { country: "us" },
-                            fields: ["formatted_address", "geometry", "name"],
-                            strictBounds: true,
-                            types: ["geocode", "establishment"],
-                            origin: spokaneCenter
-                        };
-
-                        // Initialize autocomplete for both inputs
-                        const fromInput = document.getElementById('from-address');
-                        const toInput = document.getElementById('to-address');
-                        if (fromInput) fromAutocomplete = new Autocomplete(fromInput, options);
-                        if (toInput) toAutocomplete = new Autocomplete(toInput, options);
-                    } catch (e) {
-                        console.error('Failed to initialize autocomplete:', e);
-                    }
-                });
-
-                async function detectLocation(fieldId) {
-                    if (navigator.geolocation) {
-                        try {
-                            const { Geocoder } = await google.maps.importLibrary("geocoding");
-
-                            navigator.geolocation.getCurrentPosition(
-                                async (position) => {
-                                    const lat = position.coords.latitude;
-                                    const lng = position.coords.longitude;
-
-                                    const geocoder = new Geocoder();
-                                    const response = await geocoder.geocode({
-                                        location: { lat: lat, lng: lng }
-                                    });
-
-                                    if (response.results && response.results[0]) {
-                                        const address = response.results[0].formatted_address;
-                                        const input = document.getElementById(fieldId);
-                                        if (input) {
-                                            input.value = address;
-                                        }
-                                    }
-                                },
-                                (error) => {
-                                    console.error('Error getting location:', error);
-                                    alert('Unable to get your location. Please enter address manually.');
-                                }
-                            );
-                        } catch (e) {
-                            console.error('Geocoding failed:', e);
-                        }
-                    } else {
-                        alert('Geolocation is not supported by your browser.');
-                    }
-                }
-            </script>
 
             <div class="mt-12 text-center">
                 <p class="text-gray-400 mb-6">Open 24/7 - Fast Response Guaranteed</p>

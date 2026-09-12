@@ -27,7 +27,7 @@ class QuoteController extends Controller
         try {
             // Get coordinates for pickup location to check service area
             $pickupCoords = $this->getCoordinates($fromAddress);
-            if (!$pickupCoords) {
+            if (! $pickupCoords) {
                 return redirect()->route('quote.error')->with('error', 'Unable to find pickup location. Please enter a valid address.');
             }
 
@@ -40,7 +40,7 @@ class QuoteController extends Controller
             // Calculate distance between pickup and dropoff
             $result = $this->calculateDistance($fromAddress, $toAddress);
 
-            if (!$result) {
+            if (! $result) {
                 return redirect()->route('quote.error')->with('error', 'Unable to calculate distance. Please check the addresses and try again.');
             }
 
@@ -78,10 +78,12 @@ class QuoteController extends Controller
             $this->sendQuoteNotification($quote);
 
             // Redirect to the quote display page (PRG pattern)
-            return redirect()->route('quote.show', $quote->uuid);
+            return redirect()->route('quote.show', $quote->uuid)
+                ->with('analytics_event', 'quote_created');
 
         } catch (\Exception $e) {
-            Log::error('Quote creation failed: ' . $e->getMessage());
+            Log::error('Quote creation failed: '.$e->getMessage());
+
             return redirect()->route('quote.error')->with('error', 'Something went wrong. Please try again or call us at (509) 797-7999.');
         }
     }
@@ -101,14 +103,10 @@ class QuoteController extends Controller
         $apiKey = config('towing.google_maps.api_key');
 
         if (empty($apiKey)) {
-            // Fallback: estimate based on straight-line distance
-            return [
-                'distance' => rand(5, 30),
-                'duration' => rand(10, 45),
-            ];
+            return null;
         }
 
-        $response = Http::get('https://maps.googleapis.com/maps/api/distancematrix/json', [
+        $response = Http::timeout(10)->get('https://maps.googleapis.com/maps/api/distancematrix/json', [
             'origins' => $from,
             'destinations' => $to,
             'units' => 'imperial',
@@ -136,11 +134,10 @@ class QuoteController extends Controller
         $apiKey = config('towing.google_maps.api_key');
 
         if (empty($apiKey)) {
-            // Fallback for testing
-            return ['lat' => 47.6588, 'lng' => -117.4260];
+            return null;
         }
 
-        $response = Http::get('https://maps.googleapis.com/maps/api/geocode/json', [
+        $response = Http::timeout(10)->get('https://maps.googleapis.com/maps/api/geocode/json', [
             'address' => $address,
             'key' => $apiKey,
         ]);
@@ -150,6 +147,7 @@ class QuoteController extends Controller
 
             if ($data['status'] == 'OK' && count($data['results']) > 0) {
                 $location = $data['results'][0]['geometry']['location'];
+
                 return ['lat' => $location['lat'], 'lng' => $location['lng']];
             }
         }
@@ -178,11 +176,12 @@ class QuoteController extends Controller
 
     private function sendQuoteNotification($quoteRecord)
     {
-        $resendKey = env('RESEND_KEY');
-        $notificationEmail = env('QUOTE_NOTIFICATION_EMAIL');
+        $resendKey = config('services.resend.key');
+        $notificationEmail = config('towing.notification_email');
 
         if (empty($resendKey) || empty($notificationEmail)) {
             Log::warning('Resend key or notification email not configured');
+
             return;
         }
 
@@ -199,7 +198,7 @@ class QuoteController extends Controller
 
             Log::info("Quote notification email sent for quote #{$quoteRecord->quote_number}");
         } catch (\Exception $e) {
-            Log::error("Failed to send quote notification email: " . $e->getMessage());
+            Log::error('Failed to send quote notification email: '.$e->getMessage());
         }
     }
 

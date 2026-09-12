@@ -4,7 +4,7 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
             <div>
                 <a href="/">
-                    <img src="/header-logo.webp" alt="Spokane Towing" class="h-20 w-auto mb-4">
+                    <img width="640" height="130" src="/images/header-logo-384.webp" srcset="/images/header-logo-384.webp 384w, /images/header-logo-640.webp 640w" sizes="(min-width: 1024px) 288px, (min-width: 640px) 256px, 192px" alt="Spokane Towing" class="h-auto w-48 sm:w-64 lg:w-72 max-w-full mb-4">
                 </a>
                 <p class="text-gray-500 text-sm mb-4">Licensed & Insured<br>Serving Spokane & the Inland Northwest Since 2010</p>
                 <a href="tel:+15097977999" class="text-red-500 hover:text-red-400 font-bold text-lg transition">(509) 797-7999</a>
@@ -57,7 +57,7 @@
                 <ul class="space-y-2 text-sm">
                     <li><a href="/spokane-towing-services" class="text-gray-400 hover:text-white transition">All Services</a></li>
                     <li><a href="/faq" class="text-gray-400 hover:text-white transition">FAQ</a></li>
-                    <li><a href="/#quote" class="text-gray-400 hover:text-white transition">Get Quote</a></li>
+                    <li><a href="/quote" class="text-gray-400 hover:text-white transition">Get Quote</a></li>
                     <li><a href="/contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
                     <li><a href="/privacy-policy" class="text-gray-400 hover:text-white transition">Privacy</a></li>
                     <li><a href="/terms-of-service" class="text-gray-400 hover:text-white transition">Terms</a></li>

@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Spokane Towing Services | Emergency Towing, Roadside Assistance & More</title>
     <meta name="description" content="Full-service towing company in Spokane, WA. Emergency towing, roadside assistance, flatbed transport, heavy duty & long distance towing. 20-30 min response. Call (509) 797-7999">
 
@@ -26,76 +26,10 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
     @include('partials.fonts')
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/website.css', 'resources/js/app.js'])
 
     <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@@context": "https://schema.org",
-        "@@type": "TowingService",
-        "name": "Spokane Towing Services",
-        "image": "{{ asset('images/hero.jpg') }}",
-        "url": "{{ url('/spokane-towing-services') }}",
-        "telephone": "+15097977999",
-        "priceRange": "$$",
-        "address": {
-            "@@type": "PostalAddress",
-            "addressLocality": "Spokane",
-            "addressRegion": "WA",
-            "addressCountry": "US"
-        },
-        "geo": {
-            "@@type": "GeoCoordinates",
-            "latitude": 47.6588,
-            "longitude": -117.4260
-        },
-        "serviceArea": {
-            "@@type": "GeoCircle",
-            "geoMidpoint": {
-                "@@type": "GeoCoordinates",
-                "latitude": 47.6588,
-                "longitude": -117.4260
-            },
-            "geoRadius": "50000"
-        },
-        "openingHoursSpecification": {
-            "@@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-            "opens": "00:00",
-            "closes": "23:59"
-        },
-        "hasOfferCatalog": {
-            "@@type": "OfferCatalog",
-            "name": "Towing Services",
-            "itemListElement": [
-                {
-                    "@@type": "Offer",
-                    "itemOffered": {
-                        "@@type": "Service",
-                        "name": "Emergency Towing",
-                        "description": "24/7 emergency towing services in Spokane"
-                    }
-                },
-                {
-                    "@@type": "Offer",
-                    "itemOffered": {
-                        "@@type": "Service",
-                        "name": "Roadside Assistance",
-                        "description": "Jump starts, tire changes, lockouts, and fuel delivery"
-                    }
-                },
-                {
-                    "@@type": "Offer",
-                    "itemOffered": {
-                        "@@type": "Service",
-                        "name": "Accident Recovery",
-                        "description": "Professional accident scene recovery and cleanup"
-                    }
-                }
-            ]
-        }
-    }
-    </script>
+    @include('partials.schema-organization')
 
     <script type="application/ld+json">
     {!! json_encode([
@@ -147,11 +81,11 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="flex justify-between items-center h-20">
                 <a href="/">
-                    <img src="/header-logo.webp" alt="Spokane Towing" class="h-20 w-auto">
+                    <img src="/images/header-logo-384.webp" srcset="/images/header-logo-384.webp 384w, /images/header-logo-640.webp 640w" sizes="(min-width: 1024px) 288px, (min-width: 640px) 256px, 192px" alt="Spokane Towing" width="640" height="130" class="h-auto w-48 sm:w-64 lg:w-72 max-w-full">
                 </a>
                 <nav class="hidden md:flex items-center space-x-8">
                     <a href="/spokane-towing-services" class="text-red-500 font-medium">Services</a>
-                    <a href="/#quote" class="text-gray-300 hover:text-white transition font-medium">Get Quote</a>
+                    <a href="/quote" class="text-gray-300 hover:text-white transition font-medium">Get Quote</a>
                     <a href="/faq" class="text-gray-300 hover:text-white transition font-medium">FAQ</a>
                     <a href="tel:+15097977999" class="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-xl hover:from-red-700 hover:to-red-800 transition font-semibold shadow-lg shadow-red-600/25 flex items-center space-x-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -214,7 +148,7 @@
                         </svg>
                         <span>Call (509) 797-7999</span>
                     </a>
-                    <a href="/#quote" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl hover:bg-white/20 transition font-semibold text-lg text-center border border-white/20">
+                    <a href="/quote" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl hover:bg-white/20 transition font-semibold text-lg text-center border border-white/20">
                         Get Instant Quote
                     </a>
                 </div>
@@ -324,7 +258,7 @@
                         <a href="/motorcycle-towing" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Motorcycle Towing</a>
                         <a href="/winch-out-recovery" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Winch Out & Recovery</a>
                         <a href="/long-distance-towing" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Long Distance Towing</a>
-                        <a href="/#quote" class="bg-red-600/20 border border-red-600/30 rounded-xl px-5 py-4 text-red-400 hover:text-red-300 hover:border-red-500/50 transition font-semibold">Get an Instant Quote →</a>
+                        <a href="/quote" class="bg-red-600/20 border border-red-600/30 rounded-xl px-5 py-4 text-red-400 hover:text-red-300 hover:border-red-500/50 transition font-semibold">Get an Instant Quote →</a>
                     </div>
                 </div>
 
@@ -437,7 +371,7 @@
                     <div class="space-y-6">
                         <div class="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50">
                             <h4 class="font-semibold text-white mb-2">How much do Spokane towing services cost?</h4>
-                            <p class="text-gray-400">Our towing rates are a $140 hook fee plus $6 per mile, with a $200 minimum. We offer competitive pricing with transparent rates and no hidden fees. Call for an instant quote or use our <a href="/#quote" class="text-red-500 hover:text-red-400 transition">online calculator</a> for exact pricing.</p>
+                            <p class="text-gray-400">Our towing rates are a $140 hook fee plus $6 per mile, with a $200 minimum. We offer competitive pricing with transparent rates and no hidden fees. Call for an instant quote or use our <a href="/quote" class="text-red-500 hover:text-red-400 transition">online calculator</a> for exact pricing.</p>
                         </div>
                         <div class="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50">
                             <h4 class="font-semibold text-white mb-2">Do you provide 24/7 towing services in Spokane?</h4>
@@ -470,7 +404,7 @@
                         </svg>
                         <span>Call (509) 797-7999</span>
                     </a>
-                    <a href="/#quote" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl hover:bg-white/20 transition font-semibold text-lg border border-white/20">
+                    <a href="/quote" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl hover:bg-white/20 transition font-semibold text-lg border border-white/20">
                         Get Online Quote
                     </a>
                 </div>

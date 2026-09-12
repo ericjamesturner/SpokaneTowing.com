@@ -7,12 +7,12 @@
   "url": "https://spokanetowing.com",
   "logo": {
     "@@type": "ImageObject",
-    "url": "https://spokanetowing.com/header-logo.webp",
-    "width": 400,
-    "height": 100
+    "url": "https://spokanetowing.com/images/header-logo-640.webp",
+    "width": 640,
+    "height": 130
   },
   "image": "https://spokanetowing.com/images/og-image.jpg",
-  "description": "Professional 24/7 towing and roadside assistance in Spokane, WA. Fast response, fair pricing, licensed and insured.",
+  "description": "24/7 towing and roadside assistance in Spokane, WA. Call to arrange pickup and confirm availability and pricing.",
   "telephone": "+15097977999",
   "areaServed": {
     "@@type": "GeoCircle",
