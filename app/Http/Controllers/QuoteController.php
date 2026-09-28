@@ -191,7 +191,7 @@ class QuoteController extends Controller
             $customerName = $quoteRecord->customer_name ?? 'Unknown';
             $resend->emails->send([
                 'from' => 'Spokane Towing <spokanetowing@e.ravenfab.com>',
-                'to' => [$notificationEmail, 'brtowingandrecoveryllc@gmail.com'],
+                'to' => [$notificationEmail],
                 'subject' => "New Quote from {$customerName} - \${$quoteRecord->total}",
                 'html' => $this->buildQuoteEmailHtml($quoteRecord),
             ]);
