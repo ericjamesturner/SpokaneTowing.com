@@ -1,5 +1,4 @@
 {{-- Inline tiny font declarations to avoid an extra render-blocking stylesheet. --}}
-<link rel="preload" href="/fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
 <style>
 /* Inter Font - Self-hosted for better performance */
 @font-face {

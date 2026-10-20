@@ -35,11 +35,12 @@
     <script type="application/ld+json">
     {
       "@@context": "https://schema.org",
-      "@@type": "ServiceArea",
+      "@@type": "Service",
+      "serviceType": "Towing",
       "name": "Towing Services in @yield('city')",
       "description": "@yield('description')",
       "url": "{{ url()->current() }}",
-      "broker": {
+      "provider": {
         "@@id": "https://spokanetowing.com/#organization"
       },
       "areaServed": {

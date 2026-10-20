@@ -38,7 +38,7 @@
       "@@context": "https://schema.org",
       "@@type": "Service",
       "serviceType": "@yield('service-type', 'Towing Service')",
-      "broker": {
+      "provider": {
         "@@id": "https://spokanetowing.com/#organization"
       },
       "name": "@yield('hero-title')",
