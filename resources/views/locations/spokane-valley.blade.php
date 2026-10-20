@@ -1,10 +1,14 @@
 @extends('layouts.location-page')
 
-@section('title', 'Spokane Valley Towing & Roadside Help')
+@section('title', 'Towing Spokane Valley, WA | 24/7 Tow Truck')
 
-@section('description', 'Need towing in Spokane Valley? Fast 24/7 tow truck and roadside help across Greenacres, Millwood and I-90. Call (509) 797-7999 for a price and arrival time.')
+@section('description', 'Towing in Spokane Valley, WA 24/7: I-90 exits from Argonne to Barker, Sprague, Greenacres & Millwood. $200 minimum. Call (509) 797-7999 for a tow.')
 
 @section('city', 'Spokane Valley')
+
+@section('h1')
+                        Towing in <span class="text-gradient">Spokane Valley, WA</span>
+@endsection
 
 @section('content')
 <p><strong>Spokane Valley residents trust Spokane Towing for all their vehicle towing and recovery needs.</strong> Located just east of Spokane, the Valley is home to over 100,000 residents and thousands of businesses. Whether you're stuck on Sprague Avenue during rush hour or need assistance in the University City area, we're here to help 24/7.</p>
@@ -14,7 +18,7 @@
 <h3 class="text-2xl font-semibold mt-8 mb-4">Major Spokane Valley Areas We Serve:</h3>
 <div class="grid md:grid-cols-2 gap-4 mb-8">
     <ul class="space-y-2">
-        <li><strong>Greenacres</strong> - Full coverage of this eastern Valley community</li>
+        <li><strong><a href="/towing-greenacres" class="text-red-500 hover:underline">Greenacres</a></strong> - Full coverage of this eastern Valley community</li>
         <li><strong>Millwood</strong> - Quick response to the Argonne Road area</li>
         <li><strong>Veradale</strong> - Serving the Sullivan Road corridor</li>
         <li><strong>University City</strong> - Near the Spokane Valley Mall</li>
@@ -25,7 +29,7 @@
         <li><strong>Chester</strong> - Residential area service</li>
         <li><strong>Ponderosa</strong> - North Valley coverage</li>
         <li><strong>Opportunity</strong> - East Sprague corridor</li>
-        <li><strong>Liberty Lake</strong> - I-90 and surrounding areas</li>
+        <li><strong><a href="/towing-liberty-lake" class="text-red-500 hover:underline">Liberty Lake</a></strong> - I-90 and surrounding areas</li>
     </ul>
 </div>
 
@@ -49,6 +53,43 @@
 </div>
 
 <p>From a simple jump start at Mirabeau Point to heavy-duty towing on the industrial streets near Trent, we handle it all. Our professional drivers are familiar with Spokane Valley's unique layout and traffic patterns, ensuring safe and efficient service every time.</p>
+
+
+<h3 class="text-2xl font-semibold mt-8 mb-4">Towing on I-90 Through Spokane Valley</h3>
+<p class="mb-4">Most Valley tow calls come from I-90 and the arterials that feed it. When you call, giving the nearest exit gets a truck to you faster: <strong>Argonne/Mullan</strong>, <strong>Pines Road</strong>, <strong>Evergreen Road</strong>, <strong>Sullivan Road</strong> and <strong>Barker Road</strong>. Off the freeway, we regularly get calls from Sprague Avenue, Trent Avenue (SR-290), Pines and Sullivan Roads, and the lots around the Spokane Valley Mall and Indiana Avenue.</p>
+
+<h3 class="text-2xl font-semibold mt-8 mb-4">What a Tow in Spokane Valley Costs</h3>
+<p class="mb-4">Online estimates use a $140 hook fee plus $6 per mile, with a $200 minimum. A short tow inside the Valley, such as Sprague &amp; Pines to a shop on Sullivan, usually comes in at the $200 minimum. A tow from the Valley to downtown Spokane (roughly 10 miles) works out to about $200. You get your exact price on the phone before a truck is sent, or you can use the <a href="/quote" class="text-red-500 hover:underline">online towing quote</a>.</p>
+
+<h3 class="text-2xl font-semibold mt-8 mb-4">Spokane Valley Towing FAQ</h3>
+<div class="space-y-4 mb-8">
+    <div>
+        <p class="font-semibold text-white">How fast can a tow truck get to me in Spokane Valley?</p>
+        <p>Average arrival is 20-30 minutes in most of the Valley. Snowstorms and rush hour on I-90 can add time, and you'll get an estimated arrival when you call.</p>
+    </div>
+    <div>
+        <p class="font-semibold text-white">Can you tow my car from Spokane Valley to a shop in Spokane or Coeur d'Alene?</p>
+        <p>Yes. Tell us the destination when you call. Tows into Spokane or east to Post Falls and Coeur d'Alene are priced at the same hook fee plus mileage.</p>
+    </div>
+    <div>
+        <p class="font-semibold text-white">Do I need a roadside membership?</p>
+        <p>No. You pay per call, with no membership or sign-up.</p>
+    </div>
+</div>
+
+<p class="mb-4">Need a tow on the other side of town? See our main page for <a href="/spokane-towing-services" class="text-red-500 hover:underline">towing in Spokane</a>.</p>
+
+<script type="application/ld+json">
+{!! json_encode([
+    "@@context" => "https://schema.org",
+    "@@type" => "FAQPage",
+    "mainEntity" => [
+        ["@@type" => "Question", "name" => "How fast can a tow truck get to me in Spokane Valley?", "acceptedAnswer" => ["@@type" => "Answer", "text" => "Average arrival is 20-30 minutes in most of the Valley. Snowstorms and rush hour on I-90 can add time, and you'll get an estimated arrival when you call."]],
+        ["@@type" => "Question", "name" => "Can you tow my car from Spokane Valley to a shop in Spokane or Coeur d'Alene?", "acceptedAnswer" => ["@@type" => "Answer", "text" => "Yes. Tell us the destination when you call. Tows into Spokane or east to Post Falls and Coeur d'Alene are priced at the same hook fee plus mileage."]],
+        ["@@type" => "Question", "name" => "Do I need a roadside membership?", "acceptedAnswer" => ["@@type" => "Answer", "text" => "No. You pay per call, with no membership or sign-up."]],
+    ]
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
+</script>
 
 <p class="text-lg font-semibold mt-8">Don't let a vehicle breakdown ruin your day in Spokane Valley. Call Spokane Towing at (509) 797-7999 for immediate assistance anywhere in the Valley!</p>
 @endsection

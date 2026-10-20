@@ -152,7 +152,11 @@
                 </div>
 
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                    Towing in <span class="text-gradient">@yield('city')</span>
+                    @hasSection('h1')
+                        @yield('h1')
+                    @else
+                        Towing in <span class="text-gradient">@yield('city')</span>
+                    @endif
                 </h1>
                 <p class="text-xl mb-8 text-gray-300 max-w-2xl mx-auto">
                     Professional towing and roadside assistance serving @yield('city') and surrounding areas

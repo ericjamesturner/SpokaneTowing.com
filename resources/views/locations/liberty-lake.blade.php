@@ -55,6 +55,7 @@
 </div>
 
 <p class="text-lg">From <strong>emergency accident recovery</strong> on I-90 to helping residents transport vehicles to trusted repair facilities, we handle all types of automotive emergencies in <strong>Liberty Lake</strong> with professionalism and care.</p>
+<p class="mt-6">Just west of Liberty Lake, we also cover <a href="/towing-greenacres" class="text-red-500 hover:underline">towing in Greenacres</a> along Sprague Avenue and the Barker Road exit.</p>
 @endsection
 
 @section('nearby')

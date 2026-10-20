@@ -55,9 +55,11 @@
 </div>
 
 <p class="text-lg">From <strong>commuter breakdowns</strong> on SR-41 to <a href="/winch-out-recovery" class="text-red-500 hover:underline">winter ditch recoveries</a> on prairie roads, we handle it all — including <a href="/battery-jump-start" class="text-red-500 hover:underline">jump starts</a>, <a href="/lockout-flat-tire" class="text-red-500 hover:underline">lockouts, and flat tires</a>. Available 24/7, no membership required.</p>
+<p class="mt-6">North of the Rathdrum Prairie, we also cover <a href="/towing-athol" class="text-red-500 hover:underline">towing in Athol</a> along US-95 and SR-54, plus <a href="/towing-spirit-lake" class="text-red-500 hover:underline">Spirit Lake towing</a>.</p>
 @endsection
 
 @section('nearby')
+    <a href="/towing-athol" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Athol Towing</a>
     <a href="/towing-post-falls" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Post Falls Towing</a>
     <a href="/towing-hayden-id" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Hayden Towing</a>
     <a href="/towing-spirit-lake" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Spirit Lake Towing</a>

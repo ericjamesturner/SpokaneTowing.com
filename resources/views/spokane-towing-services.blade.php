@@ -379,11 +379,13 @@
                                 <li>• <a href="/towing-airway-heights" class="hover:text-red-500 transition">Airway Heights</a></li>
                                 <li>• <a href="/towing-medical-lake" class="hover:text-red-500 transition">Medical Lake</a></li>
                                 <li>• <a href="/towing-deer-park" class="hover:text-red-500 transition">Deer Park</a></li>
+                                <li>• <a href="/towing-greenacres" class="hover:text-red-500 transition">Greenacres</a></li>
                             </ul>
                         </div>
                     </div>
                     <p class="mt-6">
-                        <a href="/service-areas" class="text-red-500 hover:text-red-400 font-semibold transition">View all service areas, including Coeur d'Alene, Post Falls & Sandpoint →</a>
+                        <a href="/service-areas" class="text-red-500 hover:text-red-400 font-semibold transition">View all service areas →</a>
+                        <span class="text-gray-400"> North Idaho: <a href="/towing-coeur-d-alene" class="hover:text-red-500">Coeur d'Alene</a>, <a href="/towing-post-falls" class="hover:text-red-500">Post Falls</a>, <a href="/towing-athol" class="hover:text-red-500">Athol</a> &amp; <a href="/towing-sandpoint" class="hover:text-red-500">Sandpoint</a>.</span>
                     </p>
                 </div>
 

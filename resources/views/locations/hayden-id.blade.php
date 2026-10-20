@@ -55,9 +55,11 @@
 </div>
 
 <p class="text-lg">Whether you need <strong>emergency towing</strong> on US-95, assistance near Hayden Lake, or transport to repair facilities in the greater Spokane-Coeur d'Alene area, we provide professional service across state lines to the <strong>Hayden community</strong>.</p>
+<p class="mt-6">Heading north on US-95 toward Silverwood or Farragut State Park? We also arrange <a href="/towing-athol" class="text-red-500 hover:underline">towing in Athol, ID</a> and the surrounding area.</p>
 @endsection
 
 @section('nearby')
+    <a href="/towing-athol" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Athol Towing</a>
     <a href="/towing-coeur-d-alene" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Coeur d'Alene Towing</a>
     <a href="/towing-post-falls" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Post Falls Towing</a>
     <a href="/towing-sandpoint" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Sandpoint Towing</a>

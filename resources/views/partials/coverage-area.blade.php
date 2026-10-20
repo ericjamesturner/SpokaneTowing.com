@@ -93,6 +93,24 @@
                         <svg class="w-5 h-5 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                         </svg>
+                        <a href="/towing-rathdrum" class="text-gray-300 hover:text-orange-500 transition">Rathdrum, ID</a>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <a href="/towing-athol" class="text-gray-300 hover:text-orange-500 transition">Athol, ID</a>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <a href="/towing-spirit-lake" class="text-gray-300 hover:text-orange-500 transition">Spirit Lake, ID</a>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
                         <a href="/service-areas" class="text-orange-500 hover:text-orange-400 transition font-semibold">View all areas →</a>
                     </li>
                 </ul>
