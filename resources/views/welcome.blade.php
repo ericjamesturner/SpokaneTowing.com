@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tow Truck & Towing in Spokane | Spokane Towing</title>
+    <title>Tow Truck Spokane | 24/7 Tow Truck & Roadside Help</title>
     <meta name="description" content="Need a tow truck in Spokane? Get fast 24/7 towing, flatbed transport and roadside assistance. Call (509) 797-7999 for availability and an estimate.">
     <link rel="canonical" href="{{ url('/') }}">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url('/') }}">
-    <meta property="og:title" content="Tow Truck & Towing in Spokane | Spokane Towing">
+    <meta property="og:title" content="Tow Truck Spokane | 24/7 Tow Truck & Roadside Help">
     <meta property="og:description" content="Need a tow truck in Spokane? Get fast 24/7 towing, flatbed transport and roadside assistance. Call (509) 797-7999 for availability and an estimate.">
     <meta property="og:image" content="{{ url('/images/og-image.jpg') }}">
     <meta property="og:locale" content="en_US">
@@ -19,7 +19,7 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="{{ url('/') }}">
-    <meta name="twitter:title" content="Tow Truck & Towing in Spokane | Spokane Towing">
+    <meta name="twitter:title" content="Tow Truck Spokane | 24/7 Tow Truck & Roadside Help">
     <meta name="twitter:description" content="Need a tow truck in Spokane? Get fast 24/7 towing, flatbed transport and roadside assistance. Call (509) 797-7999 for availability and an estimate.">
     <meta name="twitter:image" content="{{ url('/images/og-image.jpg') }}">
 
@@ -125,14 +125,14 @@
                     </div>
 
                     <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-                        Fast & Reliable<br>
-                        <span class="text-gradient">Towing Service</span><br>
+                        24/7 Tow Truck<br>
+                        <span class="text-gradient">Service</span><br>
                         in Spokane
                     </h1>
 
                     <p class="text-xl text-gray-300 mb-8 max-w-xl">
                         Need a tow truck in Spokane? Get fast towing and roadside assistance for breakdowns, flat tires and dead batteries.
-                        Call now to arrange pickup and confirm your arrival time.
+                        Call now to arrange pickup and confirm your arrival time. See <a href="/spokane-towing-services" class="text-red-400 hover:text-red-300 underline">Spokane towing services, prices and coverage</a>.
                     </p>
 
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
@@ -508,7 +508,7 @@
             <!-- View All Services -->
             <div class="text-center">
                 <a href="/spokane-towing-services" class="inline-flex items-center space-x-2 text-red-500 hover:text-red-400 font-semibold text-lg transition">
-                    <span>View All Services</span>
+                    <span>View All Spokane Towing Services</span>
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                     </svg>
@@ -625,7 +625,7 @@
                         Washington
                     </h3>
                     <ul class="space-y-2">
-                        <li><a href="/" class="text-gray-400 hover:text-red-500 transition">Spokane</a></li>
+                        <li><a href="/spokane-towing-services" class="text-gray-400 hover:text-red-500 transition">Towing in Spokane</a></li>
                         <li><a href="/towing-spokane-valley" class="text-gray-400 hover:text-red-500 transition">Spokane Valley</a></li>
                         <li><a href="/towing-greenacres" class="text-gray-400 hover:text-red-500 transition">Greenacres</a></li>
                         <li><a href="/towing-cheney" class="text-gray-400 hover:text-red-500 transition">Cheney</a></li>
@@ -677,7 +677,7 @@
                         Quick Links
                     </h3>
                     <ul class="space-y-2">
-                        <li><a href="/spokane-towing-services" class="text-gray-400 hover:text-red-500 transition">All Services</a></li>
+                        <li><a href="/spokane-towing-services" class="text-gray-400 hover:text-red-500 transition">Spokane Towing Services</a></li>
                         <li><a href="/service-areas" class="text-gray-400 hover:text-red-500 transition">All Service Areas</a></li>
                         <li><a href="/faq" class="text-gray-400 hover:text-red-500 transition">FAQ</a></li>
                         <li><a href="/quote" class="text-gray-400 hover:text-red-500 transition">Get a Quote</a></li>

@@ -29,7 +29,7 @@
             <div>
                 <h3 class="text-white font-semibold mb-4">Service Areas</h3>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="/" class="text-gray-400 hover:text-white transition">Spokane, WA</a></li>
+                    <li><a href="/spokane-towing-services" class="text-gray-400 hover:text-white transition">Towing in Spokane, WA</a></li>
                     <li><a href="/towing-spokane-valley" class="text-gray-400 hover:text-white transition">Spokane Valley</a></li>
                     <li><a href="/towing-greenacres" class="text-gray-400 hover:text-white transition">Greenacres</a></li>
                     <li><a href="/towing-liberty-lake" class="text-gray-400 hover:text-white transition">Liberty Lake</a></li>
@@ -55,7 +55,7 @@
                 </ul>
                 <h3 class="text-white font-semibold mb-4">Company</h3>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="/spokane-towing-services" class="text-gray-400 hover:text-white transition">All Services</a></li>
+                    <li><a href="/spokane-towing-services" class="text-gray-400 hover:text-white transition">Spokane Towing Services</a></li>
                     <li><a href="/faq" class="text-gray-400 hover:text-white transition">FAQ</a></li>
                     <li><a href="/quote" class="text-gray-400 hover:text-white transition">Get Quote</a></li>
                     <li><a href="/contact" class="text-gray-400 hover:text-white transition">Contact</a></li>

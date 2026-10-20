@@ -60,5 +60,5 @@
 @section('nearby')
     <a href="/towing-deer-park" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Deer Park Towing</a>
     <a href="/towing-sandpoint" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Sandpoint Towing</a>
-    <a href="/" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Spokane Towing</a>
+    <a href="/spokane-towing-services" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-6 py-3 text-gray-300 hover:text-white hover:border-red-500/50 transition">Towing in Spokane</a>
 @endsection

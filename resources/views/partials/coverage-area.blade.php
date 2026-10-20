@@ -11,7 +11,7 @@
                         <svg class="w-5 h-5 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                         </svg>
-                        <a href="/" class="text-gray-300 hover:text-orange-500 transition">Spokane</a>
+                        <a href="/spokane-towing-services" class="text-gray-300 hover:text-orange-500 transition">Spokane towing</a>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
