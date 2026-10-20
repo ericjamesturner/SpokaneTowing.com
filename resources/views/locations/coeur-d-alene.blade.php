@@ -2,7 +2,7 @@
 
 @section('title', 'Coeur d\'Alene Towing | 24/7 Tow Truck & Roadside Assistance')
 
-@section('description', 'Towing in Coeur d\'Alene, ID and the I-90 corridor. Emergency towing, roadside assistance & vehicle recovery serving CDA and surrounding areas 24/7. Call (509) 797-7999')
+@section('description', 'Coeur d\'Alene, ID towing on the I-90 corridor. Emergency towing, roadside assistance & vehicle recovery across CDA, 24/7. Call (509) 797-7999')
 
 @section('city', 'Coeur d\'Alene, ID')
 

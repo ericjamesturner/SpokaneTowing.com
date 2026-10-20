@@ -2,7 +2,7 @@
 
 @section('title', 'Medical Lake Towing | 24/7 Tow Truck & Roadside Assistance')
 
-@section('description', 'Medical Lake, WA emergency towing & roadside assistance on the West Plains. Fast response to I-90, SR-902 & near Fairchild AFB. Available 24/7. Call (509) 797-7999')
+@section('description', 'Medical Lake, WA towing & roadside assistance on the West Plains: I-90, SR-902 & near Fairchild AFB. Available day or night. Call (509) 797-7999')
 
 @section('city', 'Medical Lake, WA')
 

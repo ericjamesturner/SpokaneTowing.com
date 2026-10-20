@@ -2,7 +2,7 @@
 
 @section('title', 'Spirit Lake Towing | 24/7 Tow Truck & Roadside Assistance')
 
-@section('description', 'Spirit Lake, ID towing at the north end of SR-41. Emergency towing, winter recovery & roadside assistance for town, lake & forest roads. 24/7. Call (509) 797-7999')
+@section('description', 'Spirit Lake, ID towing on SR-41. Emergency towing, winter recovery & roadside assistance for town, lake & forest roads, 24/7. Call (509) 797-7999')
 
 @section('city', 'Spirit Lake, ID')
 

@@ -2,7 +2,7 @@
 
 @section('title', 'Commercial Towing Spokane | Fleet & Business Vehicle Towing 24/7')
 
-@section('description', 'Commercial towing services in Spokane for work trucks, vans, box trucks & fleets. Priority dispatch, direct billing & 24/7 response to minimize downtime. Call (509) 797-7999')
+@section('description', 'Commercial towing in Spokane for work trucks, vans, box trucks & fleets. Priority dispatch & 24/7 response to cut downtime. Call (509) 797-7999')
 
 @section('service-type', 'Commercial Towing Service')
 

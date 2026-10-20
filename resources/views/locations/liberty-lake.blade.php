@@ -2,7 +2,7 @@
 
 @section('title', 'Liberty Lake Towing | Fast 24/7 Tow Truck Service')
 
-@section('description', 'Liberty Lake, WA towing & roadside assistance. Serving I-90 corridor & east Spokane County. Emergency towing, jump starts & recovery 24/7. Call (509) 797-7999')
+@section('description', 'Liberty Lake, WA towing & roadside assistance on the I-90 corridor. Emergency towing, jump starts & vehicle recovery 24/7. Call (509) 797-7999')
 
 @section('city', 'Liberty Lake, WA')
 

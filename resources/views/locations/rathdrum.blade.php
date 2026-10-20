@@ -2,7 +2,7 @@
 
 @section('title', 'Rathdrum Towing | 24/7 Tow Truck & Roadside Assistance')
 
-@section('description', 'Rathdrum, ID towing services on SR-41 & SR-53. Emergency towing, roadside assistance & winter recovery for the Rathdrum Prairie. Available 24/7. Call (509) 797-7999')
+@section('description', 'Rathdrum, ID towing on SR-41 & SR-53. Emergency towing, roadside help & winter recovery across the Rathdrum Prairie, 24/7. Call (509) 797-7999')
 
 @section('city', 'Rathdrum, ID')
 

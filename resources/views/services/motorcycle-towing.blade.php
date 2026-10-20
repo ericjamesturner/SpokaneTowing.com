@@ -2,7 +2,7 @@
 
 @section('title', 'Motorcycle Towing Spokane | Safe Flatbed Motorcycle Transport')
 
-@section('description', 'Motorcycle towing in Spokane with soft straps, wheel chocks & flatbed transport — no damage to your bike. Cruisers, sport bikes & trikes. Available 24/7. Call (509) 797-7999')
+@section('description', 'Motorcycle towing in Spokane with soft straps, wheel chocks & flatbed transport. Cruisers, sport bikes & trikes, open 24/7. Call (509) 797-7999')
 
 @section('service-type', 'Motorcycle Towing Service')
 

@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Towing Service Areas | Spokane, Spokane Valley & North Idaho</title>
-    <meta name="description" content="Spokane Towing serves Spokane County, the West Plains & North Idaho: Spokane Valley, Cheney, Deer Park, Coeur d'Alene, Post Falls & more. 24/7. Call (509) 797-7999">
+    <meta name="description" content="Towing across Spokane County, the West Plains & North Idaho: Spokane Valley, Cheney, Deer Park, Coeur d'Alene, Post Falls & more. Call (509) 797-7999">
     <link rel="canonical" href="{{ url('/service-areas') }}">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url('/service-areas') }}">
     <meta property="og:title" content="Towing Service Areas | Spokane, Spokane Valley & North Idaho">
-    <meta property="og:description" content="Spokane Towing serves Spokane County, the West Plains & North Idaho: Spokane Valley, Cheney, Deer Park, Coeur d'Alene, Post Falls & more. 24/7. Call (509) 797-7999">
+    <meta property="og:description" content="Towing across Spokane County, the West Plains & North Idaho: Spokane Valley, Cheney, Deer Park, Coeur d'Alene, Post Falls & more. Call (509) 797-7999">
     <meta property="og:image" content="{{ url('/images/og-image.jpg') }}">
 
     <!-- Twitter -->

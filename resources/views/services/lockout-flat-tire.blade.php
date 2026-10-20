@@ -2,7 +2,7 @@
 
 @section('title', 'Car Lockout & Flat Tire Service Spokane | Fast 24/7 Response')
 
-@section('description', 'Locked out or flat tire in Spokane? Professional lockout service & tire changes available 24/7. 20-30 min response, no damage to your vehicle. Call (509) 797-7999')
+@section('description', 'Locked out or flat tire in Spokane? Damage-free lockout service & roadside tire changes with a 20-30 min response, open 24/7. Call (509) 797-7999')
 
 @section('hero-title', 'Car Lockout & Flat Tire Service in Spokane')
 

@@ -2,7 +2,7 @@
 
 @section('title', 'Deer Park Towing | 24/7 Tow Truck & Roadside Assistance')
 
-@section('description', 'Deer Park, WA towing services along US-395 & north Spokane County. Emergency towing, roadside assistance & vehicle recovery. Available 24/7. Call (509) 797-7999')
+@section('description', 'Deer Park, WA towing on US-395 & north Spokane County. Emergency towing, roadside assistance & vehicle recovery, open 24/7. Call (509) 797-7999')
 
 @section('city', 'Deer Park, WA')
 

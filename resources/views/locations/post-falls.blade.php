@@ -2,7 +2,7 @@
 
 @section('title', 'Post Falls Towing | 24/7 Tow Truck & Roadside Assistance')
 
-@section('description', 'Post Falls, ID towing along I-90 & the Spokane River corridor. Emergency towing, roadside assistance & vehicle recovery. Available 24/7. Call (509) 797-7999')
+@section('description', 'Post Falls, ID towing along I-90 & the Spokane River. Emergency towing, roadside assistance & vehicle recovery, open 24/7. Call (509) 797-7999')
 
 @section('city', 'Post Falls, ID')
 

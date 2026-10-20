@@ -1,7 +1,7 @@
 @extends('layouts.service-page')
 
 @section('title', 'Roadside Assistance in Spokane | 24/7 Help')
-@section('description', 'Spokane roadside assistance with no membership: battery jump starts & testing, fuel delivery, flat tires & lockouts. 20-30 min response, 24/7. Call (509) 797-7999')
+@section('description', 'Spokane roadside assistance, no membership: jump starts, fuel delivery, flat tires & lockouts. 20-30 min response, 24/7. Call (509) 797-7999')
 
 @section('hero-title', 'Roadside Assistance in Spokane')
 @section('hero-subtitle', 'Jump starts, fuel delivery, lockouts, and flat tire service. Fast, reliable help when you need it.')

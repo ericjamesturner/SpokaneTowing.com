@@ -2,7 +2,7 @@
 
 @section('title', 'Greenacres Towing | 24/7 Tow Truck & Roadside Assistance')
 
-@section('description', 'Greenacres, WA towing with 20-30 min response. Emergency towing, motorcycle towing, accident recovery & roadside assistance along I-90 & Sprague Ave. Call (509) 797-7999')
+@section('description', 'Greenacres, WA towing along I-90 & Sprague Ave. Emergency towing, motorcycle towing, accident recovery & roadside help 24/7. Call (509) 797-7999')
 
 @section('city', 'Greenacres, WA')
 

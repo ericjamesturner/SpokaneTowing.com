@@ -2,7 +2,7 @@
 
 @section('title', 'Athol Towing | 24/7 Tow Truck & Roadside Assistance')
 
-@section('description', 'Athol, ID towing on US-95 & SR-54 near Silverwood Theme Park & Farragut State Park. Emergency towing, RV towing & roadside assistance 24/7. Call (509) 797-7999')
+@section('description', 'Athol, ID towing on US-95 & SR-54 near Silverwood & Farragut State Park. Emergency towing, RV towing & roadside help 24/7. Call (509) 797-7999')
 
 @section('city', 'Athol, ID')
 

@@ -2,7 +2,7 @@
 
 @section('title', 'Flatbed Towing Spokane | Safe Auto Transport & Exotic Cars')
 
-@section('description', 'Flatbed towing in Spokane for safe vehicle transport. Luxury cars, motorcycles, exotic vehicles & damaged cars. No-contact loading, available 24/7. Call (509) 797-7999')
+@section('description', 'Flatbed towing in Spokane for luxury, exotic, low-clearance & damaged cars. No wheels touch the road, available 24/7 for you. Call (509) 797-7999')
 
 @section('hero-title', 'Professional Flatbed Towing in Spokane')
 
