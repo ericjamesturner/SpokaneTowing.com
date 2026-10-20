@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Frequently Asked Questions - Spokane Towing</title>
-    <meta name="description" content="Common questions about towing services in Spokane. Learn about costs, response times, service areas, and what to expect when you call us.">
+    <meta name="description" content="Common questions about towing services in Spokane. Learn about costs, response times, service areas, and what to expect when you call for a tow.">
     <link rel="canonical" href="{{ url('/faq') }}">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url('/faq') }}">
     <meta property="og:title" content="Frequently Asked Questions - Spokane Towing">
-    <meta property="og:description" content="Common questions about towing services in Spokane. Learn about costs, response times, service areas, and what to expect when you call us.">
+    <meta property="og:description" content="Common questions about towing services in Spokane. Learn about costs, response times, service areas, and what to expect when you call for a tow.">
     <meta property="og:image" content="{{ url('/images/og-image.jpg') }}">
 
     <!-- Twitter -->
