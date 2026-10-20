@@ -51,7 +51,7 @@
 <h3 class="text-2xl font-bold mt-8 mb-4">Cross-State Service</h3>
 <div class="bg-green-500/10 rounded-xl p-6 mb-6 border border-green-500/30">
     <p class="text-lg font-semibold mb-2 text-white">⏱️ Response Time: <span class="text-green-400">40-55 minutes</span></p>
-    <p class="text-gray-300">Despite being in Idaho, Hayden is just 35 miles from our Spokane base. Our drivers are licensed for Idaho operations and familiar with the scenic routes around Hayden Lake and US-95.</p>
+    <p class="text-gray-300">Despite being in Idaho, Hayden is just 35 miles from Spokane. Local tow drivers are familiar with the scenic routes around Hayden Lake and US-95.</p>
 </div>
 
 <p class="text-lg">Whether you need <strong>emergency towing</strong> on US-95, assistance near Hayden Lake, or transport to repair facilities in the greater Spokane-Coeur d'Alene area, we provide professional service across state lines to the <strong>Hayden community</strong>.</p>

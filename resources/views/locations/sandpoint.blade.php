@@ -51,7 +51,7 @@
 <h3 class="text-2xl font-bold mt-8 mb-4">Extended Range Service</h3>
 <div class="bg-green-500/10 rounded-xl p-6 mb-6 border border-green-500/30">
     <p class="text-lg font-semibold mb-2 text-white">⏱️ Response Time: <span class="text-green-400">90-120 minutes</span></p>
-    <p class="text-gray-300">Located approximately 80 miles north of Spokane, Sandpoint is at the edge of our extended service area. We coordinate closely with customers to ensure efficient service, and our drivers are experienced with mountain and rural road conditions.</p>
+    <p class="text-gray-300">Located approximately 80 miles north of Spokane, Sandpoint is at the edge of our extended service area. We coordinate closely with customers to ensure efficient service, and local tow drivers are experienced with mountain and rural road conditions.</p>
 </div>
 
 <p class="text-lg">We handle <strong>emergency situations</strong>, planned vehicle transport, and breakdown recovery in the Sandpoint area. While distance requires advance coordination for non-emergency services, we're available for urgent situations and can provide professional towing throughout the <strong>Lake Pend Oreille region</strong>.</p>

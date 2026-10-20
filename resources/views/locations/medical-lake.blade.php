@@ -11,7 +11,7 @@
 
 <div class="bg-blue-500/10 border-l-4 border-blue-500 p-4 my-6 rounded-r-xl">
     <p class="font-semibold text-white">🛣️ West Plains coverage, around the clock</p>
-    <p class="text-gray-300">We regularly serve the West Plains corridor between Airway Heights, Cheney, and Medical Lake. Whether you're commuting to Fairchild Air Force Base, headed to I-90, or stranded near one of the lakes, our drivers know the fastest routes to reach you.</p>
+    <p class="text-gray-300">We regularly serve the West Plains corridor between Airway Heights, Cheney, and Medical Lake. Whether you're commuting to Fairchild Air Force Base, headed to I-90, or stranded near one of the lakes, local tow drivers know the fastest routes to reach you.</p>
 </div>
 
 <h3 class="text-2xl font-bold mt-8 mb-4">Medical Lake Service Coverage</h3>
@@ -51,7 +51,7 @@
 <h3 class="text-2xl font-bold mt-8 mb-4">West Plains Expertise</h3>
 <div class="bg-green-500/10 rounded-xl p-6 mb-6 border border-green-500/30">
     <p class="text-lg font-semibold mb-2 text-white">⏱️ Response Time: <span class="text-green-400">25-35 minutes</span></p>
-    <p class="text-gray-300">Medical Lake is about 15 miles from downtown Spokane. Our drivers know the West Plains roads in every season — including winter, when SR-902 and the rural roads around the lakes get icy and <a href="/winch-out-recovery" class="text-red-500 hover:underline">ditch recoveries</a> spike.</p>
+    <p class="text-gray-300">Medical Lake is about 15 miles from downtown Spokane. Local tow drivers know the West Plains roads in every season — including winter, when SR-902 and the rural roads around the lakes get icy and <a href="/winch-out-recovery" class="text-red-500 hover:underline">ditch recoveries</a> spike.</p>
 </div>
 
 <p class="text-lg">We handle everything from <strong>highway breakdowns</strong> on I-90 to <a href="/battery-jump-start" class="text-red-500 hover:underline">dead batteries</a> in your driveway. Our modern equipment and experienced operators ensure safe, professional service anywhere in the <strong>Medical Lake area</strong>, 24 hours a day.</p>

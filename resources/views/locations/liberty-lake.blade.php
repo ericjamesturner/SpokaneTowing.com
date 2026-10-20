@@ -51,7 +51,7 @@
 <h3 class="text-2xl font-bold mt-8 mb-4">Close Proximity Service</h3>
 <div class="bg-green-500/10 rounded-xl p-6 mb-6 border border-green-500/30">
     <p class="text-lg font-semibold mb-2 text-white">⏱️ Response Time: <span class="text-green-400">25-35 minutes</span></p>
-    <p class="text-gray-300">Located just 20 miles east of downtown Spokane, Liberty Lake is within our primary service area. Our drivers know the efficient routes via <strong>I-90</strong> and local roads to reach you quickly.</p>
+    <p class="text-gray-300">Located just 20 miles east of downtown Spokane, Liberty Lake is within our primary service area. Local tow drivers know the efficient routes via <strong>I-90</strong> and local roads to reach you quickly.</p>
 </div>
 
 <p class="text-lg">From <strong>emergency accident recovery</strong> on I-90 to helping residents transport vehicles to trusted repair facilities, we handle all types of automotive emergencies in <strong>Liberty Lake</strong> with professionalism and care.</p>

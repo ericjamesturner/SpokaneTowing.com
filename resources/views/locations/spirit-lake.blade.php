@@ -11,7 +11,7 @@
 
 <div class="bg-blue-500/10 border-l-4 border-blue-500 p-4 my-6 rounded-r-xl">
     <p class="font-semibold text-white">🌲 Small town, full coverage</p>
-    <p class="text-gray-300">Big towing companies overlook towns like Spirit Lake. We don't. Our trucks already work the SR-41 corridor through Rathdrum, so the north end of the line gets the same 24/7 service as downtown Coeur d'Alene.</p>
+    <p class="text-gray-300">Big towing companies overlook towns like Spirit Lake. We don't. Tow trucks already work the SR-41 corridor through Rathdrum, so the north end of the line gets the same 24/7 service as downtown Coeur d'Alene.</p>
 </div>
 
 <h3 class="text-2xl font-bold mt-8 mb-4">Spirit Lake Service Coverage</h3>
@@ -51,7 +51,7 @@
 <h3 class="text-2xl font-bold mt-8 mb-4">Built for North Idaho Winters</h3>
 <div class="bg-green-500/10 rounded-xl p-6 mb-6 border border-green-500/30">
     <p class="text-lg font-semibold mb-2 text-white">⏱️ Response Time: <span class="text-green-400">45-60 minutes</span></p>
-    <p class="text-gray-300">Spirit Lake is about 40 miles from Spokane. Winters here are longer and snowier than in town — our drivers run SR-41 in every condition, and <a href="/winch-out-recovery" class="text-red-500 hover:underline">snow bank and ditch recoveries</a> are routine work for us, not a specialty call.</p>
+    <p class="text-gray-300">Spirit Lake is about 40 miles from Spokane. Winters here are longer and snowier than in town — local tow drivers run SR-41 in every condition, and <a href="/winch-out-recovery" class="text-red-500 hover:underline">snow bank and ditch recoveries</a> are routine work for us, not a specialty call.</p>
 </div>
 
 <p class="text-lg">We handle everything from <strong>highway breakdowns</strong> on SR-41 to <a href="/battery-jump-start" class="text-red-500 hover:underline">dead batteries</a> on cold mornings and recoveries on forest roads. Modern equipment, experienced operators, and honest pricing — 24 hours a day in the <strong>Spirit Lake area</strong>.</p>

@@ -11,7 +11,7 @@
 
 <div class="bg-blue-500/10 border-l-4 border-blue-500 p-4 my-6 rounded-r-xl">
     <p class="font-semibold text-white">🛡️ Proudly serving our military community</p>
-    <p class="text-gray-300">Our drivers are familiar with the area's layout, from the military base vicinity to residential neighborhoods and the US Highway 2 corridor. We provide respectful, professional service to military families, base personnel, and local residents alike.</p>
+    <p class="text-gray-300">Local tow drivers are familiar with the area's layout, from the military base vicinity to residential neighborhoods and the US Highway 2 corridor. We provide respectful, professional service to military families, base personnel, and local residents alike.</p>
 </div>
 
 <h3 class="text-2xl font-bold mt-8 mb-4">Airway Heights Coverage Area</h3>

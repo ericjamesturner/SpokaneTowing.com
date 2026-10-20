@@ -51,7 +51,7 @@
 <h3 class="text-2xl font-bold mt-8 mb-4">Rural Area Expertise</h3>
 <div class="bg-green-500/10 rounded-xl p-6 mb-6 border border-green-500/30">
     <p class="text-lg font-semibold mb-2 text-white">⏱️ Response Time: <span class="text-green-400">45-60 minutes</span></p>
-    <p class="text-gray-300">Located about 40 miles north of Spokane, our drivers are experienced with the area's terrain and road conditions, ensuring safe and professional service.</p>
+    <p class="text-gray-300">Located about 40 miles north of Spokane, local tow drivers are experienced with the area's terrain and road conditions, ensuring safe and professional service.</p>
 </div>
 
 <p class="text-lg">We handle everything from <strong>highway breakdowns</strong> on US-395 to off-road recovery situations. Our modern equipment and experienced operators ensure safe, professional service no matter where you're located in the <strong>Deer Park area</strong>.</p>
