@@ -7,7 +7,7 @@
 @section('city', 'Greenacres, WA')
 
 @section('content')
-<p class="text-lg leading-relaxed">When you need fast, reliable towing in <strong>Greenacres, Washington</strong>, Spokane Towing is minutes away. Located in the eastern <strong>Spokane Valley</strong> between Sullivan Road and Liberty Lake, Greenacres sits right on our home turf — our trucks pass through the area every day.</p>
+<p class="text-lg leading-relaxed">When you need fast, reliable towing in <strong>Greenacres, Washington</strong>, Spokane Towing is minutes away. Located in the eastern <strong>Spokane Valley</strong> between Sullivan Road and Liberty Lake, Greenacres is close to the heart of our service area, and local tow trucks pass through every day.</p>
 
 <div class="bg-blue-500/10 border-l-4 border-blue-500 p-4 my-6 rounded-r-xl">
     <p class="font-semibold text-white">🚗 Fast response on the I-90 corridor</p>

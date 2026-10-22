@@ -56,7 +56,7 @@
     </div>
     <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
         <h4 class="text-lg font-semibold mb-2 text-white">Is jump starting safe for newer cars with electronics?</h4>
-        <p class="text-gray-300">Yes — when done correctly. Our technicians use professional equipment with surge protection and follow manufacturer procedures, which protects the sensitive electronics in modern vehicles. This is exactly the situation where a bad jump from a stranger's cables can cause expensive damage.</p>
+        <p class="text-gray-300">Yes — when done correctly. Local roadside technicians use professional equipment with surge protection and follow manufacturer procedures, which protects the sensitive electronics in modern vehicles. This is exactly the situation where a bad jump from a stranger's cables can cause expensive damage.</p>
     </div>
 </div>
 
@@ -110,7 +110,7 @@
             "name" => "Is jump starting safe for newer cars with electronics?",
             "acceptedAnswer" => [
                 "@@type" => "Answer",
-                "text" => "Yes — when done correctly. Our technicians use professional equipment with surge protection and follow manufacturer procedures, which protects the sensitive electronics in modern vehicles."
+                "text" => "Yes — when done correctly. Local roadside technicians use professional equipment with surge protection and follow manufacturer procedures, which protects the sensitive electronics in modern vehicles."
             ]
         ]
     ]

@@ -78,7 +78,7 @@
 <div class="space-y-6 mb-12">
     <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
         <h4 class="text-lg font-semibold mb-2 text-white">Can you tow a semi truck or tractor-trailer?</h4>
-        <p class="text-gray-300">Yes, we have heavy duty tow trucks equipped to handle semis, tractor-trailers, box trucks, buses, RVs, and other large commercial vehicles. Our operators are experienced with all types of heavy equipment.</p>
+        <p class="text-gray-300">Yes. We connect you with heavy duty tow trucks equipped to handle semis, tractor-trailers, box trucks, buses, RVs, and other large commercial vehicles, run by operators experienced with all types of heavy equipment.</p>
     </div>
     <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
         <h4 class="text-lg font-semibold mb-2 text-white">How much does heavy duty towing cost?</h4>
@@ -153,7 +153,7 @@
             "name" => "Can you tow a semi truck or tractor-trailer?",
             "acceptedAnswer" => [
                 "@@type" => "Answer",
-                "text" => "Yes, we have heavy duty tow trucks equipped to handle semis, tractor-trailers, box trucks, buses, RVs, and other large commercial vehicles. Our operators are experienced with all types of heavy equipment."
+                "text" => "Yes. We connect you with heavy duty tow trucks equipped to handle semis, tractor-trailers, box trucks, buses, RVs, and other large commercial vehicles, run by operators experienced with all types of heavy equipment."
             ]
         ],
         [

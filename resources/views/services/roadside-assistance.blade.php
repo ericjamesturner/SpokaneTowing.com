@@ -27,7 +27,7 @@
 
             <div>
                 <h4 class="text-xl font-semibold mb-3"><a href="/lockout-flat-tire" class="text-white hover:text-red-500 transition">Lockout Service</a></h4>
-                <p>Locked your keys in the car? Our technicians use professional tools to safely unlock your vehicle without damage.</p>
+                <p>Locked your keys in the car? Local roadside technicians use professional tools to safely unlock your vehicle without damage.</p>
             </div>
 
             <div>
@@ -62,7 +62,7 @@
         </div>
         <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
             <h4 class="text-lg font-semibold mb-2 text-white">Will roadside assistance replace my battery?</h4>
-            <p class="text-gray-300">We provide <a href="/battery-jump-start" class="text-red-500 hover:text-red-400 transition">jump start service and battery testing</a> to get your vehicle running. If your battery needs replacement, we can get you to a trusted local auto shop — driving or towed. Our technicians will test your charging system to help diagnose the issue.</p>
+            <p class="text-gray-300">We provide <a href="/battery-jump-start" class="text-red-500 hover:text-red-400 transition">jump start service and battery testing</a> to get your vehicle running. If your battery needs replacement, we can get you to a trusted local auto shop — driving or towed. The technician can test your charging system to help diagnose the issue.</p>
         </div>
     </div>
 
@@ -71,7 +71,7 @@
         <div class="absolute inset-0 bg-black/10"></div>
         <div class="relative">
             <h3 class="text-2xl font-bold mb-4 text-white">Need Roadside Assistance Now?</h3>
-            <p class="mb-6 text-white/90">Our technicians are ready to help you 24/7</p>
+            <p class="mb-6 text-white/90">Local roadside help is a call away, 24/7</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="tel:+15097977999" class="bg-white text-orange-600 px-8 py-4 rounded-xl hover:bg-gray-100 transition font-bold text-lg shadow-lg">
                     Call (509) 797-7999
@@ -121,7 +121,7 @@
             "name" => "Will roadside assistance replace my battery?",
             "acceptedAnswer" => [
                 "@@type" => "Answer",
-                "text" => "We provide jump start service to get your vehicle running. If your battery needs replacement, we can recommend trusted local auto shops. Our technicians will test your charging system to help diagnose the issue."
+                "text" => "We provide jump start service to get your vehicle running. If your battery needs replacement, we can recommend trusted local auto shops. The technician can test your charging system to help diagnose the issue."
             ]
         ]
     ]
