@@ -1,8 +1,8 @@
 @extends('layouts.location-page')
 
-@section('title', 'Coeur d\'Alene Towing | 24/7 Tow Truck & Roadside Assistance')
+@section('title', 'Coeur d\'Alene Towing 24/7 | Tow Truck from $200')
 
-@section('description', 'Coeur d\'Alene, ID towing on the I-90 corridor. Emergency towing, roadside assistance & vehicle recovery across CDA, 24/7. Call (509) 797-7999')
+@section('description', 'Need a tow in Coeur d\'Alene? 24/7 towing & roadside help on I-90 and across CDA. $200 minimum, price confirmed before dispatch. Call (509) 797-7999 now.')
 
 @section('city', 'Coeur d\'Alene, ID')
 

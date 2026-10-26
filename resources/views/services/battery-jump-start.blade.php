@@ -1,8 +1,8 @@
 @extends('layouts.service-page')
 
-@section('title', 'Battery Jump Start in Spokane | 24/7 Help')
+@section('title', 'Battery Jump Start Spokane 24/7 | Fast Dead Battery Help')
 
-@section('description', 'Dead battery in Spokane? Jump start service with 20-30 min response, charging system test & no membership needed. Open 24/7. Call (509) 797-7999')
+@section('description', 'Dead battery in Spokane? Get a jump start 24/7, typically 20-30 min response, no membership needed. Call (509) 797-7999 now for a price and arrival time.')
 
 @section('service-type', 'Battery Jump Start Service')
 

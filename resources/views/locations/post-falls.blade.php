@@ -1,8 +1,8 @@
 @extends('layouts.location-page')
 
-@section('title', 'Post Falls Towing | 24/7 Tow Truck & Roadside Assistance')
+@section('title', 'Post Falls Towing 24/7 | Tow Truck from $200')
 
-@section('description', 'Post Falls, ID towing along I-90 & the Spokane River. Emergency towing, roadside assistance & vehicle recovery, open 24/7. Call (509) 797-7999')
+@section('description', 'Need a tow in Post Falls? 24/7 towing & roadside help along I-90 and across Post Falls. $200 minimum, price confirmed before dispatch. Call (509) 797-7999.')
 
 @section('city', 'Post Falls, ID')
 
