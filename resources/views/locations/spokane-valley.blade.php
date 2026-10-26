@@ -1,13 +1,13 @@
 @extends('layouts.location-page')
 
-@section('title', 'Towing Spokane Valley, WA | 24/7 Tow Truck')
+@section('title', 'Spokane Valley Towing 24/7 | Towing Spokane Valley, WA')
 
 @section('description', 'Towing in Spokane Valley, WA 24/7: I-90 exits from Argonne to Barker, Sprague, Greenacres & Millwood. $200 minimum. Call (509) 797-7999 for a tow.')
 
 @section('city', 'Spokane Valley')
 
 @section('h1')
-                        Towing in <span class="text-gradient">Spokane Valley, WA</span>
+                        <span class="text-gradient">Spokane Valley</span> Towing, 24/7
 @endsection
 
 @section('content')
