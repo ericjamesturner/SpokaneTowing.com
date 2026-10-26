@@ -1,6 +1,6 @@
 @extends('layouts.service-page')
 
-@section('title', 'Flatbed Towing Spokane | Safe Auto Transport & Exotic Cars')
+@section('title', 'Flatbed Towing for AWD & Exotic Cars | Spokane, WA')
 
 @section('description', 'Flatbed towing in Spokane for luxury, exotic, low-clearance & damaged cars. No wheels touch the road, available 24/7 for you. Call (509) 797-7999')
 
@@ -12,7 +12,7 @@
 <h2 class="text-3xl font-bold mb-8">Premium Flatbed Towing Services</h2>
 
 <div class="prose prose-invert prose-lg max-w-none mb-12 prose-headings:text-white prose-p:text-gray-300 prose-li:text-gray-300 prose-strong:text-white">
-    <p>When your vehicle needs the safest possible transport, flatbed towing is the gold standard. Spokane Towing provides professional flatbed towing services throughout Spokane, WA and surrounding areas. Our modern flatbed trucks ensure your vehicle is transported securely without any wheel contact with the road.</p>
+    <p>When your vehicle needs the safest possible transport, flatbed towing is the gold standard. Spokane Towing arranges flatbed tows throughout Spokane, WA and surrounding areas. On a flatbed, your vehicle rides on the truck's deck, so no wheels touch the road. Need a regular tow instead? See our main page on <a href="/spokane-towing-services" class="text-red-500 hover:underline">towing in Spokane</a> for prices and coverage.</p>
     
     <h3 class="text-2xl font-semibold mt-8 mb-4">Our Flatbed Towing Services Include:</h3>
     <ul class="space-y-2">
@@ -37,8 +37,8 @@
 
     <h3 class="text-2xl font-semibold mt-8 mb-4">Why Choose Spokane Towing for Flatbed Service?</h3>
     <ul class="space-y-2">
-        <li><strong>Modern Fleet:</strong> Well-maintained flatbed trucks with hydraulic systems</li>
-        <li><strong>Experienced Operators:</strong> Trained professionals who handle your vehicle with care</li>
+        <li><strong>Right Truck the First Time:</strong> Tell dispatch what you drive and a flatbed is sent when your vehicle needs one</li>
+        <li><strong>Careful Handling:</strong> Local tow drivers who load and strap down vehicles the right way</li>
         <li><strong>Fast Response:</strong> Available 24/7 with average arrival time of 20-30 minutes</li>
         <li><strong>Fully Insured:</strong> Complete coverage for your peace of mind</li>
         <li><strong>Competitive Rates:</strong> Fair pricing for premium flatbed service</li>
@@ -56,7 +56,7 @@
         <li>Long-distance transport</li>
     </ul>
 
-    <p class="mt-8">Trust Spokane Towing for professional flatbed towing services that prioritize the safety and security of your vehicle. Our experienced team understands the importance of proper vehicle handling and uses the latest equipment to ensure damage-free transport.</p>
+    <p class="mt-8">Call Spokane Towing when your vehicle needs a flatbed. You'll get the price on the phone before a truck is sent, and the tow is handled by local drivers who know proper loading and tie-down.</p>
 </div>
 
 <!-- CTA Box -->
