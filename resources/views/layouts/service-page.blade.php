@@ -93,6 +93,7 @@
       ]
     }
     </script>
+    @stack('schema')
     @include('partials.clarity')
 
     <style>

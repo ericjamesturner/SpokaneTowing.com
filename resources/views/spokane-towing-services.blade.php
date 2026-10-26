@@ -218,7 +218,7 @@
                         <li>• 15 miles (say, North Spokane to Spokane Valley): $140 + $90 = <strong class="text-white">$230</strong></li>
                         <li>• 30 miles (say, Spokane to Coeur d'Alene): $140 + $180 = <strong class="text-white">$320</strong></li>
                     </ul>
-                    <p class="text-gray-400 text-sm">These are estimates. Heavy-duty vehicles, winch-outs and difficult recoveries are priced separately, and your exact price is confirmed on the phone before dispatch. Use the <a href="/quote" class="text-red-500 hover:text-red-400 transition">instant towing quote calculator</a> for your route.</p>
+                    <p class="text-gray-400 text-sm">These are estimates. Heavy-duty vehicles, winch-outs and difficult recoveries are priced separately, and your exact price is confirmed on the phone before dispatch. Use the <a href="/quote" class="text-red-500 hover:text-red-400 transition">instant towing quote calculator</a> for your route, or see the full <a href="/towing-cost-spokane" class="text-red-500 hover:text-red-400 transition">Spokane towing cost breakdown</a>.</p>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-8 mb-12">
@@ -305,6 +305,8 @@
                         <a href="/motorcycle-towing" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Motorcycle Towing</a>
                         <a href="/winch-out-recovery" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Winch Out & Recovery</a>
                         <a href="/long-distance-towing" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Long Distance Towing</a>
+                        <a href="/accident-towing-spokane" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Accident Towing</a>
+                        <a href="/towed-car-spokane" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Car Towed? How to Find It</a>
                         <a href="/quote" class="bg-red-600/20 border border-red-600/30 rounded-xl px-5 py-4 text-red-400 hover:text-red-300 hover:border-red-500/50 transition font-semibold">Get an Instant Quote →</a>
                     </div>
                 </div>
