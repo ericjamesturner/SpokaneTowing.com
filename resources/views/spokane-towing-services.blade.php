@@ -316,12 +316,13 @@
                     <h3 class="text-2xl font-semibold mb-6 text-white">Types of Vehicles We Tow</h3>
                     <div class="grid md:grid-cols-3 gap-8">
                         <div>
-                            <h4 class="font-semibold text-red-500 mb-3"><a href="/flatbed-towing" class="hover:underline">Light-Duty Towing</a></h4>
+                            <h4 class="font-semibold text-red-500 mb-3">Light-Duty Towing</h4>
                             <ul class="space-y-2 text-gray-300">
                                 <li>• Cars and sedans</li>
                                 <li>• SUVs and crossovers</li>
                                 <li>• Pickup trucks</li>
                                 <li>• <a href="/motorcycle-towing" class="hover:text-red-500 transition underline decoration-slate-600 hover:decoration-red-500">Motorcycles</a></li>
+                                <li>• AWD and low cars on a <a href="/flatbed-towing" class="hover:text-red-500 transition underline decoration-slate-600 hover:decoration-red-500">flatbed tow truck</a></li>
                             </ul>
                         </div>
                         <div>
