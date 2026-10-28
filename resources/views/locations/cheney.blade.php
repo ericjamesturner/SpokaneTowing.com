@@ -54,7 +54,7 @@
     <p class="text-gray-300">We understand the unique needs of the university community and provide student-friendly service with competitive rates. We're familiar with campus parking regulations and access routes.</p>
 </div>
 
-<p class="text-lg">Whether you need help with a breakdown near the <strong>PUB</strong>, assistance getting to a repair shop in Spokane, or <strong>emergency towing</strong> after an accident on SR-904, our team provides professional, courteous service to the <strong>Cheney community</strong>.</p>
+<p class="text-lg">Whether you need help with a breakdown near the <strong>PUB</strong>, assistance getting to a repair shop in Spokane, or <strong>emergency towing</strong> <a href="/accident-towing-spokane" class="text-red-500 hover:underline">after an accident</a> on SR-904, our team provides professional, courteous service to the <strong>Cheney community</strong>.</p>
 @endsection
 
 @section('nearby')
