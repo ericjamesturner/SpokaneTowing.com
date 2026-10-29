@@ -198,15 +198,19 @@
                     <div class="space-y-6">
                         <div class="border-l-2 border-purple-500 pl-4">
                             <h3 class="font-semibold text-white mb-2">What types of vehicles can you tow?</h3>
-                            <p class="text-gray-400">We can tow cars, trucks, SUVs, <a href="/motorcycle-towing" class="text-purple-500 hover:text-purple-400 transition">motorcycles</a>, and <a href="/commercial-towing" class="text-purple-500 hover:text-purple-400 transition">commercial vehicles</a> — up to <a href="/heavy-duty-towing" class="text-purple-500 hover:text-purple-400 transition">semis and heavy equipment</a>. We have specialized equipment for different vehicle types.</p>
+                            <p class="text-gray-400">We can tow cars, trucks, SUVs, <a href="/motorcycle-towing" class="text-purple-500 hover:text-purple-400 transition">motorcycles</a>, and <a href="/commercial-towing" class="text-purple-500 hover:text-purple-400 transition">commercial vehicles</a> — up to <a href="/heavy-duty-towing" class="text-purple-500 hover:text-purple-400 transition">semis and heavy equipment</a>. Tell us what you drive when you call so the right tow truck is sent.</p>
                         </div>
                         <div class="border-l-2 border-purple-500 pl-4">
                             <h3 class="font-semibold text-white mb-2">Can you tow AWD or 4WD vehicles?</h3>
-                            <p class="text-gray-400">Yes, we have <a href="/flatbed-towing" class="text-purple-500 hover:text-purple-400 transition">flatbed trucks</a> specifically for all-wheel drive and four-wheel drive vehicles to prevent drivetrain damage.</p>
+                            <p class="text-gray-400">Yes. All-wheel drive and four-wheel drive vehicles go on a <a href="/flatbed-towing" class="text-purple-500 hover:text-purple-400 transition">flatbed tow truck</a>, with all four wheels off the ground, so the drivetrain isn't damaged.</p>
                         </div>
                         <div class="border-l-2 border-purple-500 pl-4">
                             <h3 class="font-semibold text-white mb-2">What if my car is stuck or in an accident?</h3>
-                            <p class="text-gray-400">We provide <a href="/winch-out-recovery" class="text-purple-500 hover:text-purple-400 transition">winching and recovery services</a> for stuck vehicles and can safely remove vehicles from accident scenes with our <a href="/24-hour-towing" class="text-purple-500 hover:text-purple-400 transition">24 hour wrecker service</a> when cleared by authorities.</p>
+                            <p class="text-gray-400">We provide <a href="/winch-out-recovery" class="text-purple-500 hover:text-purple-400 transition">winching and recovery services</a> for stuck vehicles and can arrange <a href="/accident-towing-spokane" class="text-purple-500 hover:text-purple-400 transition">accident towing</a> from the scene once police clear it, day or night through our <a href="/24-hour-towing" class="text-purple-500 hover:text-purple-400 transition">24 hour towing</a> line.</p>
+                        </div>
+                        <div class="border-l-2 border-purple-500 pl-4">
+                            <h3 class="font-semibold text-white mb-2">My car was towed or impounded in Spokane. Can you help?</h3>
+                            <p class="text-gray-400">We don't run an impound lot, so we can't release a towed car. Our <a href="/towed-car-spokane" class="text-purple-500 hover:text-purple-400 transition">towed car guide</a> explains how to find out who towed it, what to bring to the tow yard, and your rights under Washington law.</p>
                         </div>
                     </div>
                 </div>
