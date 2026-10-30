@@ -47,7 +47,7 @@
         <li><strong>Fair Pricing:</strong> Transparent rates with no hidden fees</li>
     </ul>
 
-    <p class="mt-8">Don't let a lockout or flat tire ruin your day. Our experienced team in Spokane is equipped with the latest tools and techniques to handle any lockout situation or tire emergency safely and efficiently. We serve all areas of Spokane, Spokane Valley, and surrounding communities.</p>
+    <p class="mt-8">Don't let a lockout or flat tire ruin your day. Call (509) 797-7999 and we'll connect you with a local roadside tech who can unlock your car or change a flat tire. We serve all areas of Spokane, Spokane Valley, and surrounding communities.</p>
 </div>
 
 <!-- CTA Box -->

@@ -162,7 +162,7 @@
                 </div>
 
                 <div class="text-gray-500 text-sm">
-                    Licensed & Insured | Serving Spokane Since 2010
+                    Licensed &amp; insured local tow operators | Serving Spokane Since 2010
                 </div>
             </div>
 

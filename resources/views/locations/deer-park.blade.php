@@ -54,7 +54,7 @@
     <p class="text-gray-300">Located about 40 miles north of Spokane, local tow drivers are experienced with the area's terrain and road conditions, ensuring safe and professional service.</p>
 </div>
 
-<p class="text-lg">We handle everything from <strong>highway breakdowns</strong> on US-395 to off-road recovery situations. Our modern equipment and experienced operators ensure safe, professional service no matter where you're located in the <strong>Deer Park area</strong>.</p>
+<p class="text-lg">We handle everything from <strong>highway breakdowns</strong> on US-395 to off-road recovery situations. One call connects you with local tow help anywhere in the <strong>Deer Park area</strong>.</p>
 @endsection
 
 @section('nearby')

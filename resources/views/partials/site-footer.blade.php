@@ -6,7 +6,7 @@
                 <a href="/">
                     <img width="640" height="130" src="/images/header-logo-384.webp" srcset="/images/header-logo-384.webp 384w, /images/header-logo-640.webp 640w" sizes="(min-width: 1024px) 288px, (min-width: 640px) 256px, 192px" alt="Spokane Towing" class="h-auto w-48 sm:w-64 lg:w-72 max-w-full mb-4">
                 </a>
-                <p class="text-gray-500 text-sm mb-4">Licensed & Insured<br>Serving Spokane & the Inland Northwest Since 2010</p>
+                <p class="text-gray-500 text-sm mb-4">Tows by licensed &amp; insured local operators<br>Serving Spokane & the Inland Northwest Since 2010</p>
                 <a href="tel:+15097977999" class="text-red-500 hover:text-red-400 font-bold text-lg transition">(509) 797-7999</a>
             </div>
 

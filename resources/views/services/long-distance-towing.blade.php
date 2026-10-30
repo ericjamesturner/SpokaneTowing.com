@@ -39,7 +39,7 @@
 
     <h3 class="text-2xl font-semibold mt-8 mb-4">Why Choose Our Long Distance Towing?</h3>
     <ul class="space-y-2">
-        <li><strong>Experienced Drivers:</strong> Licensed professionals familiar with interstate transport</li>
+        <li><strong>Licensed Drivers:</strong> Your tow is arranged through licensed operators familiar with interstate transport</li>
         <li><strong>Secure Transport:</strong> Your vehicle is properly secured for the entire journey</li>
         <li><strong>Full Insurance:</strong> Comprehensive coverage for long distance transport</li>
         <li><strong>Real-Time Updates:</strong> GPS tracking and regular communication</li>

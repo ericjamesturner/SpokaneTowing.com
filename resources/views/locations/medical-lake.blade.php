@@ -54,7 +54,7 @@
     <p class="text-gray-300">Medical Lake is about 15 miles from downtown Spokane. Local tow drivers know the West Plains roads in every season — including winter, when SR-902 and the rural roads around the lakes get icy and <a href="/winch-out-recovery" class="text-red-500 hover:underline">ditch recoveries</a> spike.</p>
 </div>
 
-<p class="text-lg">We handle everything from <strong>highway breakdowns</strong> on I-90 to <a href="/battery-jump-start" class="text-red-500 hover:underline">dead batteries</a> in your driveway. Our modern equipment and experienced operators ensure safe, professional service anywhere in the <strong>Medical Lake area</strong>, 24 hours a day.</p>
+<p class="text-lg">We handle everything from <strong>highway breakdowns</strong> on I-90 to <a href="/battery-jump-start" class="text-red-500 hover:underline">dead batteries</a> in your driveway. One call connects you with local tow help anywhere in the <strong>Medical Lake area</strong>, 24 hours a day.</p>
 @endsection
 
 @section('nearby')

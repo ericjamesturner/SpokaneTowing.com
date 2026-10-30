@@ -275,7 +275,7 @@
                     <a href="/terms-of-service" class="text-gray-400 hover:text-white transition">Terms</a>
                 </div>
                 <div class="text-gray-500 text-sm">
-                    &copy; {{ date('Y') }} Spokane Towing. Licensed & Insured.
+                    &copy; {{ date('Y') }} Spokane Towing. Tows by licensed &amp; insured local operators.
                 </div>
             </div>
         </div>

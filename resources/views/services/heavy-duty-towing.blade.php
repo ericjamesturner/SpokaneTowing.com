@@ -42,7 +42,7 @@
     <h3 class="text-2xl font-semibold mt-8 mb-4">Why Choose Our Heavy Duty Towing?</h3>
     <ul class="space-y-2">
         <li><strong>Powerful Equipment:</strong> Heavy duty tow trucks capable of handling any load</li>
-        <li><strong>Experienced Operators:</strong> Certified professionals with commercial towing expertise</li>
+        <li><strong>Heavy-Duty Partners:</strong> We connect you with local operators who run heavy-duty wreckers</li>
         <li><strong>24/7 Availability:</strong> Emergency commercial towing around the clock</li>
         <li><strong>Fast Response:</strong> Priority dispatch for commercial vehicles</li>
         <li><strong>Safety First:</strong> Proper traffic control and safety procedures</li>

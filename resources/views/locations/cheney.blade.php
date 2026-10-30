@@ -11,7 +11,7 @@
 
 <div class="bg-blue-500/10 border-l-4 border-blue-500 p-4 my-6 rounded-r-xl">
     <p class="font-semibold text-white">🏫 Serving the Eastern Washington University community</p>
-    <p class="text-gray-300">Located southwest of Spokane along State Route 904, Cheney presents unique towing challenges with its hilly terrain and busy campus area. Our experienced drivers are familiar with the area's layout, from the university campus to residential neighborhoods and the historic downtown district.</p>
+    <p class="text-gray-300">Located southwest of Spokane along State Route 904, Cheney presents unique towing challenges with its hilly terrain and busy campus area. Local tow drivers know the area's layout, from the university campus to residential neighborhoods and the historic downtown district.</p>
 </div>
 
 <h3 class="text-2xl font-bold mt-8 mb-4">Cheney Area Coverage</h3>

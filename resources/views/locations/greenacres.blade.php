@@ -54,7 +54,7 @@
     <p class="text-gray-300">Greenacres is in the heart of our Spokane Valley coverage area. We handle everything here: emergency towing, <a href="/motorcycle-towing" class="text-red-500 hover:underline">motorcycle towing</a>, accident recovery, <a href="/battery-jump-start" class="text-red-500 hover:underline">battery jump starts</a>, and <a href="/winch-out-recovery" class="text-red-500 hover:underline">winch-out service</a>.</p>
 </div>
 
-<p class="text-lg">From <strong>24 hour vehicle tows</strong> to specialized towing for motorcycles and low-clearance vehicles, our modern equipment and experienced operators serve the <strong>Greenacres area</strong> around the clock. No membership, no surge pricing — just fast help when you need it.</p>
+<p class="text-lg">From <strong>24 hour vehicle tows</strong> to specialized towing for motorcycles and low-clearance vehicles, we connect drivers with local tow help in the <strong>Greenacres area</strong> around the clock. No membership, no surge pricing — just fast help when you need it.</p>
 @endsection
 
 @section('nearby')

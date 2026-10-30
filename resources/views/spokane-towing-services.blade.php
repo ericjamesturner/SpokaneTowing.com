@@ -399,8 +399,8 @@
                         <h3 class="text-2xl font-semibold mb-6 text-white">Why Choose Our Spokane Towing Services?</h3>
                         <div class="grid md:grid-cols-2 gap-6">
                             <div>
-                                <h4 class="font-semibold text-white mb-2">Professional & Experienced</h4>
-                                <p class="text-white/80">Our certified tow truck operators have years of experience handling all types of vehicles and towing situations in Spokane.</p>
+                                <h4 class="font-semibold text-white mb-2">One Call, Local Help</h4>
+                                <p class="text-white/80">Call one number and we connect you with a local Spokane tow company for cars, trucks, motorcycles and heavy vehicles.</p>
                             </div>
                             <div>
                                 <h4 class="font-semibold text-white mb-2">Fast Response Times</h4>
@@ -461,7 +461,7 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-3xl mx-auto text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Need Spokane Towing Services Now?</h2>
-                <p class="text-xl mb-8 text-gray-300">Don't wait by the roadside. Our professional tow truck operators are standing by to help you 24/7.</p>
+                <p class="text-xl mb-8 text-gray-300">Don't wait by the roadside. Call (509) 797-7999 any time, day or night, and we'll get a local tow truck headed your way.</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="tel:+15097977999" class="bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 rounded-xl hover:from-red-700 hover:to-red-800 transition font-semibold text-lg shadow-lg shadow-red-600/25 flex items-center justify-center space-x-2">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
