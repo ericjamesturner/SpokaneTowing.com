@@ -54,7 +54,7 @@
     <p class="text-gray-300">We understand the unique needs of military families and provide reliable service with competitive rates. Located just 15 miles southwest of Spokane, we're one of the fastest response towing services in the area.</p>
 </div>
 
-<p class="text-lg">Whether you need <strong>emergency towing</strong> on US-2, assistance near the base, or help getting your vehicle to a Spokane-area repair shop, our team provides professional, courteous service to the <strong>Airway Heights community</strong>.</p>
+<p class="text-lg">Whether you need <strong>emergency towing</strong> on US-2, assistance near the base, or help getting your vehicle to a Spokane-area repair shop, we connect you with a licensed, insured local tow operator serving the <strong>Airway Heights community</strong>.</p>
 @endsection
 
 @section('nearby')

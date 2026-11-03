@@ -11,7 +11,7 @@
 
 <div class="bg-blue-500/10 border-l-4 border-blue-500 p-4 my-6 rounded-r-xl">
     <p class="font-semibold text-white">🏔️ Extended service to North Idaho's mountain paradise</p>
-    <p class="text-gray-300">Our team extends service to the Sandpoint area despite the distance, recognizing the need for professional towing in this popular tourist destination and growing residential community. From downtown Sandpoint to lakefront areas and mountain access roads, we're equipped to help.</p>
+    <p class="text-gray-300">We arrange towing in the Sandpoint area despite the distance, recognizing the need for professional towing in this popular tourist destination and growing residential community. From downtown Sandpoint to lakefront areas and mountain access roads, we can get help on the way.</p>
 </div>
 
 <h3 class="text-2xl font-bold mt-8 mb-4">Sandpoint Service Coverage</h3>

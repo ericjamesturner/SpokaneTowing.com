@@ -11,7 +11,7 @@
 
 <div class="bg-blue-500/10 border-l-4 border-blue-500 p-4 my-6 rounded-r-xl">
     <p class="font-semibold text-white">📍 Located just 25 miles east of Spokane</p>
-    <p class="text-gray-300">Our experienced team serves the entire Post Falls area, from the historic downtown district along Spokane Street to the newer residential developments and commercial areas. Whether you're traveling on I-90, exploring the Spokane River Gorge, or navigating local streets, we're ready to assist.</p>
+    <p class="text-gray-300">We arrange tows across the entire Post Falls area, from the historic downtown district along Spokane Street to the newer residential developments and commercial areas. Whether you're traveling on I-90, exploring the Spokane River Gorge, or navigating local streets, we're ready to assist.</p>
 </div>
 
 <h3 class="text-2xl font-bold mt-8 mb-4">Post Falls Service Areas</h3>

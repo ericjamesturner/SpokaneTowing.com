@@ -10,7 +10,7 @@
     <h2 class="text-3xl font-bold mb-8">Professional Roadside Assistance Services</h2>
     
     <div class="prose prose-invert prose-lg max-w-none mb-12 prose-headings:text-white prose-p:text-gray-300 prose-li:text-gray-300 prose-strong:text-white">
-        <p>Don't let a dead battery, empty gas tank, or locked car ruin your day. Spokane Towing provides comprehensive roadside assistance throughout Spokane, WA and surrounding areas. Our trained technicians arrive quickly with the tools and expertise to get you back on the road.</p>
+        <p>Don't let a dead battery, empty gas tank, or locked car ruin your day. Spokane Towing provides comprehensive roadside assistance throughout Spokane, WA and surrounding areas. One call sends a local roadside provider with the right tools to get you back on the road.</p>
         
         <h3 class="text-2xl font-semibold mt-8 mb-4">Our Roadside Assistance Services</h3>
         

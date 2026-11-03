@@ -11,7 +11,7 @@
 
 <div class="bg-blue-500/10 border-l-4 border-blue-500 p-4 my-6 rounded-r-xl">
     <p class="font-semibold text-white">📍 Located just 30 miles east of Spokane</p>
-    <p class="text-gray-300">Whether you're visiting the famous Coeur d'Alene Resort, enjoying the lake activities, or traveling along I-90, our experienced team is ready to help when vehicle troubles arise.</p>
+    <p class="text-gray-300">Whether you're visiting the famous Coeur d'Alene Resort, enjoying the lake activities, or traveling along I-90, one call to (509) 797-7999 connects you with a local tow operator who serves Coeur d'Alene.</p>
 </div>
 
 <h3 class="text-2xl font-bold mt-8 mb-4">Coeur d'Alene Area Coverage</h3>

@@ -11,7 +11,7 @@
 
 <div class="bg-blue-500/10 border-l-4 border-blue-500 p-4 my-6 rounded-r-xl">
     <p class="font-semibold text-white">🏔️ Serving North Idaho's beautiful lake community</p>
-    <p class="text-gray-300">Our experienced team serves the entire Hayden area, from lakefront properties to residential developments and the busy US Highway 95 corridor. Whether you're enjoying lake activities, commuting to nearby cities, or traveling through the area, we're ready to assist when vehicle problems arise.</p>
+    <p class="text-gray-300">We arrange tows across the entire Hayden area, from lakefront properties to residential developments and the busy US Highway 95 corridor. Whether you're enjoying lake activities, commuting to nearby cities, or traveling through the area, we're ready to assist when vehicle problems arise.</p>
 </div>
 
 <h3 class="text-2xl font-bold mt-8 mb-4">Hayden Area Coverage</h3>

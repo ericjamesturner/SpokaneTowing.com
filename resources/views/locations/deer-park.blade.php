@@ -11,7 +11,7 @@
 
 <div class="bg-blue-500/10 border-l-4 border-blue-500 p-4 my-6 rounded-r-xl">
     <p class="font-semibold text-white">🏞️ Serving rural north Spokane County</p>
-    <p class="text-gray-300">Our team understands the rural nature of the Deer Park area and the importance of quick, dependable service when you're stranded. Whether you're traveling through on US-395, visiting local attractions, or dealing with a breakdown in town, we're equipped to help.</p>
+    <p class="text-gray-300">We understand the rural nature of the Deer Park area and the importance of quick, dependable service when you're stranded. Whether you're traveling through on US-395, visiting local attractions, or dealing with a breakdown in town, we can get help on the way.</p>
 </div>
 
 <h3 class="text-2xl font-bold mt-8 mb-4">Deer Park Service Coverage</h3>

@@ -11,7 +11,7 @@
 
 <div class="bg-blue-500/10 border-l-4 border-blue-500 p-4 my-6 rounded-r-xl">
     <p class="font-semibold text-white">🏔️ Extended service to Stevens County's mountain communities</p>
-    <p class="text-gray-300">Our team provides service to the Colville area when emergency situations arise, understanding the rural nature of Stevens County and the importance of reliable towing services in mountainous terrain. From downtown Colville to surrounding rural areas, we're equipped to handle challenging recovery situations.</p>
+    <p class="text-gray-300">We arrange towing in the Colville area when emergency situations arise, understanding the rural nature of Stevens County and the importance of reliable towing services in mountainous terrain. From downtown Colville to surrounding rural areas, we can line up help for challenging recovery situations.</p>
 </div>
 
 <h3 class="text-2xl font-bold mt-8 mb-4">Colville Area Coverage</h3>

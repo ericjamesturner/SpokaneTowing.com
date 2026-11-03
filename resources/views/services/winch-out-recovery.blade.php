@@ -57,7 +57,7 @@
     </ol>
 
     <h3 class="text-2xl font-semibold mt-8 mb-4">Spokane Winter Recovery:</h3>
-    <p>Spokane winters can be harsh, and getting stuck in snow is a common occurrence. Our team is experienced in winter recovery operations and understands the unique challenges of Spokane's winter weather conditions. We carry specialized equipment for ice and snow recovery.</p>
+    <p>Spokane winters can be harsh, and getting stuck in snow is a common occurrence. We arrange winch-outs through local operators who handle Spokane's winter conditions, so tell us on the call whether you're on ice, in deep snow or in a ditch.</p>
 
     <p class="mt-8">Don't risk damaging your vehicle or injuring yourself trying to get unstuck. Let Spokane Towing's professional recovery team handle the situation safely and efficiently. We have the experience and equipment to get you back on the road.</p>
 </div>

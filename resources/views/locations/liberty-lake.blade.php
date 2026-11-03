@@ -11,7 +11,7 @@
 
 <div class="bg-blue-500/10 border-l-4 border-blue-500 p-4 my-6 rounded-r-xl">
     <p class="font-semibold text-white">🏞️ Serving the scenic Liberty Lake community</p>
-    <p class="text-gray-300">Our team is well-versed in serving the Liberty Lake community, whether you're a resident of the upscale neighborhoods, visiting the lake recreation areas, or traveling through on I-90. We understand the area's unique layout and provide efficient service to all locations.</p>
+    <p class="text-gray-300">We arrange tows for the Liberty Lake community through local operators who know the area, whether you're a resident of the upscale neighborhoods, visiting the lake recreation areas, or traveling through on I-90. We understand the area's unique layout and provide efficient service to all locations.</p>
 </div>
 
 <h3 class="text-2xl font-bold mt-8 mb-4">Liberty Lake Service Areas</h3>
