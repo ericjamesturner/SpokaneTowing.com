@@ -3,15 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tow Truck Spokane | 24/7 Tow Truck & Roadside Help</title>
-    <meta name="description" content="Need a tow truck in Spokane? Get fast 24/7 towing, flatbed transport and roadside assistance. Call (509) 797-7999 for availability and an estimate.">
+    <title>Spokane Towing | 24/7 Tow Truck & Roadside Assistance</title>
+    <meta name="description" content="Spokane Towing: 24/7 tow truck & roadside help across Spokane. Price confirmed before dispatch. Call (509) 797-7999 now.">
     <link rel="canonical" href="{{ url('/') }}">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url('/') }}">
-    <meta property="og:title" content="Tow Truck Spokane | 24/7 Tow Truck & Roadside Help">
-    <meta property="og:description" content="Need a tow truck in Spokane? Get fast 24/7 towing, flatbed transport and roadside assistance. Call (509) 797-7999 for availability and an estimate.">
+    <meta property="og:title" content="Spokane Towing | 24/7 Tow Truck & Roadside Assistance">
+    <meta property="og:description" content="Spokane Towing: 24/7 tow truck & roadside help across Spokane. Price confirmed before dispatch. Call (509) 797-7999 now.">
     <meta property="og:image" content="{{ url('/images/og-image.jpg') }}">
     <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="Spokane Towing">
@@ -19,8 +19,8 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="{{ url('/') }}">
-    <meta name="twitter:title" content="Tow Truck Spokane | 24/7 Tow Truck & Roadside Help">
-    <meta name="twitter:description" content="Need a tow truck in Spokane? Get fast 24/7 towing, flatbed transport and roadside assistance. Call (509) 797-7999 for availability and an estimate.">
+    <meta name="twitter:title" content="Spokane Towing | 24/7 Tow Truck & Roadside Assistance">
+    <meta name="twitter:description" content="Spokane Towing: 24/7 tow truck & roadside help across Spokane. Price confirmed before dispatch. Call (509) 797-7999 now.">
     <meta name="twitter:image" content="{{ url('/images/og-image.jpg') }}">
 
     <link rel="icon" href="/favicon.ico" sizes="any">

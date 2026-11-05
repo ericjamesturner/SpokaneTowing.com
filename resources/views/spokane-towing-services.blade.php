@@ -3,22 +3,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Towing Spokane WA | 24/7 Spokane Towing Services</title>
-    <meta name="description" content="Towing in Spokane, WA 24/7: I-90, US-195, US-2 & every neighborhood. $200 minimum, price confirmed before dispatch. Call (509) 797-7999 for a tow.">
+    <title>Spokane Towing Services | 24/7 Tow Truck in Spokane, WA</title>
+    <meta name="description" content="Spokane towing services 24/7 across I-90, US-395, US-2 & every neighborhood. $200 min, price before dispatch. Call (509) 797-7999.">
 
     <link rel="canonical" href="{{ url('/spokane-towing-services') }}">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url('/spokane-towing-services') }}">
-    <meta property="og:title" content="Towing Spokane WA | 24/7 Spokane Towing Services">
-    <meta property="og:description" content="Towing in Spokane, WA 24/7: I-90, US-195, US-2 & every neighborhood. $200 minimum, price confirmed before dispatch. Call (509) 797-7999 for a tow.">
+    <meta property="og:title" content="Spokane Towing Services | 24/7 Tow Truck in Spokane, WA">
+    <meta property="og:description" content="Spokane towing services 24/7 across I-90, US-395, US-2 & every neighborhood. $200 min, price before dispatch. Call (509) 797-7999.">
     <meta property="og:image" content="{{ url('/images/og-image.jpg') }}">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Towing Spokane WA | 24/7 Spokane Towing Services">
-    <meta name="twitter:description" content="Towing in Spokane, WA 24/7: I-90, US-195, US-2 & every neighborhood. $200 minimum, price confirmed before dispatch. Call (509) 797-7999 for a tow.">
+    <meta name="twitter:title" content="Spokane Towing Services | 24/7 Tow Truck in Spokane, WA">
+    <meta name="twitter:description" content="Spokane towing services 24/7 across I-90, US-395, US-2 & every neighborhood. $200 min, price before dispatch. Call (509) 797-7999.">
     <meta name="twitter:image" content="{{ url('/images/og-image.jpg') }}">
 
     <link rel="icon" href="/favicon.ico" sizes="any">
@@ -41,23 +41,23 @@
                 "name" => "How much do Spokane towing services cost?",
                 "acceptedAnswer" => [
                     "@@type" => "Answer",
-                    "text" => "Our towing rates are a $140 hook fee plus $6 per mile, with a $200 minimum. We offer competitive pricing with transparent rates and no hidden fees. Call for an instant quote or use our online calculator for exact pricing."
+                    "text" => "Rates are a $140 hook fee plus $6 per mile, with a $200 minimum. Transparent pricing, no hidden fees. Call for a quote or use the online calculator. See the full Spokane towing cost breakdown."
                 ]
             ],
             [
                 "@@type" => "Question",
-                "name" => "Do you provide 24/7 towing services in Spokane?",
+                "name" => "Are Spokane towing services available 24/7?",
                 "acceptedAnswer" => [
                     "@@type" => "Answer",
-                    "text" => "Yes, our Spokane towing services are available 24 hours a day, 7 days a week, 365 days a year including holidays. We're always ready to help when you need us."
+                    "text" => "Yes. Spokane towing services are available 24 hours a day, 7 days a week, including holidays."
                 ]
             ],
             [
                 "@@type" => "Question",
-                "name" => "What areas do your Spokane towing services cover?",
+                "name" => "What areas do Spokane towing services cover?",
                 "acceptedAnswer" => [
                     "@@type" => "Answer",
-                    "text" => "We service all of Spokane County including Spokane Valley, Liberty Lake, Cheney, Deer Park, Airway Heights, and surrounding areas. We also serve Coeur d'Alene, Post Falls, and Hayden in North Idaho."
+                    "text" => "All of Spokane County — including Spokane Valley, Liberty Lake, Cheney, Deer Park and Airway Heights — plus Coeur d'Alene, Post Falls and Hayden in North Idaho."
                 ]
             ],
             [
@@ -65,7 +65,7 @@
                 "name" => "Can you tow my vehicle to any location?",
                 "acceptedAnswer" => [
                     "@@type" => "Answer",
-                    "text" => "Yes, we can tow your vehicle to any repair shop, dealership, or location of your choice within our service area. Long-distance towing is also available for interstate transport."
+                    "text" => "Yes — to any repair shop, dealership or location you choose within the service area. Long-distance towing is also available for interstate trips."
                 ]
             ],
             [
@@ -81,7 +81,7 @@
                 "name" => "Can you tow an AWD, lowered or damaged car?",
                 "acceptedAnswer" => [
                     "@@type" => "Answer",
-                    "text" => "Yes. Tell us when you call and we will send a flatbed, which keeps all four wheels off the road. That is the safe choice for AWD, lowered, classic and accident-damaged vehicles."
+                    "text" => "Yes. Tell us when you call and a flatbed can be sent, which keeps all four wheels off the road. That is the safe choice for AWD, lowered, classic and accident-damaged vehicles."
                 ]
             ],
             [
@@ -89,7 +89,7 @@
                 "name" => "Can my car be towed from a parking lot or garage in downtown Spokane?",
                 "acceptedAnswer" => [
                     "@@type" => "Answer",
-                    "text" => "Usually, yes. Let us know about low clearance in parking garages so the right truck is sent. A standard flatbed may not fit in some low garages."
+                    "text" => "Usually, yes. Mention low clearance in parking garages so the right truck is sent. A standard flatbed may not fit in some low garages."
                 ]
             ]
         ]
@@ -144,10 +144,10 @@
                 </nav>
 
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                    Towing in Spokane, WA: <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-500">24/7 Spokane Towing</span>
+                    Spokane Towing Services: <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-500">24/7 Local Help</span>
                 </h1>
                 <p class="text-xl text-gray-300 mb-8">
-                    Tow trucks and roadside help across Spokane, Spokane Valley and the West Plains. One call to (509) 797-7999 gets you a price and an arrival time.
+                    Spokane towing services across downtown, the South Hill, Spokane Valley and the West Plains — plus I-90, US-395, US-2 and US-195. One call to (509) 797-7999 gets a price and an arrival estimate.
                 </p>
 
                 <div class="grid md:grid-cols-3 gap-6 mb-8">
@@ -157,7 +157,7 @@
                     </div>
                     <div class="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50">
                         <div class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-500">20-30</div>
-                        <div class="text-gray-400">Minutes Average Arrival</div>
+                        <div class="text-gray-400">Min Typical Arrival</div>
                     </div>
                     <div class="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50">
                         <div class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-500">50+</div>
@@ -184,34 +184,27 @@
     <section class="py-20 bg-black">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-bold mb-8 text-white">Comprehensive Spokane Towing Services</h2>
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-5">Spokane towing services, around the clock</h2>
+                <p class="text-lg md:text-xl text-gray-300 leading-relaxed mb-4">When you need <strong class="text-white">Spokane towing services</strong>, call (509) 797-7999 anytime. Spokane Towing is a dispatch line: we connect you with licensed and insured local tow operators for light-duty tows, flatbeds, roadside help and heavy vehicles.</p>
+                <p class="text-gray-300 leading-relaxed mb-6">Stranded on I-90 through Sunset Hill, on US-395 / the North Spokane Corridor, on US-2 toward Airway Heights, or on US-195 south toward Cheney — or stuck downtown, on the South Hill, in Hillyard or out in Spokane Valley — tell the dispatcher where you are and they will arrange the right truck.</p>
 
-                <div class="prose prose-invert prose-lg max-w-none mb-12 prose-p:text-gray-300">
-                    <p>
-                        When you need professional towing services in Spokane, WA, we're here to help 24 hours a day, 7 days a week.
-                        Our comprehensive Spokane towing services cover everything from emergency roadside assistance to heavy-duty commercial vehicle recovery.
-                    </p>
-                    <p>
-                        As a locally-owned and operated towing company, we understand the unique needs of Spokane drivers. Whether you're stranded
-                        on I-90, stuck in downtown Spokane, or need assistance anywhere in Spokane County, experienced local tow operators are ready to respond quickly.
-                    </p>
-                </div>
+                <div class="bg-slate-900/70 border border-slate-800 border-l-4 border-l-red-500/60 rounded-lg p-5 my-6 text-gray-300 leading-relaxed">Online estimates use a <strong class="text-white">$140 hook fee plus $6 per mile, with a $200 minimum</strong>. Most short tows inside Spokane land at $200. You always hear the exact price before a truck is sent. Full breakdown on the <a href="/towing-cost-spokane" class="text-red-500 font-semibold hover:underline">Spokane towing cost</a> page.</div>
 
                 <!-- What happens when you call -->
-                <div class="mb-12">
-                    <h2 class="text-3xl font-bold mb-6 text-white">What Happens When You Call for a Tow in Spokane</h2>
-                    <ol class="space-y-4 text-gray-300 list-decimal pl-6">
-                        <li><strong class="text-white">Tell us where you are.</strong> A cross street, highway exit or mile marker is perfect, for example "I-90 westbound near the Division Street exit" or "Hwy 195 south of Hatch Road".</li>
-                        <li><strong class="text-white">Describe the vehicle and the problem.</strong> Make, model, whether it rolls and steers, and if it's AWD, lowered or damaged. This decides whether you need a flatbed.</li>
-                        <li><strong class="text-white">Tell us where it's going.</strong> Your mechanic, a dealership, your home or a body shop. The distance sets the mileage part of the price.</li>
-                        <li><strong class="text-white">Get a price and an arrival time.</strong> You hear the price before a truck is sent, and you can say no. Average arrival is 20-30 minutes in most of the Spokane area; outlying areas and bad-weather nights can take longer.</li>
-                        <li><strong class="text-white">Stay safe while you wait.</strong> If you're on I-90, US-2 or US-195, stay buckled in with hazards on, or wait well off the road behind a barrier. Don't stand between your car and traffic.</li>
+                <div class="mb-12 mt-14 pt-10 border-t border-slate-800">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-6 text-white">What happens when you call for Spokane towing</h2>
+                    <ol class="space-y-4 my-6">
+                        <li class="flex gap-4"><span class="shrink-0 flex items-center justify-center w-8 h-8 rounded-full border border-red-500/50 text-red-400 text-sm font-bold">1</span><div class="pt-1"><p class="font-semibold text-white">Tell us where you are.</p><p class="text-gray-300 leading-relaxed mt-1">A cross street, highway exit or mile marker works — for example “I-90 westbound near Division” or “US-195 south of Hatch Road.”</p></div></li>
+                        <li class="flex gap-4"><span class="shrink-0 flex items-center justify-center w-8 h-8 rounded-full border border-red-500/50 text-red-400 text-sm font-bold">2</span><div class="pt-1"><p class="font-semibold text-white">Describe the vehicle and the problem.</p><p class="text-gray-300 leading-relaxed mt-1">Make, model, whether it rolls and steers, and if it is AWD, lowered or damaged. That decides whether a flatbed is needed.</p></div></li>
+                        <li class="flex gap-4"><span class="shrink-0 flex items-center justify-center w-8 h-8 rounded-full border border-red-500/50 text-red-400 text-sm font-bold">3</span><div class="pt-1"><p class="font-semibold text-white">Tell us where it is going.</p><p class="text-gray-300 leading-relaxed mt-1">Your mechanic, a dealership, your home or a body shop. Distance sets the mileage part of the price.</p></div></li>
+                        <li class="flex gap-4"><span class="shrink-0 flex items-center justify-center w-8 h-8 rounded-full border border-red-500/50 text-red-400 text-sm font-bold">4</span><div class="pt-1"><p class="font-semibold text-white">Get a price and an arrival estimate.</p><p class="text-gray-300 leading-relaxed mt-1">You hear both before a truck is sent, and you can say no. Typical arrival is about 20–30 minutes in most of the Spokane area; outlying spots and bad-weather nights can take longer.</p></div></li>
+                        <li class="flex gap-4"><span class="shrink-0 flex items-center justify-center w-8 h-8 rounded-full border border-red-500/50 text-red-400 text-sm font-bold">5</span><div class="pt-1"><p class="font-semibold text-white">Stay safe while you wait.</p><p class="text-gray-300 leading-relaxed mt-1">On I-90, US-2, US-195 or US-395, stay buckled with hazards on, or wait well off the road behind a barrier. Do not stand between your car and traffic.</p></div></li>
                     </ol>
                 </div>
 
                 <!-- Pricing -->
                 <div class="mb-12 bg-slate-800/50 backdrop-blur-sm p-8 rounded-2xl border border-slate-700/50">
-                    <h2 class="text-3xl font-bold mb-6 text-white">How Much Does Towing Cost in Spokane?</h2>
+                    <h2 class="text-2xl md:text-3xl font-bold mb-6 text-white">How much does Spokane towing cost?</h2>
                     <p class="text-gray-300 mb-4">Online estimates use a <strong class="text-white">$140 hook fee plus $6 per mile, with a $200 minimum</strong>. Most short tows inside the city land at the $200 minimum. Some worked examples at those rates:</p>
                     <ul class="space-y-2 text-gray-300 mb-4">
                         <li>• 5 miles (say, South Hill to a downtown shop): $140 + $30 = $170, so the $200 minimum applies</li>
@@ -293,7 +286,7 @@
 
                 <!-- All Services -->
                 <div class="mb-12">
-                    <h3 class="text-2xl font-semibold mb-6 text-white">Explore All Our Towing Services</h3>
+                    <h3 class="text-2xl font-semibold mb-6 text-white">Explore Spokane towing &amp; roadside services</h3>
                     <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
                         <a href="/24-hour-towing" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">24 Hour Emergency Towing</a>
                         <a href="/roadside-assistance" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Roadside Assistance</a>
@@ -313,7 +306,7 @@
 
                 <!-- Types of Vehicles -->
                 <div class="bg-red-600/10 border border-red-600/30 p-8 rounded-2xl mb-12">
-                    <h3 class="text-2xl font-semibold mb-6 text-white">Types of Vehicles We Tow</h3>
+                    <h3 class="text-2xl font-semibold mb-6 text-white">Vehicles Spokane towing services cover</h3>
                     <div class="grid md:grid-cols-3 gap-8">
                         <div>
                             <h4 class="font-semibold text-red-500 mb-3">Light-Duty Towing</h4>
@@ -348,9 +341,9 @@
 
                 <!-- Service Areas -->
                 <div class="mb-12">
-                    <h3 class="text-2xl font-semibold mb-6 text-white">Spokane Towing Services Coverage Area</h3>
-                    <p class="text-gray-300 mb-6">
-                        Our Spokane towing services extend throughout Spokane County and surrounding areas. We provide fast response times to all major highways, neighborhoods, and business districts.
+                    <h3 class="text-2xl font-semibold mb-6 text-white">Spokane towing services coverage area</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Spokane towing services cover Spokane County and nearby cities. Local operators respond on the major highways, in neighborhoods from Browne&apos;s Addition to Moran Prairie, and in business districts across the Valley and West Plains.
                     </p>
                     <div class="grid md:grid-cols-3 gap-6">
                         <div class="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50">
@@ -396,59 +389,59 @@
                 <div class="bg-gradient-to-r from-red-600 to-red-700 p-8 rounded-2xl mb-12 relative overflow-hidden">
                     <div class="absolute inset-0 bg-black/10"></div>
                     <div class="relative">
-                        <h3 class="text-2xl font-semibold mb-6 text-white">Why Choose Our Spokane Towing Services?</h3>
+                        <h3 class="text-2xl font-semibold mb-6 text-white">Why call for Spokane towing services?</h3>
                         <div class="grid md:grid-cols-2 gap-6">
                             <div>
-                                <h4 class="font-semibold text-white mb-2">One Call, Local Help</h4>
+                                <h4 class="font-semibold text-white mb-2">One call, local help</h4>
                                 <p class="text-white/80">Call one number and we connect you with a local Spokane tow company for cars, trucks, motorcycles and heavy vehicles.</p>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-white mb-2">Fast Response Times</h4>
-                                <p class="text-white/80">With tow operators working across Spokane, we average 20-30 minute arrival times for emergency calls.</p>
+                                <h4 class="font-semibold text-white mb-2">Typical 20–30 min arrival</h4>
+                                <p class="text-white/80">Local operators covering Spokane typically arrive in about 20–30 minutes; you get an estimate when you call.</p>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-white mb-2">Transparent Pricing</h4>
-                                <p class="text-white/80">No hidden fees or surprises. We provide upfront quotes for all our Spokane towing services before we begin.</p>
+                                <h4 class="font-semibold text-white mb-2">Transparent pricing</h4>
+                                <p class="text-white/80">No hidden fees. You hear the price for Spokane towing services before a truck is sent.</p>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-white mb-2">Insurance Approved</h4>
-                                <p class="text-white/80">We work with all major insurance companies and can bill directly for covered towing services.</p>
+                                <h4 class="font-semibold text-white mb-2">Receipts for insurance</h4>
+                                <p class="text-white/80">Ask for an itemized receipt so you can submit it to your insurer when towing is covered.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- FAQ Section -->
-                <div>
-                    <h3 class="text-2xl font-semibold mb-6 text-white">Frequently Asked Questions About Spokane Towing Services</h3>
-                    <div class="space-y-6">
-                        <div class="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50">
-                            <h4 class="font-semibold text-white mb-2">How much do Spokane towing services cost?</h4>
-                            <p class="text-gray-400">Our towing rates are a $140 hook fee plus $6 per mile, with a $200 minimum. We offer competitive pricing with transparent rates and no hidden fees. Call for an instant quote or use our <a href="/quote" class="text-red-500 hover:text-red-400 transition">online calculator</a> for exact pricing.</p>
+                <div class="mt-14 pt-10 border-t border-slate-800">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-6 text-white">Frequently asked questions about Spokane towing services</h3>
+                    <div class="divide-y divide-slate-800 border-y border-slate-800">
+                        <div class="py-5">
+                            <h4 class="text-lg font-semibold text-white mb-2">How much do Spokane towing services cost?</h4>
+                            <p class="text-gray-300 leading-relaxed">Rates are a $140 hook fee plus $6 per mile, with a $200 minimum. Transparent pricing, no hidden fees. Call for a quote or use the <a href="/quote" class="text-red-500 font-semibold hover:underline">online calculator</a>. See the full <a href="/towing-cost-spokane" class="text-red-500 font-semibold hover:underline">Spokane towing cost breakdown</a>.</p>
                         </div>
-                        <div class="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50">
-                            <h4 class="font-semibold text-white mb-2">Do you provide 24/7 towing services in Spokane?</h4>
-                            <p class="text-gray-400">Yes, our Spokane towing services are available 24 hours a day, 7 days a week, including holidays. We're always ready to help when you need us.</p>
+                        <div class="py-5">
+                            <h4 class="text-lg font-semibold text-white mb-2">Are Spokane towing services available 24/7?</h4>
+                            <p class="text-gray-300 leading-relaxed">Yes. Spokane towing services are available 24 hours a day, 7 days a week, including holidays.</p>
                         </div>
-                        <div class="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50">
-                            <h4 class="font-semibold text-white mb-2">What areas do your Spokane towing services cover?</h4>
-                            <p class="text-gray-400">We service all of Spokane County including Spokane Valley, Liberty Lake, Cheney, Deer Park, Airway Heights, and surrounding areas. We also serve Coeur d'Alene, Post Falls, and Hayden in North Idaho.</p>
+                        <div class="py-5">
+                            <h4 class="text-lg font-semibold text-white mb-2">What areas do Spokane towing services cover?</h4>
+                            <p class="text-gray-300 leading-relaxed">All of Spokane County — including Spokane Valley, Liberty Lake, Cheney, Deer Park and Airway Heights — plus Coeur d&apos;Alene, Post Falls and Hayden in North Idaho.</p>
                         </div>
-                        <div class="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50">
-                            <h4 class="font-semibold text-white mb-2">Can you tow my vehicle to any location?</h4>
-                            <p class="text-gray-400">Yes, we can tow your vehicle to any repair shop, dealership, or location of your choice within our service area. Long-distance towing is also available.</p>
+                        <div class="py-5">
+                            <h4 class="text-lg font-semibold text-white mb-2">Can you tow my vehicle to any location?</h4>
+                            <p class="text-gray-300 leading-relaxed">Yes — to any repair shop, dealership or location you choose within the service area. <a href="/long-distance-towing" class="text-red-500 font-semibold hover:underline">Long-distance towing</a> is also available for interstate trips.</p>
                         </div>
-                        <div class="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50">
-                            <h4 class="font-semibold text-white mb-2">Who will show up when I call?</h4>
-                            <p class="text-gray-400">We arrange your tow through local, licensed and insured tow operators who serve the Spokane area. You get the price and estimated arrival time on the phone before anyone is sent.</p>
+                        <div class="py-5">
+                            <h4 class="text-lg font-semibold text-white mb-2">Who will show up when I call?</h4>
+                            <p class="text-gray-300 leading-relaxed">We arrange your tow through local, licensed and insured tow operators who serve the Spokane area. You get the price and estimated arrival time on the phone before anyone is sent.</p>
                         </div>
-                        <div class="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50">
-                            <h4 class="font-semibold text-white mb-2">Can you tow an AWD, lowered or damaged car?</h4>
-                            <p class="text-gray-400">Yes. Tell us when you call and we will send a flatbed, which keeps all four wheels off the road. That is the safe choice for AWD, lowered, classic and accident-damaged vehicles.</p>
+                        <div class="py-5">
+                            <h4 class="text-lg font-semibold text-white mb-2">Can you tow an AWD, lowered or damaged car?</h4>
+                            <p class="text-gray-300 leading-relaxed">Yes. Tell us when you call and a <a href="/flatbed-towing" class="text-red-500 font-semibold hover:underline">flatbed</a> can be sent, which keeps all four wheels off the road. That is the safe choice for AWD, lowered, classic and accident-damaged vehicles.</p>
                         </div>
-                        <div class="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50">
-                            <h4 class="font-semibold text-white mb-2">Can my car be towed from a parking lot or garage in downtown Spokane?</h4>
-                            <p class="text-gray-400">Usually, yes. Let us know about low clearance in parking garages so the right truck is sent. A standard flatbed may not fit in some low garages.</p>
+                        <div class="py-5">
+                            <h4 class="text-lg font-semibold text-white mb-2">Can my car be towed from a parking lot or garage in downtown Spokane?</h4>
+                            <p class="text-gray-300 leading-relaxed">Usually, yes. Mention low clearance in parking garages so the right truck is sent. A standard flatbed may not fit in some low garages.</p>
                         </div>
                     </div>
                 </div>
@@ -473,7 +466,7 @@
                         Get Online Quote
                     </a>
                 </div>
-                <p class="mt-6 text-gray-500">Average arrival time: 20-30 minutes • Available 24/7</p>
+                <p class="mt-6 text-gray-500">Typical arrival: about 20–30 minutes • Available 24/7</p>
             </div>
         </div>
     </section>
