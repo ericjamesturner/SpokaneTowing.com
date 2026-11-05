@@ -136,7 +136,7 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="max-w-4xl mx-auto">
                 <nav class="mb-6 flex items-center text-sm">
-                    <a href="/" class="text-gray-400 hover:text-red-500 transition">Home</a>
+                    <a href="/" class="text-gray-400 hover:text-red-500 transition">Spokane Towing</a>
                     <svg class="w-4 h-4 mx-2 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                     </svg>
@@ -192,7 +192,7 @@
 
                 <!-- What happens when you call -->
                 <div class="mb-12 mt-14 pt-10 border-t border-slate-800">
-                    <h2 class="text-2xl md:text-3xl font-bold mb-6 text-white">What happens when you call for Spokane towing</h2>
+                    <h2 class="text-2xl md:text-3xl font-bold mb-6 text-white">What happens when you call for a tow</h2>
                     <ol class="space-y-4 my-6">
                         <li class="flex gap-4"><span class="shrink-0 flex items-center justify-center w-8 h-8 rounded-full border border-red-500/50 text-red-400 text-sm font-bold">1</span><div class="pt-1"><p class="font-semibold text-white">Tell us where you are.</p><p class="text-gray-300 leading-relaxed mt-1">A cross street, highway exit or mile marker works — for example “I-90 westbound near Division” or “US-195 south of Hatch Road.”</p></div></li>
                         <li class="flex gap-4"><span class="shrink-0 flex items-center justify-center w-8 h-8 rounded-full border border-red-500/50 text-red-400 text-sm font-bold">2</span><div class="pt-1"><p class="font-semibold text-white">Describe the vehicle and the problem.</p><p class="text-gray-300 leading-relaxed mt-1">Make, model, whether it rolls and steers, and if it is AWD, lowered or damaged. That decides whether a flatbed is needed.</p></div></li>

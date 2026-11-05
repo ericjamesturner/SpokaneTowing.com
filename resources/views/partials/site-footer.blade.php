@@ -32,7 +32,7 @@
             <div>
                 <h3 class="text-white font-semibold mb-4">Service Areas</h3>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="/spokane-towing-services" class="text-gray-400 hover:text-white transition">Towing in Spokane, WA</a></li>
+                    <li><a href="/" class="text-gray-400 hover:text-white transition">Spokane Towing</a></li>
                     <li><a href="/towing-spokane-valley" class="text-gray-400 hover:text-white transition">Spokane Valley</a></li>
                     <li><a href="/towing-greenacres" class="text-gray-400 hover:text-white transition">Greenacres</a></li>
                     <li><a href="/towing-liberty-lake" class="text-gray-400 hover:text-white transition">Liberty Lake</a></li>

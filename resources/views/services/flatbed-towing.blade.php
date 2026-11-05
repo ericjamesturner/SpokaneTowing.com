@@ -1,10 +1,10 @@
 @extends('layouts.service-page')
 
-@section('title', 'Flatbed Towing for AWD & Exotic Cars | Spokane, WA')
+@section('title', 'Flatbed Towing Spokane, WA | AWD, Exotic & Damaged Cars')
 
 @section('description', 'Flatbed towing in Spokane for luxury, exotic, low-clearance & damaged cars. No wheels touch the road, available 24/7 for you. Call (509) 797-7999')
 
-@section('hero-title', 'Professional Flatbed Towing in Spokane')
+@section('hero-title', 'Flatbed Towing in Spokane, WA')
 
 @section('hero-subtitle', 'Safe, secure flatbed transport for your vehicle. Perfect for luxury cars, low-clearance vehicles, and damaged automobiles.')
 
@@ -12,7 +12,7 @@
 <h2 class="text-3xl font-bold mb-8">Premium Flatbed Towing Services</h2>
 
 <div class="prose prose-invert prose-lg max-w-none mb-12 prose-headings:text-white prose-p:text-gray-300 prose-li:text-gray-300 prose-strong:text-white">
-    <p>When your vehicle needs the safest possible transport, flatbed towing is the gold standard. Spokane Towing arranges flatbed tows throughout Spokane, WA and surrounding areas. On a flatbed, your vehicle rides on the truck's deck, so no wheels touch the road. Need a regular tow instead? See our main page on <a href="/spokane-towing-services" class="text-red-500 hover:underline">towing in Spokane</a> for prices and coverage.</p>
+    <p>When your vehicle needs the safest possible transport, flatbed towing is the gold standard. Flatbed tows are arranged throughout Spokane, WA and the surrounding area. On a flatbed, your vehicle rides on the truck's deck, so no wheels touch the road. Need a regular tow instead? Start at the <a href="/" class="text-red-500 hover:underline">Spokane towing</a> home page, or compare every option on the <a href="/spokane-towing-services" class="text-red-500 hover:underline">towing services hub</a>.</p>
     
     <h3 class="text-2xl font-semibold mt-8 mb-4">Our Flatbed Towing Services Include:</h3>
     <ul class="space-y-2">
@@ -35,7 +35,7 @@
         <li><strong>Professional Loading:</strong> Experienced operators use proper tie-down techniques</li>
     </ul>
 
-    <h3 class="text-2xl font-semibold mt-8 mb-4">Why Choose Spokane Towing for Flatbed Service?</h3>
+    <h3 class="text-2xl font-semibold mt-8 mb-4">Why Call Us for a Flatbed?</h3>
     <ul class="space-y-2">
         <li><strong>Right Truck the First Time:</strong> Tell dispatch what you drive and a flatbed is sent when your vehicle needs one</li>
         <li><strong>Careful Handling:</strong> Local tow drivers who load and strap down vehicles the right way</li>
@@ -56,7 +56,7 @@
         <li>Long-distance transport</li>
     </ul>
 
-    <p class="mt-8">Call Spokane Towing when your vehicle needs a flatbed. You'll get the price on the phone before a truck is sent, and the tow is handled by local drivers who know proper loading and tie-down.</p>
+    <p class="mt-8">Call (509) 797-7999 when your vehicle needs a flatbed. You'll get the price on the phone before a truck is sent, and the tow is handled by local drivers who know proper loading and tie-down.</p>
 </div>
 
 <!-- CTA Box -->
