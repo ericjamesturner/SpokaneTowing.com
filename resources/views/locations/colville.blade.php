@@ -1,8 +1,8 @@
 @extends('layouts.location-page')
 
-@section('title', 'Colville Towing | Stevens County Tow Truck Service')
+@section('title', 'Colville Towing 24/7 | Stevens County Tow Truck from $200')
 
-@section('description', 'Colville, WA towing serving Stevens County & northeast Washington. Emergency towing, roadside assistance & long distance transport. Call (509) 797-7999')
+@section('description', 'Need a tow in Colville or Stevens County? 24/7 towing, roadside help & long-distance tows to Spokane. $200 minimum, price confirmed before dispatch. Call (509) 797-7999.')
 
 @section('city', 'Colville, WA')
 

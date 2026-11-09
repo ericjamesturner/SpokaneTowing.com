@@ -1,8 +1,8 @@
 @extends('layouts.location-page')
 
-@section('title', 'Liberty Lake Towing | Fast 24/7 Tow Truck Service')
+@section('title', 'Liberty Lake Towing 24/7 | Tow Truck from $200')
 
-@section('description', 'Liberty Lake, WA towing & roadside assistance on the I-90 corridor. Emergency towing, jump starts & vehicle recovery 24/7. Call (509) 797-7999')
+@section('description', 'Need a tow in Liberty Lake or on I-90 near the state line? 24/7 towing & roadside help. $200 minimum, price confirmed before dispatch. Call (509) 797-7999.')
 
 @section('city', 'Liberty Lake, WA')
 

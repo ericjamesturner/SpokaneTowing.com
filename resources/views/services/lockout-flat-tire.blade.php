@@ -1,18 +1,18 @@
 @extends('layouts.service-page')
 
-@section('title', 'Car Lockout & Flat Tire Service Spokane | Fast 24/7 Response')
+@section('title', 'Car Lockout & Flat Tire Help Spokane 24/7 | Price Before Dispatch')
 
-@section('description', 'Locked out or flat tire in Spokane? Damage-free lockout service & roadside tire changes with a 20-30 min response, open 24/7. Call (509) 797-7999')
+@section('description', 'Locked out or got a flat in Spokane? One call gets a local roadside tech for car unlocks & tire changes, 24/7. No membership, price confirmed first. Call (509) 797-7999.')
 
 @section('hero-title', 'Car Lockout & Flat Tire Service in Spokane')
 
-@section('hero-subtitle', 'Locked out or have a flat tire? Our professional roadside assistance gets you back on the road quickly and safely.')
+@section('hero-subtitle', 'Locked out or have a flat tire? One call connects you with a local roadside tech, 24/7, with the price confirmed before anyone is sent.')
 
 @section('content')
 <h2 class="text-3xl font-bold mb-8">Professional Lockout & Flat Tire Services</h2>
 
 <div class="prose prose-invert prose-lg max-w-none mb-12 prose-headings:text-white prose-p:text-gray-300 prose-li:text-gray-300 prose-strong:text-white">
-    <p>Getting locked out of your car or dealing with a flat tire can happen to anyone at any time. When you're stranded in Spokane, WA, you need reliable roadside assistance that responds quickly and gets the job done right. Spokane Towing provides professional car lockout services and flat tire assistance throughout the greater Spokane area.</p>
+    <p>Getting locked out of your car or dealing with a flat tire can happen to anyone at any time. When you're stranded in Spokane, WA, you need reliable roadside assistance that responds quickly and gets the job done right. Spokane Towing connects you with licensed and insured local operators for car lockouts and flat tires throughout the greater Spokane area.</p>
     
     <h3 class="text-2xl font-semibold mt-8 mb-4">Our Lockout Services Include:</h3>
     <ul class="space-y-2">
@@ -39,10 +39,10 @@
 
     <h3 class="text-2xl font-semibold mt-8 mb-4">Why Choose Spokane Towing for Lockouts & Flat Tires?</h3>
     <ul class="space-y-2">
-        <li><strong>Quick Response:</strong> Average arrival time of 20-30 minutes</li>
+        <li><strong>Price Before Dispatch:</strong> You hear the cost before anyone is sent, with no membership needed</li>
         <li><strong>24/7 Availability:</strong> Emergency assistance any time of day or night</li>
-        <li><strong>Professional Tools:</strong> Specialized equipment for safe vehicle entry</li>
-        <li><strong>Experienced Technicians:</strong> Trained professionals who won't damage your vehicle</li>
+        <li><strong>Damage-Free Entry:</strong> Local lockout techs use proper car-opening tools, not coat hangers</li>
+        <li><strong>Licensed & Insured Operators:</strong> Work is done by licensed and insured local operators</li>
         <li><strong>All Vehicle Types:</strong> Cars, trucks, SUVs, and commercial vehicles</li>
         <li><strong>Fair Pricing:</strong> Transparent rates with no hidden fees</li>
     </ul>
