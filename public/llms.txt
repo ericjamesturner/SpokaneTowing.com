@@ -62,7 +62,7 @@ Service Areas:
 - Price range: $$
 
 ## Response Time
-Average arrival time: 20-30 minutes within service area
+Arrival time: estimated on the call, before dispatch (varies by location, time and weather)
 
 ## Key Differentiators
 - Licensed and insured

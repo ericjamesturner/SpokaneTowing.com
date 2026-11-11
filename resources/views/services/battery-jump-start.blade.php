@@ -2,7 +2,7 @@
 
 @section('title', 'Battery Jump Start Spokane 24/7 | Fast Dead Battery Help')
 
-@section('description', 'Dead battery in Spokane? Get a jump start 24/7, typically 20-30 min response, no membership needed. Call (509) 797-7999 now for a price and arrival time.')
+@section('description', 'Dead battery in Spokane? Get a jump start 24/7, no membership needed. Call (509) 797-7999 now for a price and arrival time.')
 
 @section('service-type', 'Battery Jump Start Service')
 
@@ -30,7 +30,7 @@
 
     <h3 class="text-2xl font-semibold mt-8 mb-4">Why Spokane Drivers Call Us for Jump Starts</h3>
     <ul class="space-y-2">
-        <li><strong>Fast Response:</strong> Average arrival time of 20-30 minutes in the Spokane metro area</li>
+        <li><strong>Clear Up Front:</strong> Estimated arrival time and price given on the call, before dispatch</li>
         <li><strong>24/7 Availability:</strong> Cold winter mornings, late nights, weekends, and holidays</li>
         <li><strong>No Membership:</strong> Unlike AAA, there's no annual fee — you pay only when you need us</li>
         <li><strong>Honest Diagnosis:</strong> We tell you if it's the battery, the alternator, or just a dome light left on</li>

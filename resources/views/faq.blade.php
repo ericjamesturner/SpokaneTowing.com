@@ -148,7 +148,7 @@
                         </div>
                         <div class="border-l-2 border-green-500 pl-4">
                             <h3 class="font-semibold text-white mb-2">How quickly can you arrive?</h3>
-                            <p class="text-gray-400">Our average response time is 20-30 minutes within Spokane city limits. We'll provide an estimated arrival time when you call.</p>
+                            <p class="text-gray-400">It depends on where you are, the time of day and the weather. Inside Spokane, help is often on the way quickly; outlying areas, night calls and snowstorms can take longer. You get an estimated arrival time and the price on the call, before anything is dispatched.</p>
                         </div>
                         <div class="border-l-2 border-green-500 pl-4">
                             <h3 class="font-semibold text-white mb-2">Do you provide roadside assistance?</h3>

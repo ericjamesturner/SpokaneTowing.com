@@ -2,7 +2,7 @@
 
 @section('title', '24 Hour Towing Spokane | Fast Emergency Tow Truck Service')
 
-@section('description', 'Need a tow truck now? 24/7 emergency towing in Spokane with 20-30 min response times. Accident recovery, breakdowns & more. Call (509) 797-7999')
+@section('description', 'Need a tow truck now? 24/7 emergency towing in Spokane with an arrival time and price before dispatch. Accident recovery, breakdowns & more. Call (509) 797-7999')
 
 @section('hero-title', '24 Hour Emergency Towing in Spokane')
 
@@ -27,7 +27,7 @@
 
     <h3 class="text-2xl font-semibold mt-8 mb-4">Why Choose Our 24 Hour Towing?</h3>
     <ul class="space-y-2">
-        <li><strong>Fast Response:</strong> Average arrival time of 20-30 minutes</li>
+        <li><strong>Clear Up Front:</strong> Estimated arrival time and price given on the call, before dispatch</li>
         <li><strong>Always Available:</strong> 365 days a year, including holidays</li>
         <li><strong>Professional Drivers:</strong> Trained and experienced operators</li>
         <li><strong>Modern Equipment:</strong> Well-maintained tow trucks for safe transport</li>
@@ -43,7 +43,7 @@
     </div>
     <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
         <h4 class="text-lg font-semibold mb-2 text-white">How quickly can a tow truck get to me?</h4>
-        <p class="text-gray-300">Our average response time is 20-30 minutes in the Spokane metro area. We dispatch the nearest available truck to your location for the fastest possible response, even late at night.</p>
+        <p class="text-gray-300">It depends on your location, the time of day and the weather. The nearest available local tow truck is sent to you, even late at night, and you get an estimated arrival time on the call before anything is dispatched.</p>
     </div>
     <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
         <h4 class="text-lg font-semibold mb-2 text-white">Do you charge more for nighttime or holiday towing?</h4>
@@ -89,7 +89,7 @@
             "name" => "How quickly can a tow truck get to me?",
             "acceptedAnswer" => [
                 "@@type" => "Answer",
-                "text" => "Our average response time is 20-30 minutes in the Spokane metro area. We dispatch the nearest available truck to your location for the fastest possible response, even late at night."
+                "text" => "It depends on your location, the time of day and the weather. The nearest available local tow truck is sent to you, even late at night, and you get an estimated arrival time on the call before anything is dispatched."
             ]
         ],
         [

@@ -60,7 +60,7 @@
     </div>
     <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
         <h4 class="text-lg font-semibold mb-2 text-white">How fast can you reach a broken-down company vehicle?</h4>
-        <p class="text-gray-300">Average response is 20-30 minutes in the Spokane metro area, and fleet accounts get priority dispatch. We cover Spokane, Spokane Valley, the West Plains, and North Idaho.</p>
+        <p class="text-gray-300">Arrival time depends on location, time of day and weather, and you get an estimate on the call before dispatch. We cover Spokane, Spokane Valley, the West Plains, and North Idaho.</p>
     </div>
 </div>
 
@@ -119,7 +119,7 @@
             "name" => "How fast can you reach a broken-down company vehicle?",
             "acceptedAnswer" => [
                 "@@type" => "Answer",
-                "text" => "Average response is 20-30 minutes in the Spokane metro area, and fleet accounts get priority dispatch. We cover Spokane, Spokane Valley, the West Plains, and North Idaho."
+                "text" => "Arrival time depends on location, time of day and weather, and you get an estimate on the call before dispatch. We cover Spokane, Spokane Valley, the West Plains, and North Idaho."
             ]
         ]
     ]
