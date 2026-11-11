@@ -39,7 +39,7 @@
     <ul class="space-y-2">
         <li><strong>Right Truck the First Time:</strong> Tell dispatch what you drive and a flatbed is sent when your vehicle needs one</li>
         <li><strong>Careful Handling:</strong> Local tow drivers who load and strap down vehicles the right way</li>
-        <li><strong>Fast Response:</strong> Available 24/7 with average arrival time of 20-30 minutes</li>
+        <li><strong>Available 24/7:</strong> Estimated arrival time and price given on the call, before dispatch</li>
         <li><strong>Fully Insured:</strong> Complete coverage for your peace of mind</li>
         <li><strong>Competitive Rates:</strong> Fair pricing for premium flatbed service</li>
         <li><strong>Local Expertise:</strong> Familiar with Spokane roads and traffic patterns</li>

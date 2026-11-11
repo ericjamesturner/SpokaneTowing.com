@@ -48,7 +48,7 @@
     </div>
     <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
         <h4 class="text-lg font-semibold mb-2 text-white">How fast can you get to me for a dead battery?</h4>
-        <p class="text-gray-300">Our average response time is 20-30 minutes in Spokane and Spokane Valley. Outlying areas like Cheney, Deer Park, and Post Falls typically take 30-45 minutes.</p>
+        <p class="text-gray-300">It depends on where you are, the time of day and the weather. Spokane and Spokane Valley are usually quickest; outlying areas like Cheney, Deer Park and Post Falls take longer. You get an estimated arrival time and the price on the call, before anything is dispatched.</p>
     </div>
     <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
         <h4 class="text-lg font-semibold mb-2 text-white">Will you replace my car battery on the spot?</h4>
@@ -94,7 +94,7 @@
             "name" => "How fast can you get to me for a dead battery?",
             "acceptedAnswer" => [
                 "@@type" => "Answer",
-                "text" => "Our average response time is 20-30 minutes in Spokane and Spokane Valley. Outlying areas like Cheney, Deer Park, and Post Falls typically take 30-45 minutes."
+                "text" => "It depends on where you are, the time of day and the weather. Spokane and Spokane Valley are usually quickest; outlying areas like Cheney, Deer Park and Post Falls take longer. You get an estimated arrival time and the price on the call, before anything is dispatched."
             ]
         ],
         [
