@@ -26,6 +26,7 @@
                     <li><a href="/accident-towing-spokane" class="text-gray-400 hover:text-white transition">Accident Towing</a></li>
                     <li><a href="/towing-cost-spokane" class="text-gray-400 hover:text-white transition">Towing Cost in Spokane</a></li>
                     <li><a href="/towed-car-spokane" class="text-gray-400 hover:text-white transition">Car Towed? Find It</a></li>
+                    <li><a href="/abandoned-vehicle-spokane" class="text-gray-400 hover:text-white transition">Abandoned Vehicle Help</a></li>
                 </ul>
             </div>
 
