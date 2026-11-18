@@ -28,6 +28,10 @@ return [
         // Set ANALYTICS_SITE to an empty value to turn the tracker off.
         'site' => env('ANALYTICS_SITE', 'spokanetowing.com'),
         'script' => env('ANALYTICS_SCRIPT', 'https://analytics-production-azlxso.laravel.cloud/script.js'),
+        // The site's server key on the analytics app. With it set, requests from
+        // bots are reported there (App\Http\Middleware\ReportBots). Without it, nothing is.
+        'key' => env('ANALYTICS_KEY'),
+        'crawl_url' => env('ANALYTICS_CRAWL_URL', 'https://analytics-production-azlxso.laravel.cloud/api/server/crawl'),
     ],
 
     'resend' => [
