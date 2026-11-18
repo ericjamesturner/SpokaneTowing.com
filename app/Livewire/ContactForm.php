@@ -59,6 +59,11 @@ class ContactForm extends Component
         // Send email
         $this->sendContactEmail();
 
+        session()->flash('analytics', [
+            'event' => 'Contact Submitted',
+            'user' => ['name' => $this->name, 'email' => $this->email, 'phone' => $this->phone],
+        ]);
+
         // Redirect to thank you page
         return redirect()->route('contact.thankyou');
     }

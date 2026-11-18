@@ -7,6 +7,7 @@
     <title>Thank You - Spokane Towing</title>
     <meta name="description" content="Thank you for booking with Spokane Towing. We'll be there in 20-30 minutes.">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @include('partials.analytics')
     @include('partials.clarity')
 </head>
 <body data-clarity-mask="true" class="bg-gray-50">

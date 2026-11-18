@@ -51,6 +51,7 @@
       ]
     }
     </script>
+    @include('partials.analytics')
     @include('partials.clarity')
 </head>
 <body class="antialiased bg-black text-white">

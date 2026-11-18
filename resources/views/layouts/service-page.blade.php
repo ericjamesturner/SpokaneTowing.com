@@ -94,6 +94,7 @@
     }
     </script>
     @stack('schema')
+    @include('partials.analytics')
     @include('partials.clarity')
 
     <style>

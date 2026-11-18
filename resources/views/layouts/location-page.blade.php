@@ -98,6 +98,7 @@
       ]
     }
     </script>
+    @include('partials.analytics')
     @include('partials.clarity')
 
     <style>

@@ -24,6 +24,12 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'analytics' => [
+        // Set ANALYTICS_SITE to an empty value to turn the tracker off.
+        'site' => env('ANALYTICS_SITE', 'spokanetowing.com'),
+        'script' => env('ANALYTICS_SCRIPT', 'https://analytics-production-azlxso.laravel.cloud/script.js'),
+    ],
+
     'resend' => [
         'key' => env('RESEND_KEY'),
     ],

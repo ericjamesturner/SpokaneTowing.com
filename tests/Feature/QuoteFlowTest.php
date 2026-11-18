@@ -33,9 +33,14 @@ it('preserves the quote POST, minimum charge and successful conversion without c
     expect((float) $quote->total)->toBe(200.0);
     $this->get(route('quote.show', $quote->uuid))->assertOk()
         ->assertHeader('X-Robots-Tag', 'noindex, follow')
-        ->assertSee("window.clarity('event', 'quote_created')", false);
+        ->assertSee("window.clarity('event', 'quote_created')", false)
+        ->assertSee('data-site="spokanetowing.com"', false)
+        ->assertSee('window.trackEvent("Quote Created"', false)
+        ->assertSee('window.trackEvent.identify({"name":"Test Driver","phone":"5095550100"})', false);
     $this->get(route('quote.show', $quote->uuid))->assertOk()
-        ->assertDontSee("window.clarity('event', 'quote_created')", false);
+        ->assertDontSee("window.clarity('event', 'quote_created')", false)
+        ->assertDontSee('window.trackEvent("Quote Created"', false)
+        ->assertDontSee('trackEvent.identify', false);
     expect(Quote::count())->toBe(1);
 });
 
@@ -51,6 +56,8 @@ it('offers the call fallback instead of inventing a quote when Maps is not confi
     config(['towing.google_maps.api_key' => '']);
     $this->post('/quote', ['from' => 'Test pickup Spokane', 'to' => 'Test destination Spokane'])
         ->assertRedirect(route('quote.error'))->assertSessionMissing('analytics_event');
+    $this->get(route('quote.error'))->assertOk()
+        ->assertSee('window.trackEvent("Quote Error", {"reason":"pickup_not_found"})', false);
     expect(Quote::count())->toBe(0);
     Http::assertNothingSent();
 });
@@ -58,3 +65,9 @@ it('offers the call fallback instead of inventing a quote when Maps is not confi
 it('keeps utility pages out of search', function (string $url) {
     $this->get($url)->assertOk()->assertHeader('X-Robots-Tag', 'noindex, follow');
 })->with(['/booking-confirmation', '/contact/thank-you', '/quote/error']);
+
+it('puts the analytics tracker on public pages', function (string $url) {
+    $this->get($url)->assertOk()
+        ->assertSee('<script defer data-site="spokanetowing.com" data-outbound src="https://analytics-production-azlxso.laravel.cloud/script.js"></script>', false)
+        ->assertDontSee('trackEvent.identify', false);
+})->with(['/', '/quote', '/faq', '/contact', '/flatbed-towing', '/towing-cheney', '/service-areas', '/quote/error']);

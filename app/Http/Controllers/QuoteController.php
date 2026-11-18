@@ -28,20 +28,26 @@ class QuoteController extends Controller
             // Get coordinates for pickup location to check service area
             $pickupCoords = $this->getCoordinates($fromAddress);
             if (! $pickupCoords) {
-                return redirect()->route('quote.error')->with('error', 'Unable to find pickup location. Please enter a valid address.');
+                return redirect()->route('quote.error')
+                    ->with('error', 'Unable to find pickup location. Please enter a valid address.')
+                    ->with('analytics', ['event' => 'Quote Error', 'props' => ['reason' => 'pickup_not_found']]);
             }
 
             // Check if pickup is within service area
             $distanceFromSpokane = $this->calculateDistanceFromSpokane($pickupCoords['lat'], $pickupCoords['lng']);
             if ($distanceFromSpokane > config('towing.service_area.max_pickup_distance')) {
-                return redirect()->route('quote.error')->with('error', 'Pickup location is outside our service area. Please call us at (509) 797-7999 for assistance.');
+                return redirect()->route('quote.error')
+                    ->with('error', 'Pickup location is outside our service area. Please call us at (509) 797-7999 for assistance.')
+                    ->with('analytics', ['event' => 'Quote Error', 'props' => ['reason' => 'outside_service_area']]);
             }
 
             // Calculate distance between pickup and dropoff
             $result = $this->calculateDistance($fromAddress, $toAddress);
 
             if (! $result) {
-                return redirect()->route('quote.error')->with('error', 'Unable to calculate distance. Please check the addresses and try again.');
+                return redirect()->route('quote.error')
+                    ->with('error', 'Unable to calculate distance. Please check the addresses and try again.')
+                    ->with('analytics', ['event' => 'Quote Error', 'props' => ['reason' => 'distance_failed']]);
             }
 
             $distance = (int) ceil($result['distance']);
@@ -79,12 +85,19 @@ class QuoteController extends Controller
 
             // Redirect to the quote display page (PRG pattern)
             return redirect()->route('quote.show', $quote->uuid)
-                ->with('analytics_event', 'quote_created');
+                ->with('analytics_event', 'quote_created')
+                ->with('analytics', [
+                    'event' => 'Quote Created',
+                    'props' => ['miles' => $distance, 'total' => (float) $finalCharge, 'minimum' => $finalCharge == $minimumCharge],
+                    'user' => ['name' => $customerName, 'phone' => $customerPhone],
+                ]);
 
         } catch (\Exception $e) {
             Log::error('Quote creation failed: '.$e->getMessage());
 
-            return redirect()->route('quote.error')->with('error', 'Something went wrong. Please try again or call us at (509) 797-7999.');
+            return redirect()->route('quote.error')
+                ->with('error', 'Something went wrong. Please try again or call us at (509) 797-7999.')
+                ->with('analytics', ['event' => 'Quote Error', 'props' => ['reason' => 'server_error']]);
         }
     }
 

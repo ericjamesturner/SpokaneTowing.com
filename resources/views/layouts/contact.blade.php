@@ -26,6 +26,7 @@
     @include('partials.fonts')
 
     @vite(['resources/css/website.css', 'resources/js/app.js'])
+    @include('partials.analytics')
     @include('partials.clarity')
     @livewireStyles
 </head>

@@ -20,6 +20,7 @@
         ['name' => 'Home', 'url' => url('/')],
         ['name' => 'Towing Quote', 'url' => route('quote.start')],
     ]])
+    @include('partials.analytics')
     @include('partials.clarity')
 </head>
 <body class="antialiased bg-black text-white">

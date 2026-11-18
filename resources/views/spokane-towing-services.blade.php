@@ -96,6 +96,7 @@
     ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) !!}
     </script>
 
+    @include('partials.analytics')
     @include('partials.clarity')
 </head>
 <body class="antialiased bg-black text-white">

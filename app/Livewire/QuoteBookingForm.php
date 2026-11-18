@@ -85,6 +85,12 @@ class QuoteBookingForm extends Component
         // Send notification to GBPN
         $this->sendGBPNNotification();
         
+        session()->flash('analytics', [
+            'event' => 'Quote Booked',
+            'props' => ['total' => (float) $this->quote->total, 'miles' => $this->quote->distance, 'problem' => $this->problem],
+            'user' => ['name' => $this->customer_name, 'email' => $this->customer_email, 'phone' => $this->customer_phone],
+        ]);
+
         // Redirect to thank you page
         return redirect()->route('quote.thankyou', $this->quote);
     }

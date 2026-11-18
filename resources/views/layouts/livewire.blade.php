@@ -6,6 +6,7 @@
     <title>{{ $title ?? 'Spokane Towing' }}</title>
     <meta name="description" content="{{ $description ?? 'Professional towing services in Spokane, WA' }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @include('partials.analytics')
     @include('partials.clarity')
     @livewireStyles
 </head>

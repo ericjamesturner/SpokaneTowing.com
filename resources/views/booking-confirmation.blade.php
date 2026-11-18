@@ -14,6 +14,7 @@
     @include('partials.fonts')
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @include('partials.analytics')
     @include('partials.clarity')
 </head>
 <body data-clarity-mask="true" class="antialiased bg-gray-50 text-gray-900">

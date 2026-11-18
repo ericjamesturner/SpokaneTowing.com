@@ -54,6 +54,7 @@
             });
         </script>
     @endif
+    @include('partials.analytics')
     @include('partials.clarity')
 </head>
 <body data-clarity-mask="true" class="antialiased bg-black text-white min-h-screen">

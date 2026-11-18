@@ -56,6 +56,7 @@
 
     @include('partials.google-maps')
 
+    @include('partials.analytics')
     @include('partials.clarity')
 
     <style>
