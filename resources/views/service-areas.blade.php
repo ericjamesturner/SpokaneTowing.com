@@ -111,7 +111,7 @@
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
                     <a href="/" class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-red-500/50 transition group">
                         <h3 class="text-xl font-bold text-white mb-2 group-hover:text-red-500 transition">Spokane</h3>
-                        <p class="text-gray-400 text-sm">Our home base. Downtown, South Hill, North Side, and every neighborhood in between — 20-30 minute average response.</p>
+                        <p class="text-gray-400 text-sm">Our home base. Downtown, South Hill, North Side, and every neighborhood in between, with typical arrival around 20-30 minutes (exact ETA given on the call).</p>
                     </a>
                     <a href="/towing-spokane-valley" class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-red-500/50 transition group">
                         <h3 class="text-xl font-bold text-white mb-2 group-hover:text-red-500 transition">Spokane Valley</h3>

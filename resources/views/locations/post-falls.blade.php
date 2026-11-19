@@ -50,7 +50,7 @@
 
 <h3 class="text-2xl font-bold mt-8 mb-4">Quick Response from Spokane</h3>
 <div class="bg-green-500/10 rounded-xl p-6 mb-6 border border-green-500/30">
-    <p class="text-lg font-semibold mb-2 text-white">⏱️ Response Time: <span class="text-green-400">35-50 minutes</span></p>
+    <p class="text-lg font-semibold mb-2 text-white">⏱️ Typical Response: <span class="text-green-400">about 35-50 minutes</span> <span class="text-gray-400 text-sm font-normal">· exact ETA given on the call</span></p>
     <p class="text-gray-300">Local tow drivers know the quickest routes via <strong>I-90</strong> and local roads to reach you efficiently, whether you're stranded near Post Falls Dam or need assistance anywhere in the city.</p>
 </div>
 

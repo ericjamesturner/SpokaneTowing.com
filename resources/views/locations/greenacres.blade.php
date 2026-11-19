@@ -50,7 +50,7 @@
 
 <h3 class="text-2xl font-bold mt-8 mb-4">Every Service, Right in Greenacres</h3>
 <div class="bg-green-500/10 rounded-xl p-6 mb-6 border border-green-500/30">
-    <p class="text-lg font-semibold mb-2 text-white">⏱️ Response Time: <span class="text-green-400">20-30 minutes</span></p>
+    <p class="text-lg font-semibold mb-2 text-white">⏱️ Typical Response: <span class="text-green-400">about 20-30 minutes</span> <span class="text-gray-400 text-sm font-normal">· exact ETA given on the call</span></p>
     <p class="text-gray-300">Greenacres is in the heart of our Spokane Valley coverage area. We handle everything here: emergency towing, <a href="/motorcycle-towing" class="text-red-500 hover:underline">motorcycle towing</a>, accident recovery, <a href="/battery-jump-start" class="text-red-500 hover:underline">battery jump starts</a>, and <a href="/winch-out-recovery" class="text-red-500 hover:underline">winch-out service</a>.</p>
 </div>
 

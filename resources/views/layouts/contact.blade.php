@@ -118,8 +118,8 @@
                                 </svg>
                             </div>
                             <h3 class="text-lg font-semibold text-white mb-2">Fast Response</h3>
-                            <p class="text-gray-400">20-30 minute arrival</p>
-                            <p class="text-gray-500 text-sm mt-1">In most service areas</p>
+                            <p class="text-gray-400">Typically 20-30 minutes</p>
+                            <p class="text-gray-500 text-sm mt-1">In most of the metro; exact ETA given on the call</p>
                         </div>
                     </div>
 

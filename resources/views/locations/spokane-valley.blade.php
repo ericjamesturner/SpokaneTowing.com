@@ -13,7 +13,7 @@
 @section('content')
 <p><strong>Spokane Valley residents trust Spokane Towing for all their vehicle towing and recovery needs.</strong> Located just east of Spokane, the Valley is home to over 100,000 residents and thousands of businesses. Whether you're stuck on Sprague Avenue during rush hour or need assistance in the University City area, we're here to help 24/7.</p>
 
-<p>Our Spokane Valley towing services cover all major areas including <strong>Greenacres, Millwood, Veradale, and Liberty Lake</strong>. We know the Valley's roads like the back of our hand - from the busy Sullivan Road corridor to the quieter neighborhoods near Discovery Park. With average response times of 20-30 minutes, we'll get to you quickly no matter where you are in the Valley.</p>
+<p>Our Spokane Valley towing services cover all major areas including <strong>Greenacres, Millwood, Veradale, and Liberty Lake</strong>. We know the Valley's roads like the back of our hand - from the busy Sullivan Road corridor to the quieter neighborhoods near Discovery Park. Typical arrival is around 20-30 minutes in most of the Valley, and you get an exact ETA on the call before anyone is sent.</p>
 
 <h3 class="text-2xl font-semibold mt-8 mb-4">Major Spokane Valley Areas We Serve:</h3>
 <div class="grid md:grid-cols-2 gap-4 mb-8">
@@ -65,7 +65,7 @@
 <div class="space-y-4 mb-8">
     <div>
         <p class="font-semibold text-white">How fast can a tow truck get to me in Spokane Valley?</p>
-        <p>Average arrival is 20-30 minutes in most of the Valley. Snowstorms and rush hour on I-90 can add time, and you'll get an estimated arrival when you call.</p>
+        <p>Typical arrival is about 20-30 minutes in most of the Valley. Snowstorms and rush hour on I-90 can add time, and you'll get an estimated arrival when you call.</p>
     </div>
     <div>
         <p class="font-semibold text-white">Can you tow my car from Spokane Valley to a shop in Spokane or Coeur d'Alene?</p>
@@ -84,7 +84,7 @@
     "@@context" => "https://schema.org",
     "@@type" => "FAQPage",
     "mainEntity" => [
-        ["@@type" => "Question", "name" => "How fast can a tow truck get to me in Spokane Valley?", "acceptedAnswer" => ["@@type" => "Answer", "text" => "Average arrival is 20-30 minutes in most of the Valley. Snowstorms and rush hour on I-90 can add time, and you'll get an estimated arrival when you call."]],
+        ["@@type" => "Question", "name" => "How fast can a tow truck get to me in Spokane Valley?", "acceptedAnswer" => ["@@type" => "Answer", "text" => "Typical arrival is about 20-30 minutes in most of the Valley. Snowstorms and rush hour on I-90 can add time, and you'll get an estimated arrival when you call."]],
         ["@@type" => "Question", "name" => "Can you tow my car from Spokane Valley to a shop in Spokane or Coeur d'Alene?", "acceptedAnswer" => ["@@type" => "Answer", "text" => "Yes. Tell us the destination when you call. Tows into Spokane or east to Post Falls and Coeur d'Alene are priced at the same hook fee plus mileage."]],
         ["@@type" => "Question", "name" => "Do I need a roadside membership?", "acceptedAnswer" => ["@@type" => "Answer", "text" => "No. You pay per call, with no membership or sign-up."]],
     ]

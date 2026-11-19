@@ -50,7 +50,7 @@
 
 <h3 class="text-2xl font-bold mt-8 mb-4">Military-Friendly Service</h3>
 <div class="bg-green-500/10 rounded-xl p-6 mb-6 border border-green-500/30">
-    <p class="text-lg font-semibold mb-2 text-white">⏱️ Response Time: <span class="text-green-400">25-35 minutes</span></p>
+    <p class="text-lg font-semibold mb-2 text-white">⏱️ Typical Response: <span class="text-green-400">about 25-35 minutes</span> <span class="text-gray-400 text-sm font-normal">· exact ETA given on the call</span></p>
     <p class="text-gray-300">We understand the unique needs of military families and provide reliable service with competitive rates. Located just 15 miles southwest of Spokane, we're one of the fastest response towing services in the area.</p>
 </div>
 

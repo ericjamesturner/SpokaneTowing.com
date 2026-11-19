@@ -50,7 +50,7 @@
 
 <h3 class="text-2xl font-bold mt-8 mb-4">Built for North Idaho Winters</h3>
 <div class="bg-green-500/10 rounded-xl p-6 mb-6 border border-green-500/30">
-    <p class="text-lg font-semibold mb-2 text-white">⏱️ Response Time: <span class="text-green-400">45-60 minutes</span></p>
+    <p class="text-lg font-semibold mb-2 text-white">⏱️ Typical Response: <span class="text-green-400">about 45-60 minutes</span> <span class="text-gray-400 text-sm font-normal">· exact ETA given on the call</span></p>
     <p class="text-gray-300">Spirit Lake is about 40 miles from Spokane. Winters here are longer and snowier than in town — local tow drivers run SR-41 in every condition, and <a href="/winch-out-recovery" class="text-red-500 hover:underline">snow bank and ditch recoveries</a> are routine work for us, not a specialty call.</p>
 </div>
 
