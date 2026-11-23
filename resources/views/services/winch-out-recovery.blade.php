@@ -4,7 +4,7 @@
 
 @section('description', 'Stuck in a ditch, snow or mud in Spokane? Winch out & vehicle recovery with fast response, available 24/7. Call (509) 797-7999 for help now.')
 
-@section('hero-title', 'Winch Out & Off-Road Recovery Services')
+@section('hero-title', 'Winch Out & Off-Road Recovery in Spokane')
 
 @section('hero-subtitle', 'Stuck in snow, mud, or off the road? Our professional winch out and recovery services get your vehicle back on solid ground safely.')
 

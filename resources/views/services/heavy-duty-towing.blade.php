@@ -4,7 +4,7 @@
 
 @section('description', 'Heavy duty towing & wrecker service in Spokane for semis, buses & RVs, plus heavy truck roadside help on I-90. Open 24/7. Call (509) 797-7999')
 
-@section('hero-title', 'Heavy Duty Towing & Commercial Recovery')
+@section('hero-title', 'Heavy Duty Towing in Spokane: Semis, RVs & Commercial Recovery')
 
 @section('hero-subtitle', 'Professional heavy duty towing for trucks, buses, RVs, and commercial vehicles. When you need serious towing power, we deliver.')
 
