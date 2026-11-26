@@ -302,6 +302,7 @@
                         <a href="/accident-towing-spokane" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Accident Towing</a>
                         <a href="/towed-car-spokane" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Car Towed? How to Find It</a>
                         <a href="/abandoned-vehicle-spokane" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Abandoned Vehicle? Who to Call</a>
+                        <a href="/snow-emergency-towing-spokane" class="bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4 text-gray-300 hover:text-white hover:border-red-500/50 transition">Snow Parking Rules & Stuck in Snow</a>
                         <a href="/quote" class="bg-red-600/20 border border-red-600/30 rounded-xl px-5 py-4 text-red-400 hover:text-red-300 hover:border-red-500/50 transition font-semibold">Get an Instant Quote →</a>
                     </div>
                 </div>

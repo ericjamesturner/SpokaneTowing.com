@@ -27,6 +27,7 @@
                     <li><a href="/towing-cost-spokane" class="text-gray-400 hover:text-white transition">Towing Cost in Spokane</a></li>
                     <li><a href="/towed-car-spokane" class="text-gray-400 hover:text-white transition">Car Towed? Find It</a></li>
                     <li><a href="/abandoned-vehicle-spokane" class="text-gray-400 hover:text-white transition">Abandoned Vehicle Help</a></li>
+                    <li><a href="/snow-emergency-towing-spokane" class="text-gray-400 hover:text-white transition">Snow Parking & Stuck in Snow</a></li>
                 </ul>
             </div>
 
