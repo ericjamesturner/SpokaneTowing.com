@@ -12,7 +12,7 @@
 <h2 class="text-3xl font-bold mb-8">Expert Vehicle Recovery Services</h2>
 
 <div class="prose prose-invert prose-lg max-w-none mb-12 prose-headings:text-white prose-p:text-gray-300 prose-li:text-gray-300 prose-strong:text-white">
-    <p>When your vehicle is stuck in a ditch, trapped in snow, or bogged down in mud, you need professional winch out and recovery services. Spokane Towing provides expert off-road recovery throughout Spokane, WA and surrounding areas. Our experienced team has the equipment and expertise to safely extract your vehicle from any challenging situation.</p>
+    <p>When your vehicle is stuck in a ditch, trapped in snow, or bogged down in mud, you need professional winch out and recovery services. Spokane Towing connects you with a local recovery partner that handles winch-outs and off-road recovery throughout Spokane, WA and surrounding areas, with the right equipment to pull your vehicle out safely.</p>
     
     <h3 class="text-2xl font-semibold mt-8 mb-4">Our Recovery Services Include:</h3>
     <ul class="space-y-2">

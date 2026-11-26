@@ -51,7 +51,7 @@
 <h3 class="text-2xl font-bold mt-8 mb-4">Rural Mountain Service</h3>
 <div class="bg-green-500/10 rounded-xl p-6 mb-6 border border-green-500/30">
     <p class="text-lg font-semibold mb-2 text-white">⏱️ Typical Response: <span class="text-green-400">about 90-120 minutes</span> <span class="text-gray-400 text-sm font-normal">· exact ETA given on the call</span></p>
-    <p class="text-gray-300">Located approximately 70 miles northeast of Spokane, Colville requires specialized rural and mountain towing experience. We coordinate advance planning for non-emergency services, and our equipment and operators are experienced with challenging terrain and weather conditions.</p>
+    <p class="text-gray-300">Located approximately 70 miles northeast of Spokane, Colville requires specialized rural and mountain towing experience. We can help plan non-emergency tows ahead of time, and we connect you with partner operators used to rural roads, mountain terrain and winter weather.</p>
 </div>
 
 <p class="text-lg">We handle <strong>emergency breakdowns</strong> on US-395, off-road recovery situations, and transport needs to repair facilities in larger cities. While Colville is at our extended service range, we're committed to helping <strong>Stevens County residents</strong> when automotive emergencies arise.</p>
