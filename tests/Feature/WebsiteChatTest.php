@@ -8,15 +8,18 @@ test('the chat loader is optional and page HTML has no signed assertion', functi
     config(['services.website_chat.widget' => 'public-widget', 'services.website_chat.secret' => 'private-key']);
     $this->view('partials.website-chat')->assertSee('spokane-website-chat.js')->assertSee('public-widget')
         ->assertDontSee('data-identity')->assertDontSee('private-key');
-    $this->getJson('/website-chat/identity')->assertExactJson(['identity' => null, 'account' => null])
-        ->assertHeader('Cache-Control', 'no-store, private');
+    $response = $this->getJson('/website-chat/identity')->assertExactJson(['identity' => null, 'account' => null]);
+    expect($response->headers->hasCacheControlDirective('no-store'))->toBeTrue()
+        ->and($response->headers->hasCacheControlDirective('private'))->toBeTrue();
 });
 
 test('signed-in accounts receive a private fresh assertion and only verified emails are included', function (bool $verified) {
     config(['services.website_chat.widget' => 'public-widget', 'services.website_chat.secret' => 'private-key']);
     $user = User::factory()->make(['id' => 123, 'email_verified_at' => $verified ? now() : null]);
     $response = $this->actingAs($user)->getJson('/website-chat/identity')->assertOk()
-        ->assertHeader('Cache-Control', 'no-store, private')->assertDontSee('private-key');
+        ->assertDontSee('private-key');
+    expect($response->headers->hasCacheControlDirective('no-store'))->toBeTrue()
+        ->and($response->headers->hasCacheControlDirective('private'))->toBeTrue();
     $response->assertJsonPath('account', '123');
     [$payload, $signature] = explode('.', $response->json('identity'));
     expect(hash_hmac('sha256', $payload, 'private-key'))->toBe($signature);
