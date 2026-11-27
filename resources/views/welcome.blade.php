@@ -56,6 +56,7 @@
 
     @include('partials.google-maps')
 
+    @include('partials.website-chat')
     @include('partials.analytics')
     @include('partials.clarity')
 

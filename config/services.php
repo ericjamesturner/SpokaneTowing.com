@@ -24,6 +24,11 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'website_chat' => [
+        'widget' => env('GBPN_CHAT_WIDGET'),
+        'secret' => env('GBPN_CHAT_IDENTITY_SECRET'),
+    ],
+
     'analytics' => [
         // Set ANALYTICS_SITE to an empty value to turn the tracker off.
         'site' => env('ANALYTICS_SITE', 'spokanetowing.com'),

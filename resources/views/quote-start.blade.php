@@ -20,6 +20,7 @@
         ['name' => 'Home', 'url' => url('/')],
         ['name' => 'Towing Quote', 'url' => route('quote.start')],
     ]])
+    @include('partials.website-chat')
     @include('partials.analytics')
     @include('partials.clarity')
 </head>

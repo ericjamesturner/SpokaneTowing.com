@@ -14,6 +14,7 @@
     @include('partials.fonts')
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @include('partials.website-chat')
     @include('partials.analytics')
     @include('partials.clarity')
 </head>

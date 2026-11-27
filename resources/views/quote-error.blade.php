@@ -12,6 +12,7 @@
 
     @include('partials.fonts')
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @include('partials.website-chat')
     @include('partials.analytics')
 </head>
 <body class="antialiased bg-black text-white min-h-screen">

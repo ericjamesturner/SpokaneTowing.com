@@ -13,6 +13,7 @@
 
     @include('partials.fonts')
     @vite(['resources/css/website.css', 'resources/js/app.js'])
+    @include('partials.website-chat')
     @include('partials.analytics')
     @include('partials.clarity')
 </head>
@@ -69,6 +70,7 @@
                     <p class="text-gray-300 mb-4">We may collect the following types of information:</p>
                     <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
                         <li><strong class="text-white">Contact Information:</strong> Name, phone number, email address when you request a quote or service</li>
+                        <li><strong class="text-white">Website Chat:</strong> We use GBPN to receive and reply to messages. Your browser stores a chat identifier so you can return to the conversation. When you sign in, we share your account identifier and name with GBPN so you can resume your chat on another device. If you have verified your email address, we also share it to help our team find your contact record.</li>
                         <li><strong class="text-white">Location Information:</strong> Pickup and drop-off addresses for towing services</li>
                         <li><strong class="text-white">Vehicle Information:</strong> Make, model, year, and condition of vehicles for service quotes</li>
                         <li><strong class="text-white">Usage Data:</strong> Information about how you interact with our website, including IP address, browser type, and pages visited</li>

@@ -7,6 +7,8 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+Route::get('/website-chat/identity', \App\Http\Controllers\WebsiteChatIdentityController::class);
+
 Route::view('/quote', 'quote-start')->name('quote.start');
 Route::post('/quote', [\App\Http\Controllers\QuoteController::class, 'store'])->name('quote.store');
 Route::get('/quote/error', [\App\Http\Controllers\QuoteController::class, 'error'])->name('quote.error');

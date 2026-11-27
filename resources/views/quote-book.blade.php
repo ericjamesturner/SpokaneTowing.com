@@ -7,6 +7,7 @@
     <title>Complete Your Booking - Spokane Towing</title>
     <meta name="description" content="Complete your towing service booking with Spokane Towing.">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @include('partials.website-chat')
     @include('partials.analytics')
     @include('partials.clarity')
 </head>
